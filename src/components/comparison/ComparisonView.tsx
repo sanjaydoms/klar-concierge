@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import type { ComparisonResult } from "@/types/recommendation";
 
 function pretty(slug: string): string {
@@ -40,6 +41,11 @@ export function ComparisonView({ result }: { result: ComparisonResult }) {
                 </div>
               ))}
             </dl>
+            {dim.reason ? (
+              <p className="mt-2 border-t border-line pt-2 text-xs leading-relaxed text-foreground/60">
+                {dim.reason}
+              </p>
+            ) : null}
           </div>
         ))}
       </div>
@@ -57,22 +63,34 @@ export function ComparisonView({ result }: { result: ComparisonResult }) {
           </thead>
           <tbody>
             {result.dimensions.map((dim) => (
-              <tr key={dim.key} className="border-b border-line last:border-0">
-                <td className="px-4 py-3 font-medium text-brand">{dim.label}</td>
-                {result.slugs.map((s) => (
-                  <td
-                    key={s}
-                    className={
-                      dim.winnerSlug === s
-                        ? "bg-success-soft px-4 py-3 font-medium text-success"
-                        : "px-4 py-3 text-foreground/70"
-                    }
-                  >
-                    {dim.values[s]}
-                    {dim.winnerSlug === s ? <span aria-hidden> ✓</span> : null}
-                  </td>
-                ))}
-              </tr>
+              <Fragment key={dim.key}>
+                <tr className={dim.reason ? undefined : "border-b border-line last:border-0"}>
+                  <td className="px-4 py-3 font-medium text-brand">{dim.label}</td>
+                  {result.slugs.map((s) => (
+                    <td
+                      key={s}
+                      className={
+                        dim.winnerSlug === s
+                          ? "bg-success-soft px-4 py-3 font-medium text-success"
+                          : "px-4 py-3 text-foreground/70"
+                      }
+                    >
+                      {dim.values[s]}
+                      {dim.winnerSlug === s ? <span aria-hidden> ✓</span> : null}
+                    </td>
+                  ))}
+                </tr>
+                {dim.reason ? (
+                  <tr className="border-b border-line last:border-0">
+                    <td
+                      colSpan={result.slugs.length + 1}
+                      className="px-4 pb-3 pt-0 text-xs leading-relaxed text-foreground/55"
+                    >
+                      {dim.reason}
+                    </td>
+                  </tr>
+                ) : null}
+              </Fragment>
             ))}
           </tbody>
         </table>

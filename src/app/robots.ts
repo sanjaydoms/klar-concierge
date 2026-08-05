@@ -2,10 +2,15 @@ import type { MetadataRoute } from "next";
 import { config } from "@/lib/config";
 
 export default function robots(): MetadataRoute.Robots {
+  const base = config.appUrl.replace(/\/$/, "");
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: ["/admin", "/consultant", "/api"] },
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", "/embed"],
+      },
     ],
-    sitemap: `${config.appUrl}/sitemap.xml`,
+    sitemap: `${base}/sitemap.xml`,
   };
 }

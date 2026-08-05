@@ -1,0 +1,53 @@
+# Automated knowledge learning loop.
+#
+# Every Monday this workflow checks which destinations are past their
+# next-review date, asks the AI to draft refreshed intelligence for them, and
+# opens a pull request containing ONLY drafts (knowledge/drafts/). Drafts can
+# never reach customers: the eligibility gate requires human-verified status,
+# and the build ignores the drafts folder entirely. A Klar expert reviews the
+# PR, edits, promotes (npm run knowledge:promote) and merges.
+#
+# Requires repository secret: OPENAI_API_KEY
+name: knowledge-refresh
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Mondays 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft-refreshes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Draft refreshes for stale destinations
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run knowledge:research -- --refresh-stale --draft
+      - name: Open review PR (drafts only)
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: knowledge/drafts/**
+          branch: knowledge/auto-refresh
+          title: "Knowledge refresh drafts — human review required"
+          commit-message: "Add AI-drafted knowledge refreshes for stale destinations"
+          body: |
+            Automated drafts for destinations past their next-review date.
+
+            **Nothing here is live.** Drafts sit in `knowledge/drafts/`, are
+            excluded from the build, and are capped below the eligibility
+            threshold. To publish any of them, a reviewer must:
+
+            1. Check every fact against the checklist in each `REVIEW.md`.
+            2. Attach real sources.
+            3. Run `npm run knowledge:promote -- <slug> --reviewed-by "Name"`.
+            4. Run `npm run knowledge:build` and commit.

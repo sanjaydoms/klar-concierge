@@ -25,15 +25,25 @@ export default function DiscoverPage() {
             <p className="mt-1 text-sm text-foreground/65">{c.description}</p>
             <ul className="mt-4 space-y-3">
               {c.destinations.map((d) => (
-                <li key={d.slug} className="rounded-lg bg-surface-muted px-4 py-3">
-                  <div className="flex items-baseline justify-between gap-3">
-                    <span className="font-medium text-brand">{d.name}</span>
-                    <span className="text-xs text-foreground/55">{d.country}</span>
-                  </div>
-                  <p className="mt-0.5 text-sm text-foreground/65">{d.positioningLine}</p>
-                  {d.seasonLabel ? (
-                    <p className="mt-1 text-xs text-foreground/55">This month: {d.seasonLabel}</p>
-                  ) : null}
+                <li key={d.slug}>
+                  <Link
+                    href={`/destinations/${d.slug}`}
+                    className="block rounded-lg bg-surface-muted px-4 py-3 transition hover:bg-brand-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
+                  >
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="font-medium text-brand">{d.name}</span>
+                      <span className="text-xs text-foreground/55">
+                        {d.country === d.name ? d.region : d.country}
+                      </span>
+                    </div>
+                    <p className="mt-0.5 text-sm text-foreground/65">{d.positioningLine}</p>
+                    <div className="mt-1 flex items-baseline justify-between gap-3">
+                      {d.seasonLabel ? (
+                        <p className="text-xs text-foreground/55">This month: {d.seasonLabel}</p>
+                      ) : <span />}
+                      <span aria-hidden className="text-xs font-medium text-brand">Explore →</span>
+                    </div>
+                  </Link>
                 </li>
               ))}
             </ul>

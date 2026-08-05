@@ -11,10 +11,33 @@ test.describe("public surface", () => {
     expect(overflow).toBe(false);
   });
 
-  test("discover page lists KTIE collections", async ({ page }) => {
+  test("discover page lists KTIE collections with clickable destinations", async ({ page }) => {
     await page.goto("/concierge/discover");
     await expect(page.getByRole("heading", { name: "Best for families" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Best for seniors" })).toBeVisible();
+    // Destination cards are links into the encyclopedia — not dead text.
+    const firstCard = page.locator('a[href^="/destinations/"]').first();
+    await expect(firstCard).toBeVisible();
+    await firstCard.click();
+    await expect(page).toHaveURL(/\/destinations\/[a-z-]+/);
+    await expect(page.getByRole("heading", { name: /Month by month/i })).toBeVisible();
+  });
+
+  test("destination encyclopedia page carries the full intelligence", async ({ page }) => {
+    await page.goto("/destinations/japan");
+    await expect(page.getByRole("heading", { name: "Japan", exact: true })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /Month by month/i })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /What you.ll actually do/i })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /The honest trade-offs/i })).toBeVisible();
+    const jsonLd = (await page.locator('script[type="application/ld+json"]').allTextContents()).join(" ");
+    expect(jsonLd).toContain("TouristDestination");
+  });
+
+  test("embed route renders the bare planner for the portal iframe", async ({ page }) => {
+    await page.goto("/embed");
+    await expect(page.getByPlaceholder("Describe your holiday…")).toBeVisible();
+    // No site chrome inside the iframe
+    await expect(page.getByRole("navigation", { name: "Main" })).toHaveCount(0);
   });
 
   test("no internal or commerce routes exist", async ({ page }) => {
@@ -68,10 +91,10 @@ test.describe("planner journey (CRM disabled)", () => {
     const isMobile = (page.viewportSize()?.width ?? 1280) < 640;
     if (isMobile) {
       await expect(page.getByText(/Season in October/i).first()).toBeVisible();
-      await expect(page.getByText(/Flight fatigue/i).first()).toBeVisible();
+      await expect(page.getByText(/Getting there from India/i).first()).toBeVisible();
     } else {
       await expect(page.getByRole("cell", { name: /Season in October/i })).toBeVisible();
-      await expect(page.getByRole("cell", { name: /Flight fatigue/i })).toBeVisible();
+      await expect(page.getByRole("cell", { name: /Getting there from India/i })).toBeVisible();
     }
   });
 });

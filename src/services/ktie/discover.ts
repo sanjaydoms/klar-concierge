@@ -9,6 +9,7 @@ export type DiscoverCollection = {
     slug: string;
     name: string;
     country: string;
+    region: string;
     positioningLine: string;
     seasonLabel?: string;
   }>;
@@ -33,6 +34,7 @@ export function buildDiscoverCollections(month: number): DiscoverCollection[] {
       slug: d.slug,
       name: d.name,
       country: d.countryName,
+      region: d.region,
       positioningLine: d.positioningLine,
       seasonLabel: d.monthlyIntelligence.find((m) => m.month === month)?.seasonLabel,
     }));

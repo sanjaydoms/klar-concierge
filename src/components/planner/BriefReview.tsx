@@ -83,12 +83,19 @@ export function BriefReview({
           <label className="field-label" htmlFor="bf-nights">Nights</label>
           <input
             id="bf-nights"
-            type="number"
-            min={1}
-            max={30}
+            type="text"
+            inputMode="numeric"
+            autoComplete="off"
+            pattern="[0-9]*"
+            maxLength={2}
             className="field-input"
             value={draft.durationNights ?? ""}
-            onChange={(e) => set("durationNights", e.target.value ? Number(e.target.value) : undefined)}
+            onChange={(e) => {
+              // Mobile keyboards allow emoji even in number fields — keep
+              // digits only and clamp to a plannable range.
+              const digits = e.target.value.replace(/\D/g, "").slice(0, 2);
+              set("durationNights", digits ? Math.min(45, Math.max(1, parseInt(digits, 10))) : undefined);
+            }}
           />
         </div>
         <div>
@@ -110,6 +117,7 @@ export function BriefReview({
           <input
             id="bf-adults"
             type="number"
+            inputMode="numeric"
             min={1}
             max={20}
             className="field-input"
@@ -140,6 +148,7 @@ export function BriefReview({
           <input
             id="bf-seniors"
             type="number"
+            inputMode="numeric"
             min={0}
             max={20}
             className="field-input"

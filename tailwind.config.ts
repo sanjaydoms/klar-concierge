@@ -31,7 +31,10 @@ const config: Config = {
           DEFAULT: "#9b6718",
           soft: "#fbf1dd",
         },
-        danger: "#c62828",
+        danger: {
+          DEFAULT: "#c62828",
+          soft: "#fdebeb",
+        },
       },
       maxWidth: {
         content: "72rem",

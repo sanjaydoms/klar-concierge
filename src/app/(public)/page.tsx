@@ -49,9 +49,14 @@ export default function LandingPage() {
               <p className="mt-1 text-sm text-foreground/65">{c.description}</p>
               <ul className="mt-4 space-y-2">
                 {c.destinations.map((d) => (
-                  <li key={d.slug} className="flex items-baseline justify-between gap-3 text-sm">
-                    <span className="font-medium">{d.name}</span>
-                    <span className="text-right text-foreground/60">{d.positioningLine}</span>
+                  <li key={d.slug}>
+                    <Link
+                      href={`/destinations/${d.slug}`}
+                      className="flex items-baseline justify-between gap-3 rounded-md px-1 py-0.5 text-sm transition hover:bg-brand-soft"
+                    >
+                      <span className="font-medium text-brand">{d.name}</span>
+                      <span className="text-right text-foreground/60">{d.positioningLine}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -5,6 +5,7 @@ import {
 } from "@/types/brief";
 import type { PlanningSession } from "@/types/session";
 import { getAIProvider } from "@/services/ai";
+import { isUnreadableMessage, parseAwaitedAnswer } from "@/services/conversation/slotFill";
 import { getDestination } from "@/repositories/knowledge";
 import { buildDiscoverCollections } from "@/services/ktie/discover";
 import type { DestinationIntelligence } from "@/types/knowledge";
@@ -147,6 +148,24 @@ const OUT_OF_SCOPE_REPLY =
 const UNDECIDED_REPLY =
   "That's exactly what I'm for. Let's narrow it gently: which month are you thinking of, roughly how many nights, and who's travelling?";
 
+/** Record a complete turn (used for early honest replies that skip extraction). */
+function recordTurn(
+  session: PlanningSession,
+  userMessage: string,
+  assistantMessage: string,
+): ChatTurnResult {
+  const now = new Date().toISOString();
+  session.messages.push({ role: "user", content: userMessage, createdAt: now });
+  session.messages.push({ role: "assistant", content: assistantMessage, createdAt: new Date().toISOString() });
+  session.turnIndex += 1;
+  return {
+    session,
+    assistantMessage,
+    readyForRecommendations: briefReadyForRecommendations(session.brief),
+    missingFields: missingBriefFields(session.brief),
+  };
+}
+
 /**
  * Process one user message inside a planning session: extract preferences,
  * merge into the brief and choose the single most useful next step. When an
@@ -158,7 +177,30 @@ export async function processChatTurn(
   message: string,
 ): Promise<ChatTurnResult> {
   const ai = getAIProvider();
+
+  // Honesty first: emoji-only or symbol-only input carries nothing to plan
+  // with. Never reply "Got it" to it — say so, and re-ask the open question.
+  if (isUnreadableMessage(message)) {
+    const openField = session.awaitingField ?? missingBriefFields(session.brief)[0];
+    const question = openField
+      ? await ai.composeFollowUp({ brief: session.brief, missingField: openField })
+      : "Tell me about the holiday you have in mind.";
+    return recordTurn(session, message, `Sorry — I couldn't make sense of that message. ${question}`);
+  }
+
+  // If the assistant just asked a specific question, read short replies as the
+  // answer to it: "9" after "How many nights?" means nine nights.
+  let slotPatch: Partial<TravelBrief> = {};
+  if (session.awaitingField) {
+    const slot = parseAwaitedAnswer(message, session.awaitingField);
+    if (slot.kind === "invalid") {
+      return recordTurn(session, message, slot.reply);
+    }
+    if (slot.kind === "filled") slotPatch = slot.patch;
+  }
+
   const extraction = await ai.extractBrief({ message, currentBrief: session.brief });
+  extraction.briefPatch = { ...slotPatch, ...extraction.briefPatch };
 
   const brief = mergeBrief(
     session.brief.originalPrompt ? session.brief : { ...session.brief, originalPrompt: message },
@@ -207,11 +249,21 @@ export async function processChatTurn(
       .join(" ");
   } else {
     nextQuestion = await ai.composeFollowUp({ brief, missingField: missing[0] });
-    const ack = ACKNOWLEDGEMENTS[session.turnIndex % ACKNOWLEDGEMENTS.length];
+    const learnedNothing =
+      Object.keys(extraction.briefPatch).length === 0 && extraction.detectedIntent === "unknown";
+    // Only acknowledge warmly when the message actually taught us something —
+    // pretending to understand junk is exactly what erodes trust.
+    const ack = learnedNothing
+      ? "I didn't quite catch that, so let me ask again:"
+      : ACKNOWLEDGEMENTS[session.turnIndex % ACKNOWLEDGEMENTS.length];
     assistantMessage = [session.turnIndex === 0 ? undefined : ack, summary, nextQuestion]
       .filter(Boolean)
       .join(" ");
   }
+
+  // Remember which question is open so a bare answer next turn lands in the
+  // right slot. Cleared when no question is pending.
+  session.awaitingField = nextQuestion ? missing[0] : undefined;
 
   // Optional natural-language polish — strictly grounded, always falls back.
   if (polishable && ai.polishReply) {
