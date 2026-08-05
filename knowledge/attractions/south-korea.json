@@ -1,0 +1,231 @@
+[
+  {
+    "id": "south-korea-gyeongbokgung-palace-in-hanbok",
+    "destinationSlug": "south-korea",
+    "name": "Gyeongbokgung Palace in hanbok",
+    "category": "culture",
+    "summary": "Joseon-era grand palace; hanbok wearers enter free and photograph beautifully.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Guard-change ceremony at set times — verify schedule"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-korea-n-seoul-tower-namsan",
+    "destinationSlug": "south-korea",
+    "name": "N Seoul Tower & Namsan",
+    "category": "landmark",
+    "summary": "Cable car to the love-lock deck above the city lights.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "sunset into night",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-korea-myeongdong-street-food-shopping",
+    "destinationSlug": "south-korea",
+    "name": "Myeongdong street food & shopping",
+    "category": "shopping",
+    "summary": "K-beauty flagships between rows of sizzling snack stalls.",
+    "idealFor": [
+      "shopping",
+      "family",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "bestTimeOfDay": "evening",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-korea-dmz-half-day-tour",
+    "destinationSlug": "south-korea",
+    "name": "DMZ half-day tour",
+    "category": "experience",
+    "summary": "The world's most fortified border — tunnels, lookouts and history.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "minimumAge": 10,
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Passport required; book licensed tours ahead"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-korea-bukchon-hanok-village",
+    "destinationSlug": "south-korea",
+    "name": "Bukchon Hanok Village",
+    "category": "culture",
+    "summary": "Hillside lanes of traditional wooden homes between the palaces.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Sloped lanes — take the downhill route"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-korea-everland-or-lotte-world",
+    "destinationSlug": "south-korea",
+    "name": "Everland or Lotte World",
+    "category": "theme-park",
+    "summary": "Korea's two giant parks — gardens and coasters vs indoor ice rink city.",
+    "idealFor": [
+      "family",
+      "children",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 7,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Lotte World's indoor half rescues rainy days"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

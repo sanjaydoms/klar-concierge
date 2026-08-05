@@ -1,0 +1,265 @@
+{
+  "slug": "kuala-lumpur",
+  "name": "Kuala Lumpur",
+  "countryIso2": "MY",
+  "countryName": "Malaysia",
+  "region": "Southeast Asia",
+  "summary": "The Petronas Towers skyline, Batu Caves, serious street food and huge malls — an easy, halal-friendly city break with great connections onward.",
+  "positioningLine": "Skyline, street food and shopping — remarkable value.",
+  "idealTraveller": "City-breakers and families who want an easy, affordable long weekend abroad.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 5,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "city": 88,
+    "food": 88,
+    "shopping": 88,
+    "culture": 72,
+    "themeparks": 65,
+    "nightlife": 65,
+    "history": 55,
+    "relaxation": 55,
+    "romance": 60,
+    "nature": 50,
+    "beach": 10,
+    "adventure": 45,
+    "wildlife": 45,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 85,
+    "toddlers": 78,
+    "children5To10": 85,
+    "teenagers": 82,
+    "seniors": 82,
+    "honeymoon": 65,
+    "solo": 82,
+    "firstInternationalTrip": 90
+  },
+  "food": {
+    "vegetarianFriendly": 80,
+    "indianFoodAvailability": 95,
+    "halalFriendly": 98,
+    "localCuisineScore": 92,
+    "streetFoodScore": 94,
+    "fineDiningScore": 80
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 4.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 80,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 75,
+    "medicalAccessScore": 85
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "warm-all-year"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Thaipusam at Batu Caves (verify dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Mega Sale shopping season"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Afternoon thunderstorms most days"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Kuala Lumpur + Langkawi",
+    "Kuala Lumpur + Singapore",
+    "Kuala Lumpur + Genting Highlands"
+  ],
+  "commonMistakes": [
+    "Walking between districts in midday humidity instead of using the LRT/monorail"
+  ],
+  "packingConsiderations": [
+    "Breathable clothing",
+    "Compact umbrella — showers strike fast",
+    "Modest wear for mosques and temples"
+  ],
+  "practicalWarnings": [
+    "Afternoon downpours are routine; plan indoor slots after lunch"
+  ],
+  "tradeOffs": [
+    "Humidity is constant year-round",
+    "Fewer marquee sights beyond four days"
+  ],
+  "whoShouldAvoid": [
+    "Travellers chasing beaches or a dry, temperate climate"
+  ],
+  "confidence": 85,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-malaysia",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Malaysia",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

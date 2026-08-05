@@ -1,0 +1,233 @@
+[
+  {
+    "id": "south-africa-kruger-big-five-safari",
+    "destinationSlug": "south-africa",
+    "name": "Kruger Big Five safari",
+    "category": "nature",
+    "summary": "Dawn and dusk game drives among lion, leopard and elephant.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "bestTimeOfDay": "dawn",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Private reserves accept younger children more flexibly than some lodges"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Winter (Jun–Sep) gives the best sightings"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-africa-table-mountain-cableway",
+    "destinationSlug": "south-africa",
+    "name": "Table Mountain cableway",
+    "category": "nature",
+    "summary": "Rotating cable car to Cape Town's flat-topped icon.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [
+      "Upper paths partially wheelchair-accessible"
+    ],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Goes clear-day only — take the first gap in the weather"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-africa-cape-peninsula-cape-point-penguins",
+    "destinationSlug": "south-africa",
+    "name": "Cape Peninsula: Cape Point & penguins",
+    "category": "nature",
+    "summary": "Chapman's Peak drive, the Cape of Good Hope and Boulders Beach penguins.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Boardwalk penguin viewing delights all ages"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-africa-winelands-stellenbosch-franschhoek",
+    "destinationSlug": "south-africa",
+    "name": "Winelands: Stellenbosch & Franschhoek",
+    "category": "food",
+    "summary": "Cape Dutch estates, tram-hopped tastings and long vineyard lunches.",
+    "idealFor": [
+      "couple",
+      "food",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Wine tram offers effortless estate-hopping"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-africa-v-a-waterfront-robben-island",
+    "destinationSlug": "south-africa",
+    "name": "V&A Waterfront & Robben Island",
+    "category": "culture",
+    "summary": "Harbour dining plus the ferry to Mandela's prison island.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Robben Island ferries sell out and are sea-dependent — book early"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "south-africa-hermanus-whale-watching-seasonal",
+    "destinationSlug": "south-africa",
+    "name": "Hermanus whale watching (seasonal)",
+    "category": "nature",
+    "summary": "Southern right whales breach metres off the cliffs, roughly June–November.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Seasonal — verify sightings window"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

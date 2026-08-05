@@ -1,0 +1,268 @@
+{
+  "slug": "south-africa",
+  "name": "South Africa",
+  "countryIso2": "ZA",
+  "countryName": "South Africa",
+  "region": "Africa",
+  "summary": "Big Five safaris in Kruger, Cape Town's Table Mountain and winelands, whales and penguins on the Garden Route — Africa's greatest variety show.",
+  "positioningLine": "Safari mornings, wineland afternoons, ocean sunsets.",
+  "idealTraveller": "Wildlife dreamers and scenery lovers who want safari plus city in one trip.",
+  "minimumNights": 7,
+  "idealNights": 9,
+  "maximumNights": 14,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "wildlife": 98,
+    "nature": 95,
+    "adventure": 85,
+    "food": 80,
+    "romance": 80,
+    "beach": 65,
+    "culture": 70,
+    "city": 70,
+    "relaxation": 60,
+    "history": 65,
+    "shopping": 55,
+    "nightlife": 60,
+    "themeparks": 15,
+    "snow": 5
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 60,
+    "children5To10": 82,
+    "teenagers": 88,
+    "seniors": 72,
+    "honeymoon": 90,
+    "solo": 70,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 78,
+    "halalFriendly": 70,
+    "localCuisineScore": 85,
+    "streetFoodScore": 65,
+    "fineDiningScore": 90
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 11,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 40,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 75
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "southern-hemisphere",
+    "dry-winter-safari",
+    "mediterranean-cape"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Kruger is hot and green — animals harder to spot"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Cape Town's driest, warmest beach weather"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Cape Town's rainy season"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Peak dry-season game viewing in Kruger; whales arrive at Hermanus"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Cape Town + Garden Route + Kruger",
+    "South Africa + Victoria Falls",
+    "Cape Town + Winelands"
+  ],
+  "commonMistakes": [
+    "Expecting one season countrywide — Cape Town and Kruger are opposites",
+    "Self-driving safari with no early-morning starts"
+  ],
+  "packingConsiderations": [
+    "Neutral-coloured layers for safari; mornings are cold",
+    "Binoculars",
+    "Sun protection year-round"
+  ],
+  "practicalWarnings": [
+    "Take local safety advice seriously in cities — use recommended transport at night"
+  ],
+  "tradeOffs": [
+    "Cape Town and Kruger have opposite best seasons",
+    "Urban safety requires sensible precautions"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting carefree late-night city wandering"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-south-african-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "South African Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

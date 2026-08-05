@@ -1,6 +1,6 @@
 "use client";
 
-import type { ItineraryDay } from "@/types/recommendation";
+import type { ItineraryBlock, ItineraryDay } from "@/types/recommendation";
 
 const PACE_LABEL: Record<ItineraryDay["pace"], string> = {
   light: "Light day",
@@ -8,24 +8,55 @@ const PACE_LABEL: Record<ItineraryDay["pace"], string> = {
   active: "Active day",
 };
 
+function Blocks({ label, blocks }: { label: string; blocks: ItineraryBlock[] }) {
+  if (blocks.length === 0) return null;
+  return (
+    <div className="mt-2">
+      <p className="text-xs font-semibold uppercase tracking-wide text-foreground/50">{label}</p>
+      <ul className="mt-1 space-y-1.5">
+        {blocks.map((b, i) => (
+          <li key={i} className="text-sm">
+            <span className="font-medium text-foreground">
+              {b.title}
+              {b.optional ? (
+                <span className="ml-2 rounded bg-surface-muted px-1.5 py-0.5 text-xs font-normal text-foreground/60">
+                  optional
+                </span>
+              ) : null}
+            </span>
+            <p className="text-foreground/65">{b.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export function ItineraryView({
   destinationName,
   itinerary,
+  crmEnabled,
+  production,
   onBack,
   onContinue,
 }: {
   destinationName: string;
   itinerary: ItineraryDay[];
+  crmEnabled: boolean | null;
+  production: boolean;
   onBack: () => void;
   onContinue: () => void;
 }) {
+  const notes = (day: ItineraryDay) =>
+    [...day.childNotes, ...day.seniorNotes, ...day.accessibilityNotes, ...day.practicalNotes];
+
   return (
     <section aria-labelledby="itin-heading">
       <h1 id="itin-heading" className="text-2xl font-bold text-brand sm:text-3xl">
         Your {destinationName} itinerary
       </h1>
       <p className="mt-2 rounded-lg bg-brand-soft px-4 py-2.5 text-sm font-medium text-brand">
-        A starting plan for your Klar expert to refine.
+        A decision-ready starting plan for a Klar expert to refine — not a confirmed package.
       </p>
 
       <ol className="mt-6 space-y-4">
@@ -37,24 +68,17 @@ export function ItineraryView({
               </h2>
               <span className="text-xs text-foreground/55">{PACE_LABEL[day.pace]}</span>
             </div>
-            <ul className="mt-3 space-y-2">
-              {day.activities.map((activity, i) => (
-                <li key={i} className="text-sm">
-                  <span className="font-medium text-foreground">
-                    {activity.title}
-                    {activity.optional ? (
-                      <span className="ml-2 rounded bg-surface-muted px-1.5 py-0.5 text-xs font-normal text-foreground/60">
-                        optional
-                      </span>
-                    ) : null}
-                  </span>
-                  <p className="text-foreground/65">{activity.description}</p>
-                </li>
-              ))}
-            </ul>
-            {day.notes.length > 0 ? (
+            <Blocks label="Morning" blocks={day.morning} />
+            <Blocks label="Afternoon" blocks={day.afternoon} />
+            <Blocks label="Evening" blocks={day.evening} />
+            {day.weatherAlternative ? (
+              <p className="mt-3 rounded-lg bg-surface-muted px-3 py-2 text-xs text-foreground/65">
+                ☂ {day.weatherAlternative}
+              </p>
+            ) : null}
+            {notes(day).length > 0 ? (
               <ul className="mt-3 space-y-1 border-t border-line pt-2 text-xs text-foreground/55">
-                {day.notes.map((note, i) => (
+                {notes(day).map((note, i) => (
                   <li key={i}>{note}</li>
                 ))}
               </ul>
@@ -63,14 +87,31 @@ export function ItineraryView({
         ))}
       </ol>
 
-      <div className="mt-8 flex flex-wrap gap-3">
+      <div className="mt-8 flex flex-wrap items-center gap-3">
         <button type="button" className="btn-secondary" onClick={onBack}>
           ← Other directions
         </button>
-        <button type="button" className="btn-primary" onClick={onContinue}>
-          Let Klar Finalise My Holiday
-        </button>
+        {crmEnabled ? (
+          <button type="button" className="btn-primary" onClick={onContinue}>
+            Hand Over to a Klar Expert
+          </button>
+        ) : crmEnabled === false && !production ? (
+          <button
+            type="button"
+            className="btn-secondary cursor-not-allowed opacity-60"
+            disabled
+            title="Expert handover activates when Klar connects its CRM"
+          >
+            Expert handover — not yet available (preview)
+          </button>
+        ) : null}
       </div>
+      {crmEnabled === false ? (
+        <p className="mt-4 rounded-lg bg-surface-muted p-4 text-sm text-foreground/70">
+          To take this plan further right now, contact Klar Travels directly and mention your
+          chosen direction — nothing you&rsquo;ve planned here has been sent anywhere.
+        </p>
+      ) : null}
     </section>
   );
 }

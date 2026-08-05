@@ -1,0 +1,13 @@
+[
+  {
+    "id": "klar-knowledge-pack-2026",
+    "sourceType": "klar-expert",
+    "sourceName": "Klar destination knowledge pack (expert-compiled)",
+    "accessedAt": "2026-08-01",
+    "applicableFields": [
+      "*"
+    ],
+    "reliability": "medium",
+    "freshness": "current"
+  }
+]

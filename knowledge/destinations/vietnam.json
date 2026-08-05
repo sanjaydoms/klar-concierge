@@ -1,0 +1,268 @@
+{
+  "slug": "vietnam",
+  "name": "Vietnam",
+  "countryIso2": "VN",
+  "countryName": "Vietnam",
+  "region": "Southeast Asia",
+  "summary": "Ha Long Bay cruises, lantern-lit Hoi An, buzzing street food and dramatic caves — a rising favourite with excellent value.",
+  "positioningLine": "Story-rich landscapes at unbeatable value.",
+  "idealTraveller": "Curious travellers happy to move between regions for scenery, food and culture.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "culture": 90,
+    "food": 92,
+    "nature": 88,
+    "adventure": 82,
+    "history": 85,
+    "beach": 70,
+    "city": 75,
+    "relaxation": 60,
+    "romance": 75,
+    "shopping": 65,
+    "nightlife": 65,
+    "themeparks": 40,
+    "wildlife": 55,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 55,
+    "children5To10": 68,
+    "teenagers": 80,
+    "seniors": 62,
+    "honeymoon": 80,
+    "solo": 88,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 45,
+    "localCuisineScore": 95,
+    "streetFoodScore": 95,
+    "fineDiningScore": 75
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 5.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "tropical",
+    "regional-contrast",
+    "typhoon-season-aug-nov"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Cool, clear weather in the north; Tet festival atmosphere (verify dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Best all-round month across regions"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Hot and wet in the north"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Typhoon season on the central coast"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Hanoi + Ha Long + Da Nang/Hoi An",
+    "Ho Chi Minh City + Mekong Delta",
+    "Vietnam + Cambodia"
+  ],
+  "commonMistakes": [
+    "Planning one itinerary for the whole country — north and south have opposite weather",
+    "Underestimating internal travel time"
+  ],
+  "packingConsiderations": [
+    "Layers for the cooler north in winter",
+    "Rain protection in monsoon months",
+    "Comfortable shoes for old-quarter walking"
+  ],
+  "practicalWarnings": [
+    "Cross roads slowly and predictably — scooter traffic flows around you"
+  ],
+  "tradeOffs": [
+    "Regions have opposite weather patterns — routing matters",
+    "Long distances between north and south"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting a single-base, no-transfers beach holiday"
+  ],
+  "confidence": 84,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-vietnam-national-authority-of-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Vietnam National Authority of Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

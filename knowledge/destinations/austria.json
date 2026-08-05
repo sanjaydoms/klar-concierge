@@ -1,0 +1,267 @@
+{
+  "slug": "austria",
+  "name": "Austria",
+  "countryIso2": "AT",
+  "countryName": "Austria",
+  "region": "Europe",
+  "summary": "Vienna's imperial palaces and coffee houses, Salzburg's Sound-of-Music lanes and Hallstatt's lakeside postcard — elegant Alps without the rush.",
+  "positioningLine": "Imperial elegance and storybook alpine villages.",
+  "idealTraveller": "Couples and families who want European elegance at a gentler pace than the big-three capitals.",
+  "minimumNights": 5,
+  "idealNights": 6,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "culture": 90,
+    "history": 88,
+    "nature": 85,
+    "romance": 85,
+    "city": 80,
+    "food": 75,
+    "snow": 70,
+    "relaxation": 70,
+    "shopping": 65,
+    "adventure": 55,
+    "nightlife": 50,
+    "themeparks": 30,
+    "wildlife": 25,
+    "beach": 5
+  },
+  "suitability": {
+    "family": 82,
+    "toddlers": 72,
+    "children5To10": 82,
+    "teenagers": 80,
+    "seniors": 85,
+    "honeymoon": 88,
+    "solo": 78,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 60,
+    "halalFriendly": 55,
+    "localCuisineScore": 85,
+    "streetFoodScore": 60,
+    "fineDiningScore": 88
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 92,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 82,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "alpine",
+    "four-seasons",
+    "snowy-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Alpine lakes at their most swimmable"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Salzburg festival crowds and prices"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Grey between-season weeks"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Vienna's Christmas markets — Europe's loveliest"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Vienna + Salzburg + Hallstatt",
+    "Austria + Switzerland",
+    "Vienna + Prague + Budapest"
+  ],
+  "commonMistakes": [
+    "Day-tripping Hallstatt at midday with the crowds — stay overnight or go early"
+  ],
+  "packingConsiderations": [
+    "Smart-casual layers for concerts and coffee houses",
+    "Warm coat Nov–Mar",
+    "Comfortable walking shoes"
+  ],
+  "practicalWarnings": [
+    "Sunday closures affect shops — plan grocery and shopping days"
+  ],
+  "tradeOffs": [
+    "Quieter evenings than Europe's party capitals",
+    "Peak Christmas-market season books out early"
+  ],
+  "whoShouldAvoid": [
+    "Travellers chasing beach warmth or big nightlife"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-austrian-national-tourist-office",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Austrian National Tourist Office",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

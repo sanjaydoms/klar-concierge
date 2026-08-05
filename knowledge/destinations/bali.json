@@ -1,0 +1,269 @@
+{
+  "slug": "bali",
+  "name": "Bali",
+  "countryIso2": "ID",
+  "countryName": "Indonesia",
+  "region": "Southeast Asia",
+  "summary": "Temples, rice terraces, surf beaches and wellness retreats. Equally suited to honeymoons, friends' trips and slow family holidays.",
+  "positioningLine": "Tropical island escape with soul and style.",
+  "idealTraveller": "Honeymooners, wellness seekers and easy-going groups who value atmosphere over efficiency.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 92,
+    "relaxation": 95,
+    "romance": 92,
+    "nature": 88,
+    "culture": 85,
+    "adventure": 78,
+    "food": 80,
+    "nightlife": 70,
+    "city": 40,
+    "shopping": 60,
+    "history": 65,
+    "themeparks": 35,
+    "wildlife": 60,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 75,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 78,
+    "seniors": 65,
+    "honeymoon": 95,
+    "solo": 85,
+    "firstInternationalTrip": 80
+  },
+  "food": {
+    "vegetarianFriendly": 85,
+    "indianFoodAvailability": 60,
+    "halalFriendly": 60,
+    "localCuisineScore": 85,
+    "streetFoodScore": 80,
+    "fineDiningScore": 82
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 40,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 55,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "dry-season-jun-sep"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Wet season — expect daily downpours"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Green landscapes right after the rains"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Dry-season perfection for beaches and waterfalls"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Wet season and holiday crowds around Christmas"
+      ]
+    }
+  ],
+  "commonTripCombinations": [
+    "Bali + Nusa Penida",
+    "Bali + Gili Islands",
+    "Singapore + Bali"
+  ],
+  "commonMistakes": [
+    "Basing in one area and commuting daily across the island through traffic",
+    "Underestimating transfer times between south-coast beaches and Ubud"
+  ],
+  "packingConsiderations": [
+    "Sarong or cover-up for temples",
+    "Reef-safe sunscreen",
+    "Light rain layer outside dry season"
+  ],
+  "practicalWarnings": [
+    "Traffic between areas can eat hours — plan by zone, not by distance"
+  ],
+  "tradeOffs": [
+    "Traffic between areas can eat into short trips",
+    "Monsoon months (Dec–Feb) bring daily rain"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who want efficient public transport and city polish"
+  ],
+  "confidence": 85,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-wonderful-indonesia",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Wonderful Indonesia",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

@@ -5,9 +5,20 @@ export type BriefExtractionInput = {
   currentBrief: TravelBrief;
 };
 
+export type DetectedIntent =
+  | "plan-holiday"
+  | "refine-preferences"
+  | "answer-follow-up"
+  | "compare-destinations"
+  | "undecided"
+  | "out-of-scope"
+  | "unknown";
+
 export type BriefExtractionOutput = {
   briefPatch: Partial<TravelBrief>;
-  detectedIntent: "plan-holiday" | "refine-preferences" | "answer-follow-up" | "unknown";
+  detectedIntent: DetectedIntent;
+  /** Slugs mentioned for comparison, when intent is compare-destinations */
+  comparisonSlugs: string[];
   confidence: number;
 };
 

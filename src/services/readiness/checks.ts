@@ -1,5 +1,5 @@
 import { config } from "@/lib/config";
-import { getDb } from "@/lib/db";
+import { getAllDestinations, getCountries, getEligibleDestinations } from "@/repositories/knowledge";
 
 export type ReadinessCheck = {
   key: string;
@@ -9,117 +9,79 @@ export type ReadinessCheck = {
   detail: string;
 };
 
-export async function runReadinessChecks(): Promise<{
-  ready: boolean;
-  checks: ReadinessCheck[];
-}> {
+export async function runReadinessChecks(): Promise<{ ready: boolean; checks: ReadinessCheck[] }> {
   const checks: ReadinessCheck[] = [];
 
+  const destinations = getAllDestinations();
+  const eligible = getEligibleDestinations();
+  const countries = getCountries();
+
   checks.push({
-    key: "portal-protection",
-    label: "Internal routes protected by the klartravels portal",
+    key: "knowledge-loaded",
+    label: "KTIE knowledge compiled and loaded",
+    ok: destinations.length >= 30 && countries.length >= 190,
+    required: true,
+    detail: `${countries.length} countries, ${destinations.length} destinations loaded.`,
+  });
+
+  checks.push({
+    key: "eligibility",
+    label: "Recommendation-eligible destinations (10+)",
+    ok: eligible.length >= 10,
+    required: true,
+    detail: `${eligible.length} destinations pass the evidence gate (verified status, 12-month data, 5+ attractions, trade-offs, sources).`,
+  });
+
+  checks.push({
+    key: "ai-fallback",
+    label: "AI provider or deterministic fallback",
     ok: true,
     required: true,
-    detail:
-      "This app ships without its own login by design. Confirm the portal or reverse proxy restricts /consultant, /admin and their APIs to Klar staff before launch.",
-  });
-
-  // Database reachability + migrations (representative tables must exist).
-  let dbOk = false;
-  let destinationCount = 0;
-  let verifiedCount = 0;
-  try {
-    const db = getDb();
-    await db.$queryRaw`SELECT 1`;
-    destinationCount = await db.destination.count();
-    verifiedCount = await db.destination.count({ where: { status: "verified" } });
-    dbOk = true;
-  } catch {
-    dbOk = false;
-  }
-  checks.push({
-    key: "database",
-    label: "PostgreSQL reachable and migrated",
-    ok: dbOk,
-    required: true,
-    detail: dbOk
-      ? "Database connection and schema look healthy."
-      : "Database unreachable or migrations not applied. Check DATABASE_URL and run prisma migrate deploy.",
-  });
-
-  checks.push({
-    key: "ktie-seeded",
-    label: "KTIE destinations loaded",
-    ok: destinationCount >= 20,
-    required: true,
-    detail: `${destinationCount} destinations in the database (need 20 seeded).`,
-  });
-
-  checks.push({
-    key: "ktie-verified",
-    label: "KTIE verified threshold (10+)",
-    ok: verifiedCount >= 10,
-    required: true,
-    detail: `${verifiedCount} destinations verified (need at least 10 for public launch).`,
+    detail: config.openaiApiKey
+      ? "OpenAI configured; deterministic fallback stands behind it."
+      : "No OpenAI key — deterministic extraction keeps the planner fully usable.",
   });
 
   if (config.crmEnabled) {
-    let crmConfigOk = false;
-    let crmDetail = "";
+    let ok = false;
+    let detail = "";
     try {
-      const { createCRMProvider } = await import("@/services/crm/factory");
+      const { createCRMProvider } = await import("@/services/crm/providers");
       const provider = createCRMProvider(config);
       const health = await provider.health();
-      crmConfigOk = health.healthy;
-      crmDetail = health.detail;
+      ok = health.healthy;
+      detail = health.detail;
     } catch (e) {
-      crmConfigOk = false;
-      crmDetail = e instanceof Error ? e.message : "CRM configuration invalid.";
+      detail = e instanceof Error ? e.message : "CRM configuration invalid.";
     }
-    checks.push({
-      key: "crm-config",
-      label: "CRM provider configured",
-      ok: crmConfigOk,
-      required: true,
-      detail: crmDetail,
-    });
+    checks.push({ key: "crm-config", label: "CRM provider configured", ok, required: true, detail });
   } else {
     checks.push({
       key: "crm-disabled",
-      label: "CRM-disabled mode (placeholder provider)",
+      label: "CRM-disabled mode (truthful placeholder)",
       ok: config.crmProvider === "placeholder",
       required: true,
       detail:
         config.crmProvider === "placeholder"
-          ? "CRM is intentionally disabled. Leads are stored durably in PostgreSQL and handled by the Klar team."
+          ? "CRM handover is intentionally disabled. The decision engine runs fully; no fake success states exist."
           : "With CRM_ENABLED=false, CRM_PROVIDER must be 'placeholder'.",
     });
   }
 
   checks.push({
-    key: "ai",
-    label: "AI provider or deterministic fallback",
+    key: "no-pii-store",
+    label: "No customer-PII persistence",
     ok: true,
     required: true,
-    detail: config.openaiApiKey
-      ? "OpenAI configured; deterministic fallback available."
-      : "No OpenAI key — deterministic extraction keeps the planner fully usable.",
-  });
-
-  checks.push({
-    key: "analytics",
-    label: "Analytics enabled",
-    ok: config.featureAnalytics,
-    required: false,
-    detail: config.featureAnalytics ? "Anonymous funnel analytics on." : "FEATURE_ANALYTICS is off.",
+    detail: "The application stores only anonymous TTL sessions and idempotency records — customer PII goes to the CRM at handover only.",
   });
 
   checks.push({
     key: "no-commerce",
-    label: "No public commerce routes",
+    label: "No commerce or internal-dashboard routes",
     ok: true,
     required: true,
-    detail: "Phase 1 ships no booking, payment or inventory routes.",
+    detail: "No booking, payment, inventory, consultant or admin routes exist in this release.",
   });
 
   const ready = checks.filter((c) => c.required).every((c) => c.ok);

@@ -1,0 +1,267 @@
+{
+  "slug": "australia",
+  "name": "Australia",
+  "countryIso2": "AU",
+  "countryName": "Australia",
+  "region": "Oceania",
+  "summary": "Sydney's harbour, the Great Barrier Reef and wildlife found nowhere else. A big-trip destination that rewards ten days or more.",
+  "positioningLine": "Bucket-list nature and easy-going city life.",
+  "idealTraveller": "Big-trip planners with 10+ nights who want reef, wildlife and city life in one journey.",
+  "minimumNights": 8,
+  "idealNights": 10,
+  "maximumNights": 16,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 95,
+    "wildlife": 95,
+    "beach": 88,
+    "adventure": 88,
+    "city": 82,
+    "food": 80,
+    "relaxation": 60,
+    "romance": 75,
+    "culture": 65,
+    "nightlife": 70,
+    "shopping": 70,
+    "history": 45,
+    "themeparks": 65,
+    "snow": 25
+  },
+  "suitability": {
+    "family": 82,
+    "toddlers": 68,
+    "children5To10": 82,
+    "teenagers": 88,
+    "seniors": 72,
+    "honeymoon": 85,
+    "solo": 85,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 80,
+    "indianFoodAvailability": 78,
+    "halalFriendly": 65,
+    "localCuisineScore": 85,
+    "streetFoodScore": 65,
+    "fineDiningScore": 90
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 12,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 80,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 85,
+    "medicalAccessScore": 95
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "southern-hemisphere",
+    "regional-contrast",
+    "tropical-north"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Tropical north wet season and stingers"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Cyclone season in Queensland's north"
+      ]
+    },
+    {
+      "month": 3,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Autumn calm — reef visibility excellent"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Spring: whales, wildflowers and mild city days"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Sydney + Cairns/Reef + Melbourne",
+    "Australia + New Zealand",
+    "Sydney + Gold Coast"
+  ],
+  "commonMistakes": [
+    "Underestimating internal distances — Sydney–Cairns is a 3-hour flight",
+    "Trying to see three coasts in ten days"
+  ],
+  "packingConsiderations": [
+    "Layers — southern cities can be four seasons in a day",
+    "Reef-safe sunscreen and stinger-suit hire in season",
+    "High-SPF protection — the sun is fierce"
+  ],
+  "practicalWarnings": [
+    "Swim between the flags at patrolled beaches only"
+  ],
+  "tradeOffs": [
+    "Long-haul flights and internal distances",
+    "Higher budget; visa lead time required"
+  ],
+  "whoShouldAvoid": [
+    "Travellers with under a week to spare"
+  ],
+  "confidence": 85,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-australia",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Australia",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

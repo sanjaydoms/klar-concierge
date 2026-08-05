@@ -1,0 +1,271 @@
+{
+  "slug": "dubai",
+  "name": "Dubai",
+  "countryIso2": "AE",
+  "countryName": "United Arab Emirates",
+  "region": "Middle East",
+  "summary": "Desert glamour, record-breaking architecture, malls, theme parks and beach resorts — a short flight from India with excellent Indian food availability.",
+  "positioningLine": "Big-ticket wow factor within a short flight.",
+  "idealTraveller": "Families and groups who want spectacle, shopping and easy logistics close to home.",
+  "minimumNights": 4,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "city": 92,
+    "shopping": 95,
+    "themeparks": 88,
+    "beach": 70,
+    "food": 80,
+    "adventure": 78,
+    "nightlife": 80,
+    "relaxation": 65,
+    "culture": 60,
+    "romance": 70,
+    "history": 50,
+    "nature": 45,
+    "wildlife": 30,
+    "snow": 20
+  },
+  "suitability": {
+    "family": 90,
+    "toddlers": 85,
+    "children5To10": 92,
+    "teenagers": 90,
+    "seniors": 85,
+    "honeymoon": 75,
+    "solo": 75,
+    "firstInternationalTrip": 92
+  },
+  "food": {
+    "vegetarianFriendly": 85,
+    "indianFoodAvailability": 95,
+    "halalFriendly": 98,
+    "localCuisineScore": 78,
+    "streetFoodScore": 70,
+    "fineDiningScore": 92
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 3.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 85,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 90,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "desert",
+    "dry-winter",
+    "extreme-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Dubai Shopping Festival"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat — outdoor plans limited to mornings and evenings"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat — indoor-focused itinerary recommended"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat — indoor-focused itinerary recommended"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Pleasant outdoor weather for desert safaris"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Dubai + Abu Dhabi",
+    "Dubai + Maldives",
+    "Dubai stopover en route to Europe"
+  ],
+  "commonMistakes": [
+    "Visiting in peak summer expecting outdoor sightseeing",
+    "Underestimating time needed at mega-malls and parks"
+  ],
+  "packingConsiderations": [
+    "Light layers plus a warm layer for icy indoor air-conditioning",
+    "Modest wear for mosques and heritage areas",
+    "Sun protection"
+  ],
+  "practicalWarnings": [
+    "Respect local norms in public spaces; check Ramadan timings if applicable"
+  ],
+  "tradeOffs": [
+    "Summer months are extremely hot outdoors",
+    "Feels commercial rather than cultural for some travellers"
+  ],
+  "whoShouldAvoid": [
+    "Travellers seeking historic old-world charm or lush landscapes"
+  ],
+  "confidence": 88,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-dubai-department-of-economy-and-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Dubai Department of Economy and Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

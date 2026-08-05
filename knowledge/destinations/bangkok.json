@@ -1,0 +1,269 @@
+{
+  "slug": "bangkok",
+  "name": "Bangkok",
+  "countryIso2": "TH",
+  "countryName": "Thailand",
+  "region": "Southeast Asia",
+  "summary": "Golden temples beside mega-malls, the best street food in Asia and a river that ties it all together. The classic big-energy city break from India.",
+  "positioningLine": "Street food, temples and city buzz — superb value.",
+  "idealTraveller": "Food lovers, shoppers and first-timers who want maximum energy per rupee.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 6,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "food": 95,
+    "city": 90,
+    "shopping": 90,
+    "nightlife": 88,
+    "culture": 80,
+    "history": 65,
+    "themeparks": 60,
+    "relaxation": 50,
+    "romance": 65,
+    "beach": 20,
+    "nature": 40,
+    "adventure": 55,
+    "wildlife": 40,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 65,
+    "children5To10": 78,
+    "teenagers": 85,
+    "seniors": 70,
+    "honeymoon": 70,
+    "solo": 90,
+    "firstInternationalTrip": 90
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 80,
+    "halalFriendly": 70,
+    "localCuisineScore": 96,
+    "streetFoodScore": 98,
+    "fineDiningScore": 85
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 4.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 80,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 85
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "hot-all-year"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Hottest month; Songkran water festival crowds"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 52,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Peak monsoon — plan indoor fallbacks"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Loy Krathong lantern festival on the river"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Coolest, driest sightseeing weather"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Bangkok + Phuket",
+    "Bangkok + Krabi",
+    "Bangkok + Pattaya"
+  ],
+  "commonMistakes": [
+    "Trying to see temples at midday heat",
+    "Booking a hotel far from BTS/MRT lines"
+  ],
+  "packingConsiderations": [
+    "Breathable clothing",
+    "Modest wear for temples (shoulders and knees covered)",
+    "Comfortable sandals"
+  ],
+  "practicalWarnings": [
+    "Agree taxi meters or use ride-hailing; tuk-tuk prices are negotiable"
+  ],
+  "tradeOffs": [
+    "Hot and humid nearly all year",
+    "Traffic can be intense outside train corridors"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting quiet, slow-paced surroundings"
+  ],
+  "confidence": 88,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-authority-of-thailand",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Authority of Thailand",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

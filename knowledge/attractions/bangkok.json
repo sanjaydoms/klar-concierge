@@ -1,0 +1,231 @@
+[
+  {
+    "id": "bangkok-grand-palace-wat-phra-kaew",
+    "destinationSlug": "bangkok",
+    "name": "Grand Palace & Wat Phra Kaew",
+    "category": "culture",
+    "summary": "Thailand's dazzling royal complex and the Emerald Buddha.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "opening time, before heat and crowds",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Extensive walking on hot stone — hats and water essential"
+    ],
+    "practicalNotes": [
+      "Strict dress code enforced — cover shoulders and knees"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bangkok-wat-arun-river-ferries",
+    "destinationSlug": "bangkok",
+    "name": "Wat Arun & river ferries",
+    "category": "religious",
+    "summary": "The porcelain-encrusted Temple of Dawn, best crossed to by public ferry.",
+    "idealFor": [
+      "culture",
+      "senior",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "late afternoon for sunset from across the river",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bangkok-chatuchak-weekend-market",
+    "destinationSlug": "bangkok",
+    "name": "Chatuchak Weekend Market",
+    "category": "shopping",
+    "summary": "15,000 stalls of everything imaginable — Saturdays and Sundays only.",
+    "idealFor": [
+      "shopping",
+      "family",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Weekends only; go early to beat the heat"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bangkok-street-food-night-tour",
+    "destinationSlug": "bangkok",
+    "name": "Street-food night tour",
+    "category": "food",
+    "summary": "Guided tastings through Chinatown's legendary Yaowarat lanes.",
+    "idealFor": [
+      "food",
+      "friends",
+      "couple"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "bestTimeOfDay": "evening",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bangkok-chao-phraya-dinner-cruise",
+    "destinationSlug": "bangkok",
+    "name": "Chao Phraya dinner cruise",
+    "category": "experience",
+    "summary": "Temples and bridges lit up from the river over dinner.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Easy boarding at central piers with assistance"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bangkok-iconsiam-mahanakhon-skywalk",
+    "destinationSlug": "bangkok",
+    "name": "ICONSIAM & Mahanakhon SkyWalk",
+    "category": "landmark",
+    "summary": "Riverside mega-mall paired with a glass-floored skyscraper deck.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

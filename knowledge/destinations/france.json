@@ -1,0 +1,267 @@
+{
+  "slug": "france",
+  "name": "France",
+  "countryIso2": "FR",
+  "countryName": "France",
+  "region": "Europe",
+  "summary": "Paris icons, Loire châteaux, Riviera glamour and the world's benchmark food culture — a layered classic for romantics and culture lovers.",
+  "positioningLine": "Romance, art and appetite — the classic done right.",
+  "idealTraveller": "Romantics, art lovers and food pilgrims happy to walk beautiful cities.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "culture": 95,
+    "food": 95,
+    "romance": 95,
+    "history": 92,
+    "city": 90,
+    "shopping": 92,
+    "beach": 55,
+    "nature": 60,
+    "relaxation": 60,
+    "nightlife": 75,
+    "adventure": 45,
+    "themeparks": 70,
+    "wildlife": 20,
+    "snow": 45
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 68,
+    "children5To10": 80,
+    "teenagers": 85,
+    "seniors": 78,
+    "honeymoon": 95,
+    "solo": 85,
+    "firstInternationalTrip": 70
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 65,
+    "halalFriendly": 60,
+    "localCuisineScore": 98,
+    "streetFoodScore": 70,
+    "fineDiningScore": 99
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 9,
+    "walkingIntensity": "high",
+    "publicTransportEase": 90,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 75,
+    "medicalAccessScore": 90
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "temperate",
+    "four-seasons",
+    "mediterranean-south"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Short, grey days in the north"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Long spring evenings; gardens in bloom"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Parisian August closures; Riviera at peak crowd"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Golden light, grape harvest and fewer queues"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Paris + Riviera",
+    "Paris + Switzerland",
+    "Paris + Disneyland day"
+  ],
+  "commonMistakes": [
+    "Queueing for headline sights without pre-booked slots",
+    "Cramming Versailles and the Louvre into one day"
+  ],
+  "packingConsiderations": [
+    "Smart-casual layers — Parisians dress up",
+    "Very comfortable walking shoes",
+    "Compact umbrella"
+  ],
+  "practicalWarnings": [
+    "Pickpockets work major sights and metro lines — keep bags zipped"
+  ],
+  "tradeOffs": [
+    "Peak-season queues at headline sights",
+    "Higher budget; Schengen visa lead time"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who dislike walking-heavy city days"
+  ],
+  "confidence": 87,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-atout-france",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Atout France",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "bali-ubud-rice-terraces-jungle-swings",
+    "destinationSlug": "bali",
+    "name": "Ubud rice terraces & jungle swings",
+    "category": "nature",
+    "summary": "Tegallalang's sculpted terraces with photo swings and gentle valley walks.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "bestTimeOfDay": "early morning before tour buses",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bali-uluwatu-temple-kecak-dance",
+    "destinationSlug": "bali",
+    "name": "Uluwatu Temple & Kecak dance",
+    "category": "religious",
+    "summary": "Clifftop temple with sunset fire-dance performances above the surf.",
+    "idealFor": [
+      "culture",
+      "senior",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Some uneven clifftop paths"
+    ],
+    "practicalNotes": [
+      "Guard belongings from monkeys"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bali-nusa-penida-day-trip",
+    "destinationSlug": "bali",
+    "name": "Nusa Penida day trip",
+    "category": "adventure",
+    "summary": "Kelingking's T-rex cliff and Crystal Bay by fast boat.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [
+      "limited mobility",
+      "toddlers"
+    ],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Rough seas cancel boats — keep the day flexible"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bali-balinese-spa-wellness-day",
+    "destinationSlug": "bali",
+    "name": "Balinese spa & wellness day",
+    "category": "wellness",
+    "summary": "Flower baths, massage and jungle-view relaxation — Bali's signature indulgence.",
+    "idealFor": [
+      "couple",
+      "relaxation",
+      "honeymoon"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bali-tanah-lot-sunset",
+    "destinationSlug": "bali",
+    "name": "Tanah Lot sunset",
+    "category": "landmark",
+    "summary": "The island's iconic sea temple silhouetted at golden hour.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "sunset",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "bali-jimbaran-seafood-beach-dinner",
+    "destinationSlug": "bali",
+    "name": "Jimbaran seafood beach dinner",
+    "category": "food",
+    "summary": "Grilled seafood at candlelit tables on the sand.",
+    "idealFor": [
+      "couple",
+      "family",
+      "food"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

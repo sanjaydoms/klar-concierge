@@ -5,52 +5,77 @@ export type TravellerType =
   | "solo"
   | "friends"
   | "senior"
-  | "corporate";
+  | "multi-generational"
+  | "corporate"
+  | "unknown";
 
-export type Pace = "relaxed" | "balanced" | "active";
+export type Pace = "relaxed" | "balanced" | "active" | "unknown";
 
-export type BudgetBand = "value" | "comfort" | "premium" | "luxury";
+export type BudgetBand = "value" | "comfort" | "premium" | "luxury" | "unknown";
+
+export type FlightTolerance = "short" | "medium" | "long" | "no-preference";
+
+export type CrowdTolerance = "low" | "medium" | "high";
 
 export type TravelBrief = {
   originalPrompt: string;
 
+  originCountry?: string;
   originCity?: string;
   departureAirport?: string;
+
+  destinationPreferences: string[];
+  excludedDestinations: string[];
 
   travelMonth?: number;
   startDate?: string;
   endDate?: string;
   flexibilityDays?: number;
-
   durationNights?: number;
 
-  travellerType?: TravellerType;
+  travellerType: TravellerType;
 
   adults: number;
   childrenAges: number[];
   seniorTravellers: number;
 
-  pace?: Pace;
+  pace: Pace;
 
   interests: string[];
+  dislikes: string[];
 
   occasion?: string;
 
   accessibilityNeeds: string[];
-  foodPreferences: string[];
+  dietaryPreferences: string[];
 
-  budgetBand?: BudgetBand;
+  flightTolerance?: FlightTolerance;
+
+  climatePreferences: string[];
+  crowdTolerance?: CrowdTolerance;
+
+  budgetBand: BudgetBand;
+
+  decisionPriorities: string[];
 };
 
 export function emptyBrief(originalPrompt = ""): TravelBrief {
   return {
     originalPrompt,
+    destinationPreferences: [],
+    excludedDestinations: [],
+    travellerType: "unknown",
     adults: 2,
     childrenAges: [],
     seniorTravellers: 0,
+    pace: "unknown",
     interests: [],
+    dislikes: [],
     accessibilityNeeds: [],
-    foodPreferences: [],
+    dietaryPreferences: [],
+    climatePreferences: [],
+    budgetBand: "unknown",
+    decisionPriorities: [],
   };
 }
 
@@ -60,7 +85,6 @@ export type BriefField =
   | "travelMonth"
   | "durationNights"
   | "travellerType"
-  | "adults"
   | "childrenAges"
   | "pace"
   | "interests"
@@ -68,17 +92,22 @@ export type BriefField =
 
 export function missingBriefFields(brief: TravelBrief): BriefField[] {
   const missing: BriefField[] = [];
-  if (!brief.originCity) missing.push("originCity");
   if (!brief.travelMonth) missing.push("travelMonth");
   if (!brief.durationNights) missing.push("durationNights");
-  if (!brief.travellerType) missing.push("travellerType");
-  if (!brief.pace) missing.push("pace");
+  if (brief.travellerType === "unknown") missing.push("travellerType");
+  if (brief.travellerType === "family" && brief.childrenAges.length === 0) {
+    missing.push("childrenAges");
+  }
+  if (brief.pace === "unknown") missing.push("pace");
   if (brief.interests.length === 0) missing.push("interests");
-  if (!brief.budgetBand) missing.push("budgetBand");
+  if (!brief.originCity) missing.push("originCity");
+  if (brief.budgetBand === "unknown") missing.push("budgetBand");
   return missing;
 }
 
-/** The brief is complete enough to recommend once the core trip shape is known. */
+/** The brief supports recommendations once the core trip shape is known. */
 export function briefReadyForRecommendations(brief: TravelBrief): boolean {
-  return Boolean(brief.travelMonth && brief.durationNights && brief.travellerType);
+  return Boolean(
+    brief.travelMonth && brief.durationNights && brief.travellerType !== "unknown",
+  );
 }

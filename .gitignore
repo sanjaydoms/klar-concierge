@@ -1,6 +1,7 @@
 node_modules
-src/generated
 .next
 .env
 .env.local
 *.tsbuildinfo
+test-results
+playwright-report

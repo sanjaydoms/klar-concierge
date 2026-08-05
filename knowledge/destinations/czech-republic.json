@@ -1,0 +1,268 @@
+{
+  "slug": "czech-republic",
+  "name": "Czech Republic",
+  "countryIso2": "CZ",
+  "countryName": "Czech Republic",
+  "region": "Europe",
+  "summary": "Prague's fairy-tale skyline of spires and bridges, castle towns like Český Krumlov and Europe's best-value old-world charm.",
+  "positioningLine": "Fairy-tale Europe at the continent's best prices.",
+  "idealTraveller": "First-time Europe visitors and couples who want maximum old-world atmosphere per euro.",
+  "minimumNights": 4,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "history": 92,
+    "culture": 88,
+    "city": 85,
+    "romance": 85,
+    "food": 70,
+    "nightlife": 70,
+    "shopping": 60,
+    "nature": 55,
+    "relaxation": 60,
+    "adventure": 40,
+    "snow": 40,
+    "themeparks": 20,
+    "wildlife": 15,
+    "beach": 0
+  },
+  "suitability": {
+    "family": 75,
+    "toddlers": 62,
+    "children5To10": 75,
+    "teenagers": 80,
+    "seniors": 78,
+    "honeymoon": 85,
+    "solo": 85,
+    "firstInternationalTrip": 78
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 45,
+    "localCuisineScore": 78,
+    "streetFoodScore": 70,
+    "fineDiningScore": 78
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 90,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 65,
+    "medicalAccessScore": 85
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "continental",
+    "four-seasons",
+    "cold-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Cold, grey and short days"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Blossoming parks and long golden evenings"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Charles Bridge is shoulder-to-shoulder by 10am — go at dawn"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Old Town Square Christmas market"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Prague + Vienna + Budapest",
+    "Prague + Český Krumlov",
+    "Prague + Karlovy Vary"
+  ],
+  "commonMistakes": [
+    "Exchanging money on the street or at tourist-trap kiosks",
+    "Only seeing Prague — Krumlov is two hours away"
+  ],
+  "packingConsiderations": [
+    "Cobblestone-proof shoes — Prague is all stone",
+    "Warm layers Oct–Apr",
+    "Compact umbrella"
+  ],
+  "practicalWarnings": [
+    "Use bank ATMs, never street exchange booths"
+  ],
+  "tradeOffs": [
+    "Peak-season crowds swamp the old town core",
+    "Winter days are short and cold"
+  ],
+  "whoShouldAvoid": [
+    "Travellers seeking warm weather or beach time"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-czechtourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "CzechTourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

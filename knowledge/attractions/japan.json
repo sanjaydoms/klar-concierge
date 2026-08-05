@@ -1,0 +1,235 @@
+[
+  {
+    "id": "japan-fushimi-inari-shrine-trail",
+    "destinationSlug": "japan",
+    "name": "Fushimi Inari shrine trail",
+    "category": "religious",
+    "summary": "Ten thousand vermilion torii gates winding up the sacred mountain.",
+    "idealFor": [
+      "culture",
+      "senior",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "dawn — near-empty before 8am",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "First gate clusters need only 20 minutes of easy walking"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "japan-shinkansen-bullet-train-journey",
+    "destinationSlug": "japan",
+    "name": "Shinkansen bullet-train journey",
+    "category": "experience",
+    "summary": "The 300 km/h ride past Mt Fuji — an attraction in itself.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [
+      "Full step-free boarding with reserved wheelchair spaces"
+    ],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "japan-teamlab-planets-tokyo",
+    "destinationSlug": "japan",
+    "name": "teamLab Planets Tokyo",
+    "category": "museum",
+    "summary": "Barefoot immersive digital art through water and mirrored infinity rooms.",
+    "idealFor": [
+      "culture",
+      "history",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Sensory wonderland for kids; knee-deep water sections"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Timed tickets sell out — book early"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "japan-tokyo-disneysea",
+    "destinationSlug": "japan",
+    "name": "Tokyo DisneySea",
+    "category": "theme-park",
+    "summary": "Widely rated the world's most beautiful theme park — unique to Tokyo.",
+    "idealFor": [
+      "family",
+      "children",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 7,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Gentler than Disneyland for the youngest visitors"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "japan-kyoto-kinkaku-ji-arashiyama-bamboo",
+    "destinationSlug": "japan",
+    "name": "Kyoto: Kinkaku-ji & Arashiyama bamboo",
+    "category": "culture",
+    "summary": "The golden pavilion and the west hills' bamboo groves and river.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "before 9am",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "japan-osaka-dotonbori-food-night",
+    "destinationSlug": "japan",
+    "name": "Osaka Dotonbori food night",
+    "category": "food",
+    "summary": "Takoyaki, kushikatsu and neon along the canal — Japan's kitchen.",
+    "idealFor": [
+      "food",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "bestTimeOfDay": "evening",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

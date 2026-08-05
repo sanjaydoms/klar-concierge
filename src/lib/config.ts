@@ -12,26 +12,23 @@ export const config = {
   appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3002",
   isProduction: process.env.NODE_ENV === "production",
 
-  databaseUrl: process.env.DATABASE_URL ?? "",
-
   openaiApiKey: process.env.OPENAI_API_KEY ?? "",
   openaiModel: process.env.OPENAI_MODEL ?? "gpt-5-mini",
   enableAIPersonalisation: bool(process.env.ENABLE_AI_PERSONALISATION, true),
+
+  sessionTtlMinutes: int(process.env.SESSION_TTL_MINUTES, 120),
 
   crmEnabled: bool(process.env.CRM_ENABLED, false),
   crmProvider: process.env.CRM_PROVIDER ?? "placeholder",
   crmWebhookUrl: process.env.CRM_WEBHOOK_URL ?? "",
   crmWebhookToken: process.env.CRM_WEBHOOK_TOKEN ?? "",
   crmTimeoutMs: int(process.env.CRM_TIMEOUT_MS, 8000),
-  crmRetrySecret: process.env.CRM_RETRY_SECRET ?? "",
 
-  enableKtieAdmin: bool(process.env.ENABLE_KTIE_ADMIN, true),
-  featureAnalytics: bool(process.env.FEATURE_ANALYTICS, true),
-  featureConsultantWorkspace: bool(process.env.FEATURE_CONSULTANT_WORKSPACE, true),
-  featureLeadRetry: bool(process.env.FEATURE_LEAD_RETRY, true),
+  analyticsProvider: process.env.ANALYTICS_PROVIDER ?? "none",
 
   rateLimitChatPerMinute: int(process.env.RATE_LIMIT_CHAT_PER_MINUTE, 20),
-  rateLimitLeadsPerMinute: int(process.env.RATE_LIMIT_LEADS_PER_MINUTE, 5),
+  rateLimitPlanPerMinute: int(process.env.RATE_LIMIT_PLAN_PER_MINUTE, 10),
+  rateLimitCrmPerMinute: int(process.env.RATE_LIMIT_CRM_PER_MINUTE, 5),
 
   logLevel: process.env.LOG_LEVEL ?? "info",
 };

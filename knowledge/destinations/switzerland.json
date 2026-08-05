@@ -1,0 +1,268 @@
+{
+  "slug": "switzerland",
+  "name": "Switzerland",
+  "countryIso2": "CH",
+  "countryName": "Switzerland",
+  "region": "Europe",
+  "summary": "Snow peaks, mirror lakes, scenic trains and storybook villages. The gold standard for honeymoon-grade alpine scenery.",
+  "positioningLine": "The Alps at their most cinematic.",
+  "idealTraveller": "Honeymooners and families who want jaw-dropping scenery with flawless logistics.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "relaxed",
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 98,
+    "snow": 95,
+    "romance": 92,
+    "adventure": 82,
+    "relaxation": 78,
+    "city": 60,
+    "culture": 65,
+    "food": 70,
+    "history": 60,
+    "shopping": 65,
+    "wildlife": 40,
+    "nightlife": 40,
+    "beach": 5,
+    "themeparks": 30
+  },
+  "suitability": {
+    "family": 85,
+    "toddlers": 75,
+    "children5To10": 85,
+    "teenagers": 85,
+    "seniors": 82,
+    "honeymoon": 98,
+    "solo": 75,
+    "firstInternationalTrip": 78
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 70,
+    "halalFriendly": 55,
+    "localCuisineScore": 80,
+    "streetFoodScore": 45,
+    "fineDiningScore": 88
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 9,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 98,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 88,
+    "medicalAccessScore": 95
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "alpine",
+    "four-seasons",
+    "cool-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Snowmelt slush at mid-altitudes"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Green alpine meadows and full waterfalls"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 95,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Between-season lull — some mountain lifts closed"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Christmas markets and snow-dusted villages"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Interlaken + Lucerne + Zermatt",
+    "Switzerland + Paris",
+    "Glacier Express route"
+  ],
+  "commonMistakes": [
+    "Changing hotels daily — base in two hubs and day-trip by train",
+    "Skipping the Swiss Travel Pass calculation"
+  ],
+  "packingConsiderations": [
+    "Layers — summits are cold even in July",
+    "Sunglasses and sunscreen for snow glare",
+    "Comfortable waterproof shoes"
+  ],
+  "practicalWarnings": [
+    "Mountain weather changes fast — check webcams before summit tickets"
+  ],
+  "tradeOffs": [
+    "Among the highest daily costs in Europe",
+    "Schengen visa lead time needs planning"
+  ],
+  "whoShouldAvoid": [
+    "Value-focused travellers — costs compound quickly"
+  ],
+  "confidence": 88,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-switzerland-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Switzerland Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

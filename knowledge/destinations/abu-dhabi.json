@@ -1,0 +1,266 @@
+{
+  "slug": "abu-dhabi",
+  "name": "Abu Dhabi",
+  "countryIso2": "AE",
+  "countryName": "United Arab Emirates",
+  "region": "Middle East",
+  "summary": "The UAE's calmer capital: the Sheikh Zayed Grand Mosque, Louvre Abu Dhabi, Ferrari World and family beaches — grand, gracious and easy to pair with Dubai.",
+  "positioningLine": "Grand culture and family thrills at a gentler pace than Dubai.",
+  "idealTraveller": "Families and culture-curious travellers who want UAE spectacle with more breathing room.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 6,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "city": 85,
+    "culture": 78,
+    "themeparks": 90,
+    "shopping": 75,
+    "beach": 72,
+    "food": 75,
+    "adventure": 65,
+    "relaxation": 72,
+    "romance": 68,
+    "history": 55,
+    "nightlife": 55,
+    "nature": 45,
+    "wildlife": 35,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 92,
+    "toddlers": 85,
+    "children5To10": 92,
+    "teenagers": 90,
+    "seniors": 88,
+    "honeymoon": 70,
+    "solo": 70,
+    "firstInternationalTrip": 90
+  },
+  "food": {
+    "vegetarianFriendly": 82,
+    "indianFoodAvailability": 92,
+    "halalFriendly": 98,
+    "localCuisineScore": 76,
+    "streetFoodScore": 60,
+    "fineDiningScore": 88
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 3.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 65,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 90,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "desert",
+    "dry-winter",
+    "extreme-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 52,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 38,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 34,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat — plan indoor attractions"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 34,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat — plan indoor attractions"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "F1 Abu Dhabi Grand Prix energy on Yas Island"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Perfect Corniche weather"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Abu Dhabi + Dubai",
+    "Abu Dhabi + Maldives"
+  ],
+  "commonMistakes": [
+    "Treating it as a half-day trip from Dubai — Yas Island alone needs a full day"
+  ],
+  "packingConsiderations": [
+    "Modest clothing for the Grand Mosque (coverings provided)",
+    "Sun protection",
+    "Light layers for air-conditioning"
+  ],
+  "practicalWarnings": [
+    "Grand Mosque dress code is strictly enforced"
+  ],
+  "tradeOffs": [
+    "Quieter nightlife and street energy than Dubai",
+    "Attractions are spread out — taxis or transfers needed"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting walkable old-town streets and bustle"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-experience-abu-dhabi",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Experience Abu Dhabi",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

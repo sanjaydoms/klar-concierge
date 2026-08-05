@@ -1,0 +1,228 @@
+[
+  {
+    "id": "kuala-lumpur-petronas-towers-klcc-park",
+    "destinationSlug": "kuala-lumpur",
+    "name": "Petronas Towers & KLCC Park",
+    "category": "landmark",
+    "summary": "The twin icons — skybridge visits by timed ticket, fountain shows below.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Book skybridge slots online days ahead"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kuala-lumpur-batu-caves",
+    "destinationSlug": "kuala-lumpur",
+    "name": "Batu Caves",
+    "category": "religious",
+    "summary": "Rainbow steps beside a golden statue up to Hindu cave temples.",
+    "idealFor": [
+      "culture",
+      "senior",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Steps are steep — take them slowly with the handrail"
+    ],
+    "practicalNotes": [
+      "272 steps; monkeys snatch loose items"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kuala-lumpur-jalan-alor-food-street",
+    "destinationSlug": "kuala-lumpur",
+    "name": "Jalan Alor food street",
+    "category": "food",
+    "summary": "The city's famous open-air hawker strip, alive from dusk.",
+    "idealFor": [
+      "food",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "bestTimeOfDay": "evening",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kuala-lumpur-kl-bird-park-lake-gardens",
+    "destinationSlug": "kuala-lumpur",
+    "name": "KL Bird Park & Lake Gardens",
+    "category": "nature",
+    "summary": "Walk-through free-flight aviary in the green heart of the city.",
+    "idealFor": [
+      "family",
+      "children",
+      "seniors"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kuala-lumpur-merdeka-square-heritage-walk",
+    "destinationSlug": "kuala-lumpur",
+    "name": "Merdeka Square & heritage walk",
+    "category": "culture",
+    "summary": "Colonial-era square, Sultan Abdul Samad Building and river of life views.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "evening for the illuminated river",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kuala-lumpur-genting-highlands-day-trip",
+    "destinationSlug": "kuala-lumpur",
+    "name": "Genting Highlands day trip",
+    "category": "theme-park",
+    "summary": "Cool hilltop resort with theme parks and the Awana SkyWay cable car.",
+    "idealFor": [
+      "family",
+      "children",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 7,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "One hour from the city; pack a light layer"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

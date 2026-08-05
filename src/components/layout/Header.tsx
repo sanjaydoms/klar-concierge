@@ -14,6 +14,7 @@ export function Header() {
         <nav aria-label="Main" className="hidden items-center gap-1 md:flex">
           <Link href="/concierge" className="btn-quiet">Plan a Holiday</Link>
           <Link href="/concierge/discover" className="btn-quiet">Discover</Link>
+          <Link href="/concierge/compare" className="btn-quiet">Compare</Link>
           <Link href="/concierge/how-it-works" className="btn-quiet">How It Works</Link>
         </nav>
         <Link href="/concierge" className="btn-primary whitespace-nowrap px-5 text-sm">

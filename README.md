@@ -1,76 +1,63 @@
 # Klar Concierge
 
-AI-assisted holiday planning and lead qualification for **Klar Travels** (klartravels.com) — Phase 1.
+A conversational holiday decision engine for **Klar Travels** (klartravels.com).
 
-> Standalone client project — this repository contains the complete application:
-> code, database schema, seed data, tests and docs.
-
-Customers describe the holiday they want, build a structured trip brief through a guided
-conversation, compare **three personalised destination directions**, review a draft
-itinerary, and hand the complete plan to a Klar travel expert. Phase 1 ends at a qualified
-lead — there is **no booking, pricing, availability or payment** anywhere in the product.
+Klar Concierge helps a traveller answer *where should I go?* — through natural
+conversation, grounded destination intelligence (KTIE), honest three-direction
+recommendations, side-by-side comparison and practical draft itineraries —
+ending in an optional handover to a real Klar travel expert via CRM.
 
 ```
-Conversation → Trip brief → Three directions → Itinerary → Lead capture → Klar expert handover
+Natural conversation → Structured travel understanding → Decision support
+→ Three differentiated directions → Comparison on request → Draft itinerary
+→ Customer selects → Optional Klar expert handover (CRM)
 ```
+
+## What it is not
+
+No supplier integrations, inventory, live pricing, quotes, bookings, payments,
+traveller accounts, internal lead dashboards, or authentication. Customer PII
+is never persisted here — it travels to the CRM at handover only.
 
 ## Stack
 
-- Next.js (App Router) + TypeScript + Tailwind CSS
-- PostgreSQL + Prisma (the only system of record for leads)
-- Zod validation on every API
-- **No app-level login** — the app sits inside the klartravels portal, which controls
-  access to the consultant/admin areas
-- OpenAI (optional) behind a provider abstraction with a deterministic fallback —
-  the planner works fully without an AI key
-- KTIE (Klar Travel Intelligence Engine): 20 seeded destinations with monthly
-  seasonal intelligence, suitability, food and practicality scores
-- Vitest unit tests
+- Next.js (App Router) + TypeScript + Tailwind — no database required
+- KTIE knowledge base: Git-managed JSON under `knowledge/` (196 countries,
+  30 deep destinations, 180 structured attractions), compiled and validated
+  by scripts
+- Deterministic recommendation, comparison and itinerary engines —
+  AI (optional OpenAI) only interprets the traveller, never ranks destinations
+- Anonymous TTL planning sessions; truthful placeholder CRM adapter
+- Vitest unit/integration tests, Playwright e2e, 288-scenario evaluation suite
 
 ## Quick start
 
 ```bash
 npm install
-cp .env.example .env          # fill DATABASE_URL
-npm run db:generate
-npx prisma migrate deploy      # applies prisma/migrations to your PostgreSQL
-npm run db:seed                # 20 KTIE destinations
-npm run dev                    # http://localhost:3002
+npm run knowledge:build     # validate + compile the knowledge base
+npm run dev                 # http://localhost:3002
 ```
 
-The public planner (`/`, `/concierge`, `/concierge/discover`) works without a database.
-Lead submission, the consultant workspace and admin pages require PostgreSQL.
+No environment variables are required to run the full decision engine.
+See `.env.example` for optional AI, session-TTL and CRM configuration.
 
-## Scripts
+## Verification (all must pass before release)
 
-| Script | Purpose |
-| --- | --- |
-| `npm run dev` | Dev server on port 3002 |
-| `npm run build` | `prisma generate` + production build |
-| `npm run test` | Vitest unit tests (38 tests) |
-| `npm run typecheck` / `lint` | TypeScript strict check |
-| `npm run db:migrate` | `prisma migrate deploy` |
-| `npm run db:seed` | Seed the 20 KTIE destinations |
-
-## Key routes
-
-Public: `/`, `/concierge`, `/concierge/discover`, `/concierge/how-it-works`, `/privacy`, `/terms`
-Internal (protect via the klartravels portal / reverse proxy): `/consultant`, `/consultant/leads/:id`, `/admin`, `/admin/knowledge/destinations`, `/admin/analytics`, `/admin/integrations/crm`, `/admin/readiness`, `/admin/audit`
+```bash
+npm run typecheck
+npm run test                # 58 unit + integration tests
+npm run knowledge:validate
+npm run knowledge:coverage
+npm run knowledge:staleness
+npm run eval                # 288 evaluation scenarios
+npm run eval:critical       # release-blocking subset
+npm run build
+npm run test:e2e            # Playwright (build + start first, or let it boot)
+```
 
 ## Documentation
 
-See [`docs/`](./docs) — product overview, architecture, database, environment setup,
-CRM integration, KTIE guide, admin & consultant guides, test plan, QA checklist,
-deployment and release notes.
-
-## Phase 1 guarantees
-
-- A customer never sees success unless the lead is stored durably in PostgreSQL.
-- CRM/RMS is intentionally **disabled** (`CRM_ENABLED=false`, placeholder provider);
-  the app launches and operates fully without any CRM vendor.
-- The placeholder provider never fakes an external submission or reference.
-- Recommendations come only from the verified KTIE dataset — the AI never invents
-  destinations, visa rules, prices or availability.
-- The official Klar logo (`public/brand/klar-logo.png` / `.svg`) is used exactly as supplied.
-- No app-level authentication by design — the portal must restrict `/consultant`,
-  `/admin` and their APIs to Klar staff before launch.
+Everything lives in [`docs/`](./docs) — product definition, architecture,
+conversation engine, KTIE schemas and coverage, knowledge governance, CRM
+adapter, privacy and retention, evaluation framework, test plan, QA and
+accessibility audits, deployment, release notes and honest known limitations.

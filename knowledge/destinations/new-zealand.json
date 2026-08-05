@@ -1,0 +1,267 @@
+{
+  "slug": "new-zealand",
+  "name": "New Zealand",
+  "countryIso2": "NZ",
+  "countryName": "New Zealand",
+  "region": "Oceania",
+  "summary": "Fiordland's misty peaks, Queenstown's adrenaline, glow-worm caves and Hobbiton — the world's most cinematic road-trip country.",
+  "positioningLine": "Middle-earth landscapes and the world's adventure capital.",
+  "idealTraveller": "Nature-obsessed couples and adventure seekers comfortable with self-drive touring.",
+  "minimumNights": 8,
+  "idealNights": 10,
+  "maximumNights": 16,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 98,
+    "adventure": 95,
+    "romance": 85,
+    "wildlife": 75,
+    "relaxation": 65,
+    "snow": 60,
+    "food": 70,
+    "culture": 60,
+    "city": 55,
+    "beach": 50,
+    "history": 40,
+    "shopping": 45,
+    "nightlife": 45,
+    "themeparks": 20
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 60,
+    "children5To10": 78,
+    "teenagers": 88,
+    "seniors": 70,
+    "honeymoon": 92,
+    "solo": 85,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 78,
+    "indianFoodAvailability": 72,
+    "halalFriendly": 60,
+    "localCuisineScore": 82,
+    "streetFoodScore": 55,
+    "fineDiningScore": 85
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 15,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 78,
+    "medicalAccessScore": 90
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "southern-hemisphere",
+    "temperate-oceanic",
+    "changeable"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Settled summer — best hiking and fiord cruising"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Alpine passes may need snow chains"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Short days limit road-trip hours"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Lupins bloom around Lake Tekapo"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "South Island loop (Christchurch–Queenstown)",
+    "Auckland + Rotorua + Queenstown",
+    "Australia + New Zealand"
+  ],
+  "commonMistakes": [
+    "Planning Australia-style distances — NZ roads are slow and winding",
+    "Booking Milford Sound with no weather buffer"
+  ],
+  "packingConsiderations": [
+    "Waterproof layers in every season",
+    "Sturdy walking shoes",
+    "Sunscreen — UV is extreme even when cool"
+  ],
+  "practicalWarnings": [
+    "Weather changes hourly in the fiords — build flex days"
+  ],
+  "tradeOffs": [
+    "Very long flights from India",
+    "Self-driving is near-essential outside cities"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who won't drive and dislike changeable weather"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-new-zealand",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism New Zealand",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "slug": "japan",
+  "name": "Japan",
+  "countryIso2": "JP",
+  "countryName": "Japan",
+  "region": "East Asia",
+  "summary": "Tokyo's neon, Kyoto's temples, bullet trains and seasonal spectacle — cherry blossoms in spring, fiery maples in autumn.",
+  "positioningLine": "A one-of-a-kind blend of tradition and future.",
+  "idealTraveller": "Culture-first travellers and teens-and-up families who enjoy walking and trains.",
+  "minimumNights": 6,
+  "idealNights": 8,
+  "maximumNights": 14,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "culture": 98,
+    "city": 95,
+    "food": 95,
+    "history": 92,
+    "nature": 80,
+    "shopping": 88,
+    "themeparks": 80,
+    "adventure": 60,
+    "snow": 70,
+    "romance": 80,
+    "nightlife": 78,
+    "relaxation": 60,
+    "beach": 30,
+    "wildlife": 45
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 65,
+    "children5To10": 78,
+    "teenagers": 90,
+    "seniors": 75,
+    "honeymoon": 88,
+    "solo": 95,
+    "firstInternationalTrip": 65
+  },
+  "food": {
+    "vegetarianFriendly": 55,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 45,
+    "localCuisineScore": 98,
+    "streetFoodScore": 85,
+    "fineDiningScore": 98
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 98,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 85,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "temperate",
+    "four-seasons",
+    "humid-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Cherry blossom season (peak timing varies — verify)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Rainy season (tsuyu)"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Hot, humid and typhoon-prone"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "high",
+      "highlights": [
+        "Autumn foliage at its peak"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Tokyo + Kyoto + Osaka golden route",
+    "Japan + Hakone/Mt Fuji",
+    "Winter Hokkaido add-on"
+  ],
+  "commonMistakes": [
+    "Cramming too many cities into a week",
+    "Skipping rail-pass planning until arrival"
+  ],
+  "packingConsiderations": [
+    "Excellent walking shoes — 15k+ steps daily is normal",
+    "Layers for big day-night temperature swings",
+    "Cash still useful in small establishments"
+  ],
+  "practicalWarnings": [
+    "Vegetarian dining needs planning outside big cities — dashi (fish stock) is ubiquitous"
+  ],
+  "tradeOffs": [
+    "Higher budget than Southeast Asia",
+    "Vegetarian dining needs planning outside big cities"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting a low-walking, resort-style holiday"
+  ],
+  "confidence": 88,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-japan-national-tourism-organization",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Japan National Tourism Organization",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

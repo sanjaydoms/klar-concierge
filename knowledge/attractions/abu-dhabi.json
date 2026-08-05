@@ -1,0 +1,236 @@
+[
+  {
+    "id": "abu-dhabi-sheikh-zayed-grand-mosque",
+    "destinationSlug": "abu-dhabi",
+    "name": "Sheikh Zayed Grand Mosque",
+    "category": "religious",
+    "summary": "One of the world's most beautiful mosques — 82 white domes and vast marble courtyards.",
+    "idealFor": [
+      "culture",
+      "senior",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "late afternoon into sunset",
+    "accessibilityNotes": [
+      "Wheelchair-accessible routes throughout"
+    ],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Strict dress code; free abaya loan available",
+      "Book free entry slots online"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "abu-dhabi-louvre-abu-dhabi",
+    "destinationSlug": "abu-dhabi",
+    "name": "Louvre Abu Dhabi",
+    "category": "museum",
+    "summary": "Jean Nouvel's floating dome sheltering art spanning all civilisations.",
+    "idealFor": [
+      "culture",
+      "history",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Plenty of seating; easily a half-day at gentle pace"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "abu-dhabi-ferrari-world-yas-island",
+    "destinationSlug": "abu-dhabi",
+    "name": "Ferrari World & Yas Island",
+    "category": "theme-park",
+    "summary": "Indoor Ferrari park with the world's fastest coaster, next to Warner Bros. World.",
+    "idealFor": [
+      "family",
+      "children",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "minimumAge": 0,
+    "typicalDurationHours": 7,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Formula Rossa requires 130cm+; junior zone covers younger kids"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "abu-dhabi-qasr-al-watan-palace",
+    "destinationSlug": "abu-dhabi",
+    "name": "Qasr Al Watan palace",
+    "category": "culture",
+    "summary": "The working presidential palace's staggering great hall, open to visitors.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "abu-dhabi-corniche-beach-waterfront",
+    "destinationSlug": "abu-dhabi",
+    "name": "Corniche beach & waterfront",
+    "category": "beach",
+    "summary": "Eight kilometres of groomed public beachfront with family zones.",
+    "idealFor": [
+      "family",
+      "couple",
+      "relaxation"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Lifeguarded family sections with calm water"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "abu-dhabi-mangrove-kayaking",
+    "destinationSlug": "abu-dhabi",
+    "name": "Mangrove kayaking",
+    "category": "adventure",
+    "summary": "Paddle the city's protected mangrove channels at high tide.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "minimumAge": 6,
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

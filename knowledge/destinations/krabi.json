@@ -1,0 +1,268 @@
+{
+  "slug": "krabi",
+  "name": "Krabi",
+  "countryIso2": "TH",
+  "countryName": "Thailand",
+  "region": "Southeast Asia",
+  "summary": "Limestone karsts rising from emerald water, Railay's famous beaches and four-island boat days — Thailand's dramatic, calmer beach alternative.",
+  "positioningLine": "Thailand's most dramatic coastline, without Phuket's crowds.",
+  "idealTraveller": "Couples and nature-leaning families who want postcard scenery and a slower rhythm.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 7,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 95,
+    "nature": 90,
+    "adventure": 80,
+    "relaxation": 88,
+    "romance": 85,
+    "food": 70,
+    "nightlife": 45,
+    "culture": 45,
+    "shopping": 35,
+    "city": 20,
+    "themeparks": 15,
+    "history": 25,
+    "wildlife": 55,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 65,
+    "children5To10": 78,
+    "teenagers": 82,
+    "seniors": 68,
+    "honeymoon": 90,
+    "solo": 82,
+    "firstInternationalTrip": 80
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 65,
+    "halalFriendly": 80,
+    "localCuisineScore": 85,
+    "streetFoodScore": 78,
+    "fineDiningScore": 65
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 6,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 35,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "dry-season-nov-apr"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Glass-calm seas around the four islands"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon — island trips frequently cancelled"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Sea conditions unpredictable"
+      ]
+    },
+    {
+      "month": 11,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Best Railay conditions of the year"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Krabi + Phuket",
+    "Krabi + Koh Lanta",
+    "Bangkok + Krabi"
+  ],
+  "commonMistakes": [
+    "Expecting Railay access by road — it's boat-only",
+    "Day-tripping Phi Phi from Krabi on a tight schedule"
+  ],
+  "packingConsiderations": [
+    "Dry bag for longtail boat rides",
+    "Water shoes",
+    "Reef-safe sunscreen"
+  ],
+  "practicalWarnings": [
+    "Longtail boats stop in rough weather; keep the last day flexible"
+  ],
+  "tradeOffs": [
+    "Fewer dining and nightlife options than Phuket",
+    "Beach access often involves boats"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting big-resort infrastructure and nightlife"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-authority-of-thailand",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Authority of Thailand",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

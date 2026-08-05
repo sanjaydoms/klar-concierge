@@ -8,15 +8,19 @@ const MONTHS = [
   "July", "August", "September", "October", "November", "December",
 ];
 
-const TRAVELLER_TYPES: TravellerType[] = [
-  "family", "couple", "honeymoon", "solo", "friends", "senior", "corporate",
+const TRAVELLER_TYPES: Exclude<TravellerType, "unknown">[] = [
+  "family", "couple", "honeymoon", "solo", "friends", "senior", "multi-generational", "corporate",
 ];
-const PACES: Pace[] = ["relaxed", "balanced", "active"];
-const BUDGETS: BudgetBand[] = ["value", "comfort", "premium", "luxury"];
+const PACES: Exclude<Pace, "unknown">[] = ["relaxed", "balanced", "active"];
+const BUDGETS: Exclude<BudgetBand, "unknown">[] = ["value", "comfort", "premium", "luxury"];
 const INTEREST_OPTIONS = [
   "beach", "food", "culture", "history", "city", "shopping", "adventure",
   "nature", "relaxation", "nightlife", "themeparks", "romance", "wildlife", "snow",
 ];
+
+function label(value: string): string {
+  return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, " ");
+}
 
 export function BriefReview({
   brief,
@@ -41,7 +45,7 @@ export function BriefReview({
         Your trip brief
       </h1>
       <p className="mt-2 text-sm text-foreground/60">
-        Check the details and adjust anything before we suggest destinations.
+        Check the details and adjust anything before I suggest directions.
       </p>
 
       <form
@@ -84,9 +88,7 @@ export function BriefReview({
             max={30}
             className="field-input"
             value={draft.durationNights ?? ""}
-            onChange={(e) =>
-              set("durationNights", e.target.value ? Number(e.target.value) : undefined)
-            }
+            onChange={(e) => set("durationNights", e.target.value ? Number(e.target.value) : undefined)}
           />
         </div>
         <div>
@@ -94,14 +96,12 @@ export function BriefReview({
           <select
             id="bf-type"
             className="field-input"
-            value={draft.travellerType ?? ""}
-            onChange={(e) =>
-              set("travellerType", (e.target.value || undefined) as TravellerType | undefined)
-            }
+            value={draft.travellerType}
+            onChange={(e) => set("travellerType", e.target.value as TravellerType)}
           >
-            <option value="">Choose…</option>
+            <option value="unknown">Choose…</option>
             {TRAVELLER_TYPES.map((t) => (
-              <option key={t} value={t}>{t.charAt(0).toUpperCase() + t.slice(1)}</option>
+              <option key={t} value={t}>{label(t)}</option>
             ))}
           </select>
         </div>
@@ -152,12 +152,12 @@ export function BriefReview({
           <select
             id="bf-pace"
             className="field-input"
-            value={draft.pace ?? ""}
-            onChange={(e) => set("pace", (e.target.value || undefined) as Pace | undefined)}
+            value={draft.pace}
+            onChange={(e) => set("pace", e.target.value as Pace)}
           >
-            <option value="">Choose…</option>
+            <option value="unknown">Choose…</option>
             {PACES.map((p) => (
-              <option key={p} value={p}>{p.charAt(0).toUpperCase() + p.slice(1)}</option>
+              <option key={p} value={p}>{label(p)}</option>
             ))}
           </select>
         </div>
@@ -166,15 +166,31 @@ export function BriefReview({
           <select
             id="bf-budget"
             className="field-input"
-            value={draft.budgetBand ?? ""}
-            onChange={(e) => set("budgetBand", (e.target.value || undefined) as BudgetBand | undefined)}
+            value={draft.budgetBand}
+            onChange={(e) => set("budgetBand", e.target.value as BudgetBand)}
           >
-            <option value="">Not sure yet</option>
+            <option value="unknown">Not sure yet</option>
             {BUDGETS.map((b) => (
-              <option key={b} value={b}>{b.charAt(0).toUpperCase() + b.slice(1)}</option>
+              <option key={b} value={b}>{label(b)}</option>
             ))}
           </select>
         </div>
+        <div>
+          <label className="field-label" htmlFor="bf-excluded">Anywhere to avoid?</label>
+          <input
+            id="bf-excluded"
+            className="field-input"
+            value={draft.excludedDestinations.join(", ")}
+            onChange={(e) =>
+              set(
+                "excludedDestinations",
+                e.target.value.split(",").map((v) => v.trim()).filter(Boolean),
+              )
+            }
+            placeholder="e.g. Dubai, Thailand"
+          />
+        </div>
+
         <div className="sm:col-span-2">
           <fieldset>
             <legend className="field-label">Interests</legend>
@@ -186,11 +202,7 @@ export function BriefReview({
                     key={interest}
                     type="button"
                     aria-pressed={active}
-                    className={
-                      active
-                        ? "chip border-brand bg-brand-soft font-medium"
-                        : "chip"
-                    }
+                    className={active ? "chip border-brand bg-brand-soft font-medium" : "chip"}
                     onClick={() =>
                       set(
                         "interests",
@@ -213,7 +225,7 @@ export function BriefReview({
             Back to conversation
           </button>
           <button type="submit" className="btn-primary" disabled={busy}>
-            {busy ? "Finding directions…" : "Show My Three Directions"}
+            {busy ? "Finding directions…" : "Show My Directions"}
           </button>
         </div>
       </form>

@@ -1,0 +1,267 @@
+{
+  "slug": "langkawi",
+  "name": "Langkawi",
+  "countryIso2": "MY",
+  "countryName": "Malaysia",
+  "region": "Southeast Asia",
+  "summary": "A duty-free island of jungle-backed beaches, the famous SkyBridge cable car and mangrove boat safaris — Malaysia's easy-going beach escape.",
+  "positioningLine": "Relaxed island beaches with a jungle heart.",
+  "idealTraveller": "Families and couples wanting calm beaches, nature days and resort value.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 6,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 90,
+    "nature": 85,
+    "relaxation": 90,
+    "romance": 80,
+    "adventure": 65,
+    "food": 70,
+    "wildlife": 65,
+    "shopping": 55,
+    "culture": 40,
+    "nightlife": 40,
+    "city": 15,
+    "themeparks": 30,
+    "history": 25,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 88,
+    "toddlers": 80,
+    "children5To10": 88,
+    "teenagers": 78,
+    "seniors": 82,
+    "honeymoon": 85,
+    "solo": 70,
+    "firstInternationalTrip": 85
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 85,
+    "halalFriendly": 98,
+    "localCuisineScore": 82,
+    "streetFoodScore": 78,
+    "fineDiningScore": 72
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 6,
+    "walkingIntensity": "low",
+    "publicTransportEase": 35,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 65,
+    "medicalAccessScore": 70
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "dry-season-dec-mar"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Calm seas and clear island-hopping days"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Wettest month — expect daily rain"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Sea activities frequently affected"
+      ]
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Best beach weather begins"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Kuala Lumpur + Langkawi",
+    "Langkawi + Penang"
+  ],
+  "commonMistakes": [
+    "Skipping the cable car on the one clear morning — go early when skies allow"
+  ],
+  "packingConsiderations": [
+    "Reef-safe sunscreen",
+    "Insect repellent for mangrove tours",
+    "Light rain layer outside Dec–Mar"
+  ],
+  "practicalWarnings": [
+    "Jellyfish occasionally present — heed beach notices"
+  ],
+  "tradeOffs": [
+    "Quiet nightlife and limited shopping beyond duty-free",
+    "Sea clarity varies by season"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting a lively boardwalk scene"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-malaysia",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Malaysia",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

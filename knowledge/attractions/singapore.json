@@ -1,0 +1,240 @@
+[
+  {
+    "id": "singapore-gardens-by-the-bay",
+    "destinationSlug": "singapore",
+    "name": "Gardens by the Bay",
+    "category": "nature",
+    "summary": "Futuristic Supertree Grove and cooled conservatories; the evening light show is free.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "late afternoon into the 7:45pm light show",
+    "accessibilityNotes": [
+      "Step-free routes and wheelchair hire available"
+    ],
+    "childNotes": [
+      "Cloud Forest mist walk delights younger children"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "singapore-universal-studios-singapore",
+    "destinationSlug": "singapore",
+    "name": "Universal Studios Singapore",
+    "category": "theme-park",
+    "summary": "Compact movie theme park on Sentosa with rides across every age band.",
+    "idealFor": [
+      "family",
+      "children",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 7,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Height restrictions on major coasters — check before promising rides"
+    ],
+    "seniorNotes": [
+      "Shaded rest areas throughout"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "singapore-singapore-zoo-river-wonders",
+    "destinationSlug": "singapore",
+    "name": "Singapore Zoo & River Wonders",
+    "category": "nature",
+    "summary": "Open-concept rainforest zoo consistently rated among the world's best.",
+    "idealFor": [
+      "family",
+      "children",
+      "wildlife"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Kidzworld water play area — bring a change of clothes"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "singapore-hawker-centre-food-trail",
+    "destinationSlug": "singapore",
+    "name": "Hawker centre food trail",
+    "category": "food",
+    "summary": "Michelin-listed street food across Chinatown, Little India and Lau Pa Sat.",
+    "idealFor": [
+      "food",
+      "family",
+      "solo"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Cash or local cards preferred at older stalls"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "singapore-sentosa-island-beaches-cable-car",
+    "destinationSlug": "singapore",
+    "name": "Sentosa Island beaches & cable car",
+    "category": "beach",
+    "summary": "Man-made beach playground with luges, aquariums and the harbour cable car.",
+    "idealFor": [
+      "family",
+      "couple",
+      "relaxation"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Skyline Luge is a reliable hit for ages 6+"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "singapore-marina-bay-merlion-waterfront-walk",
+    "destinationSlug": "singapore",
+    "name": "Marina Bay & Merlion waterfront walk",
+    "category": "landmark",
+    "summary": "The classic skyline loop past the Merlion, Esplanade and Marina Bay Sands.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "bestTimeOfDay": "sunset",
+    "accessibilityNotes": [
+      "Fully step-free waterfront promenade"
+    ],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

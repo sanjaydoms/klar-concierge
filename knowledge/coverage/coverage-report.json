@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-08-05T16:20:14.580Z",
+  "countries": {
+    "total": 196,
+    "reviewed": 26,
+    "skeleton": 170
+  },
+  "destinations": 30,
+  "attractions": 180,
+  "eligibleDestinations": 30
+}

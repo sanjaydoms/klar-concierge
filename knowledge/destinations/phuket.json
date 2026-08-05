@@ -1,0 +1,269 @@
+{
+  "slug": "phuket",
+  "name": "Phuket",
+  "countryIso2": "TH",
+  "countryName": "Thailand",
+  "region": "Southeast Asia",
+  "summary": "Thailand's biggest island: long beaches, island-hopping to Phi Phi and James Bond Island, family resorts and lively nightlife zones you can opt into or avoid.",
+  "positioningLine": "Full-service beach holiday with legendary island day trips.",
+  "idealTraveller": "Beach-first families and groups who want resorts, boat days and plenty of dining choice.",
+  "minimumNights": 4,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 95,
+    "relaxation": 88,
+    "nightlife": 80,
+    "adventure": 75,
+    "food": 80,
+    "romance": 78,
+    "nature": 70,
+    "shopping": 60,
+    "culture": 50,
+    "city": 40,
+    "themeparks": 55,
+    "history": 30,
+    "wildlife": 55,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 85,
+    "toddlers": 75,
+    "children5To10": 85,
+    "teenagers": 85,
+    "seniors": 75,
+    "honeymoon": 85,
+    "solo": 80,
+    "firstInternationalTrip": 88
+  },
+  "food": {
+    "vegetarianFriendly": 72,
+    "indianFoodAvailability": 80,
+    "halalFriendly": 75,
+    "localCuisineScore": 88,
+    "streetFoodScore": 85,
+    "fineDiningScore": 80
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 4.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 45,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 80
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "dry-season-nov-apr"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Dry, sunny beach perfection"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Rough west-coast swimming; watch flag warnings"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon seas — boat trips often cancelled"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Calm seas — best island-hopping window"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Bangkok + Phuket",
+    "Phuket + Krabi",
+    "Phuket + Phi Phi overnight"
+  ],
+  "commonMistakes": [
+    "Booking beach plans in September without weather buffers",
+    "Staying in Patong when seeking quiet (or vice versa)"
+  ],
+  "packingConsiderations": [
+    "Reef-safe sunscreen",
+    "Motion-sickness tablets for speedboat days",
+    "Water shoes for rocky coves"
+  ],
+  "practicalWarnings": [
+    "Respect red-flag swimming warnings in monsoon months"
+  ],
+  "tradeOffs": [
+    "Very touristy in peak zones",
+    "Monsoon (May–Oct) limits island hopping"
+  ],
+  "whoShouldAvoid": [
+    "Travellers seeking an untouched, crowd-free island feel"
+  ],
+  "confidence": 86,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-authority-of-thailand",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Authority of Thailand",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

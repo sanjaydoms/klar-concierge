@@ -1,0 +1,266 @@
+{
+  "slug": "maldives",
+  "name": "Maldives",
+  "countryIso2": "MV",
+  "countryName": "Maldives",
+  "region": "Indian Ocean",
+  "summary": "Overwater villas, house reefs and blue lagoons. The definitive fly-and-flop honeymoon, now also open to families and value seekers via guesthouse islands.",
+  "positioningLine": "The ultimate barefoot-luxury lagoon escape.",
+  "idealTraveller": "Honeymooners and anyone whose perfect day is lagoon, snorkel, spa, repeat.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 7,
+  "suitablePaces": [
+    "relaxed"
+  ],
+  "interests": {
+    "beach": 100,
+    "relaxation": 100,
+    "romance": 98,
+    "adventure": 55,
+    "nature": 70,
+    "food": 65,
+    "wildlife": 70,
+    "nightlife": 30,
+    "culture": 25,
+    "city": 5,
+    "shopping": 20,
+    "history": 15,
+    "themeparks": 0,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 70,
+    "seniors": 78,
+    "honeymoon": 100,
+    "solo": 55,
+    "firstInternationalTrip": 85
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 80,
+    "halalFriendly": 95,
+    "localCuisineScore": 70,
+    "streetFoodScore": 40,
+    "fineDiningScore": 90
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 2.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 40,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 55
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "warm-all-year",
+    "dry-season-dec-apr"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 95,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 95,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Calm, glassy lagoons and best visibility"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "South-west monsoon — brief squalls likely"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Manta and whale-shark season at Hanifaru Bay (verify)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Wettest weeks; seaplane delays possible"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Maldives + Sri Lanka",
+    "Maldives + Dubai"
+  ],
+  "commonMistakes": [
+    "Booking distant atolls with tight return flights — seaplane schedules shift",
+    "Expecting sightseeing variety beyond the resort"
+  ],
+  "packingConsiderations": [
+    "Reef-safe sunscreen",
+    "Snorkel mask if you prefer your own fit",
+    "Modest wear for local (non-resort) islands"
+  ],
+  "practicalWarnings": [
+    "Alcohol only on resort islands, not local islands"
+  ],
+  "tradeOffs": [
+    "One-island stays can feel small after five nights",
+    "Premium resorts price everything à la carte"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who need sightseeing variety and city energy"
+  ],
+  "confidence": 88,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-visit-maldives",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Visit Maldives",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

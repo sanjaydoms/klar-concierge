@@ -3,7 +3,7 @@ import { config } from "@/lib/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = config.appUrl;
-  return ["/", "/concierge", "/concierge/discover", "/concierge/how-it-works", "/privacy", "/terms"].map(
+  return ["/", "/concierge", "/concierge/discover", "/concierge/compare", "/concierge/how-it-works", "/privacy", "/terms"].map(
     (path) => ({
       url: `${base}${path}`,
       changeFrequency: "weekly",

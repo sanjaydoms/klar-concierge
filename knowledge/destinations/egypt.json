@@ -1,0 +1,268 @@
+{
+  "slug": "egypt",
+  "name": "Egypt",
+  "countryIso2": "EG",
+  "countryName": "Egypt",
+  "region": "North Africa",
+  "summary": "The Pyramids and the Sphinx, Nile cruises past ancient temples, and Red Sea reefs at Hurghada — five thousand years of wonder at approachable prices.",
+  "positioningLine": "The world's greatest ancient wonders, plus Red Sea blue.",
+  "idealTraveller": "History enthusiasts and families with school-age kids who dream of pharaohs.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 98,
+    "culture": 90,
+    "adventure": 70,
+    "beach": 65,
+    "nature": 55,
+    "food": 65,
+    "romance": 68,
+    "city": 65,
+    "shopping": 60,
+    "relaxation": 55,
+    "wildlife": 40,
+    "nightlife": 45,
+    "themeparks": 15,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 55,
+    "children5To10": 80,
+    "teenagers": 85,
+    "seniors": 68,
+    "honeymoon": 72,
+    "solo": 72,
+    "firstInternationalTrip": 70
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 45,
+    "halalFriendly": 98,
+    "localCuisineScore": 80,
+    "streetFoodScore": 75,
+    "fineDiningScore": 70
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 6,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 45,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 60
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "desert",
+    "dry",
+    "mild-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Abu Simbel sun alignment (22 Feb — verify)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Upper Egypt exceeds 40°C — dawn starts only"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat at open-air sites"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Perfect temple-touring temperatures"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Cairo + Nile cruise (Luxor–Aswan)",
+    "Cairo + Hurghada",
+    "Egypt + Jordan"
+  ],
+  "commonMistakes": [
+    "Visiting open-air temples at midday in summer",
+    "Skipping Luxor — Cairo alone misses the best temples"
+  ],
+  "packingConsiderations": [
+    "Sun hat and high-SPF sunscreen",
+    "Modest, breathable clothing",
+    "Scarf for dust and sun"
+  ],
+  "practicalWarnings": [
+    "Expect persistent vendors at major sites; a firm, polite no works"
+  ],
+  "tradeOffs": [
+    "Summer heat is punishing at open-air sites",
+    "Touting at major monuments requires patience"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting a polished, hassle-free resort experience only"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-egyptian-tourism-authority",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Egyptian Tourism Authority",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

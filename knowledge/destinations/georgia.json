@@ -1,0 +1,267 @@
+{
+  "slug": "georgia",
+  "name": "Georgia",
+  "countryIso2": "GE",
+  "countryName": "Georgia",
+  "region": "Caucasus",
+  "summary": "Tbilisi's balconied old town, Caucasus mountain drives, ancient wine country and monasteries — Europe-adjacent charm at gentle prices.",
+  "positioningLine": "Mountains, wine and old-world charm, visa-easy.",
+  "idealTraveller": "Adventurous couples and friends who like mountains, wine and unpolished charm.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 90,
+    "culture": 82,
+    "food": 85,
+    "history": 80,
+    "adventure": 80,
+    "city": 65,
+    "romance": 72,
+    "relaxation": 60,
+    "snow": 65,
+    "shopping": 45,
+    "nightlife": 60,
+    "beach": 35,
+    "wildlife": 40,
+    "themeparks": 15
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 58,
+    "children5To10": 68,
+    "teenagers": 78,
+    "seniors": 65,
+    "honeymoon": 78,
+    "solo": 85,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 50,
+    "halalFriendly": 55,
+    "localCuisineScore": 90,
+    "streetFoodScore": 70,
+    "fineDiningScore": 70
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 60
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "continental",
+    "mountain",
+    "four-seasons"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "High mountain passes may close (ski areas open)"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 52,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Green valleys and perfect mountain-road conditions"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Rtveli grape-harvest season in Kakheti"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Short daylight; icy mountain roads"
+      ]
+    }
+  ],
+  "commonTripCombinations": [
+    "Tbilisi + Kazbegi + Kakheti",
+    "Georgia + Azerbaijan"
+  ],
+  "commonMistakes": [
+    "Day-tripping Kazbegi on a tight schedule — the road deserves time",
+    "Expecting Western-Europe infrastructure"
+  ],
+  "packingConsiderations": [
+    "Layers for mountain temperature swings",
+    "Sturdy shoes for cobbles and trails",
+    "Motion-sickness tablets for winding roads"
+  ],
+  "practicalWarnings": [
+    "Mountain excursions involve long, winding drives"
+  ],
+  "tradeOffs": [
+    "Mountain excursions involve long, winding drives",
+    "Infrastructure is simpler than Western Europe"
+  ],
+  "whoShouldAvoid": [
+    "Travellers needing step-free access throughout"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-georgia-travel",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Georgia Travel",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

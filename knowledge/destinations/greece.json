@@ -1,0 +1,268 @@
+{
+  "slug": "greece",
+  "name": "Greece",
+  "countryIso2": "GR",
+  "countryName": "Greece",
+  "region": "Europe",
+  "summary": "Athens' Acropolis then whitewashed Cyclades — Santorini sunsets, Mykonos beaches and slow island evenings. A honeymoon staple.",
+  "positioningLine": "Blue-and-white island romance with ancient roots.",
+  "idealTraveller": "Honeymooners and sunset-chasers comfortable with steps, ferries and island time.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 88,
+    "romance": 95,
+    "history": 90,
+    "relaxation": 85,
+    "food": 85,
+    "culture": 85,
+    "nightlife": 75,
+    "city": 60,
+    "nature": 60,
+    "shopping": 60,
+    "adventure": 50,
+    "wildlife": 15,
+    "themeparks": 10,
+    "snow": 15
+  },
+  "suitability": {
+    "family": 72,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 80,
+    "seniors": 70,
+    "honeymoon": 97,
+    "solo": 78,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 80,
+    "indianFoodAvailability": 45,
+    "halalFriendly": 50,
+    "localCuisineScore": 92,
+    "streetFoodScore": 80,
+    "fineDiningScore": 85
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8,
+    "walkingIntensity": "high",
+    "publicTransportEase": 65,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 78
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mediterranean",
+    "dry-summer",
+    "island-winds"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Warm seas before peak crowds"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Meltemi winds and peak pricing in the Cyclades"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Best month: warm water, soft light, fewer ferries missed"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Many island hotels close for winter"
+      ]
+    }
+  ],
+  "commonTripCombinations": [
+    "Athens + Santorini + Mykonos",
+    "Athens + Naxos + Paros",
+    "Greece + Turkey"
+  ],
+  "commonMistakes": [
+    "Booking tight ferry connections",
+    "Only visiting Santorini — quieter islands are the magic"
+  ],
+  "packingConsiderations": [
+    "Deck-friendly shoes for ferries",
+    "Sun hat — shade is scarce at ruins",
+    "Light layers for evening island winds"
+  ],
+  "practicalWarnings": [
+    "Caldera towns mean steps everywhere — pack light"
+  ],
+  "tradeOffs": [
+    "Ferry schedules shape the itinerary",
+    "Santorini premiums in July–August are steep"
+  ],
+  "whoShouldAvoid": [
+    "Travellers uncomfortable with steps and cliffside paths"
+  ],
+  "confidence": 85,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-visit-greece",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Visit Greece",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

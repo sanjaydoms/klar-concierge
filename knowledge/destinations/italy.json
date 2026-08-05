@@ -1,0 +1,268 @@
+{
+  "slug": "italy",
+  "name": "Italy",
+  "countryIso2": "IT",
+  "countryName": "Italy",
+  "region": "Europe",
+  "summary": "Rome's ruins, Florence's art, Venice's canals and the Amalfi Coast — history, food and romance stacked deeper than anywhere else.",
+  "positioningLine": "The grand tour: art, coastlines and unforgettable food.",
+  "idealTraveller": "Travellers who measure a trip in meals, masterpieces and golden-hour piazzas.",
+  "minimumNights": 6,
+  "idealNights": 8,
+  "maximumNights": 14,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 98,
+    "culture": 96,
+    "food": 96,
+    "romance": 92,
+    "city": 88,
+    "beach": 60,
+    "shopping": 85,
+    "nature": 60,
+    "relaxation": 55,
+    "nightlife": 65,
+    "adventure": 45,
+    "wildlife": 15,
+    "themeparks": 30,
+    "snow": 40
+  },
+  "suitability": {
+    "family": 76,
+    "toddlers": 62,
+    "children5To10": 75,
+    "teenagers": 85,
+    "seniors": 72,
+    "honeymoon": 95,
+    "solo": 82,
+    "firstInternationalTrip": 68
+  },
+  "food": {
+    "vegetarianFriendly": 80,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 55,
+    "localCuisineScore": 99,
+    "streetFoodScore": 85,
+    "fineDiningScore": 95
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 80,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 88
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mediterranean",
+    "four-seasons",
+    "hot-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Warm days before the summer surge"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "City heat makes midday sightseeing tough"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Ferragosto crowds on every coast"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Sea still warm; cities exhale after August"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Rome + Florence + Venice",
+    "Rome + Amalfi Coast",
+    "Italy + Switzerland"
+  ],
+  "commonMistakes": [
+    "Moving cities every night",
+    "Arriving without timed tickets for the Vatican or Uffizi"
+  ],
+  "packingConsiderations": [
+    "Modest wear for churches (shoulders covered)",
+    "Cobblestone-proof shoes",
+    "Light layers"
+  ],
+  "practicalWarnings": [
+    "Headline sights need pre-booking days or weeks ahead"
+  ],
+  "tradeOffs": [
+    "Multi-city routing means packing and moving every few days",
+    "Headline sights need pre-booking"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting one base and minimal walking"
+  ],
+  "confidence": 87,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-enit-italian-national-tourist-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "ENIT — Italian National Tourist Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

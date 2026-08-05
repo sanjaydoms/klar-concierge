@@ -1,0 +1,268 @@
+{
+  "slug": "sri-lanka",
+  "name": "Sri Lanka",
+  "countryIso2": "LK",
+  "countryName": "Sri Lanka",
+  "region": "South Asia",
+  "summary": "Tea hills, leopard safaris, ancient citadels and palm-backed beaches packed into one compact island a short hop from India.",
+  "positioningLine": "Maximum variety, minimum flight time.",
+  "idealTraveller": "Variety seekers who want wildlife, hills, culture and beach in one short-haul trip.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "relaxed",
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 90,
+    "wildlife": 90,
+    "beach": 85,
+    "culture": 82,
+    "history": 85,
+    "relaxation": 80,
+    "adventure": 75,
+    "food": 75,
+    "romance": 78,
+    "city": 45,
+    "shopping": 45,
+    "nightlife": 40,
+    "themeparks": 20,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 68,
+    "children5To10": 80,
+    "teenagers": 78,
+    "seniors": 75,
+    "honeymoon": 85,
+    "solo": 80,
+    "firstInternationalTrip": 88
+  },
+  "food": {
+    "vegetarianFriendly": 88,
+    "indianFoodAvailability": 90,
+    "halalFriendly": 75,
+    "localCuisineScore": 85,
+    "streetFoodScore": 75,
+    "fineDiningScore": 65
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 2,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "tropical",
+    "two-monsoons",
+    "regional-contrast"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Perfect south-west beach season"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "South-west monsoon begins"
+      ]
+    },
+    {
+      "month": 6,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Kandy Esala Perahera festival (verify dates); east-coast beaches shine"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Inter-monsoon rains island-wide"
+      ]
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Cultural triangle + tea country + south beaches",
+    "Sri Lanka + Maldives"
+  ],
+  "commonMistakes": [
+    "Judging distances by kilometres — hill roads are slow",
+    "Booking west-coast beaches in monsoon months"
+  ],
+  "packingConsiderations": [
+    "Layers for cool tea-country evenings",
+    "Modest wear for temples",
+    "Leech socks for rainforest walks (seasonal)"
+  ],
+  "practicalWarnings": [
+    "Road journeys are slow — 100 km can take three hours in the hills"
+  ],
+  "tradeOffs": [
+    "Road journeys are slow — distances deceive",
+    "Two monsoons split the island's beach seasons"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting nightlife and big-city shopping"
+  ],
+  "confidence": 86,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-sri-lanka-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Sri Lanka Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

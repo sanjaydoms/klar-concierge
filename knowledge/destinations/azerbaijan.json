@@ -1,0 +1,267 @@
+{
+  "slug": "azerbaijan",
+  "name": "Azerbaijan",
+  "countryIso2": "AZ",
+  "countryName": "Azerbaijan",
+  "region": "Caucasus",
+  "summary": "Baku's flame towers beside a medieval walled city, mud volcanoes, burning hillsides and quick mountain escapes — a compact, offbeat city break.",
+  "positioningLine": "Futuristic Baku with fire-country day trips.",
+  "idealTraveller": "City-breakers who want somewhere genuinely different within five flight hours.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 7,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "city": 85,
+    "culture": 75,
+    "history": 72,
+    "food": 78,
+    "adventure": 60,
+    "nature": 60,
+    "shopping": 65,
+    "nightlife": 70,
+    "romance": 65,
+    "relaxation": 55,
+    "snow": 30,
+    "beach": 30,
+    "wildlife": 20,
+    "themeparks": 20
+  },
+  "suitability": {
+    "family": 72,
+    "toddlers": 62,
+    "children5To10": 70,
+    "teenagers": 75,
+    "seniors": 75,
+    "honeymoon": 72,
+    "solo": 80,
+    "firstInternationalTrip": 80
+  },
+  "food": {
+    "vegetarianFriendly": 65,
+    "indianFoodAvailability": 60,
+    "halalFriendly": 90,
+    "localCuisineScore": 82,
+    "streetFoodScore": 65,
+    "fineDiningScore": 75
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 4.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 70,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "semi-arid",
+    "windy-caspian",
+    "four-seasons"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Cold snaps; mountain roads icy"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Mild Caspian spring — best city-walking weather"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Baku's summer winds and heat"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Golden autumn in the Caucasus foothills"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Baku + Gabala",
+    "Baku + Sheki",
+    "Georgia + Azerbaijan"
+  ],
+  "commonMistakes": [
+    "Allocating a week when five nights covers the highlights"
+  ],
+  "packingConsiderations": [
+    "Windproof layer — Baku is the 'city of winds'",
+    "Modest wear for mosques",
+    "Comfortable shoes for old-city cobbles"
+  ],
+  "practicalWarnings": [
+    "Caspian beach scene is limited — this is a city-and-culture trip"
+  ],
+  "tradeOffs": [
+    "Fewer marquee sights beyond five nights",
+    "Beach scene on the Caspian is limited"
+  ],
+  "whoShouldAvoid": [
+    "Travellers expecting a classic beach holiday"
+  ],
+  "confidence": 78,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-azerbaijan-tourism-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Azerbaijan Tourism Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

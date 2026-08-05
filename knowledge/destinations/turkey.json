@@ -1,0 +1,268 @@
+{
+  "slug": "turkey",
+  "name": "Turkey",
+  "countryIso2": "TR",
+  "countryName": "Turkey",
+  "region": "Europe & Anatolia",
+  "summary": "Istanbul's minarets and bazaars, Cappadocia's balloon-filled dawns and a turquoise coast — east-meets-west drama at fair prices.",
+  "positioningLine": "Two continents of drama in one trip.",
+  "idealTraveller": "History and food lovers who enjoy multi-stop journeys and dramatic scenery.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 95,
+    "culture": 92,
+    "food": 88,
+    "city": 82,
+    "adventure": 78,
+    "romance": 80,
+    "beach": 70,
+    "shopping": 80,
+    "nature": 75,
+    "relaxation": 60,
+    "nightlife": 65,
+    "wildlife": 30,
+    "themeparks": 30,
+    "snow": 40
+  },
+  "suitability": {
+    "family": 75,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 82,
+    "seniors": 70,
+    "honeymoon": 88,
+    "solo": 80,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 95,
+    "localCuisineScore": 92,
+    "streetFoodScore": 88,
+    "fineDiningScore": 85
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 6.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 75,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 75
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mediterranean",
+    "continental-interior",
+    "four-seasons"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Cold and wet in Istanbul; snow inland"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Ideal weather everywhere, Cappadocia at its best"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Interior heat peaks; book balloons early"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Warm seas and thinning crowds"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Istanbul + Cappadocia",
+    "Istanbul + Antalya coast",
+    "Turkey + Greece"
+  ],
+  "commonMistakes": [
+    "Skipping the internal flight and losing a day on buses",
+    "Booking balloons for a single morning with no weather buffer"
+  ],
+  "packingConsiderations": [
+    "Layers — Istanbul, Cappadocia and the coast differ sharply",
+    "Modest wear for mosques",
+    "Sturdy shoes for cobblestones and valleys"
+  ],
+  "practicalWarnings": [
+    "Balloon flights are weather-dependent — keep two mornings free"
+  ],
+  "tradeOffs": [
+    "Ambitious multi-stop routings mean internal flights",
+    "Summer interior heat can be intense"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting a single-resort, low-movement holiday"
+  ],
+  "confidence": 85,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-go-t-rkiye",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Go Türkiye",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

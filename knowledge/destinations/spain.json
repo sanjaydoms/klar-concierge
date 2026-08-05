@@ -1,0 +1,268 @@
+{
+  "slug": "spain",
+  "name": "Spain",
+  "countryIso2": "ES",
+  "countryName": "Spain",
+  "region": "Europe",
+  "summary": "Gaudí's Barcelona, royal Madrid, Moorish Andalusia and late-night tapas culture — Europe's most energetic classic.",
+  "positioningLine": "Art, tapas and fiesta energy from Barcelona to Seville.",
+  "idealTraveller": "Culture-and-food travellers who love cities that stay up late.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "culture": 92,
+    "food": 90,
+    "city": 90,
+    "history": 88,
+    "nightlife": 85,
+    "beach": 70,
+    "shopping": 80,
+    "romance": 82,
+    "relaxation": 60,
+    "nature": 55,
+    "adventure": 50,
+    "themeparks": 55,
+    "wildlife": 20,
+    "snow": 25
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 65,
+    "children5To10": 78,
+    "teenagers": 85,
+    "seniors": 75,
+    "honeymoon": 85,
+    "solo": 85,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 65,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 55,
+    "localCuisineScore": 95,
+    "streetFoodScore": 80,
+    "fineDiningScore": 92
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 9.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 88,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 72,
+    "medicalAccessScore": 88
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mediterranean",
+    "hot-summer",
+    "mild-winter-south"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Perfect city-walking weather everywhere"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Interior heat — plan siesta-style days"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Andalusia regularly exceeds 40°C"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Warm seas, harvest menus, fewer crowds"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Barcelona + Madrid",
+    "Madrid + Seville + Granada",
+    "Spain + Portugal"
+  ],
+  "commonMistakes": [
+    "Expecting dinner before 8:30pm",
+    "Skipping Alhambra pre-booking — it sells out weeks ahead"
+  ],
+  "packingConsiderations": [
+    "Light clothing plus a smart layer for evenings",
+    "Walking shoes for old-town cobbles",
+    "Sun protection for Andalusia"
+  ],
+  "practicalWarnings": [
+    "Alhambra and Sagrada Família require timed tickets booked well ahead"
+  ],
+  "tradeOffs": [
+    "Peak-summer heat in the south is intense",
+    "Late dining rhythm takes adjustment"
+  ],
+  "whoShouldAvoid": [
+    "Early-to-bed travellers who dislike late, lively evenings"
+  ],
+  "confidence": 84,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-turespa-a",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Turespaña",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

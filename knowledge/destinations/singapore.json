@@ -1,0 +1,269 @@
+{
+  "slug": "singapore",
+  "name": "Singapore",
+  "countryIso2": "SG",
+  "countryName": "Singapore",
+  "region": "Southeast Asia",
+  "summary": "A compact, spotless city-state that mixes gardens, theme parks, hawker food and skyline views. One of the easiest first international trips from India.",
+  "positioningLine": "Effortless city break with world-class family attractions.",
+  "idealTraveller": "Families with children, first international trips, and anyone who wants maximum wow with minimum friction.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 7,
+  "suitablePaces": [
+    "relaxed",
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "city": 95,
+    "food": 90,
+    "themeparks": 92,
+    "shopping": 88,
+    "culture": 70,
+    "nature": 60,
+    "beach": 40,
+    "nightlife": 75,
+    "relaxation": 55,
+    "romance": 65,
+    "history": 55,
+    "adventure": 55,
+    "wildlife": 65,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 95,
+    "toddlers": 90,
+    "children5To10": 95,
+    "teenagers": 88,
+    "seniors": 90,
+    "honeymoon": 60,
+    "solo": 80,
+    "firstInternationalTrip": 95
+  },
+  "food": {
+    "vegetarianFriendly": 90,
+    "indianFoodAvailability": 95,
+    "halalFriendly": 90,
+    "localCuisineScore": 92,
+    "streetFoodScore": 95,
+    "fineDiningScore": 90
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 4.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 95,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 92,
+    "medicalAccessScore": 95
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "humid",
+    "warm-all-year"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Great Singapore Sale shopping season"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 74,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 74,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "North-east monsoon showers — keep afternoons flexible"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Year-end light-ups along Orchard Road"
+      ],
+      "warnings": [
+        "Peak holiday crowds at major attractions"
+      ]
+    }
+  ],
+  "commonTripCombinations": [
+    "Singapore + Bali",
+    "Singapore + Kuala Lumpur",
+    "Singapore + cruise"
+  ],
+  "commonMistakes": [
+    "Packing too many attractions into one day in the humidity",
+    "Skipping hawker centres for hotel dining"
+  ],
+  "packingConsiderations": [
+    "Light breathable clothing",
+    "Umbrella or light rain jacket year-round",
+    "Comfortable walking shoes"
+  ],
+  "practicalWarnings": [
+    "Strict fines for littering and eating on public transport"
+  ],
+  "tradeOffs": [
+    "Compact itinerary options — fewer 'new' sights beyond five nights",
+    "Higher daily costs than most of Southeast Asia"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting raw nature or long beach stays as the main event"
+  ],
+  "confidence": 88,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-singapore-tourism-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Singapore Tourism Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

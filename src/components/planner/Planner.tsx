@@ -2,19 +2,26 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { TravelBrief } from "@/types/brief";
-import type { ItineraryDay, Recommendation } from "@/types/recommendation";
+import type {
+  ComparisonResult,
+  ItineraryDay,
+  Recommendation,
+  RecommendationResult,
+} from "@/types/recommendation";
 import { BriefReview } from "./BriefReview";
 import { RecommendationCards } from "./RecommendationCards";
 import { ItineraryView } from "./ItineraryView";
-import { LeadForm, type LeadFormValues } from "./LeadForm";
-import { SuccessView } from "./SuccessView";
+import { ComparisonView } from "@/components/comparison/ComparisonView";
+import { HandoverForm, type HandoverValues } from "@/components/handover/HandoverForm";
+import { HandoverSuccess } from "@/components/handover/HandoverSuccess";
 
 type Stage =
   | "conversation"
   | "brief-review"
   | "recommendations"
+  | "comparison"
   | "itinerary"
-  | "lead-capture"
+  | "handover"
   | "submitted";
 
 type ChatMessage = { role: "user" | "assistant"; content: string; createdAt: string };
@@ -22,54 +29,91 @@ type ChatMessage = { role: "user" | "assistant"; content: string; createdAt: str
 const CHIPS = [
   "Family holiday",
   "Honeymoon",
-  "Best visited this month",
+  "Best this month",
   "Relaxed beach escape",
   "Senior-friendly trip",
-  "Something different",
+  "Short international break",
+  "Food and culture",
+  "Surprise me",
 ];
 
-const EXAMPLE =
-  "We are a family of four from Hyderabad looking for a relaxed seven-night holiday in December. Our children are 6 and 10, and we enjoy food, easy sightseeing and fun activities.";
-
-function track(name: string, props?: Record<string, unknown>) {
-  fetch("/api/analytics", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, props }),
-    keepalive: true,
-  }).catch(() => undefined);
-}
+const SESSION_KEY = "klar-session-id";
 
 export function Planner() {
   const [stage, setStage] = useState<Stage>("conversation");
-  const [messages, setMessages] = useState<ChatMessage[]>([
-    {
-      role: "assistant",
-      content:
-        "Tell us about the holiday you have in mind. Where would you like to go — or how would you like it to feel?",
-      createdAt: new Date().toISOString(),
-    },
-  ]);
+  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [brief, setBrief] = useState<TravelBrief | undefined>(undefined);
   const [ready, setReady] = useState(false);
-  const [turnIndex, setTurnIndex] = useState(0);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
+  const [recResult, setRecResult] = useState<RecommendationResult | null>(null);
   const [selected, setSelected] = useState<Recommendation | null>(null);
+  const [comparison, setComparison] = useState<ComparisonResult | null>(null);
   const [itinerary, setItinerary] = useState<ItineraryDay[]>([]);
-  const [reference, setReference] = useState<string | null>(null);
-  const [idempotencyKey] = useState(() => crypto.randomUUID());
+  const [crmEnabled, setCrmEnabled] = useState<boolean | null>(null);
+  const [production, setProduction] = useState(false);
+  const [crmReference, setCrmReference] = useState<string | null>(null);
   const logRef = useRef<HTMLDivElement>(null);
+  const recovered = useRef(false);
 
+  const greeting: ChatMessage = {
+    role: "assistant",
+    content:
+      "Tell me about the holiday you have in mind. You can name a destination, or simply describe how you want the trip to feel.",
+    createdAt: "",
+  };
+
+  // Session recovery after refresh + capability flags.
   useEffect(() => {
-    track("planner_started");
+    if (recovered.current) return;
+    recovered.current = true;
+    fetch("/api/system/health")
+      .then((r) => r.json())
+      .then((h: { crmEnabled?: boolean; production?: boolean }) => {
+        setCrmEnabled(Boolean(h.crmEnabled));
+        setProduction(Boolean(h.production));
+      })
+      .catch(() => setCrmEnabled(false));
+    const saved = typeof window !== "undefined" ? window.localStorage.getItem(SESSION_KEY) : null;
+    if (!saved) return;
+    fetch(`/api/chat/session/${saved}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { sessionId: string; brief: TravelBrief; messages: ChatMessage[] } | null) => {
+        if (!data) {
+          window.localStorage.removeItem(SESSION_KEY);
+          return;
+        }
+        setSessionId(data.sessionId);
+        setBrief(data.brief);
+        setMessages(data.messages);
+        setReady(Boolean(data.brief.travelMonth && data.brief.durationNights));
+      })
+      .catch(() => undefined);
   }, []);
 
   useEffect(() => {
     logRef.current?.scrollTo({ top: logRef.current.scrollHeight });
   }, [messages]);
+
+  const startOver = useCallback(async () => {
+    if (sessionId) {
+      await fetch(`/api/chat/session/${sessionId}`, { method: "DELETE" }).catch(() => undefined);
+      window.localStorage.removeItem(SESSION_KEY);
+    }
+    setSessionId(null);
+    setMessages([]);
+    setBrief(undefined);
+    setReady(false);
+    setRecResult(null);
+    setSelected(null);
+    setComparison(null);
+    setItinerary([]);
+    setCrmReference(null);
+    setError(null);
+    setStage("conversation");
+  }, [sessionId]);
 
   const sendMessage = useCallback(
     async (text: string) => {
@@ -77,18 +121,13 @@ export function Planner() {
       if (!trimmed || busy) return;
       setBusy(true);
       setError(null);
-      const userMessage: ChatMessage = {
-        role: "user",
-        content: trimmed,
-        createdAt: new Date().toISOString(),
-      };
-      setMessages((m) => [...m, userMessage]);
+      setMessages((m) => [...m, { role: "user", content: trimmed, createdAt: new Date().toISOString() }]);
       setInput("");
       try {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: trimmed, brief, turnIndex }),
+          body: JSON.stringify({ message: trimmed, sessionId: sessionId ?? undefined }),
         });
         if (res.status === 429) {
           setError("You're sending messages a little fast — give it a few seconds and try again.");
@@ -96,63 +135,93 @@ export function Planner() {
         }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = (await res.json()) as {
+          sessionId: string;
           brief: TravelBrief;
           assistantMessage: string;
           readyForRecommendations: boolean;
+          suggestedAction?: "recommend" | "compare";
+          comparisonSlugs?: string[];
         };
+        setSessionId(data.sessionId);
+        window.localStorage.setItem(SESSION_KEY, data.sessionId);
         setBrief(data.brief);
         setReady(data.readyForRecommendations);
-        setTurnIndex((t) => t + 1);
         setMessages((m) => [
           ...m,
           { role: "assistant", content: data.assistantMessage, createdAt: new Date().toISOString() },
         ]);
-        track("planner_message_sent");
+        if (data.suggestedAction === "compare" && data.comparisonSlugs?.length) {
+          await runComparison(data.comparisonSlugs, data.sessionId);
+        }
       } catch {
-        setError(
-          "We couldn't process that just now. Your conversation is safe — please try again.",
-        );
+        setError("We couldn't process that just now. Your conversation is safe — please try again.");
       } finally {
         setBusy(false);
       }
     },
-    [brief, busy, turnIndex],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [busy, sessionId],
   );
 
-  const goToBriefReview = useCallback(() => {
-    if (!brief) return;
-    setStage("brief-review");
-    track("trip_brief_completed");
-  }, [brief]);
+  const runComparison = useCallback(
+    async (slugs: string[], sid?: string) => {
+      setBusy(true);
+      try {
+        const res = await fetch("/api/compare", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ slugs, sessionId: sid ?? sessionId ?? undefined }),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        setComparison((await res.json()) as ComparisonResult);
+        setStage("comparison");
+      } catch {
+        setError("The comparison couldn't run just now — please try again.");
+      } finally {
+        setBusy(false);
+      }
+    },
+    [sessionId],
+  );
 
-  const fetchRecommendations = useCallback(
+  const confirmBrief = useCallback(
     async (finalBrief: TravelBrief) => {
+      if (!sessionId) return;
       setBusy(true);
       setError(null);
-      setBrief(finalBrief);
       try {
+        const completeRes = await fetch("/api/chat/complete", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sessionId, brief: finalBrief }),
+        });
+        if (!completeRes.ok) throw new Error(`HTTP ${completeRes.status}`);
+        setBrief(finalBrief);
         const res = await fetch("/api/plan", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ brief: finalBrief }),
+          body: JSON.stringify({ sessionId }),
         });
+        if (res.status === 410) {
+          setError("Your session expired — let's start fresh. Nothing was sent anywhere.");
+          await startOver();
+          return;
+        }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = (await res.json()) as { recommendations: Recommendation[] };
-        setRecommendations(data.recommendations);
+        setRecResult((await res.json()) as RecommendationResult);
         setStage("recommendations");
-        track("recommendations_viewed");
       } catch {
         setError("We couldn't prepare recommendations just now. Please try again in a moment.");
       } finally {
         setBusy(false);
       }
     },
-    [],
+    [sessionId, startOver],
   );
 
   const selectRecommendation = useCallback(
     async (rec: Recommendation) => {
-      if (!brief) return;
+      if (!sessionId) return;
       setBusy(true);
       setError(null);
       setSelected(rec);
@@ -160,14 +229,12 @@ export function Planner() {
         const res = await fetch("/api/plan", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ brief, destinationSlug: rec.destinationSlug }),
+          body: JSON.stringify({ sessionId, destinationSlug: rec.destinationSlug }),
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = (await res.json()) as { itinerary: ItineraryDay[] };
         setItinerary(data.itinerary);
         setStage("itinerary");
-        track("recommendation_selected", { destination: rec.destinationSlug, direction: rec.direction });
-        track("itinerary_viewed", { destination: rec.destinationSlug });
       } catch {
         setError("We couldn't build the itinerary just now. Please try again.");
         setSelected(null);
@@ -175,60 +242,51 @@ export function Planner() {
         setBusy(false);
       }
     },
-    [brief],
+    [sessionId],
   );
 
-  const submitLead = useCallback(
-    async (values: LeadFormValues) => {
-      if (!brief || !selected) return;
+  const compareRecommendations = useCallback(
+    (recs: Recommendation[]) => {
+      void runComparison(recs.map((r) => r.destinationSlug).slice(0, 3));
+    },
+    [runComparison],
+  );
+
+  const submitHandover = useCallback(
+    async (values: HandoverValues) => {
+      if (!sessionId) return;
       setBusy(true);
       setError(null);
       try {
-        const res = await fetch("/api/leads", {
+        const res = await fetch("/api/crm/handover", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Idempotency-Key": idempotencyKey,
-          },
-          body: JSON.stringify({
-            customer: values,
-            brief,
-            recommendations,
-            selected: {
-              conceptId: selected.conceptId,
-              destinationSlug: selected.destinationSlug,
-              direction: selected.direction,
-            },
-            itinerary,
-            transcript: messages,
-          }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sessionId, customer: values }),
         });
-        if (res.status === 429) {
-          setError("Too many attempts in a short time. Please wait a minute and try again.");
+        const data = (await res.json()) as { crmReferenceId?: string; error?: string };
+        if (!res.ok || !data.crmReferenceId) {
+          setError(data.error ?? "The handover didn't complete. Your plan is safe — please try again.");
           return;
         }
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = (await res.json()) as { reference: string };
-        setReference(data.reference);
+        setCrmReference(data.crmReferenceId);
+        window.localStorage.removeItem(SESSION_KEY);
         setStage("submitted");
-        track("lead_submitted", { destination: selected.destinationSlug });
       } catch {
-        track("lead_submission_failed");
-        setError(
-          "We couldn't submit your plan just now. Nothing has been lost — please try again in a moment.",
-        );
+        setError("The handover didn't complete. Your plan is safe in this session — please try again.");
       } finally {
         setBusy(false);
       }
     },
-    [brief, selected, recommendations, itinerary, messages, idempotencyKey],
+    [sessionId],
   );
 
-  // ---------- Render per stage ----------
+  // ---------- Render ----------
 
-  if (stage === "submitted" && reference && selected) {
-    return <SuccessView reference={reference} destinationName={selected.destinationName} />;
+  if (stage === "submitted" && crmReference && selected) {
+    return <HandoverSuccess crmReference={crmReference} destinationName={selected.destinationName} />;
   }
+
+  const showMessages = messages.length > 0 ? messages : [greeting];
 
   return (
     <div>
@@ -242,10 +300,10 @@ export function Planner() {
       {stage === "conversation" ? (
         <section aria-label="Holiday conversation">
           <h1 className="text-2xl font-bold text-brand sm:text-3xl">
-            Tell us about the holiday you have in mind.
+            Tell me about the holiday you have in mind.
           </h1>
           <p className="mt-2 text-sm text-foreground/60">
-            For example: &ldquo;{EXAMPLE}&rdquo;
+            Name a destination — or simply describe how you want the trip to feel.
           </p>
 
           <div
@@ -253,7 +311,7 @@ export function Planner() {
             aria-live="polite"
             className="mt-6 max-h-[45vh] space-y-3 overflow-y-auto rounded-2xl border border-line bg-surface p-4"
           >
-            {messages.map((m, i) => (
+            {showMessages.map((m, i) => (
               <div
                 key={i}
                 className={
@@ -309,14 +367,18 @@ export function Planner() {
             </button>
           </form>
 
-          {ready && brief ? (
-            <div className="mt-6 rounded-2xl bg-success-soft p-4 text-center">
-              <p className="text-sm text-success">Your trip brief is taking shape.</p>
-              <button type="button" className="btn-primary mt-3" onClick={goToBriefReview}>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+            {sessionId ? (
+              <button type="button" className="btn-quiet text-xs" onClick={() => void startOver()}>
+                Start over
+              </button>
+            ) : <span />}
+            {ready && brief ? (
+              <button type="button" className="btn-primary" onClick={() => setStage("brief-review")}>
                 Review My Trip Brief
               </button>
-            </div>
-          ) : null}
+            ) : null}
+          </div>
         </section>
       ) : null}
 
@@ -325,37 +387,67 @@ export function Planner() {
           brief={brief}
           busy={busy}
           onBack={() => setStage("conversation")}
-          onConfirm={(b) => void fetchRecommendations(b)}
+          onConfirm={(b) => void confirmBrief(b)}
         />
       ) : null}
 
-      {stage === "recommendations" ? (
+      {stage === "recommendations" && recResult ? (
         <RecommendationCards
-          recommendations={recommendations}
+          result={recResult}
           busy={busy}
           onBack={() => setStage("brief-review")}
           onSelect={(rec) => void selectRecommendation(rec)}
+          onCompare={compareRecommendations}
         />
+      ) : null}
+
+      {stage === "comparison" && comparison ? (
+        <div>
+          <ComparisonView result={comparison} />
+          <div className="mt-6 flex flex-wrap gap-3">
+            <button
+              type="button"
+              className="btn-secondary"
+              onClick={() => setStage(recResult ? "recommendations" : "conversation")}
+            >
+              ← Back
+            </button>
+            <button
+              type="button"
+              className="btn-primary"
+              disabled={busy}
+              onClick={() => {
+                const winner = recResult?.recommendations.find(
+                  (r) => r.destinationSlug === comparison.finalRecommendationSlug,
+                );
+                if (winner) void selectRecommendation(winner);
+                else if (recResult) setStage("recommendations");
+                else setStage("conversation");
+              }}
+            >
+              Continue with {comparison.finalRecommendationSlug.replace(/-/g, " ")}
+            </button>
+          </div>
+        </div>
       ) : null}
 
       {stage === "itinerary" && selected ? (
         <ItineraryView
           destinationName={selected.destinationName}
           itinerary={itinerary}
+          crmEnabled={crmEnabled}
+          production={production}
           onBack={() => setStage("recommendations")}
-          onContinue={() => {
-            setStage("lead-capture");
-            track("lead_form_started");
-          }}
+          onContinue={() => setStage("handover")}
         />
       ) : null}
 
-      {stage === "lead-capture" && selected ? (
-        <LeadForm
+      {stage === "handover" && selected ? (
+        <HandoverForm
           destinationName={selected.destinationName}
           busy={busy}
           onBack={() => setStage("itinerary")}
-          onSubmit={(values) => void submitLead(values)}
+          onSubmit={(values) => void submitHandover(values)}
         />
       ) : null}
     </div>
@@ -367,11 +459,12 @@ const STAGE_LABELS: Array<{ key: Stage; label: string }> = [
   { key: "brief-review", label: "Trip brief" },
   { key: "recommendations", label: "Directions" },
   { key: "itinerary", label: "Itinerary" },
-  { key: "lead-capture", label: "Handover" },
+  { key: "handover", label: "Klar expert" },
 ];
 
 function StageIndicator({ stage }: { stage: Stage }) {
-  const activeIndex = STAGE_LABELS.findIndex((s) => s.key === stage);
+  const effective = stage === "comparison" ? "recommendations" : stage;
+  const activeIndex = STAGE_LABELS.findIndex((s) => s.key === effective);
   return (
     <nav aria-label="Planning progress" className="mb-8">
       <ol className="flex flex-wrap items-center gap-2 text-xs">
