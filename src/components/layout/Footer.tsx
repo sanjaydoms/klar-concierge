@@ -6,7 +6,9 @@ export function Footer() {
     <footer className="mt-16 border-t border-line bg-surface print:hidden">
       <div className="mx-auto flex max-w-content flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-3">
-          <KlarLogo height={26} />
+          <Link href="/" className="inline-block" aria-label="Klar Travels home">
+            <KlarLogo height={32} />
+          </Link>
           <p className="max-w-md text-sm text-foreground/70">
             Intelligent holiday planning, with real Klar expertise when you need it.
           </p>
