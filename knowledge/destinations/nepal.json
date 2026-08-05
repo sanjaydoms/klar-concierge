@@ -1,0 +1,269 @@
+{
+  "slug": "nepal",
+  "name": "Nepal",
+  "countryIso2": "NP",
+  "countryName": "Nepal",
+  "region": "South Asia",
+  "summary": "Everest views without climbing, Pokhara's lakeside calm, Kathmandu's living temples and some of Earth's best trekking — the Himalaya next door.",
+  "positioningLine": "The Himalaya next door — epic views, easy visas, gentle prices.",
+  "idealTraveller": "Mountain lovers, trekkers and culture seekers on any budget.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "relaxed",
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 95,
+    "adventure": 92,
+    "culture": 85,
+    "history": 78,
+    "wildlife": 65,
+    "relaxation": 60,
+    "food": 65,
+    "romance": 60,
+    "snow": 70,
+    "city": 50,
+    "shopping": 50,
+    "nightlife": 40,
+    "beach": 0,
+    "themeparks": 5
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 55,
+    "children5To10": 68,
+    "teenagers": 82,
+    "seniors": 62,
+    "honeymoon": 72,
+    "solo": 90,
+    "firstInternationalTrip": 85
+  },
+  "food": {
+    "vegetarianFriendly": 90,
+    "indianFoodAvailability": 92,
+    "halalFriendly": 60,
+    "localCuisineScore": 80,
+    "streetFoodScore": 72,
+    "fineDiningScore": 55
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 2,
+    "walkingIntensity": "high",
+    "publicTransportEase": 35,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 40,
+    "medicalAccessScore": 55
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "mountain",
+    "monsoon-jun-sep",
+    "clear-autumn"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Rhododendron bloom on the trails"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon — mountains hidden, trails leech-prone"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon continues; domestic flights disrupted"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Crystal Himalayan visibility — the classic trekking window"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Kathmandu + Pokhara",
+    "Kathmandu + Chitwan safari",
+    "Short Annapurna treks"
+  ],
+  "commonMistakes": [
+    "Expecting to see Everest from Kathmandu — take the mountain flight or go to viewpoints",
+    "Underestimating road journey times"
+  ],
+  "packingConsiderations": [
+    "Layers — valley warm, viewpoints cold",
+    "Sturdy walking shoes",
+    "Motion-sickness tablets for hill roads"
+  ],
+  "practicalWarnings": [
+    "Domestic mountain flights are weather-dependent — build buffer days"
+  ],
+  "tradeOffs": [
+    "Infrastructure is basic outside main hubs",
+    "Monsoon months hide the mountains entirely"
+  ],
+  "whoShouldAvoid": [
+    "Travellers needing step-free access or luxury polish throughout"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-nepal-tourism-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Nepal Tourism Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

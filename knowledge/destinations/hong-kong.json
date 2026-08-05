@@ -1,0 +1,268 @@
+{
+  "slug": "hong-kong",
+  "name": "Hong Kong",
+  "countryIso2": "HK",
+  "countryName": "Hong Kong",
+  "region": "East Asia",
+  "summary": "Skyline drama over Victoria Harbour, Disneyland, dim sum and mountain trams — a dense, thrilling city break that families and foodies both love.",
+  "positioningLine": "Vertical city energy with Disney magic and dim sum.",
+  "idealTraveller": "City-break families and food lovers who want maximum spectacle in few days.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 6,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "city": 95,
+    "food": 90,
+    "shopping": 90,
+    "themeparks": 85,
+    "culture": 70,
+    "nightlife": 78,
+    "history": 60,
+    "nature": 60,
+    "relaxation": 45,
+    "romance": 65,
+    "adventure": 55,
+    "beach": 35,
+    "wildlife": 25,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 85,
+    "toddlers": 75,
+    "children5To10": 88,
+    "teenagers": 88,
+    "seniors": 75,
+    "honeymoon": 70,
+    "solo": 85,
+    "firstInternationalTrip": 80
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 70,
+    "halalFriendly": 55,
+    "localCuisineScore": 95,
+    "streetFoodScore": 92,
+    "fineDiningScore": 95
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 6,
+    "walkingIntensity": "high",
+    "publicTransportEase": 96,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 85,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "subtropical",
+    "humid-summer",
+    "typhoon-season-jul-sep"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Hot, humid and stormy"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Typhoon season — outdoor plans need backups"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Clear, dry hiking and harbour weather — the city's best month"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Winter light shows over the harbour"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Hong Kong + Macau",
+    "Hong Kong + Disneyland day",
+    "Hong Kong stopover"
+  ],
+  "commonMistakes": [
+    "Cramming Disneyland and the Peak into one day",
+    "Skipping the islands and trails entirely"
+  ],
+  "packingConsiderations": [
+    "Comfortable shoes for steep streets",
+    "Compact umbrella",
+    "A layer for icy indoor air-conditioning"
+  ],
+  "practicalWarnings": [
+    "Octopus card makes all transport effortless — get one on arrival"
+  ],
+  "tradeOffs": [
+    "Dense and fast-paced — not a resort-style rest",
+    "Hotel rooms are famously compact"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting space, calm and beach mornings"
+  ],
+  "confidence": 84,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-hong-kong-tourism-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Hong Kong Tourism Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

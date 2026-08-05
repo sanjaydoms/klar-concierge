@@ -26,8 +26,8 @@ export const config = {
 
   analyticsProvider: process.env.ANALYTICS_PROVIDER ?? "none",
 
-  rateLimitChatPerMinute: int(process.env.RATE_LIMIT_CHAT_PER_MINUTE, 20),
-  rateLimitPlanPerMinute: int(process.env.RATE_LIMIT_PLAN_PER_MINUTE, 10),
+  rateLimitChatPerMinute: int(process.env.RATE_LIMIT_CHAT_PER_MINUTE, 30),
+  rateLimitPlanPerMinute: int(process.env.RATE_LIMIT_PLAN_PER_MINUTE, 30),
   rateLimitCrmPerMinute: int(process.env.RATE_LIMIT_CRM_PER_MINUTE, 5),
 
   logLevel: process.env.LOG_LEVEL ?? "info",

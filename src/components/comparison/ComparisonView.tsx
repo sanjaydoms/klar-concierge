@@ -17,7 +17,35 @@ export function ComparisonView({ result }: { result: ComparisonResult }) {
         {result.decisionSummary}
       </p>
 
-      <div className="mt-6 overflow-x-auto rounded-2xl border border-line bg-surface">
+      {/* Mobile: stacked dimension cards — every value visible, nothing cut off */}
+      <div className="mt-6 space-y-3 sm:hidden">
+        {result.dimensions.map((dim) => (
+          <div key={dim.key} className="rounded-2xl border border-line bg-surface p-4">
+            <p className="text-sm font-semibold text-brand">{dim.label}</p>
+            <dl className="mt-2 space-y-1.5">
+              {result.slugs.map((s) => (
+                <div
+                  key={s}
+                  className={
+                    dim.winnerSlug === s
+                      ? "flex items-baseline justify-between gap-3 rounded-lg bg-success-soft px-2.5 py-1.5 text-sm font-medium text-success"
+                      : "flex items-baseline justify-between gap-3 px-2.5 py-1.5 text-sm text-foreground/70"
+                  }
+                >
+                  <dt>{pretty(s)}</dt>
+                  <dd className="text-right">
+                    {dim.values[s]}
+                    {dim.winnerSlug === s ? <span aria-hidden> ✓</span> : null}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop/tablet: side-by-side table */}
+      <div className="mt-6 hidden overflow-x-auto rounded-2xl border border-line bg-surface sm:block">
         <table className="w-full min-w-[560px] text-left text-sm">
           <thead className="border-b border-line text-xs uppercase tracking-wide text-foreground/55">
             <tr>

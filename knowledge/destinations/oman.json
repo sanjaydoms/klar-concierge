@@ -1,0 +1,268 @@
+{
+  "slug": "oman",
+  "name": "Oman",
+  "countryIso2": "OM",
+  "countryName": "Oman",
+  "region": "Middle East",
+  "summary": "Wadis of turquoise water, dune camps under the Milky Way, forts and a gracious capital — Arabia's most authentic, uncrowded escape.",
+  "positioningLine": "Authentic Arabia — wadis, dunes and genuine welcome.",
+  "idealTraveller": "Couples and families who want Gulf ease without Gulf glitz.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "nature": 88,
+    "adventure": 82,
+    "culture": 80,
+    "history": 75,
+    "beach": 70,
+    "relaxation": 75,
+    "romance": 78,
+    "food": 65,
+    "wildlife": 55,
+    "city": 55,
+    "shopping": 50,
+    "nightlife": 25,
+    "themeparks": 10,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 82,
+    "toddlers": 70,
+    "children5To10": 82,
+    "teenagers": 82,
+    "seniors": 75,
+    "honeymoon": 85,
+    "solo": 72,
+    "firstInternationalTrip": 78
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 90,
+    "halalFriendly": 98,
+    "localCuisineScore": 75,
+    "streetFoodScore": 55,
+    "fineDiningScore": 75
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 3,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 35,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 65,
+    "medicalAccessScore": 80
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "desert",
+    "mild-winter",
+    "khareef-monsoon-south"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat away from the Salalah monsoon belt"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Khareef season turns Salalah green (regional exception)"
+      ],
+      "warnings": [
+        "Muscat is very hot; Salalah is the summer story"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Perfect wadi-swimming and desert-camp weather"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Muscat + Wahiba Sands + Nizwa",
+    "Oman + Dubai",
+    "Salalah khareef escape"
+  ],
+  "commonMistakes": [
+    "Day-tripping the desert — the overnight camp is the magic",
+    "Skipping travel insurance for wadi and dune driving"
+  ],
+  "packingConsiderations": [
+    "Modest, breathable clothing",
+    "Water shoes for wadis",
+    "A warm layer for desert nights"
+  ],
+  "practicalWarnings": [
+    "Wadi swimming depends on flash-flood conditions — heed local advice"
+  ],
+  "tradeOffs": [
+    "Self-drive or private driver is near-essential",
+    "Quiet evenings — nightlife is minimal"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting buzzing city nights and malls-first holidays"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-experience-oman",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Experience Oman",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

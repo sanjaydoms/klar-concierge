@@ -64,8 +64,15 @@ test.describe("planner journey (CRM disabled)", () => {
     await page.locator("#cmp-month").selectOption("10");
     await page.getByRole("button", { name: "Compare", exact: true }).click();
     await expect(page.getByRole("heading", { name: /Japan vs South Korea/i })).toBeVisible({ timeout: 20_000 });
-    await expect(page.getByRole("cell", { name: /Season in October/i })).toBeVisible();
-    await expect(page.getByRole("cell", { name: /Flight fatigue/i })).toBeVisible();
+    // Mobile shows stacked dimension cards; larger screens show the table.
+    const isMobile = (page.viewportSize()?.width ?? 1280) < 640;
+    if (isMobile) {
+      await expect(page.getByText(/Season in October/i).first()).toBeVisible();
+      await expect(page.getByText(/Flight fatigue/i).first()).toBeVisible();
+    } else {
+      await expect(page.getByRole("cell", { name: /Season in October/i })).toBeVisible();
+      await expect(page.getByRole("cell", { name: /Flight fatigue/i })).toBeVisible();
+    }
   });
 });
 

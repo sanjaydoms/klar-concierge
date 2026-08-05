@@ -1,0 +1,267 @@
+{
+  "slug": "united-kingdom",
+  "name": "United Kingdom",
+  "countryIso2": "GB",
+  "countryName": "United Kingdom",
+  "region": "Europe",
+  "summary": "London's palaces, museums and West End, plus Stonehenge, the Cotswolds and Edinburgh's castle skyline — the classic that never stops delivering.",
+  "positioningLine": "London and beyond — pageantry, museums and green hills.",
+  "idealTraveller": "First big-Europe trips, families and culture lovers with mixed interests.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 14,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "city": 92,
+    "history": 92,
+    "culture": 90,
+    "shopping": 88,
+    "food": 75,
+    "themeparks": 55,
+    "nature": 60,
+    "romance": 75,
+    "nightlife": 75,
+    "relaxation": 50,
+    "adventure": 40,
+    "wildlife": 25,
+    "beach": 15,
+    "snow": 15
+  },
+  "suitability": {
+    "family": 85,
+    "toddlers": 72,
+    "children5To10": 85,
+    "teenagers": 90,
+    "seniors": 80,
+    "honeymoon": 78,
+    "solo": 88,
+    "firstInternationalTrip": 70
+  },
+  "food": {
+    "vegetarianFriendly": 85,
+    "indianFoodAvailability": 95,
+    "halalFriendly": 85,
+    "localCuisineScore": 78,
+    "streetFoodScore": 75,
+    "fineDiningScore": 92
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 9.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 92,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 80,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "temperate-oceanic",
+    "changeable",
+    "mild"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Short, grey days"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Long golden evenings; parks and pageantry at their best"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Peak crowds at headline sights; book ahead"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Christmas lights, markets and West End season"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "London + Windsor/Stonehenge days",
+    "London + Edinburgh by train",
+    "UK + Paris by Eurostar"
+  ],
+  "commonMistakes": [
+    "Planning around perfect weather — carry a layer and go regardless",
+    "Not pre-booking the Eye, Tower and shows"
+  ],
+  "packingConsiderations": [
+    "Rain-ready layers in every season",
+    "Very comfortable walking shoes",
+    "Smart-casual for shows and dining"
+  ],
+  "practicalWarnings": [
+    "Contactless cards tap straight onto all London transport"
+  ],
+  "tradeOffs": [
+    "Among Europe's priciest cities",
+    "Weather is famously unpredictable"
+  ],
+  "whoShouldAvoid": [
+    "Sunshine-guarantee seekers"
+  ],
+  "confidence": 84,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-visitbritain",
+      "sourceType": "official-tourism-board",
+      "sourceName": "VisitBritain",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

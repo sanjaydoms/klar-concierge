@@ -13,8 +13,8 @@ All variables are optional — the full decision engine runs with none set.
 | CRM_WEBHOOK_URL / CRM_WEBHOOK_TOKEN | — | Required only when provider=webhook |
 | CRM_TIMEOUT_MS | 8000 | Webhook timeout |
 | ANALYTICS_PROVIDER | none | none \| console |
-| RATE_LIMIT_CHAT_PER_MINUTE | 20 | Per-client chat limit |
-| RATE_LIMIT_PLAN_PER_MINUTE | 10 | Per-client plan/compare limit |
+| RATE_LIMIT_CHAT_PER_MINUTE | 30 | Per-client chat limit |
+| RATE_LIMIT_PLAN_PER_MINUTE | 30 | Per-client plan/compare limit (shared IPs behind office NAT need headroom) |
 | RATE_LIMIT_CRM_PER_MINUTE | 5 | Per-client handover limit |
 | LOG_LEVEL | info | Log verbosity |
 

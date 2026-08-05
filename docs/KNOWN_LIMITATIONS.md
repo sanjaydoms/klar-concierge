@@ -1,7 +1,7 @@
 # Known Limitations (honest)
 
-1. **Knowledge depth is 30 destinations, not the world.** The 196-country
-   registry is skeletal by design; only the 30 Tier-1 destinations are
+1. **Knowledge depth is 40 destinations, not the world.** The 196-country
+   registry is skeletal by design; only the 40 Tier-1 destinations are
    recommendation-eligible. "Where should I go?" answers are excellent within
    that pack and honestly limited outside it.
 2. **Seed verification is editorial, not operational.** Records were compiled

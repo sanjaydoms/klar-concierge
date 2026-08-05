@@ -3,7 +3,10 @@ import { defineConfig, devices } from "@playwright/test";
 export default defineConfig({
   testDir: "tests/e2e",
   timeout: 60_000,
-  retries: 1,
+  retries: 2,
+  // Two workers keep the suite honest without starving the app server in
+  // small CI containers (interactive tests are sensitive to CPU contention).
+  workers: 2,
   reporter: [["list"]],
   use: {
     baseURL: "http://localhost:3002",

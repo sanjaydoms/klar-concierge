@@ -2,7 +2,7 @@
 
 ## Automated (all green at release)
 - `npm run typecheck` — strict TypeScript, zero errors.
-- `npm run test` — 58 Vitest tests: extraction (v2 fields, intents),
+- `npm run test` — 62 Vitest tests: extraction (v2 fields, intents),
   recommendation scoring/exclusions/three-direction honesty, comparison
   determinism, itinerary feasibility and safety, knowledge invariants and
   eligibility gate, privacy/CRM truthfulness, and an integration suite for

@@ -467,7 +467,7 @@ function StageIndicator({ stage }: { stage: Stage }) {
   const activeIndex = STAGE_LABELS.findIndex((s) => s.key === effective);
   return (
     <nav aria-label="Planning progress" className="mb-8">
-      <ol className="flex flex-wrap items-center gap-2 text-xs">
+      <ol className="flex flex-wrap items-center gap-1.5 text-xs sm:gap-2">
         {STAGE_LABELS.map((s, i) => (
           <li key={s.key} className="flex items-center gap-2">
             <span
@@ -483,7 +483,7 @@ function StageIndicator({ stage }: { stage: Stage }) {
               {s.label}
             </span>
             {i < STAGE_LABELS.length - 1 ? (
-              <span aria-hidden className="text-foreground/30">→</span>
+              <span aria-hidden className="hidden text-foreground/30 sm:inline">→</span>
             ) : null}
           </li>
         ))}

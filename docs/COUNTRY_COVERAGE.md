@@ -4,7 +4,7 @@
   `world-countries` dataset (name, ISO codes, region, subregion, currencies,
   languages). Status `skeleton`; unknown fields are absent, not invented.
   Skeleton countries are **never recommendation-eligible**.
-- **Reviewed overlays:** countries hosting Tier-1 destinations (currently 25)
+- **Reviewed overlays:** countries hosting Tier-1 destinations (currently 35)
   carry aggregated traveller-fit, practicality and food blocks derived from
   their reviewed destination records, status `reviewed`.
 - Regeneration: `npm run knowledge:generate` (authoring sources) →

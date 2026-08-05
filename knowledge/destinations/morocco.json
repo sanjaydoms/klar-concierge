@@ -1,0 +1,269 @@
+{
+  "slug": "morocco",
+  "name": "Morocco",
+  "countryIso2": "MA",
+  "countryName": "Morocco",
+  "region": "North Africa",
+  "summary": "Marrakech's drum-beating square, blue Chefchaouen, Sahara camel camps and riad courtyards — a sensory kaleidoscope three continents seem to share.",
+  "positioningLine": "A sensory kaleidoscope — souks, Sahara and blue cities.",
+  "idealTraveller": "Colour-and-culture chasers comfortable with delightful chaos.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "culture": 95,
+    "history": 85,
+    "adventure": 80,
+    "shopping": 85,
+    "food": 82,
+    "romance": 80,
+    "nature": 70,
+    "relaxation": 55,
+    "city": 70,
+    "nightlife": 45,
+    "beach": 45,
+    "wildlife": 20,
+    "themeparks": 0,
+    "snow": 20
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 55,
+    "children5To10": 70,
+    "teenagers": 82,
+    "seniors": 65,
+    "honeymoon": 85,
+    "solo": 75,
+    "firstInternationalTrip": 65
+  },
+  "food": {
+    "vegetarianFriendly": 72,
+    "indianFoodAvailability": 40,
+    "halalFriendly": 98,
+    "localCuisineScore": 90,
+    "streetFoodScore": 85,
+    "fineDiningScore": 80
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 10,
+    "walkingIntensity": "high",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mediterranean-north",
+    "desert-south",
+    "hot-summer-interior"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Perfect medina-and-mountains weather; roses bloom in the valleys"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Marrakech regularly exceeds 40°C"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Interior heat peaks; coastal cities stay pleasant"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Warm days, cool Sahara nights — ideal desert-camp season"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Marrakech + Sahara circuit",
+    "Marrakech + Fes + Chefchaouen",
+    "Morocco + Spain"
+  ],
+  "commonMistakes": [
+    "Underestimating Marrakech–Merzouga drive times (two long days)",
+    "Souk navigation without a landmark strategy"
+  ],
+  "packingConsiderations": [
+    "Modest layered clothing",
+    "Scarf for sun and sand",
+    "Warm layer — desert nights get genuinely cold"
+  ],
+  "practicalWarnings": [
+    "Agree taxi fares or insist on meters; haggling in souks is expected and good-natured"
+  ],
+  "tradeOffs": [
+    "Long road days link the highlights",
+    "Sensory intensity isn't for everyone"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who dislike haggling and busy medina energy"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-moroccan-national-tourist-office",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Moroccan National Tourist Office",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

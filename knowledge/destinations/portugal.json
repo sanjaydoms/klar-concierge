@@ -1,0 +1,268 @@
+{
+  "slug": "portugal",
+  "name": "Portugal",
+  "countryIso2": "PT",
+  "countryName": "Portugal",
+  "region": "Europe",
+  "summary": "Lisbon's tiled hills and tram bells, Porto's port cellars, golden Algarve cliffs and Europe's friendliest prices for this much charm.",
+  "positioningLine": "Europe's sunniest charm-per-euro champion.",
+  "idealTraveller": "First-time and repeat Europe travellers who want charm, coast and value together.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "culture": 88,
+    "food": 88,
+    "history": 85,
+    "city": 82,
+    "beach": 78,
+    "romance": 85,
+    "relaxation": 70,
+    "nature": 65,
+    "shopping": 65,
+    "nightlife": 70,
+    "adventure": 55,
+    "wildlife": 25,
+    "themeparks": 20,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 68,
+    "children5To10": 78,
+    "teenagers": 82,
+    "seniors": 78,
+    "honeymoon": 88,
+    "solo": 85,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 65,
+    "indianFoodAvailability": 60,
+    "halalFriendly": 50,
+    "localCuisineScore": 90,
+    "streetFoodScore": 70,
+    "fineDiningScore": 88
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 10.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 80,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 60,
+    "medicalAccessScore": 88
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "mediterranean-atlantic",
+    "mild-winter",
+    "dry-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Atlantic rain spells; still mild"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Santos Populares street festivals fill Lisbon (verify dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Algarve at peak crowd and price"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Warm seas, harvest season in the Douro"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Lisbon + Porto",
+    "Lisbon + Sintra + Algarve",
+    "Portugal + Spain"
+  ],
+  "commonMistakes": [
+    "Driving in Lisbon's old town — walk, tram and metro instead",
+    "Skipping Sintra or cramming it into a half day"
+  ],
+  "packingConsiderations": [
+    "Cobblestone-and-hill-proof shoes",
+    "Light layers — Atlantic evenings cool fast",
+    "Sun protection"
+  ],
+  "practicalWarnings": [
+    "Lisbon's hills are steep — trams and funiculars are your friends"
+  ],
+  "tradeOffs": [
+    "Long flights with connections from India",
+    "Peak-summer Algarve is crowded"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting short-haul convenience"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-visit-portugal",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Visit Portugal",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

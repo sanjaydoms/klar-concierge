@@ -1,0 +1,268 @@
+{
+  "slug": "kenya",
+  "name": "Kenya",
+  "countryIso2": "KE",
+  "countryName": "Kenya",
+  "region": "Africa",
+  "summary": "The Masai Mara's great migration, elephants beneath Kilimanjaro at Amboseli and Indian Ocean beaches at Diani — safari's beating heart.",
+  "positioningLine": "The classic safari — the Mara, up close.",
+  "idealTraveller": "Wildlife dreamers ready for early mornings and open-roof wonder.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "wildlife": 100,
+    "nature": 95,
+    "adventure": 85,
+    "romance": 78,
+    "relaxation": 55,
+    "culture": 65,
+    "beach": 60,
+    "food": 60,
+    "city": 40,
+    "history": 45,
+    "shopping": 35,
+    "nightlife": 35,
+    "themeparks": 0,
+    "snow": 5
+  },
+  "suitability": {
+    "family": 75,
+    "toddlers": 50,
+    "children5To10": 78,
+    "teenagers": 88,
+    "seniors": 70,
+    "honeymoon": 88,
+    "solo": 70,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 80,
+    "halalFriendly": 70,
+    "localCuisineScore": 72,
+    "streetFoodScore": 55,
+    "fineDiningScore": 75
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 6.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 30,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "equatorial-highland",
+    "two-rain-seasons",
+    "dry-jul-oct"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Calving season and superb predator action"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Long rains — some camps close, roads challenging"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 95,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Great migration river crossings in the Mara (timing varies — verify)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "mild",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Short rains; afternoon storms"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Masai Mara + Amboseli",
+    "Safari + Diani Beach",
+    "Kenya + Tanzania"
+  ],
+  "commonMistakes": [
+    "Two-night safari sprints — three nights per park minimum",
+    "Expecting guaranteed migration crossings on fixed dates"
+  ],
+  "packingConsiderations": [
+    "Neutral-coloured layers (cold dawns, warm middays)",
+    "Binoculars per person",
+    "Soft duffel bags for light aircraft"
+  ],
+  "practicalWarnings": [
+    "Yellow-fever and malaria precautions apply — confirm medical requirements with your doctor and Klar expert"
+  ],
+  "tradeOffs": [
+    "Safari pricing is premium by nature",
+    "Long, bumpy park transfers between reserves"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who dislike early starts and rustic remoteness"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-magical-kenya",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Magical Kenya",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

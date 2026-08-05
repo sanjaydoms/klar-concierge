@@ -13,7 +13,7 @@ export function KlarLogo({ height = 36, priority = false }: { height?: number; p
       width={width}
       height={height}
       priority={priority}
-      style={{ height, width: "auto" }}
+      style={{ height, width: "auto", alignSelf: "flex-start", flexShrink: 0 }}
     />
   );
 }

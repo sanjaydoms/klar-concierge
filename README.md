@@ -23,7 +23,7 @@ is never persisted here — it travels to the CRM at handover only.
 
 - Next.js (App Router) + TypeScript + Tailwind — no database required
 - KTIE knowledge base: Git-managed JSON under `knowledge/` (196 countries,
-  30 deep destinations, 180 structured attractions), compiled and validated
+  40 deep destinations, 240 structured attractions), compiled and validated
   by scripts
 - Deterministic recommendation, comparison and itinerary engines —
   AI (optional OpenAI) only interprets the traveller, never ranks destinations
@@ -45,7 +45,7 @@ See `.env.example` for optional AI, session-TTL and CRM configuration.
 
 ```bash
 npm run typecheck
-npm run test                # 58 unit + integration tests
+npm run test                # 62 unit + integration tests
 npm run knowledge:validate
 npm run knowledge:coverage
 npm run knowledge:staleness

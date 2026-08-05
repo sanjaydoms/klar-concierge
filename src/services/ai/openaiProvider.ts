@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { AIProvider, BriefExtractionInput, BriefExtractionOutput, FollowUpInput } from "./types";
+import type { AIProvider, BriefExtractionInput, BriefExtractionOutput, FollowUpInput, ReplyFacts } from "./types";
 import { FallbackAIProvider } from "./fallbackExtractor";
 
 const patchSchema = z.object({
@@ -36,7 +36,8 @@ const patchSchema = z.object({
     .partial(),
   detectedIntent: z.enum([
     "plan-holiday", "refine-preferences", "answer-follow-up",
-    "compare-destinations", "undecided", "out-of-scope", "unknown",
+    "compare-destinations", "destination-info", "best-time",
+    "undecided", "out-of-scope", "unknown",
   ]),
   confidence: z.number().min(0).max(1),
 });
@@ -98,6 +99,7 @@ export class OpenAIProvider implements AIProvider {
           deterministic.detectedIntent === "compare-destinations" || deterministic.detectedIntent === "out-of-scope"
             ? deterministic.detectedIntent
             : parsed.detectedIntent,
+        mentionedSlugs: deterministic.mentionedSlugs,
         comparisonSlugs: deterministic.comparisonSlugs,
         confidence: parsed.confidence,
       };
@@ -109,5 +111,43 @@ export class OpenAIProvider implements AIProvider {
   async composeFollowUp(input: FollowUpInput): Promise<string> {
     // A single follow-up question is deterministic — no AI round-trip needed.
     return this.fallback.composeFollowUp(input);
+  }
+
+  /**
+   * Rephrase the deterministic reply naturally. Strictly grounded: the model
+   * may only reword the provided facts, never add destinations, prices,
+   * visa claims or availability. Falls back to the deterministic text.
+   */
+  async polishReply(facts: ReplyFacts): Promise<string> {
+    try {
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${this.apiKey}`,
+        },
+        body: JSON.stringify({
+          model: this.model,
+          messages: [
+            {
+              role: "system",
+              content:
+                "You are Klar Concierge, a warm, concise holiday-planning assistant. Rewrite the given reply naturally in 1-3 short sentences (keep any question at the end). STRICT RULES: use ONLY the facts provided; never add destinations, prices, availability, bookings or visa claims; never remove the question; no emojis; no marketing fluff.",
+            },
+            { role: "user", content: JSON.stringify(facts) },
+          ],
+          max_tokens: 220,
+        }),
+        signal: AbortSignal.timeout(8_000),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = (await response.json()) as { choices?: Array<{ message?: { content?: string } }> };
+      const text = data.choices?.[0]?.message?.content?.trim();
+      // Guardrails: sane length and no obviously ungrounded additions.
+      if (!text || text.length < 10 || text.length > 600) throw new Error("bad polish");
+      return text;
+    } catch {
+      return facts.deterministicReply;
+    }
   }
 }

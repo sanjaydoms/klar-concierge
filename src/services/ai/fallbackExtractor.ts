@@ -242,6 +242,16 @@ function detectIntent(text: string, patch: Partial<TravelBrief>, mentions: strin
   if ((/\bor\b/.test(lower) || /\b(vs|versus|compare|better)\b/.test(lower)) && mentions.length >= 2) {
     return "compare-destinations";
   }
+  if (mentions.length === 1 && /\bbest (time|month|season|weather)\b|\bwhen (should|to|is)\b/.test(lower)) {
+    return "best-time";
+  }
+  if (
+    mentions.length === 1 &&
+    /\b(tell me about|what'?s .{0,30}like|how is|is it worth|about)\b|\bis \w[\w\s]* (good|nice|safe|worth)\b|\?/.test(lower) &&
+    !patch.durationNights && !patch.travellerType
+  ) {
+    return "destination-info";
+  }
   if (/\b(no idea|not sure|don'?t know|undecided|anywhere|surprise me|you decide|suggest something)\b/.test(lower)) {
     return "undecided";
   }
@@ -324,6 +334,7 @@ export class FallbackAIProvider implements AIProvider {
     return {
       briefPatch,
       detectedIntent,
+      mentionedSlugs: mentioned,
       comparisonSlugs: detectedIntent === "compare-destinations" ? mentioned.slice(0, 3) : [],
       confidence: Math.min(0.9, 0.3 + fieldsFound * 0.1),
     };

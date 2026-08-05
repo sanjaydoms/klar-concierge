@@ -1,5 +1,34 @@
 # Release Notes
 
+## 2.1.0 — QC hardening, smarter conversation, knowledge expansion (2026-08-05)
+
+### Mobile QC (instrumented audit at 320/375/390/430px + visual review)
+- Fixed footer logo distortion (flex-stretch was deforming the official mark)
+- Comparison results now render as stacked per-dimension cards on phones —
+  previously the winner column could sit off-screen behind an unhinted scroll
+- Stage indicator no longer wraps with dangling arrows on small screens
+- Destination country stacks under the name on narrow cards
+- Raised default chat/plan rate limits (30/min) — shared office/CGNAT IPs
+  could previously trip 429s during normal comparison use
+
+### Conversation intelligence
+- Rich acknowledgements: the assistant now reflects back everything it
+  understood ("So far I have: a family holiday, 7 nights, in December…")
+- Direct destination Q&A from KTIE ("Tell me about Bali?") with season,
+  child/senior fit and an honest trade-off — always ending in a next step
+- Best-time answers ("When should I visit the Maldives?") with strongest and
+  riskiest months
+- Grounded seasonal shortlists for undecided travellers with a month in mind
+- Optional OpenAI reply polishing (strictly grounded in engine facts; always
+  degrades to the deterministic reply)
+
+### Knowledge expansion
+- +10 Tier-1 destinations: Hong Kong, Nepal, Bhutan, Oman, Qatar, Cambodia,
+  Kenya, Morocco, Portugal, United Kingdom — now 40 destinations and 240
+  structured attractions, all passing the eligibility gate
+- 4 new conversation unit tests (62 total); e2e stabilised at 12/12 across
+  repeated runs
+
 ## 2.0.0 — Final decision-engine release (2026-08-05)
 
 A ground-up correction of the repository against the final product

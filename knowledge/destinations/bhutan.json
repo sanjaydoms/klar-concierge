@@ -1,0 +1,267 @@
+{
+  "slug": "bhutan",
+  "name": "Bhutan",
+  "countryIso2": "BT",
+  "countryName": "Bhutan",
+  "region": "South Asia",
+  "summary": "Cliffside monasteries, prayer flags over pine valleys and a kingdom that measures happiness — travel's most serene bucket-list stamp.",
+  "positioningLine": "The happiness kingdom — serene, sacred, unforgettable.",
+  "idealTraveller": "Seekers of calm, culture and mountain beauty who value depth over checklists.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "culture": 95,
+    "nature": 92,
+    "history": 85,
+    "relaxation": 85,
+    "adventure": 70,
+    "romance": 75,
+    "wildlife": 45,
+    "food": 60,
+    "snow": 40,
+    "city": 25,
+    "shopping": 30,
+    "nightlife": 10,
+    "beach": 0,
+    "themeparks": 0
+  },
+  "suitability": {
+    "family": 68,
+    "toddlers": 55,
+    "children5To10": 65,
+    "teenagers": 75,
+    "seniors": 70,
+    "honeymoon": 85,
+    "solo": 78,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 85,
+    "indianFoodAvailability": 85,
+    "halalFriendly": 45,
+    "localCuisineScore": 72,
+    "streetFoodScore": 45,
+    "fineDiningScore": 60
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 2.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 30,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 55
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mountain",
+    "monsoon-jun-aug",
+    "clear-spring-autumn"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "High passes cold; some hotels minimally heated"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Paro Tshechu festival season and valley blossoms (verify dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon clouds hide the Himalaya"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Thimphu Tshechu and flawless mountain skies (verify dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Paro + Thimphu + Punakha",
+    "Bhutan + Nepal"
+  ],
+  "commonMistakes": [
+    "Attempting Tiger's Nest on arrival day before acclimatising",
+    "Over-packing the itinerary — Bhutan rewards slowness"
+  ],
+  "packingConsiderations": [
+    "Modest layers for dzongs and temples",
+    "Broken-in walking shoes for the Tiger's Nest climb",
+    "Warm evening layers year-round"
+  ],
+  "practicalWarnings": [
+    "Sustainable Development Fee and guided-travel rules apply — your Klar expert will confirm current requirements"
+  ],
+  "tradeOffs": [
+    "Daily tourism fees make it a premium trip",
+    "Winding mountain roads between valleys"
+  ],
+  "whoShouldAvoid": [
+    "Nightlife seekers and tight-budget travellers"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-department-of-tourism-bhutan",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Department of Tourism, Bhutan",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

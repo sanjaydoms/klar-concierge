@@ -1,0 +1,268 @@
+{
+  "slug": "cambodia",
+  "name": "Cambodia",
+  "countryIso2": "KH",
+  "countryName": "Cambodia",
+  "region": "Southeast Asia",
+  "summary": "Angkor Wat's sunrise silhouette, floating villages and a gentle, resilient culture — one of travel's great wonders at everyday prices.",
+  "positioningLine": "Angkor's temples — the wonder that exceeds the hype.",
+  "idealTraveller": "Culture and history lovers pairing a wonder-of-the-world with easy value.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "history": 95,
+    "culture": 92,
+    "nature": 65,
+    "food": 70,
+    "adventure": 60,
+    "relaxation": 60,
+    "romance": 70,
+    "wildlife": 45,
+    "city": 45,
+    "shopping": 45,
+    "nightlife": 55,
+    "beach": 40,
+    "themeparks": 5,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 72,
+    "toddlers": 58,
+    "children5To10": 72,
+    "teenagers": 80,
+    "seniors": 68,
+    "honeymoon": 78,
+    "solo": 88,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 50,
+    "localCuisineScore": 82,
+    "streetFoodScore": 80,
+    "fineDiningScore": 65
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 5.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 40,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 55
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "tropical",
+    "monsoon-may-oct",
+    "hot-all-year"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "April is the hottest month — dawn starts essential"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 52,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 52,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Lush green moats and fewer crowds (showers pass fast)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Heaviest rains; some rural roads flood"
+      ]
+    },
+    {
+      "month": 10,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Dry-season temple weather at its kindest"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Siem Reap + Phnom Penh",
+    "Cambodia + Vietnam",
+    "Cambodia + Bangkok"
+  ],
+  "commonMistakes": [
+    "One-day Angkor sprints — three days reveals the magic",
+    "Midday temple visits in the heat"
+  ],
+  "packingConsiderations": [
+    "Temple-appropriate clothing (shoulders/knees)",
+    "Serious sun protection",
+    "Broken-in walking shoes for temple steps"
+  ],
+  "practicalWarnings": [
+    "Temple steps are steep and uneven — take them slowly"
+  ],
+  "tradeOffs": [
+    "Beyond the temples, sights are quieter and simpler",
+    "Hot and humid most of the year"
+  ],
+  "whoShouldAvoid": [
+    "Travellers uninterested in temples and history"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-ministry-of-tourism-cambodia",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Ministry of Tourism Cambodia",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

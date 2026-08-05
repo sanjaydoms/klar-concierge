@@ -68,7 +68,9 @@ export function RecommendationCards({
             </div>
             <h2 className="mt-3 text-xl font-bold text-brand">
               {rec.destinationName}
-              <span className="ml-2 text-sm font-normal text-foreground/55">{rec.country}</span>
+              <span className="block text-sm font-normal text-foreground/55 sm:ml-2 sm:inline">
+                {rec.country}
+              </span>
             </h2>
             <p className="mt-1 text-sm text-foreground/70">{rec.positioningLine}</p>
 

@@ -1,0 +1,266 @@
+{
+  "slug": "qatar",
+  "name": "Qatar",
+  "countryIso2": "QA",
+  "countryName": "Qatar",
+  "region": "Middle East",
+  "summary": "The Museum of Islamic Art, a futuristic skyline, souq lanes and inland-sea dunes — a polished long-weekend stopover that grew into a destination.",
+  "positioningLine": "Polished Gulf stopover with world-class museums.",
+  "idealTraveller": "Stopover travellers and culture-curious families on short breaks.",
+  "minimumNights": 2,
+  "idealNights": 4,
+  "maximumNights": 5,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "city": 85,
+    "culture": 80,
+    "shopping": 82,
+    "food": 75,
+    "history": 60,
+    "beach": 60,
+    "adventure": 60,
+    "relaxation": 65,
+    "romance": 65,
+    "nightlife": 45,
+    "nature": 40,
+    "wildlife": 20,
+    "themeparks": 45,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 85,
+    "toddlers": 78,
+    "children5To10": 85,
+    "teenagers": 82,
+    "seniors": 82,
+    "honeymoon": 70,
+    "solo": 75,
+    "firstInternationalTrip": 85
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 92,
+    "halalFriendly": 98,
+    "localCuisineScore": 78,
+    "streetFoodScore": 60,
+    "fineDiningScore": 88
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 3.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 85,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 90,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "desert",
+    "dry-winter",
+    "extreme-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Corniche weather at its finest"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 32,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat — indoor itinerary only"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 32,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Extreme heat and humidity"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Outdoor souq evenings return"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Doha stopover en route to Europe",
+    "Doha + desert inland sea day"
+  ],
+  "commonMistakes": [
+    "Treating it as airport-only — the museums deserve a day each"
+  ],
+  "packingConsiderations": [
+    "Modest wear for souqs and mosques",
+    "Sun protection",
+    "Light layers for fierce indoor air-conditioning"
+  ],
+  "practicalWarnings": [
+    "Ramadan changes dining hours — check dates"
+  ],
+  "tradeOffs": [
+    "Compact sight list — best under five nights",
+    "Summer is brutally hot"
+  ],
+  "whoShouldAvoid": [
+    "Travellers seeking nature, hiking or nightlife depth"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-visit-qatar",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Visit Qatar",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}
