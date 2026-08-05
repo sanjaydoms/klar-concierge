@@ -28,16 +28,53 @@ type Stage =
 
 type ChatMessage = { role: "user" | "assistant"; content: string; createdAt: string };
 
-const CHIPS = [
-  "Family holiday",
-  "Honeymoon",
-  "Best this month",
-  "Relaxed beach escape",
-  "Senior-friendly trip",
-  "Short international break",
-  "Food and culture",
-  "Surprise me",
-];
+function getDynamicChips(brief?: TravelBrief): string[] {
+  if (!brief) {
+    return [
+      "Family holiday",
+      "Couple getaway",
+      "Honeymoon",
+      "Solo trip",
+      "Friends trip",
+      "Relaxed beach escape",
+      "Food and culture",
+    ];
+  }
+
+  const chips: string[] = [];
+
+  // Step 1: Missing Travel Month
+  if (!brief.travelMonth) {
+    chips.push("Traveling in April", "Traveling in July", "Traveling in October", "Flexible dates");
+  }
+
+  // Step 2: Missing Duration
+  if (!brief.durationNights) {
+    chips.push("7 nights (1 week)", "10 nights", "14 nights (2 weeks)", "Short 4-day break");
+  }
+
+  // Step 3: Missing Pace
+  if (brief.pace === "unknown") {
+    chips.push("Relaxed pace", "Balanced pace", "Active & adventurous");
+  }
+
+  // Step 4: Missing Budget
+  if (brief.budgetBand === "unknown") {
+    chips.push("Comfort budget", "Premium budget", "Luxury getaway");
+  }
+
+  // Step 5: Interests & Vibe
+  if (brief.interests.length === 0) {
+    chips.push("Beaches & relaxation", "Historical sites", "Food & wine", "Nature & wildlife");
+  }
+
+  // Fallback defaults if most parameters are filled
+  if (chips.length < 3) {
+    chips.push("Show recommendations", "Surprise me", "Direct flights preferred");
+  }
+
+  return chips.slice(0, 6);
+}
 
 const SESSION_KEY = "klar-session-id";
 
@@ -339,13 +376,14 @@ export function Planner({ isEmbedded = false }: { isEmbedded?: boolean }) {
             ) : null}
           </div>
 
+          {/* Dynamic contextual suggestion chips */}
           <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick ideas">
-            {CHIPS.map((chip) => (
+            {getDynamicChips(brief).map((chip) => (
               <button
                 key={chip}
                 type="button"
                 className="chip"
-                onClick={() => setInput((v) => (v ? `${v} ${chip.toLowerCase()}` : chip))}
+                onClick={() => void sendMessage(chip)}
               >
                 {chip}
               </button>
