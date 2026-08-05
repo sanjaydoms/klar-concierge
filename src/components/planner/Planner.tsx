@@ -51,7 +51,13 @@ const STARTER_CHIPS = [
 
 const SESSION_KEY = "klar-session-id";
 
-export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
+export function Planner({
+  themes = [],
+  isEmbedded = false,
+}: {
+  themes?: ThemeChip[];
+  isEmbedded?: boolean;
+}) {
   const [stage, setStage] = useState<Stage>("conversation");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -437,7 +443,7 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
 
   return (
     <div>
-      <StageIndicator stage={stage} />
+      {!isEmbedded && <StageIndicator stage={stage} />}
       {error ? (
         <p role="alert" className="mb-4 rounded-lg bg-accent-soft px-4 py-3 text-sm text-accent-strong">
           {error}
