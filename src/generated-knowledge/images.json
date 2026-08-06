@@ -1,1 +1,288 @@
-{}
+{
+  "abu-dhabi": {
+    "file": "/destinations/abu-dhabi.jpg",
+    "alt": "Abu Dhabi — Abu Dhabi",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+  },
+  "almaty": {
+    "file": "/destinations/almaty.jpg",
+    "alt": "Almaty — Almaty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Almaty"
+  },
+  "armenia": {
+    "file": "/destinations/armenia.jpg",
+    "alt": "Armenia — Armenia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Armenia"
+  },
+  "australia": {
+    "file": "/destinations/australia.jpg",
+    "alt": "Australia — Australia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Australia"
+  },
+  "austria": {
+    "file": "/destinations/austria.jpg",
+    "alt": "Austria — Austria",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Austria"
+  },
+  "azerbaijan": {
+    "file": "/destinations/azerbaijan.jpg",
+    "alt": "Azerbaijan — Azerbaijan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Azerbaijan"
+  },
+  "canada": {
+    "file": "/destinations/canada.jpg",
+    "alt": "Canada — Canada",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Canada"
+  },
+  "dubai": {
+    "file": "/destinations/dubai.jpg",
+    "alt": "Dubai — Dubai",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Dubai"
+  },
+  "egypt": {
+    "file": "/destinations/egypt.jpg",
+    "alt": "Egypt — Egypt",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Egypt"
+  },
+  "hungary": {
+    "file": "/destinations/hungary.jpg",
+    "alt": "Hungary — Hungary",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hungary"
+  },
+  "maldives": {
+    "file": "/destinations/maldives.jpg",
+    "alt": "Maldives — Maldives",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Maldives"
+  },
+  "new-zealand": {
+    "file": "/destinations/new-zealand.jpg",
+    "alt": "New Zealand — New Zealand",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/New_Zealand"
+  },
+  "singapore": {
+    "file": "/destinations/singapore.jpg",
+    "alt": "Singapore — Singapore",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Singapore"
+  },
+  "switzerland": {
+    "file": "/destinations/switzerland.jpg",
+    "alt": "Switzerland — Switzerland",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Switzerland"
+  },
+  "vietnam": {
+    "file": "/destinations/vietnam.jpg",
+    "alt": "Vietnam — Vietnam",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Vietnam"
+  },
+  "bali": {
+    "file": "/destinations/bali.jpg",
+    "alt": "Bali — Bali",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bali"
+  },
+  "bangkok": {
+    "file": "/destinations/bangkok.jpg",
+    "alt": "Bangkok — Bangkok",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bangkok"
+  },
+  "bhutan": {
+    "file": "/destinations/bhutan.jpg",
+    "alt": "Bhutan — Bhutan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bhutan"
+  },
+  "cambodia": {
+    "file": "/destinations/cambodia.jpg",
+    "alt": "Cambodia — Cambodia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cambodia"
+  },
+  "czech-republic": {
+    "file": "/destinations/czech-republic.jpg",
+    "alt": "Czech Republic — Czech Republic",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Czech_Republic"
+  },
+  "georgia": {
+    "file": "/destinations/georgia.jpg",
+    "alt": "Georgia — Georgia (country)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Georgia_(country)"
+  },
+  "greece": {
+    "file": "/destinations/greece.jpg",
+    "alt": "Greece — Greece",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Greece"
+  },
+  "iceland": {
+    "file": "/destinations/iceland.jpg",
+    "alt": "Iceland — Iceland",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Iceland"
+  },
+  "japan": {
+    "file": "/destinations/japan.jpg",
+    "alt": "Japan — Japan",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Japan"
+  },
+  "kenya": {
+    "file": "/destinations/kenya.jpg",
+    "alt": "Kenya — Kenya",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kenya"
+  },
+  "morocco": {
+    "file": "/destinations/morocco.jpg",
+    "alt": "Morocco — Morocco",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Morocco"
+  },
+  "nepal": {
+    "file": "/destinations/nepal.jpg",
+    "alt": "Nepal — Nepal",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nepal"
+  },
+  "netherlands": {
+    "file": "/destinations/netherlands.jpg",
+    "alt": "Netherlands — Netherlands",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Netherlands"
+  },
+  "oman": {
+    "file": "/destinations/oman.jpg",
+    "alt": "Oman — Oman",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Oman"
+  },
+  "phuket": {
+    "file": "/destinations/phuket.jpg",
+    "alt": "Phuket — Phuket province",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Phuket_province"
+  },
+  "portugal": {
+    "file": "/destinations/portugal.jpg",
+    "alt": "Portugal — Portugal",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Portugal"
+  },
+  "seychelles": {
+    "file": "/destinations/seychelles.jpg",
+    "alt": "Seychelles — Seychelles",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Seychelles"
+  },
+  "south-korea": {
+    "file": "/destinations/south-korea.jpg",
+    "alt": "South Korea — South Korea",
+    "sourceUrl": "https://en.wikipedia.org/wiki/South_Korea"
+  },
+  "sri-lanka": {
+    "file": "/destinations/sri-lanka.jpg",
+    "alt": "Sri Lanka — Sri Lanka",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sri_Lanka"
+  },
+  "united-kingdom": {
+    "file": "/destinations/united-kingdom.jpg",
+    "alt": "United Kingdom — United Kingdom",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/United_Kingdom"
+  },
+  "zanzibar": {
+    "file": "/destinations/zanzibar.jpg",
+    "alt": "Zanzibar — Zanzibar",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Zanzibar"
+  },
+  "croatia": {
+    "file": "/destinations/croatia.jpg",
+    "alt": "Croatia — Croatia",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Croatia"
+  },
+  "france": {
+    "file": "/destinations/france.jpg",
+    "alt": "France — France",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/France"
+  },
+  "germany": {
+    "file": "/destinations/germany.jpg",
+    "alt": "Germany — Germany",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Germany"
+  },
+  "italy": {
+    "file": "/destinations/italy.jpg",
+    "alt": "Italy — Italy",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Italy"
+  },
+  "jordan": {
+    "file": "/destinations/jordan.jpg",
+    "alt": "Jordan — Jordan",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jordan"
+  },
+  "langkawi": {
+    "file": "/destinations/langkawi.jpg",
+    "alt": "Langkawi — Langkawi",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Langkawi"
+  },
+  "mauritius": {
+    "file": "/destinations/mauritius.jpg",
+    "alt": "Mauritius — Mauritius",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mauritius"
+  },
+  "norway": {
+    "file": "/destinations/norway.jpg",
+    "alt": "Norway — Norway",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Norway"
+  },
+  "qatar": {
+    "file": "/destinations/qatar.jpg",
+    "alt": "Qatar — Qatar",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qatar"
+  },
+  "south-africa": {
+    "file": "/destinations/south-africa.jpg",
+    "alt": "South Africa — South Africa",
+    "sourceUrl": "https://en.wikipedia.org/wiki/South_Africa"
+  },
+  "spain": {
+    "file": "/destinations/spain.jpg",
+    "alt": "Spain — Spain",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Spain"
+  },
+  "turkey": {
+    "file": "/destinations/turkey.jpg",
+    "alt": "Turkey — Turkey",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Turkey"
+  },
+  "hong-kong": {
+    "file": "/destinations/hong-kong.jpg",
+    "alt": "Hong Kong — Hong Kong",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Hong_Kong"
+  },
+  "krabi": {
+    "file": "/destinations/krabi.jpg",
+    "alt": "Krabi — Krabi",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Krabi"
+  },
+  "kuala-lumpur": {
+    "file": "/destinations/kuala-lumpur.jpg",
+    "alt": "Kuala Lumpur — Kuala Lumpur",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kuala_Lumpur"
+  },
+  "united-states": {
+    "file": "/destinations/united-states.jpg",
+    "alt": "United States — United States",
+    "sourceUrl": "https://en.wikipedia.org/wiki/United_States"
+  },
+  "uzbekistan": {
+    "file": "/destinations/uzbekistan.jpg",
+    "alt": "Uzbekistan — Uzbekistan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Uzbekistan"
+  }
+}
