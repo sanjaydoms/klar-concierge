@@ -1,5 +1,51 @@
 # Release Notes
 
+## 2.3.0 — Autonomous evidence-verified knowledge, multi-engine AI (2026-08-05)
+
+### The knowledge base now grows and refreshes itself — no human required
+- **Measured climate replaces estimates**: `npm run knowledge:enrich` pulls
+  five years of measured daily data per destination from the Open-Meteo
+  archive (free, keyless) and maps it to monthly temperature/rainfall/
+  humidity bands through fixed, unit-tested thresholds. Season scores that
+  contradict measured weather are clamped — never inflated.
+- **Real citations**: Wikipedia and Wikivoyage sources with URLs and access
+  dates are attached to every destination automatically.
+- **`npm run knowledge:autonomous`** generates new destinations end-to-end:
+  evidence pack → AI synthesis grounded only in that evidence → measured
+  climate injected deterministically → an adversarial AI audit that tries to
+  refute the draft → auto-promotion with confidence computed from evidence
+  coverage. Refuted or under-evidenced drafts land in `knowledge/drafts/`
+  (invisible to builds) with a WHY_NOT_LIVE.txt.
+- **Hands-off CI**: the weekly `knowledge-autonomous` workflow enriches
+  everything, regenerates stale entries, runs the full test gate (typecheck,
+  tests, 70 critical evals) and commits straight to main — Vercel redeploys.
+  The on-demand `knowledge-expand` workflow takes typed destination names
+  from the Actions tab to live pages in minutes.
+- Requires nothing for enrichment; `ANTHROPIC_API_KEY` and/or
+  `OPENAI_API_KEY` repository secrets enable generation.
+  See `docs/KNOWLEDGE_AUTOMATION.md` for the full trust model.
+
+### Multi-engine AI (not just OpenAI)
+- New Anthropic (Claude) provider for chat extraction and reply polishing,
+  with the same strict grounding and deterministic fallback contracts.
+- `AI_PROVIDER=auto|anthropic|openai|deterministic` — auto prefers Claude,
+  then OpenAI, then the deterministic engine. The planner never depends on
+  any external API being up.
+- The knowledge pipeline uses whichever engine is keyed; evidence sources
+  (Wikipedia, Wikivoyage, Open-Meteo) are engines of record in their own
+  right — free, keyless and independent of any AI vendor.
+
+### Knowledge expansion
+- +5 destinations chosen for Indian-traveller value: Uzbekistan, Almaty
+  (Kazakhstan), Armenia, Jordan, Zanzibar (Tanzania) — 45 destinations and
+  270 attractions total, all passing the eligibility gate, all with
+  encyclopedia pages, sitemap and llms.txt entries automatically.
+
+### Verification
+- 84 unit/integration tests (8 new for the deterministic climate mapping and
+  coordinates registry), 288/288 evals, 16/16 Playwright e2e, production
+  build green with 45 statically generated guides.
+
 ## 2.2.0 — Live-QC fixes, real comparatives, encyclopedia & portal embedding (2026-08-05)
 
 ### Conversation: the reported planner bugs, fixed at the root

@@ -1,0 +1,268 @@
+{
+  "slug": "armenia",
+  "name": "Armenia",
+  "countryIso2": "AM",
+  "countryName": "Armenia",
+  "region": "Caucasus",
+  "summary": "Monasteries carved into cliffs, Mount Ararat filling the horizon, café culture in pink-stone Yerevan and brandy older than most nations — the world's first Christian country, warm and walkable.",
+  "positioningLine": "Cliff monasteries, Ararat views and Yerevan's easy charm.",
+  "idealTraveller": "Culture-curious couples and friends who like history with wine, cafés and mountain drives.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "history": 92,
+    "culture": 90,
+    "nature": 80,
+    "food": 75,
+    "romance": 72,
+    "city": 65,
+    "relaxation": 60,
+    "adventure": 50,
+    "shopping": 50,
+    "nightlife": 55,
+    "wildlife": 15,
+    "snow": 25,
+    "beach": 0,
+    "themeparks": 5
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 58,
+    "children5To10": 65,
+    "teenagers": 72,
+    "seniors": 75,
+    "honeymoon": 74,
+    "solo": 84,
+    "firstInternationalTrip": 76
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 50,
+    "halalFriendly": 45,
+    "localCuisineScore": 82,
+    "streetFoodScore": 65,
+    "fineDiningScore": 65
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 4,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 62
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "continental",
+    "dry-summer",
+    "cold-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Snow and ice — mountain monasteries need careful driving"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Green valleys, snow still on Ararat — peak beauty"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Yerevan bakes in mid-30s dry heat by afternoon"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Grape harvest, golden monastery light and warm days"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Yerevan + Garni-Geghard + Lake Sevan",
+    "Armenia + Georgia overland"
+  ],
+  "commonMistakes": [
+    "Only staying in Yerevan — the monasteries are the point",
+    "Cramming the far south into a short trip"
+  ],
+  "packingConsiderations": [
+    "Modest cover for monasteries",
+    "Sun hat for dry summer heat",
+    "Real winter kit December–February"
+  ],
+  "practicalWarnings": [
+    "Distances look small but mountain roads are slow — one region per day"
+  ],
+  "tradeOffs": [
+    "Nightlife and shopping are modest",
+    "Winter closes some high monastery roads"
+  ],
+  "whoShouldAvoid": [
+    "Beach and resort travellers",
+    "Anyone allergic to churches and history"
+  ],
+  "confidence": 76,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-tourism-committee-of-armenia",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Tourism Committee of Armenia",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

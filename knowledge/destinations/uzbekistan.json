@@ -1,0 +1,267 @@
+{
+  "slug": "uzbekistan",
+  "name": "Uzbekistan",
+  "countryIso2": "UZ",
+  "countryName": "Uzbekistan",
+  "region": "Central Asia",
+  "summary": "Turquoise domes over Registan Square, Silk Road caravanserais and bazaars unchanged in spirit for centuries — history's greatest trade route, hours from India.",
+  "positioningLine": "The Silk Road, real and affordable — domes, bazaars, legends.",
+  "idealTraveller": "History and culture lovers who want wow-factor architecture without long flights or big budgets.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 96,
+    "culture": 94,
+    "city": 70,
+    "food": 72,
+    "shopping": 75,
+    "nature": 40,
+    "romance": 65,
+    "relaxation": 45,
+    "adventure": 45,
+    "nightlife": 35,
+    "wildlife": 10,
+    "beach": 0,
+    "themeparks": 5,
+    "snow": 15
+  },
+  "suitability": {
+    "family": 72,
+    "toddlers": 55,
+    "children5To10": 65,
+    "teenagers": 75,
+    "seniors": 75,
+    "honeymoon": 68,
+    "solo": 85,
+    "firstInternationalTrip": 78
+  },
+  "food": {
+    "vegetarianFriendly": 45,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 95,
+    "localCuisineScore": 80,
+    "streetFoodScore": 75,
+    "fineDiningScore": 55
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 3,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 70,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 60
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "continental",
+    "hot-dry-summer",
+    "cold-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Genuinely cold; some heritage courtyards are raw"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Spring bloom over the madrassas — the classic window"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Fierce dry heat — sightseeing only works early and late"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Golden light, harvest bazaars and mild sightseeing days"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Tashkent + Samarkand + Bukhara by fast train",
+    "Add Khiva for the full Silk Road arc"
+  ],
+  "commonMistakes": [
+    "Only visiting Tashkent — the magic is in Samarkand and Bukhara",
+    "Underestimating summer heat on stone plazas"
+  ],
+  "packingConsiderations": [
+    "Modest cover for mosques and madrassas",
+    "Serious sun protection in summer",
+    "Warm layers November–March"
+  ],
+  "practicalWarnings": [
+    "Card acceptance is improving but carry some cash outside big hotels"
+  ],
+  "tradeOffs": [
+    "Vegetarian dining takes planning — the cuisine is meat-led",
+    "Tourism infrastructure is functional rather than polished"
+  ],
+  "whoShouldAvoid": [
+    "Beach seekers and travellers wanting nightlife or resort comfort"
+  ],
+  "confidence": 78,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-uzbekistan-tourism-committee",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Uzbekistan Tourism Committee",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

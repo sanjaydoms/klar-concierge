@@ -1,0 +1,239 @@
+[
+  {
+    "id": "jordan-petra",
+    "destinationSlug": "jordan",
+    "name": "Petra",
+    "category": "landmark",
+    "summary": "Walk the Siq as it cracks open onto the Treasury, then keep going — a carved city of tombs, temples and trails that rewards a full day.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [
+      "limited mobility",
+      "anyone unable to walk several kilometres"
+    ],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Manageable for school-age kids with breaks; carriers beat strollers"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Start at gate-opening to beat heat and crowds; the Monastery climb adds 800 steps"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "jordan-wadi-rum-desert",
+    "destinationSlug": "jordan",
+    "name": "Wadi Rum Desert",
+    "category": "adventure",
+    "summary": "Jeep tracks between sandstone mountains, tea with Bedouin hosts and a night under desert stars — the trip's emotional peak.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Kids love the jeeps and dunes; nights get cold"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Overnight in a camp rather than day-tripping — sunset and dawn are the point"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "jordan-dead-sea",
+    "destinationSlug": "jordan",
+    "name": "Dead Sea",
+    "category": "wellness",
+    "summary": "Float without effort at the lowest point on Earth, then a mineral mud scrub — surreal, restorative, unmissable.",
+    "idealFor": [
+      "relaxation",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [
+      "open cuts (the salt finds them instantly)"
+    ],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Keep water away from eyes; short floats work best for kids"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Resorts sell day passes with showers and pools"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "jordan-jerash-roman-ruins",
+    "destinationSlug": "jordan",
+    "name": "Jerash Roman Ruins",
+    "category": "culture",
+    "summary": "Colonnaded streets, theatres and plazas of one of the best-preserved Roman cities anywhere — an easy Amman half-day.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Large site with sun exposure — morning visits and a hat"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "jordan-amman-citadel-downtown",
+    "destinationSlug": "jordan",
+    "name": "Amman Citadel & Downtown",
+    "category": "culture",
+    "summary": "Temple columns above a hillside capital, then knafeh and falafel in the buzzing downtown souks below.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Pair sunset at the Citadel with dinner on Rainbow Street"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "jordan-aqaba-red-sea-snorkelling",
+    "destinationSlug": "jordan",
+    "name": "Aqaba Red Sea Snorkelling",
+    "category": "beach",
+    "summary": "Coral gardens and warm clear water at Jordan's toe — a soft landing after Petra's dust.",
+    "idealFor": [
+      "family",
+      "couple",
+      "relaxation"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Calm house reefs suit young snorkellers"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

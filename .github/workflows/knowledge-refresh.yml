@@ -1,14 +1,19 @@
-# Automated knowledge learning loop.
+# Autonomous knowledge maintenance — no human in the loop.
 #
-# Every Monday this workflow checks which destinations are past their
-# next-review date, asks the AI to draft refreshed intelligence for them, and
-# opens a pull request containing ONLY drafts (knowledge/drafts/). Drafts can
-# never reach customers: the eligibility gate requires human-verified status,
-# and the build ignores the drafts folder entirely. A Klar expert reviews the
-# PR, edits, promotes (npm run knowledge:promote) and merges.
+# Weekly (and on demand): enrich every destination with freshly measured
+# climate + citations, regenerate anything past its review date via the
+# evidence-grounded AI pipeline, validate, run the full test gate, and commit
+# straight to main. Vercel redeploys automatically.
 #
-# Requires repository secret: OPENAI_API_KEY
-name: knowledge-refresh
+# Safety comes from machines, not reviewers: measured data overrides AI
+# opinion, an adversarial audit pass must approve every regeneration, schema
+# validation gates the build, and the eval suite must stay green before any
+# commit is pushed.
+#
+# Repository secrets used (either AI key is enough; enrichment needs none):
+#   ANTHROPIC_API_KEY  — preferred engine (Claude)
+#   OPENAI_API_KEY     — fallback engine
+name: knowledge-autonomous
 
 on:
   schedule:
@@ -17,10 +22,13 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+
+concurrency:
+  group: knowledge-autonomous
+  cancel-in-progress: false
 
 jobs:
-  draft-refreshes:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,25 +37,34 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - name: Draft refreshes for stale destinations
+
+      - name: Enrich all destinations with measured climate + citations
+        run: npm run knowledge:enrich
+
+      - name: Regenerate destinations past their review date (AI, evidence-grounded)
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: npm run knowledge:research -- --refresh-stale --draft
-      - name: Open review PR (drafts only)
-        uses: peter-evans/create-pull-request@v6
-        with:
-          add-paths: knowledge/drafts/**
-          branch: knowledge/auto-refresh
-          title: "Knowledge refresh drafts — human review required"
-          commit-message: "Add AI-drafted knowledge refreshes for stale destinations"
-          body: |
-            Automated drafts for destinations past their next-review date.
+        run: npm run knowledge:autonomous -- --refresh-stale
+        continue-on-error: true # a failed regen keeps the enriched data flowing
 
-            **Nothing here is live.** Drafts sit in `knowledge/drafts/`, are
-            excluded from the build, and are capped below the eligibility
-            threshold. To publish any of them, a reviewer must:
+      - name: Validate and compile knowledge
+        run: npm run knowledge:build
 
-            1. Check every fact against the checklist in each `REVIEW.md`.
-            2. Attach real sources.
-            3. Run `npm run knowledge:promote -- <slug> --reviewed-by "Name"`.
-            4. Run `npm run knowledge:build` and commit.
+      - name: Full quality gate before anything ships
+        run: |
+          npm run typecheck
+          npm test
+          npm run eval:critical
+
+      - name: Commit refreshed knowledge to main
+        run: |
+          git config user.name "klar-knowledge-bot"
+          git config user.email "knowledge-bot@users.noreply.github.com"
+          git add knowledge/ src/generated-knowledge/
+          if git diff --cached --quiet; then
+            echo "Knowledge already fresh — nothing to commit."
+          else
+            git commit -m "Autonomous knowledge refresh: measured climate, citations, stale regenerations"
+            git push
+          fi

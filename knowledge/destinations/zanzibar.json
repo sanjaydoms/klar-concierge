@@ -1,0 +1,267 @@
+{
+  "slug": "zanzibar",
+  "name": "Zanzibar",
+  "countryIso2": "TZ",
+  "countryName": "Tanzania",
+  "region": "East Africa",
+  "summary": "Powder beaches shading from white to turquoise, Stone Town's carved doors and spice-scented lanes, dhows at sunset — the Indian Ocean's most storied island escape.",
+  "positioningLine": "Spice-island beaches with Swahili soul and dhow sunsets.",
+  "idealTraveller": "Honeymooners and beach lovers who want culture and snorkelling with their sunbeds.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 96,
+    "relaxation": 92,
+    "romance": 90,
+    "culture": 70,
+    "food": 68,
+    "nature": 65,
+    "adventure": 60,
+    "wildlife": 55,
+    "history": 65,
+    "city": 30,
+    "shopping": 45,
+    "nightlife": 45,
+    "themeparks": 0,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 72,
+    "toddlers": 60,
+    "children5To10": 70,
+    "teenagers": 75,
+    "seniors": 65,
+    "honeymoon": 95,
+    "solo": 70,
+    "firstInternationalTrip": 65
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 75,
+    "halalFriendly": 90,
+    "localCuisineScore": 75,
+    "streetFoodScore": 70,
+    "fineDiningScore": 70
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 7,
+    "walkingIntensity": "low",
+    "publicTransportEase": 30,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 40,
+    "medicalAccessScore": 50
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical",
+    "long-rains-apr-may",
+    "dry-jun-oct"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Warm seas and vivid snorkelling between the rains"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Long rains — many beach lodges pause or discount deeply"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Rains continue; seaweed can reach some east-coast beaches"
+      ]
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Peak dry season — postcard water and cool breezes"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Zanzibar + Serengeti safari",
+    "Stone Town + north-coast beach split"
+  ],
+  "commonMistakes": [
+    "Booking April–May expecting brochure weather",
+    "Ignoring tide tables — east-coast lagoons empty at low tide"
+  ],
+  "packingConsiderations": [
+    "Reef-safe sunscreen and snorkel gear",
+    "Modest wear for Stone Town's lanes",
+    "Light rain layer November and March"
+  ],
+  "practicalWarnings": [
+    "Choose your coast deliberately: north swims all day, east is tidal"
+  ],
+  "tradeOffs": [
+    "Reaching it from India usually means a connection — budget the journey day",
+    "Infrastructure is island-simple outside the resorts"
+  ],
+  "whoShouldAvoid": [
+    "Travellers needing nightlife, malls or step-free everything"
+  ],
+  "confidence": 78,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-zanzibar-commission-for-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Zanzibar Commission for Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

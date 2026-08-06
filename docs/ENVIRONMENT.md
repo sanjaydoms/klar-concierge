@@ -5,8 +5,10 @@ All variables are optional — the full decision engine runs with none set.
 | Variable | Default | Purpose |
 | --- | --- | --- |
 | NEXT_PUBLIC_APP_URL | http://localhost:3002 | Canonical URL for metadata |
-| OPENAI_API_KEY / OPENAI_MODEL | — / gpt-5-mini | Optional extraction model; deterministic fallback otherwise |
-| ENABLE_AI_PERSONALISATION | true | Master switch for the AI provider |
+| AI_PROVIDER | auto | auto \| anthropic \| openai \| deterministic — "auto" prefers Claude, then OpenAI, then deterministic |
+| ANTHROPIC_API_KEY / ANTHROPIC_MODEL | — / claude-sonnet-5 | Claude engine for extraction + reply polish (preferred in auto mode) |
+| OPENAI_API_KEY / OPENAI_MODEL | — / gpt-5-mini | OpenAI engine; used when Claude isn't keyed |
+| ENABLE_AI_PERSONALISATION | true | Master switch for all AI engines |
 | SESSION_TTL_MINUTES | 120 | Anonymous session lifetime |
 | CRM_ENABLED | false | Handover activation |
 | CRM_PROVIDER | placeholder | placeholder \| webhook |

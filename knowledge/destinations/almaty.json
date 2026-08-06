@@ -1,0 +1,270 @@
+{
+  "slug": "almaty",
+  "name": "Almaty",
+  "countryIso2": "KZ",
+  "countryName": "Kazakhstan",
+  "region": "Central Asia",
+  "summary": "Snow peaks rising straight from leafy boulevards, alpine lakes an hour from coffee shops, skiing in winter and canyon road-trips in summer — the mountain city break India hasn't discovered yet.",
+  "positioningLine": "Alpine drama a short flight away — lakes, peaks, ski runs.",
+  "idealTraveller": "Mountain lovers, young couples and friend groups wanting big scenery on a short break.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 95,
+    "adventure": 85,
+    "snow": 88,
+    "city": 65,
+    "food": 60,
+    "culture": 55,
+    "shopping": 60,
+    "relaxation": 55,
+    "romance": 70,
+    "history": 45,
+    "nightlife": 60,
+    "wildlife": 30,
+    "beach": 0,
+    "themeparks": 15
+  },
+  "suitability": {
+    "family": 75,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 85,
+    "seniors": 62,
+    "honeymoon": 75,
+    "solo": 82,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 40,
+    "indianFoodAvailability": 60,
+    "halalFriendly": 90,
+    "localCuisineScore": 68,
+    "streetFoodScore": 60,
+    "fineDiningScore": 65
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 3.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 65,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 50,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "continental",
+    "alpine-access",
+    "snow-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Shymbulak ski season in full swing"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Slushy shoulder season — mountains half-open"
+      ]
+    },
+    {
+      "month": 4,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [
+        "Alpine lakes at full colour; Charyn Canyon road-trips"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Grey between autumn colour and reliable snow"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Snow city + ski season begins"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Almaty + Charyn Canyon + Kolsai Lakes",
+    "Almaty ski weekend",
+    "Almaty + Tashkent"
+  ],
+  "commonMistakes": [
+    "Day-tripping Big Almaty Lake without warm layers — it's high altitude",
+    "Treating it as a city trip and skipping the mountains"
+  ],
+  "packingConsiderations": [
+    "Layers in every season — city warm, mountains cold",
+    "Sunglasses for snow and altitude",
+    "Sturdy shoes for lake trails"
+  ],
+  "practicalWarnings": [
+    "Mountain roads close in heavy snow — keep flexibility in winter itineraries"
+  ],
+  "tradeOffs": [
+    "English is limited outside tourist services",
+    "Vegetarian options are thin beyond the city centre"
+  ],
+  "whoShouldAvoid": [
+    "Travellers wanting beaches, heritage depth or guaranteed warm weather"
+  ],
+  "confidence": 76,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-kazakh-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Kazakh Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

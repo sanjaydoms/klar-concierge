@@ -1,0 +1,67 @@
+# On-demand autonomous expansion: type destination names, get them live.
+#
+# Run from the GitHub Actions tab → "knowledge-expand" → Run workflow →
+# enter comma-separated destinations (e.g. "Croatia, Philippines, Fiji").
+# The pipeline gathers evidence, synthesizes, audits, validates, runs the
+# full test gate and commits straight to main. Destinations that fail the
+# audit or validation land in knowledge/drafts/ instead of going live.
+#
+# Each destination needs coordinates in scripts/lib/coordinates.ts first —
+# measured climate is mandatory evidence, so unknown places fail loudly
+# rather than shipping weather guesses.
+name: knowledge-expand
+
+on:
+  workflow_dispatch:
+    inputs:
+      destinations:
+        description: "Comma-separated destination names"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: knowledge-autonomous
+  cancel-in-progress: false
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Generate destinations (evidence → AI synthesis → audit)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          names=$(echo "${{ github.event.inputs.destinations }}" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | sed 's/.*/"&"/' | tr '\n' ' ')
+          eval npm run knowledge:autonomous -- $names
+
+      - name: Validate and compile knowledge
+        run: npm run knowledge:build
+
+      - name: Full quality gate before anything ships
+        run: |
+          npm run typecheck
+          npm test
+          npm run eval:critical
+
+      - name: Commit new knowledge to main
+        run: |
+          git config user.name "klar-knowledge-bot"
+          git config user.email "knowledge-bot@users.noreply.github.com"
+          git add knowledge/ src/generated-knowledge/
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "Autonomous knowledge expansion: ${{ github.event.inputs.destinations }}"
+            git push
+          fi

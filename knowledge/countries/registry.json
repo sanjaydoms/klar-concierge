@@ -190,8 +190,14 @@
       "Armenian"
     ],
     "timezones": [],
-    "climateZones": [],
-    "seasonOverview": [],
+    "climateZones": [
+      "continental",
+      "dry-summer",
+      "cold-winter"
+    ],
+    "seasonOverview": [
+      "Armenia: best months score highest around May, Sep, Oct"
+    ],
     "stableAdvisoryNotes": [],
     "dynamicFieldsRequireVerification": [
       "visa rules",
@@ -199,8 +205,44 @@
       "safety advisories",
       "health requirements"
     ],
-    "status": "skeleton",
-    "sources": []
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ],
+    "travellerFit": {
+      "family": 70,
+      "children": 65,
+      "teenagers": 72,
+      "seniors": 75,
+      "honeymoon": 74,
+      "solo": 84,
+      "firstInternationalTrip": 76
+    },
+    "travelPracticality": {
+      "typicalFlightTimeFromIndia": 4,
+      "connectivityLevel": "strong",
+      "internalTransportEase": 55,
+      "accessibilityMaturity": 50,
+      "medicalAccess": 62,
+      "languageEaseForIndianTravellers": 70
+    },
+    "foodPracticality": {
+      "vegetarianEase": 60,
+      "indianFoodAvailability": 50,
+      "halalEase": 45
+    },
+    "reviewedAt": "2026-08-01",
+    "nextReviewAt": "2026-11-01"
   },
   {
     "iso2": "AU",
@@ -2778,8 +2820,14 @@
       "Arabic"
     ],
     "timezones": [],
-    "climateZones": [],
-    "seasonOverview": [],
+    "climateZones": [
+      "desert",
+      "mild-spring-autumn",
+      "hot-summer"
+    ],
+    "seasonOverview": [
+      "Jordan: best months score highest around Apr, Oct, May"
+    ],
     "stableAdvisoryNotes": [],
     "dynamicFieldsRequireVerification": [
       "visa rules",
@@ -2787,8 +2835,44 @@
       "safety advisories",
       "health requirements"
     ],
-    "status": "skeleton",
-    "sources": []
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ],
+    "travellerFit": {
+      "family": 74,
+      "children": 68,
+      "teenagers": 85,
+      "seniors": 60,
+      "honeymoon": 76,
+      "solo": 80,
+      "firstInternationalTrip": 72
+    },
+    "travelPracticality": {
+      "typicalFlightTimeFromIndia": 5,
+      "connectivityLevel": "strong",
+      "internalTransportEase": 40,
+      "accessibilityMaturity": 45,
+      "medicalAccess": 70,
+      "languageEaseForIndianTravellers": 70
+    },
+    "foodPracticality": {
+      "vegetarianEase": 70,
+      "indianFoodAvailability": 45,
+      "halalEase": 98
+    },
+    "reviewedAt": "2026-08-01",
+    "nextReviewAt": "2026-11-01"
   },
   {
     "iso2": "KZ",
@@ -2804,8 +2888,14 @@
       "Russian"
     ],
     "timezones": [],
-    "climateZones": [],
-    "seasonOverview": [],
+    "climateZones": [
+      "continental",
+      "alpine-access",
+      "snow-winter"
+    ],
+    "seasonOverview": [
+      "Almaty: best months score highest around Jul, Aug, Jun"
+    ],
     "stableAdvisoryNotes": [],
     "dynamicFieldsRequireVerification": [
       "visa rules",
@@ -2813,8 +2903,44 @@
       "safety advisories",
       "health requirements"
     ],
-    "status": "skeleton",
-    "sources": []
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ],
+    "travellerFit": {
+      "family": 75,
+      "children": 72,
+      "teenagers": 85,
+      "seniors": 62,
+      "honeymoon": 75,
+      "solo": 82,
+      "firstInternationalTrip": 75
+    },
+    "travelPracticality": {
+      "typicalFlightTimeFromIndia": 3.5,
+      "connectivityLevel": "strong",
+      "internalTransportEase": 65,
+      "accessibilityMaturity": 50,
+      "medicalAccess": 65,
+      "languageEaseForIndianTravellers": 70
+    },
+    "foodPracticality": {
+      "vegetarianEase": 40,
+      "indianFoodAvailability": 60,
+      "halalEase": 90
+    },
+    "reviewedAt": "2026-08-01",
+    "nextReviewAt": "2026-11-01"
   },
   {
     "iso2": "KE",
@@ -5737,8 +5863,14 @@
       "Swahili"
     ],
     "timezones": [],
-    "climateZones": [],
-    "seasonOverview": [],
+    "climateZones": [
+      "tropical",
+      "long-rains-apr-may",
+      "dry-jun-oct"
+    ],
+    "seasonOverview": [
+      "Zanzibar: best months score highest around Jul, Aug, Sep"
+    ],
     "stableAdvisoryNotes": [],
     "dynamicFieldsRequireVerification": [
       "visa rules",
@@ -5746,8 +5878,44 @@
       "safety advisories",
       "health requirements"
     ],
-    "status": "skeleton",
-    "sources": []
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ],
+    "travellerFit": {
+      "family": 72,
+      "children": 70,
+      "teenagers": 75,
+      "seniors": 65,
+      "honeymoon": 95,
+      "solo": 70,
+      "firstInternationalTrip": 65
+    },
+    "travelPracticality": {
+      "typicalFlightTimeFromIndia": 7,
+      "connectivityLevel": "strong",
+      "internalTransportEase": 30,
+      "accessibilityMaturity": 40,
+      "medicalAccess": 50,
+      "languageEaseForIndianTravellers": 70
+    },
+    "foodPracticality": {
+      "vegetarianEase": 60,
+      "indianFoodAvailability": 75,
+      "halalEase": 90
+    },
+    "reviewedAt": "2026-08-01",
+    "nextReviewAt": "2026-11-01"
   },
   {
     "iso2": "TH",
@@ -6316,8 +6484,14 @@
       "Uzbek"
     ],
     "timezones": [],
-    "climateZones": [],
-    "seasonOverview": [],
+    "climateZones": [
+      "continental",
+      "hot-dry-summer",
+      "cold-winter"
+    ],
+    "seasonOverview": [
+      "Uzbekistan: best months score highest around Apr, Oct, May"
+    ],
     "stableAdvisoryNotes": [],
     "dynamicFieldsRequireVerification": [
       "visa rules",
@@ -6325,8 +6499,44 @@
       "safety advisories",
       "health requirements"
     ],
-    "status": "skeleton",
-    "sources": []
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ],
+    "travellerFit": {
+      "family": 72,
+      "children": 65,
+      "teenagers": 75,
+      "seniors": 75,
+      "honeymoon": 68,
+      "solo": 85,
+      "firstInternationalTrip": 78
+    },
+    "travelPracticality": {
+      "typicalFlightTimeFromIndia": 3,
+      "connectivityLevel": "strong",
+      "internalTransportEase": 70,
+      "accessibilityMaturity": 50,
+      "medicalAccess": 60,
+      "languageEaseForIndianTravellers": 70
+    },
+    "foodPracticality": {
+      "vegetarianEase": 45,
+      "indianFoodAvailability": 55,
+      "halalEase": 95
+    },
+    "reviewedAt": "2026-08-01",
+    "nextReviewAt": "2026-11-01"
   },
   {
     "iso2": "VU",

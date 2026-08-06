@@ -1,0 +1,268 @@
+{
+  "slug": "jordan",
+  "name": "Jordan",
+  "countryIso2": "JO",
+  "countryName": "Jordan",
+  "region": "Middle East",
+  "summary": "Petra's rose-red Treasury at dawn, Wadi Rum's Mars-scape by jeep and a float on the Dead Sea — three of Earth's great travel moments in one compact, welcoming kingdom.",
+  "positioningLine": "Petra, Wadi Rum, Dead Sea — three wonders, one small country.",
+  "idealTraveller": "Bucket-listers, photographers and history lovers who don't mind earning views with their feet.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 96,
+    "nature": 88,
+    "adventure": 82,
+    "culture": 85,
+    "romance": 70,
+    "relaxation": 60,
+    "food": 70,
+    "city": 50,
+    "wildlife": 20,
+    "shopping": 45,
+    "nightlife": 30,
+    "beach": 40,
+    "themeparks": 0,
+    "snow": 5
+  },
+  "suitability": {
+    "family": 74,
+    "toddlers": 50,
+    "children5To10": 68,
+    "teenagers": 85,
+    "seniors": 60,
+    "honeymoon": 76,
+    "solo": 80,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 45,
+    "halalFriendly": 98,
+    "localCuisineScore": 85,
+    "streetFoodScore": 75,
+    "fineDiningScore": 65
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 40,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 70
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "desert",
+    "mild-spring-autumn",
+    "hot-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Amman can be cold and wet; occasional snow closes roads"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [
+        "Wildflowers at Jerash, perfect Petra hiking weather"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Desert heat makes Petra's trails punishing by mid-morning"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Warm Wadi Rum nights and golden canyon light"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Amman + Petra + Wadi Rum + Dead Sea circuit",
+    "Add Aqaba for Red Sea snorkelling"
+  ],
+  "commonMistakes": [
+    "Giving Petra a half day — it deserves one full day minimum",
+    "Skipping a Wadi Rum overnight, which is the trip's soul"
+  ],
+  "packingConsiderations": [
+    "Proper walking shoes — Petra is kilometres of trail",
+    "Sun protection and refillable water bottle",
+    "Warm layer for desert nights year-round"
+  ],
+  "practicalWarnings": [
+    "Distances between sites mean a driver or tour makes the trip — public transport is thin"
+  ],
+  "tradeOffs": [
+    "It's a walking-heavy destination — comfort depends on fitness",
+    "Costs run higher than Egypt or Turkey for similar days"
+  ],
+  "whoShouldAvoid": [
+    "Travellers with limited mobility — Petra's magic requires distance on foot",
+    "Resort-and-pool holidaymakers"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-jordan-tourism-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Jordan Tourism Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}
