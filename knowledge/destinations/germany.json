@@ -1,0 +1,271 @@
+{
+  "slug": "germany",
+  "name": "Germany",
+  "countryIso2": "DE",
+  "countryName": "Germany",
+  "region": "Western Europe",
+  "summary": "Fairy-tale castles above forested hills, Berlin's history and nightlife, beer halls, Christmas markets and trains that make it all effortless — Europe's most underrated all-rounder.",
+  "positioningLine": "Castles, Christmas markets and cities that work perfectly.",
+  "idealTraveller": "First-time Europe travellers, history lovers and families who value smooth logistics.",
+  "minimumNights": 5,
+  "idealNights": 8,
+  "maximumNights": 14,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 90,
+    "culture": 88,
+    "city": 85,
+    "nature": 75,
+    "food": 70,
+    "shopping": 70,
+    "romance": 68,
+    "nightlife": 75,
+    "relaxation": 50,
+    "adventure": 50,
+    "themeparks": 65,
+    "snow": 40,
+    "wildlife": 15,
+    "beach": 10
+  },
+  "suitability": {
+    "family": 82,
+    "toddlers": 70,
+    "children5To10": 80,
+    "teenagers": 82,
+    "seniors": 80,
+    "honeymoon": 70,
+    "solo": 85,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 65,
+    "indianFoodAvailability": 75,
+    "halalFriendly": 70,
+    "localCuisineScore": 75,
+    "streetFoodScore": 70,
+    "fineDiningScore": 80
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 9,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 92,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 88,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "temperate",
+    "cold-winter",
+    "mild-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Short grey days — a cities-and-museums month"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 42,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Long bright evenings, castles at their photogenic best"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Beer-festival season and golden countryside (verify festival dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "The dullest window: post-autumn, pre-markets"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Christmas markets transform every town square"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Berlin + Munich + Neuschwanstein by rail",
+    "Germany + Austria + Switzerland",
+    "Rhine Valley + Cologne"
+  ],
+  "commonMistakes": [
+    "Only doing Berlin and Munich — the small towns are the fairy tale",
+    "Underestimating distances; use the trains"
+  ],
+  "packingConsiderations": [
+    "Layers year-round",
+    "Rain shell for summer showers",
+    "Serious warmth for market evenings in December"
+  ],
+  "practicalWarnings": [
+    "Many smaller shops close Sundays; card acceptance still trails cash in places"
+  ],
+  "tradeOffs": [
+    "Food scene is hearty rather than dazzling for vegetarians outside big cities",
+    "Winter daylight is short"
+  ],
+  "whoShouldAvoid": [
+    "Beach-first travellers",
+    "Anyone wanting tropical warmth"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-german-national-tourist-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "German National Tourist Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

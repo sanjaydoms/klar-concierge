@@ -1,0 +1,270 @@
+{
+  "slug": "iceland",
+  "name": "Iceland",
+  "countryIso2": "IS",
+  "countryName": "Iceland",
+  "region": "Northern Europe",
+  "summary": "Erupting geysers, black-sand beaches, glacier lagoons and skies that dance green in winter — a young volcanic island that feels like another planet.",
+  "positioningLine": "Fire, ice and aurora — Earth showing off.",
+  "idealTraveller": "Bucket-list adventurers and photographers chasing landscapes that exist nowhere else.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 98,
+    "adventure": 88,
+    "romance": 75,
+    "snow": 70,
+    "relaxation": 65,
+    "wildlife": 50,
+    "culture": 45,
+    "city": 35,
+    "history": 40,
+    "food": 55,
+    "nightlife": 45,
+    "shopping": 30,
+    "beach": 15,
+    "themeparks": 0
+  },
+  "suitability": {
+    "family": 68,
+    "toddlers": 50,
+    "children5To10": 65,
+    "teenagers": 82,
+    "seniors": 62,
+    "honeymoon": 85,
+    "solo": 82,
+    "firstInternationalTrip": 55
+  },
+  "food": {
+    "vegetarianFriendly": 55,
+    "indianFoodAvailability": 40,
+    "halalFriendly": 40,
+    "localCuisineScore": 65,
+    "streetFoodScore": 50,
+    "fineDiningScore": 72
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 13,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 35,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 55,
+    "medicalAccessScore": 80
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "subarctic",
+    "volatile-weather",
+    "aurora-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Winter driving is serious — guided tours beat self-drive"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Prime aurora hunting with longer days than December (verify forecasts)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Midnight sun, every highland road open"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Aurora season starts while roads stay easy"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Four hours of daylight and storm-prone roads"
+      ]
+    }
+  ],
+  "commonTripCombinations": [
+    "Golden Circle + south coast",
+    "Ring Road (10+ nights)",
+    "Iceland stopover en route to North America"
+  ],
+  "commonMistakes": [
+    "Treating winter self-drive casually — storms close roads fast",
+    "Only booking Blue Lagoon on landing day — flight delays forfeit it"
+  ],
+  "packingConsiderations": [
+    "True waterproof shell and layers",
+    "Swimwear for lagoons year-round",
+    "Crampon grips for icy paths in winter"
+  ],
+  "practicalWarnings": [
+    "Aurora is a probability, not a promise — plan joy that doesn't depend on it"
+  ],
+  "tradeOffs": [
+    "Extreme cost — Iceland out-prices even Norway",
+    "Weather owns every plan you make"
+  ],
+  "whoShouldAvoid": [
+    "Budget travellers",
+    "Anyone needing warmth or urban buzz"
+  ],
+  "confidence": 78,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-visit-iceland",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Visit Iceland",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

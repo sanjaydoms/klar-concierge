@@ -1,0 +1,267 @@
+{
+  "slug": "hungary",
+  "name": "Hungary",
+  "countryIso2": "HU",
+  "countryName": "Hungary",
+  "region": "Central Europe",
+  "summary": "Budapest's parliament glowing over the Danube, thermal baths from the Ottoman age, ruin bars in crumbling courtyards and Europe's best-value grandeur.",
+  "positioningLine": "Danube grandeur, thermal baths and ruin-bar nights — at half Western prices.",
+  "idealTraveller": "Couples, friends and culture fans who want imperial Europe without imperial bills.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 7,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "city": 88,
+    "culture": 85,
+    "history": 85,
+    "nightlife": 82,
+    "romance": 80,
+    "food": 72,
+    "relaxation": 75,
+    "shopping": 60,
+    "nature": 40,
+    "adventure": 30,
+    "wildlife": 5,
+    "beach": 5,
+    "themeparks": 10,
+    "snow": 15
+  },
+  "suitability": {
+    "family": 70,
+    "toddlers": 60,
+    "children5To10": 68,
+    "teenagers": 78,
+    "seniors": 78,
+    "honeymoon": 80,
+    "solo": 85,
+    "firstInternationalTrip": 72
+  },
+  "food": {
+    "vegetarianFriendly": 55,
+    "indianFoodAvailability": 55,
+    "halalFriendly": 45,
+    "localCuisineScore": 78,
+    "streetFoodScore": 70,
+    "fineDiningScore": 75
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 8.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 85,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 70,
+    "medicalAccessScore": 80
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "continental",
+    "cold-winter",
+    "warm-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 42,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Cold and grey, though baths and cafés compensate"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Café terraces open, Danube cruises at golden hour"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Heatwaves push mid-30s — baths and shade by afternoon"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 52,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 68,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [
+        "Christmas markets plus steaming outdoor thermal baths"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Budapest + Vienna + Prague",
+    "Budapest + Lake Balaton (summer)"
+  ],
+  "commonMistakes": [
+    "Day-tripping the baths — go at opening or at night, unhurried",
+    "Missing the Buda side entirely"
+  ],
+  "packingConsiderations": [
+    "Swimwear and flip-flops for the baths",
+    "Smart-casual layer for river-cruise dinners"
+  ],
+  "practicalWarnings": [
+    "Validate public-transport tickets — inspectors fine tourists daily"
+  ],
+  "tradeOffs": [
+    "Beyond Budapest, sights thin out quickly for short trips",
+    "Hearty cuisine challenges strict vegetarians"
+  ],
+  "whoShouldAvoid": [
+    "Nature-first travellers",
+    "Beach seekers"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-hungarian-tourism-agency",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Hungarian Tourism Agency",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

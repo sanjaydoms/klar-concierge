@@ -1,6 +1,6 @@
 # Known Limitations (honest)
 
-1. **Knowledge depth is 45 destinations, not the world — but it now grows autonomously.** The 196-country
+1. **Knowledge depth is 53 destinations, not the world — but it now grows autonomously.** The 196-country
    registry is skeletal by design; only the 40 Tier-1 destinations are
    recommendation-eligible. "Where should I go?" answers are excellent within
    that pack and honestly limited outside it.

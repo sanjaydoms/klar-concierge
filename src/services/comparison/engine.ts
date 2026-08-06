@@ -355,6 +355,25 @@ export function compareDestinations(
     }),
   );
 
+  // ---- Peace of mind: when vulnerable travellers are along ----
+  if (hasChildren || hasSeniors) {
+    const who = hasChildren && hasSeniors ? "children and elders" : hasChildren ? "the children" : "the elders";
+    dims.push(
+      dimension({
+        key: "peace-of-mind",
+        label: "Peace of mind if something goes wrong",
+        candidates,
+        value: (c) => ({
+          display: `Medical access ${c.d.travelPracticality.medicalAccessScore}/100, ${c.d.travelPracticality.publicTransportEase >= 70 ? "help is easy to reach" : "reaching help takes longer"}`,
+          rank: c.d.travelPracticality.medicalAccessScore,
+        }),
+        reason: (w, o) =>
+          `Travelling with ${who}, ${w.d.name}'s stronger medical access (${w.d.travelPracticality.medicalAccessScore}/100 vs ${o.d.travelPracticality.medicalAccessScore}/100 in ${o.d.name}) buys real peace of mind — the dimension nobody thinks about until they need it.`,
+        tieReason: "Medical access is comparable — neither has an edge in emergencies.",
+      }),
+    );
+  }
+
   // ---- Accessibility: only when it was asked for ----
   if (fullBrief.accessibilityNeeds.length > 0) {
     dims.push(
@@ -402,7 +421,11 @@ export function compareDestinations(
       key: "watchouts",
       label: "The trade-off you accept",
       candidates,
-      value: (c) => ({ display: c.d.tradeOffs[0] ?? "No major trade-off recorded", rank: 0 }),
+      value: (c) => {
+        const tradeOff = c.d.tradeOffs[0] ?? "No major trade-off recorded";
+        const avoid = c.d.whoShouldAvoid[0];
+        return { display: avoid ? `${tradeOff} Not for: ${lc(avoid)}` : tradeOff, rank: 0 };
+      },
       reason: () => "",
       tieReason: "Trade-offs decide more than scores — choose the one you can genuinely live with.",
     }),

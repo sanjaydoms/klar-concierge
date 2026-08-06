@@ -58,4 +58,13 @@ export const DESTINATION_GEO: Record<string, DestinationGeo> = {
   armenia: { lat: 40.18, lon: 44.51, station: "Yerevan" },
   jordan: { lat: 31.95, lon: 35.93, station: "Amman" },
   zanzibar: { lat: -6.16, lon: 39.2, station: "Zanzibar City" },
+  // 2.4.0 additions — Europe & the Americas
+  germany: { lat: 52.52, lon: 13.4, station: "Berlin" },
+  netherlands: { lat: 52.37, lon: 4.9, station: "Amsterdam" },
+  croatia: { lat: 42.65, lon: 18.09, station: "Dubrovnik" },
+  hungary: { lat: 47.5, lon: 19.04, station: "Budapest" },
+  norway: { lat: 60.39, lon: 5.32, station: "Bergen" },
+  iceland: { lat: 64.15, lon: -21.94, station: "Reykjavik" },
+  "united-states": { lat: 40.71, lon: -74.01, station: "New York City" },
+  canada: { lat: 43.65, lon: -79.38, station: "Toronto" },
 };

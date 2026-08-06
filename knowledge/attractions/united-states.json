@@ -1,0 +1,234 @@
+[
+  {
+    "id": "united-states-new-york-city-icons",
+    "destinationSlug": "united-states",
+    "name": "New York City Icons",
+    "category": "landmark",
+    "summary": "Times Square's neon canyon, Central Park's calm, the Statue of Liberty and a skyline that needs no introduction.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Central Park playgrounds and the Natural History Museum balance the crowds"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Buy Liberty/Ellis ferry tickets only from the official operator"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "united-states-grand-canyon-national-park",
+    "destinationSlug": "united-states",
+    "name": "Grand Canyon National Park",
+    "category": "nature",
+    "summary": "A mile-deep, ten-mile-wide silence in banded stone — no photograph prepares you.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Rim Trail is flat and shuttle-served; sunrise beats the heat and crowds"
+    ],
+    "practicalNotes": [
+      "Summer inner-canyon hiking is dangerous heat — rim views are the point"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "united-states-niagara-falls",
+    "destinationSlug": "united-states",
+    "name": "Niagara Falls",
+    "category": "nature",
+    "summary": "Thundering horseshoe of water on the border — boat decks get you close enough to feel it in your chest.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Ponchos provided; kids adore getting soaked"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "united-states-las-vegas-strip",
+    "destinationSlug": "united-states",
+    "name": "Las Vegas Strip",
+    "category": "nightlife",
+    "summary": "Fountains, volcanoes, gondolas and casinos in a desert fever dream — gloriously excessive.",
+    "idealFor": [
+      "friends",
+      "couple",
+      "nightlife"
+    ],
+    "unsuitableFor": [
+      "young children (adult-oriented evenings)"
+    ],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Shows sell out — book headliners before flying"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "united-states-orlando-theme-parks",
+    "destinationSlug": "united-states",
+    "name": "Orlando Theme Parks",
+    "category": "theme-park",
+    "summary": "Disney World and Universal — the deepest theme-park universe on Earth; plan like a military operation, smile like a child.",
+    "idealFor": [
+      "family",
+      "children",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 7,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Ride-reservation apps are essential; build rest days in"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Park-hopper strategy matters — one park per day minimum"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "united-states-golden-gate-san-francisco-bay",
+    "destinationSlug": "united-states",
+    "name": "Golden Gate & San Francisco Bay",
+    "category": "landmark",
+    "summary": "The rust-red bridge in and out of fog, cable cars, Alcatraz and sourdough at the wharf.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Alcatraz tickets vanish weeks ahead — book first, plan around it"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

@@ -1,5 +1,41 @@
 # Release Notes
 
+## 2.4.0 — Europe & Americas expansion, security certification, sharper comparison (2026-08-06)
+
+### Knowledge: +8 destinations across Europe and the Americas
+- Germany, Netherlands, Croatia, Hungary, Norway, Iceland, United States,
+  Canada — chosen for Indian outbound demand across first-Europe trips,
+  honeymoons (Croatia, Norway, Iceland), families (Germany, USA, Canada) and
+  value city breaks (Hungary). Now **53 destinations / 318 attractions**,
+  all eligibility-gated, all with encyclopedia pages, sitemap and llms.txt
+  entries, all wired into the autonomous climate/citation pipeline.
+
+### Security: audited, hardened, and self-testing
+- **Dependencies: 0 known vulnerabilities.** Next.js upgraded to 15.5.22;
+  patched sharp (libvips CVEs) and postcss (XSS/path-traversal advisories)
+  forced via overrides — without the breaking Next 16 jump.
+- Hardening from a full-surface review: HSTS added; JSON-LD script blocks
+  escape `<` (script-tag breakout closed); rate-limiter memory bounded and
+  client-IP detection made platform-aware; session transcripts capped;
+  every API body already zod-validated with length/enum/UUID bounds.
+- **Automated vulnerability test + fix module**: the `security` CI workflow
+  runs `npm audit` (fails on high+), prototype-pollution/injection fuzzing
+  and end-to-end security tests (headers, XSS execution, payload abuse,
+  path traversal) on every push and weekly; the weekly run applies
+  `npm audit fix`, re-runs the entire quality gate and commits only if
+  green. Dependabot handles breaking upgrades as reviewable PRs.
+  Full model in `docs/SECURITY.md`.
+
+### Comparison: two more decision-driving rows
+- "Peace of mind if something goes wrong" — medical-access comparison,
+  shown only when children or seniors are travelling.
+- The trade-off row now also names who each destination is *not* for.
+
+### Verification
+- 88 unit/integration tests, 288/288 evals, **34/34 e2e** (18 security
+  assertions across desktop + 320px mobile), production build green with 53
+  static guides, `npm audit`: 0 vulnerabilities.
+
 ## 2.3.0 — Autonomous evidence-verified knowledge, multi-engine AI (2026-08-05)
 
 ### The knowledge base now grows and refreshes itself — no human required

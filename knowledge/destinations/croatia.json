@@ -1,0 +1,269 @@
+{
+  "slug": "croatia",
+  "name": "Croatia",
+  "countryIso2": "HR",
+  "countryName": "Croatia",
+  "region": "Southern Europe",
+  "summary": "Marble old towns dropping into a turquoise Adriatic, waterfall national parks and a thousand islands — Mediterranean beauty before the Mediterranean prices.",
+  "positioningLine": "The Adriatic's walled towns, waterfalls and island summers.",
+  "idealTraveller": "Couples and friends who want Mediterranean glamour, history and swimmable seas together.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 82,
+    "history": 85,
+    "nature": 85,
+    "culture": 80,
+    "romance": 85,
+    "food": 72,
+    "relaxation": 78,
+    "city": 60,
+    "adventure": 60,
+    "nightlife": 70,
+    "shopping": 45,
+    "wildlife": 15,
+    "themeparks": 5,
+    "snow": 5
+  },
+  "suitability": {
+    "family": 75,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 80,
+    "seniors": 70,
+    "honeymoon": 86,
+    "solo": 78,
+    "firstInternationalTrip": 70
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 40,
+    "halalFriendly": 45,
+    "localCuisineScore": 78,
+    "streetFoodScore": 60,
+    "fineDiningScore": 72
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 10,
+    "walkingIntensity": "high",
+    "publicTransportEase": 55,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 55,
+    "medicalAccessScore": 75
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "mediterranean",
+    "hot-dry-summer",
+    "mild-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Many island hotels and ferries hibernate"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Warm sea before peak crowds — the sweet spot"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": [
+        "Dubrovnik's walls at midday are a slow, hot queue"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Sea still warm, crowds gone, light golden"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Dubrovnik + Split + Hvar",
+    "Croatia + Slovenia + Plitvice",
+    "Adriatic cruise add-on"
+  ],
+  "commonMistakes": [
+    "August in Dubrovnik without dawn starts",
+    "Trying five islands in a week — pick two"
+  ],
+  "packingConsiderations": [
+    "Water shoes for pebble beaches",
+    "Sun cover for stone streets that radiate heat",
+    "A layer for sea breezes at night"
+  ],
+  "practicalWarnings": [
+    "Old-town stays mean stairs and cobbles — pack light or choose hotels with porters"
+  ],
+  "tradeOffs": [
+    "Peak summer is crowded and priced accordingly",
+    "Beaches are pebble, not sand"
+  ],
+  "whoShouldAvoid": [
+    "Travellers needing step-free stays — old towns are vertical",
+    "White-sand purists"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-croatian-national-tourist-board",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Croatian National Tourist Board",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Destination Coverage
 
-45 Tier-1 destinations, each with full 12-month intelligence and ≥5 structured
-attractions (270 total):
+53 Tier-1 destinations, each with full 12-month intelligence and ≥5 structured
+attractions (318 total):
 
 Singapore · Dubai · Abu Dhabi · Bali · Bangkok · Phuket · Krabi ·
 Kuala Lumpur · Langkawi · Vietnam · Japan · South Korea · Sri Lanka ·
@@ -9,7 +9,8 @@ Maldives · Mauritius · Seychelles · Turkey · Georgia · Azerbaijan · Egypt 
 Switzerland · France · Italy · Greece · Spain · Austria · Czech Republic ·
 Australia · New Zealand · South Africa · Hong Kong · Nepal · Bhutan · Oman ·
 Qatar · Cambodia · Kenya · Morocco · Portugal · United Kingdom · Uzbekistan ·
-Almaty · Armenia · Jordan · Zanzibar
+Almaty · Armenia · Jordan · Zanzibar · Germany · Netherlands · Croatia ·
+Hungary · Norway · Iceland · United States · Canada
 
 ## Recommendation eligibility gate
 A destination is customer-recommendable only when **all** hold:

@@ -8,11 +8,22 @@ type Window = { count: number; resetAt: number };
 
 const windows = new Map<string, Window>();
 
+// Memory bound: expired windows are swept opportunistically so a scanner
+// cycling spoofed keys cannot grow the map without limit.
+const MAX_WINDOWS = 50_000;
+
+function sweep(now: number) {
+  for (const [key, w] of windows) {
+    if (w.resetAt <= now) windows.delete(key);
+  }
+}
+
 export function rateLimit(
   key: string,
   limitPerMinute: number,
 ): { allowed: boolean; retryAfterSeconds: number } {
   const now = Date.now();
+  if (windows.size > MAX_WINDOWS) sweep(now);
   const current = windows.get(key);
   if (!current || current.resetAt <= now) {
     windows.set(key, { count: 1, resetAt: now + 60_000 });
@@ -26,7 +37,10 @@ export function rateLimit(
 }
 
 export function clientKey(request: Request, scope: string): string {
+  // Prefer the platform-set client IP (Vercel sets x-real-ip and sanitises
+  // x-forwarded-for at its edge). The first XFF entry is the fallback.
+  const real = request.headers.get("x-real-ip");
   const forwarded = request.headers.get("x-forwarded-for");
-  const ip = forwarded ? forwarded.split(",")[0].trim() : "local";
+  const ip = real?.trim() || (forwarded ? forwarded.split(",")[0].trim() : "local");
   return `${scope}:${ip}`;
 }

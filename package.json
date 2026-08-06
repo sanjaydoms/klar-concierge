@@ -1,7 +1,7 @@
 {
   "name": "klar-concierge",
   "private": true,
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Klar Concierge \u2014 conversational holiday decision engine for Klar Travels",
   "scripts": {
     "dev": "next dev -p 3002",
@@ -26,22 +26,26 @@
     "knowledge:autonomous": "tsx scripts/knowledge-autonomous.ts"
   },
   "dependencies": {
-    "next": "^15.4.6",
+    "next": "^15.5.22",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "zod": "^3.25.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.49.0",
     "@types/node": "^22.15.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
+    "postcss": "^8.5.25",
     "tailwindcss": "^3.4.10",
     "tsx": "^4.19.0",
     "typescript": "^5.8.0",
     "vitest": "^3.2.0",
-    "@playwright/test": "^1.49.0",
     "world-countries": "^5.0.0"
+  },
+  "overrides": {
+    "sharp": "^0.35.0",
+    "postcss": "^8.5.25"
   }
 }

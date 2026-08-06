@@ -1,0 +1,75 @@
+# Automated vulnerability testing and fixing.
+#
+# Every push and every Monday:
+#   1. npm audit gates the build — any high/critical dependency vulnerability
+#      fails the workflow loudly.
+#   2. The security test suite runs: header checks, XSS/injection resistance,
+#      payload abuse, path traversal, prototype pollution fuzzing.
+#
+# The weekly run adds AUTO-FIX: `npm audit fix` is applied, the full quality
+# gate re-runs (typecheck, tests, evals), and only if everything stays green
+# is the fix committed to main. Vercel redeploys automatically. Breaking
+# upgrades are never auto-applied — those surface through Dependabot PRs.
+name: security
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "30 3 * * 1" # Mondays 03:30 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  vulnerability-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Dependency vulnerability gate (high and above fails)
+        run: npm audit --audit-level=high
+      - name: Unit-level security tests (fuzzing, pollution, hostile input)
+        run: npx vitest run tests/unit/input-fuzzing.test.ts
+      - name: Build for end-to-end security tests
+        run: npm run build
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+      - name: End-to-end security tests (headers, XSS, API abuse)
+        run: npx playwright test tests/e2e/security.spec.ts --project=desktop
+
+  auto-fix:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: vulnerability-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Apply non-breaking security fixes
+        run: npm audit fix || true
+      - name: Verify nothing broke
+        run: |
+          npm run typecheck
+          npm test
+          npm run eval:critical
+          npm run build
+      - name: Commit fixes if any
+        run: |
+          git config user.name "klar-security-bot"
+          git config user.email "security-bot@users.noreply.github.com"
+          git add package.json package-lock.json
+          if git diff --cached --quiet; then
+            echo "No security fixes to apply."
+          else
+            git commit -m "Automated security fix: npm audit fix (full gate green)"
+            git push
+          fi

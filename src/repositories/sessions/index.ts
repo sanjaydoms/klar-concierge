@@ -57,6 +57,11 @@ class MemorySessionStore implements SessionStore {
   async save(session: PlanningSession): Promise<void> {
     session.updatedAt = new Date().toISOString();
     session.expiresAt = new Date(Date.now() + config.sessionTtlMinutes * 60_000).toISOString();
+    // Bound per-session memory: only the recent transcript matters for
+    // planning; the brief carries the accumulated understanding.
+    if (session.messages.length > 80) {
+      session.messages = session.messages.slice(-80);
+    }
     this.sessions.set(session.id, session);
   }
 

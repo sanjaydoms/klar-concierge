@@ -1,0 +1,268 @@
+{
+  "slug": "netherlands",
+  "name": "Netherlands",
+  "countryIso2": "NL",
+  "countryName": "Netherlands",
+  "region": "Western Europe",
+  "summary": "Canals under gabled houses, tulip fields to the horizon in spring, world-class art and villages where boats replace cars — compact, flat and endlessly photogenic.",
+  "positioningLine": "Canals, tulips and masterpieces — Europe at its prettiest.",
+  "idealTraveller": "Couples and culture lovers wanting maximum charm with minimum transit.",
+  "minimumNights": 3,
+  "idealNights": 5,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "culture": 90,
+    "city": 85,
+    "history": 80,
+    "romance": 80,
+    "nature": 65,
+    "food": 65,
+    "shopping": 70,
+    "relaxation": 60,
+    "nightlife": 75,
+    "adventure": 35,
+    "themeparks": 50,
+    "wildlife": 10,
+    "beach": 20,
+    "snow": 5
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 70,
+    "children5To10": 78,
+    "teenagers": 78,
+    "seniors": 82,
+    "honeymoon": 78,
+    "solo": 85,
+    "firstInternationalTrip": 75
+  },
+  "food": {
+    "vegetarianFriendly": 70,
+    "indianFoodAvailability": 72,
+    "halalFriendly": 72,
+    "localCuisineScore": 65,
+    "streetFoodScore": 65,
+    "fineDiningScore": 78
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 9,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 94,
+    "roadTransferBurden": "low",
+    "accessibilityScore": 86,
+    "medicalAccessScore": 92
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "temperate-maritime",
+    "mild",
+    "rain-any-month"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 42,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 44,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Tulip season — Keukenhof and the bulb fields in full colour (verify open dates)"
+      ],
+      "warnings": [
+        "Tulip crowds are real; book everything early"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 72,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Grey, wet and windy — indoor plans essential"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Canal-side lights and cosy museum days"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Amsterdam + Belgium",
+    "Amsterdam + Paris by rail",
+    "Netherlands + Germany"
+  ],
+  "commonMistakes": [
+    "Visiting for tulips outside the spring window",
+    "Staying only in central Amsterdam — day trips are effortless"
+  ],
+  "packingConsiderations": [
+    "A rain layer every month of the year",
+    "Comfortable shoes for cobbles and canals"
+  ],
+  "practicalWarnings": [
+    "Book Keukenhof, Anne Frank House and canal-side restaurants well ahead in season"
+  ],
+  "tradeOffs": [
+    "Weather is a lottery outside high summer",
+    "Prices run high in tulip season"
+  ],
+  "whoShouldAvoid": [
+    "Sun-guarantee seekers",
+    "Travellers who hate cycling-dominated streets"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-netherlands-board-of-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Netherlands Board of Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

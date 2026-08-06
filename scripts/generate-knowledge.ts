@@ -14,19 +14,21 @@ import { DESTINATIONS_2 } from "./authoring/destinations-2";
 import { DESTINATIONS_3 } from "./authoring/destinations-3";
 import { DESTINATIONS_4 } from "./authoring/destinations-4";
 import { DESTINATIONS_5 } from "./authoring/destinations-5";
+import { DESTINATIONS_6 } from "./authoring/destinations-6";
 import { ATTRACTIONS_1 } from "./authoring/attractions-1";
 import { ATTRACTIONS_2 } from "./authoring/attractions-2";
 import { ATTRACTIONS_3 } from "./authoring/attractions-3";
 import { ATTRACTIONS_4 } from "./authoring/attractions-4";
 import { ATTRACTIONS_5 } from "./authoring/attractions-5";
+import { ATTRACTIONS_6 } from "./authoring/attractions-6";
 import type { CountryIntelligence, DestinationIntelligence } from "../src/types/knowledge";
 import { KLAR_EXPERT_SOURCE } from "./authoring/builders";
 
 const ROOT = path.join(__dirname, "..");
 const KNOWLEDGE = path.join(ROOT, "knowledge");
 
-const destinations = [...DESTINATIONS_1, ...DESTINATIONS_2, ...DESTINATIONS_3, ...DESTINATIONS_4, ...DESTINATIONS_5];
-const attractions = [...ATTRACTIONS_1, ...ATTRACTIONS_2, ...ATTRACTIONS_3, ...ATTRACTIONS_4, ...ATTRACTIONS_5];
+const destinations = [...DESTINATIONS_1, ...DESTINATIONS_2, ...DESTINATIONS_3, ...DESTINATIONS_4, ...DESTINATIONS_5, ...DESTINATIONS_6];
+const attractions = [...ATTRACTIONS_1, ...ATTRACTIONS_2, ...ATTRACTIONS_3, ...ATTRACTIONS_4, ...ATTRACTIONS_5, ...ATTRACTIONS_6];
 
 function writeJson(file: string, data: unknown) {
   fs.mkdirSync(path.dirname(file), { recursive: true });

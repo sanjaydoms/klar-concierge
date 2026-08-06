@@ -1,0 +1,270 @@
+{
+  "slug": "canada",
+  "name": "Canada",
+  "countryIso2": "CA",
+  "countryName": "Canada",
+  "region": "North America",
+  "summary": "Turquoise lakes under Rocky Mountain walls, Niagara's thunder, whale-rich coasts and cities that top livability charts — wilderness with excellent manners.",
+  "positioningLine": "Rockies, Niagara and civilised wilderness.",
+  "idealTraveller": "Nature-loving families and couples who want epic outdoors with polished comfort.",
+  "minimumNights": 7,
+  "idealNights": 10,
+  "maximumNights": 16,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "nature": 95,
+    "wildlife": 70,
+    "city": 70,
+    "adventure": 72,
+    "romance": 75,
+    "snow": 65,
+    "relaxation": 65,
+    "food": 70,
+    "culture": 65,
+    "history": 55,
+    "shopping": 65,
+    "nightlife": 60,
+    "beach": 20,
+    "themeparks": 30
+  },
+  "suitability": {
+    "family": 82,
+    "toddlers": 65,
+    "children5To10": 80,
+    "teenagers": 85,
+    "seniors": 72,
+    "honeymoon": 82,
+    "solo": 80,
+    "firstInternationalTrip": 55
+  },
+  "food": {
+    "vegetarianFriendly": 72,
+    "indianFoodAvailability": 85,
+    "halalFriendly": 72,
+    "localCuisineScore": 75,
+    "streetFoodScore": 68,
+    "fineDiningScore": 85
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 14.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 60,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 88,
+    "medicalAccessScore": 90
+  },
+  "budgetBands": [
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "continental",
+    "severe-winter",
+    "glorious-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Deep-freeze cold shocks first-timers — this is a ski-trip month"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 48,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 78,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Long days, whales on both coasts"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [
+        "Rockies' lakes at full turquoise; wildlife everywhere"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 82,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Larch gold in the mountains, maple red in the east"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Grey shoulder between colours and snow"
+      ]
+    },
+    {
+      "month": 12,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Toronto + Niagara + Rockies",
+    "Vancouver + Rocky Mountaineer",
+    "East-coast fall-colours drive"
+  ],
+  "commonMistakes": [
+    "Underestimating internal distances — Toronto to Banff is a flight, not a drive",
+    "Skipping advance permits for Lake Louise-area parking in summer"
+  ],
+  "packingConsiderations": [
+    "Warm layer even in July for mountain evenings",
+    "Full winter kit December–March",
+    "Bug spray for June lakesides"
+  ],
+  "practicalWarnings": [
+    "Summer Rockies accommodation books out months ahead — commit early"
+  ],
+  "tradeOffs": [
+    "Long-haul flight plus internal flights to reach the Rockies",
+    "Peak-summer prices rival Switzerland"
+  ],
+  "whoShouldAvoid": [
+    "Short-break travellers",
+    "Anyone chasing guaranteed warmth"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-destination-canada",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Destination Canada",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

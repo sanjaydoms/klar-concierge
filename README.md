@@ -23,7 +23,7 @@ is never persisted here — it travels to the CRM at handover only.
 
 - Next.js (App Router) + TypeScript + Tailwind — no database required
 - KTIE knowledge base: Git-managed JSON under `knowledge/` (196 countries,
-  45 deep destinations, 270 structured attractions), compiled and validated
+  53 deep destinations, 318 structured attractions), compiled and validated
   by scripts
 - Deterministic recommendation, comparison and itinerary engines —
   AI (optional OpenAI) only interprets the traveller, never ranks destinations

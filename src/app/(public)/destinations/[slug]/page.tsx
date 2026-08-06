@@ -89,7 +89,8 @@ export default async function DestinationPage({
     <div className="mx-auto max-w-content px-4 py-14 sm:px-6">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        // "<" escaped so no knowledge string can ever close the script tag
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
 
       <nav aria-label="Breadcrumb" className="text-xs text-foreground/55">
