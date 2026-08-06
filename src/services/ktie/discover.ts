@@ -8,6 +8,7 @@ export type DiscoverCollection = {
   destinations: Array<{
     slug: string;
     name: string;
+    countryIso2?: string;
     country: string;
     region: string;
     positioningLine: string;
@@ -33,6 +34,7 @@ export function buildDiscoverCollections(month: number): DiscoverCollection[] {
     list.map((d) => ({
       slug: d.slug,
       name: d.name,
+      countryIso2: d.countryIso2,
       country: d.countryName,
       region: d.region,
       positioningLine: d.positioningLine,
