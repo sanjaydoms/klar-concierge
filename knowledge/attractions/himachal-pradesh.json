@@ -1,0 +1,234 @@
+[
+  {
+    "id": "himachal-pradesh-solang-valley-atal-tunnel",
+    "destinationSlug": "himachal-pradesh",
+    "name": "Solang Valley & Atal Tunnel",
+    "category": "adventure",
+    "summary": "Paragliding, zorbing and ropeway rides — then through the tunnel to Sissu's stark beauty.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Activity operators vary — pick licensed ones"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "himachal-pradesh-old-manali-hadimba-temple",
+    "destinationSlug": "himachal-pradesh",
+    "name": "Old Manali & Hadimba Temple",
+    "category": "culture",
+    "summary": "Cedar-forest temple, café lanes and apple orchards — Manali's gentler face.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Short forest walk on mostly even paths"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "himachal-pradesh-shimla-mall-road-ridge",
+    "destinationSlug": "himachal-pradesh",
+    "name": "Shimla Mall Road & Ridge",
+    "category": "experience",
+    "summary": "Colonial promenade, Christ Church and valley views — the original hill-station evening.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Lift connects Cart Road to Mall Road, sparing the climb"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "himachal-pradesh-kalka-shimla-toy-train",
+    "destinationSlug": "himachal-pradesh",
+    "name": "Kalka–Shimla Toy Train",
+    "category": "experience",
+    "summary": "A UNESCO narrow-gauge climb through 100 tunnels and pine forests.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Book windows seats weeks ahead in season"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "himachal-pradesh-bir-billing-paragliding",
+    "destinationSlug": "himachal-pradesh",
+    "name": "Bir Billing Paragliding",
+    "category": "adventure",
+    "summary": "One of the world's top paragliding sites — tandem flights over tea gardens and monasteries.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [
+      "young children (operator age limits)",
+      "vertigo sufferers"
+    ],
+    "minimumAge": 12,
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "himachal-pradesh-kasol-parvati-valley",
+    "destinationSlug": "himachal-pradesh",
+    "name": "Kasol & Parvati Valley",
+    "category": "nature",
+    "summary": "Riverside cafés, easy village hikes and the Himalaya at backpacker pace.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Day-hike to Chalal is the gentle classic"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

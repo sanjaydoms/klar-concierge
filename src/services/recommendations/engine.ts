@@ -38,6 +38,14 @@ export function hardExclusions(
 
   if (destination.status !== "verified") reasons.push("not-verified");
 
+  // Trip scope: "within India" excludes international, and vice versa.
+  if (brief.travelScope === "domestic" && destination.countryIso2 !== "IN") {
+    reasons.push("scope-conflict");
+  }
+  if (brief.travelScope === "international" && destination.countryIso2 === "IN") {
+    reasons.push("scope-conflict");
+  }
+
   if (brief.travelMonth) {
     const month = destination.monthlyIntelligence.find((m) => m.month === brief.travelMonth);
     if (month && month.seasonScore < SEASON_MINIMUM) reasons.push("season-below-threshold");

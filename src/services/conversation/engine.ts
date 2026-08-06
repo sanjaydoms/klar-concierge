@@ -55,6 +55,9 @@ function understoodSummary(patch: Partial<TravelBrief>, brief: TravelBrief): str
         : `a ${patch.travellerType} holiday`,
     );
   }
+  if (patch.travelScope) {
+    bits.push(patch.travelScope === "domestic" ? "a holiday within India" : "an international holiday");
+  }
   if (patch.durationNights) bits.push(`${patch.durationNights} nights`);
   if (patch.travelMonth) bits.push(`in ${MONTH_NAMES[patch.travelMonth - 1]}`);
   if (patch.originCity) bits.push(`from ${patch.originCity}`);

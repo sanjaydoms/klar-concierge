@@ -17,6 +17,9 @@ export type FlightTolerance = "short" | "medium" | "long" | "no-preference";
 
 export type CrowdTolerance = "low" | "medium" | "high";
 
+/** Domestic = within India; international = abroad; unset = open to both. */
+export type TravelScope = "domestic" | "international";
+
 export type TravelBrief = {
   originalPrompt: string;
 
@@ -26,6 +29,8 @@ export type TravelBrief = {
 
   destinationPreferences: string[];
   excludedDestinations: string[];
+
+  travelScope?: TravelScope;
 
   travelMonth?: number;
   startDate?: string;

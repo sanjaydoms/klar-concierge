@@ -1,0 +1,270 @@
+{
+  "slug": "rajasthan",
+  "name": "Rajasthan",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Amber forts glowing at sunset, blue Jodhpur and golden Jaisalmer, palace hotels and desert nights — the India of every imagination, real.",
+  "positioningLine": "Forts, palaces and desert gold — royal India, alive.",
+  "idealTraveller": "Culture lovers, photographers and celebration trips that deserve a palace.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "history": 96,
+    "culture": 94,
+    "romance": 82,
+    "food": 78,
+    "shopping": 80,
+    "adventure": 55,
+    "nature": 50,
+    "city": 60,
+    "wildlife": 45,
+    "relaxation": 50,
+    "nightlife": 35,
+    "beach": 0,
+    "themeparks": 5,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 60,
+    "children5To10": 72,
+    "teenagers": 78,
+    "seniors": 72,
+    "honeymoon": 85,
+    "solo": 78,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 95,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 75,
+    "localCuisineScore": 88,
+    "streetFoodScore": 85,
+    "fineDiningScore": 78
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 1.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 45,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 45,
+    "medicalAccessScore": 65
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "desert",
+    "fierce-summer",
+    "mild-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Cool mornings, golden light — photography's favourite month"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "45°C afternoons make sightseeing genuinely unsafe by noon"
+      ]
+    },
+    {
+      "month": 6,
+      "seasonScore": 30,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Peak desert heat continues"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Pushkar fair season and flawless fort weather (verify fair dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Jaipur + Jodhpur + Udaipur golden triangle-plus",
+    "Add Jaisalmer desert overnight",
+    "Rajasthan + Agra"
+  ],
+  "commonMistakes": [
+    "Trying five cities in six nights — the roads eat your hours",
+    "April–June visits without a heat plan"
+  ],
+  "packingConsiderations": [
+    "Sun cover and serious hydration",
+    "Modest wear for temples",
+    "A warm layer for desert winter nights"
+  ],
+  "practicalWarnings": [
+    "Fort visits are steep, cobbled and long — pace the elders"
+  ],
+  "tradeOffs": [
+    "Winter is peak-priced and busy at headline forts",
+    "Distances between cities are long road days"
+  ],
+  "whoShouldAvoid": [
+    "Beach-first relaxers",
+    "Anyone travelling April–June who dislikes extreme heat"
+  ],
+  "confidence": 86,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-rajasthan-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Rajasthan Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

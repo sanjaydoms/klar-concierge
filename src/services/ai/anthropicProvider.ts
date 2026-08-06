@@ -9,6 +9,7 @@ const patchSchema = z.object({
       originCity: z.string().optional(),
       departureAirport: z.string().optional(),
       destinationPreferences: z.array(z.string()).optional(),
+      travelScope: z.enum(["domestic", "international"]).optional(),
       excludedDestinations: z.array(z.string()).optional(),
       travelMonth: z.number().int().min(1).max(12).optional(),
       startDate: z.string().optional(),

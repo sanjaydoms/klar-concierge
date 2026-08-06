@@ -1,0 +1,232 @@
+[
+  {
+    "id": "rajasthan-amber-fort-jaipur",
+    "destinationSlug": "rajasthan",
+    "name": "Amber Fort, Jaipur",
+    "category": "landmark",
+    "summary": "Mirror halls and ramparts above a lake — Rajasthan's grand overture.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [
+      "limited mobility (long ramps and stairs)"
+    ],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Go at opening; skip the elephant ride, take the jeep"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "rajasthan-mehrangarh-fort-jodhpur",
+    "destinationSlug": "rajasthan",
+    "name": "Mehrangarh Fort, Jodhpur",
+    "category": "landmark",
+    "summary": "A cliff-top colossus over the blue city — India's best-run fort museum.",
+    "idealFor": [
+      "family",
+      "couple",
+      "first-visit"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Lift available to upper courtyards"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "rajasthan-udaipur-lake-pichola",
+    "destinationSlug": "rajasthan",
+    "name": "Udaipur Lake Pichola",
+    "category": "experience",
+    "summary": "Sunset boat past the Lake Palace, ghats glowing gold — India's most romantic hour.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Effortless beauty — seated boat cruise"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "rajasthan-jaisalmer-sam-dunes-overnight",
+    "destinationSlug": "rajasthan",
+    "name": "Jaisalmer & Sam Dunes Overnight",
+    "category": "adventure",
+    "summary": "Golden sandstone lanes, then camel-back dunes and folk music under stars.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Kids adore the camels and campfire; nights get cold"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "rajasthan-city-palace-udaipur",
+    "destinationSlug": "rajasthan",
+    "name": "City Palace, Udaipur",
+    "category": "culture",
+    "summary": "Courtyards, peacock mosaics and lake views through marble jharokhas.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Audio guide turns corridors into stories"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "rajasthan-jaipur-bazaars",
+    "destinationSlug": "rajasthan",
+    "name": "Jaipur Bazaars",
+    "category": "shopping",
+    "summary": "Block prints, blue pottery, juttis and gemstones — haggling as sport in the pink city.",
+    "idealFor": [
+      "shopping",
+      "family",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Fixed-price government emporia calibrate your bargaining"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

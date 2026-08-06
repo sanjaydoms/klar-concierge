@@ -31,6 +31,7 @@ type ChatMessage = { role: "user" | "assistant"; content: string; createdAt: str
 const CHIPS = [
   "Family holiday",
   "Honeymoon",
+  "Within India",
   "Best this month",
   "Relaxed beach escape",
   "Senior-friendly trip",

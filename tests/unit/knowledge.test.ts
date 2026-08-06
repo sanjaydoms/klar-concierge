@@ -57,9 +57,9 @@ describe("KTIE knowledge base", () => {
     expect(singapore!.status).toBe("reviewed");
   });
 
-  it("builds all twelve discovery collections from eligible destinations only", () => {
+  it("builds all thirteen discovery collections from eligible destinations only", () => {
     const collections = buildDiscoverCollections(12);
-    expect(collections).toHaveLength(12);
+    expect(collections).toHaveLength(13);
     const eligible = new Set(getEligibleDestinations().map((d) => d.slug));
     for (const c of collections) {
       expect(c.destinations.length).toBeGreaterThan(0);

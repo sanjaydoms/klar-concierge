@@ -1,5 +1,38 @@
 # Release Notes
 
+## 2.6.0 — Domestic India, and the language of Indian travellers (2026-08-06)
+
+### India domestic knowledge pack (the reported gap)
+- +8 Indian destinations with honest seasons and 48 reviewed attractions:
+  **Goa, Kerala, Rajasthan, Himachal Pradesh, Kashmir, Andaman Islands,
+  Ladakh, Sikkim & Darjeeling** — monsoon truthfully scored, altitude and
+  permit realities stated, ropey roads called ropey. Now **61 destinations
+  / 366 attractions**, all eligibility-gated, all in the autonomous
+  climate/photo pipeline.
+- New "Incredible India" Discover collection; "Short holidays" collection
+  is now explicitly international so the two don't blur.
+
+### The planner now speaks domestic
+- New `travelScope` understanding: "domestic tours", "within India",
+  "holiday in India" → only Indian recommendations; "abroad/international"
+  → only international. Enforced as a hard exclusion in the engine, not a
+  soft preference.
+- "Within India" quick chip added to the planner.
+- Bug fixed en route: "holiday in **Goa**" was previously read as a
+  *departure city* (Goa was in the origin-city list). Origin now requires
+  "from <city>" phrasing; bare city mentions are destination wishes, and
+  bare answers to "which city are you starting from?" still fill origin
+  via slot-filling.
+- More natural-language coverage: hill station(s), Himalayas, backwaters,
+  valley, snowfall now map to interests.
+
+### Verification
+- 95/95 unit/integration tests (7 new domestic-scope tests), 288/288
+  evals, 38/38 e2e, production build green with 61 static guides.
+- Live-verified: "Suggest some domestic tours for a family, 5 nights in
+  December, we love beaches" → understood in one turn, recommends Goa /
+  Andaman Islands / Kerala.
+
 ## 2.5.0 — The "feel" release: photography, maps, sharing, streaming (2026-08-06)
 
 ### Destination photography (autonomous, credited)

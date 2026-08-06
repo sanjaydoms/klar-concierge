@@ -1,0 +1,230 @@
+[
+  {
+    "id": "kashmir-dal-lake-shikara-houseboat",
+    "destinationSlug": "kashmir",
+    "name": "Dal Lake Shikara & Houseboat",
+    "category": "experience",
+    "summary": "Glide past floating gardens and lotus fields at dawn; sleep on a carved houseboat.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "The most effortless beauty in India — seated throughout"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kashmir-gulmarg-gondola",
+    "destinationSlug": "kashmir",
+    "name": "Gulmarg Gondola",
+    "category": "adventure",
+    "summary": "Asia's highest cable car, meadows in summer, serious powder in winter.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Book Phase 2 slots online ahead; carry warm layers year-round"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kashmir-mughal-gardens-srinagar",
+    "destinationSlug": "kashmir",
+    "name": "Mughal Gardens, Srinagar",
+    "category": "culture",
+    "summary": "Nishat and Shalimar's terraced fountains framed by chinar and mountains.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Open lawns for restless legs"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kashmir-pahalgam-betaab-valley",
+    "destinationSlug": "kashmir",
+    "name": "Pahalgam & Betaab Valley",
+    "category": "nature",
+    "summary": "Pine-lined river valleys and pony trails — the Kashmir of film songs.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Fix pony/taxi rates before starting"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kashmir-sonamarg-meadows",
+    "destinationSlug": "kashmir",
+    "name": "Sonamarg Meadows",
+    "category": "nature",
+    "summary": "The 'meadow of gold' beneath glaciers — day-trip drama on the Ladakh road.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Viewpoints are drive-up; glacier walks optional"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kashmir-srinagar-old-city-craft-shopping",
+    "destinationSlug": "kashmir",
+    "name": "Srinagar Old City & Craft Shopping",
+    "category": "shopping",
+    "summary": "Pashmina, papier-mâché and walnut carving from generational workshops.",
+    "idealFor": [
+      "shopping",
+      "family",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Buy GI-tagged pashmina from reputed houses"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

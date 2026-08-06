@@ -1,0 +1,232 @@
+[
+  {
+    "id": "kerala-alleppey-backwater-houseboat",
+    "destinationSlug": "kerala",
+    "name": "Alleppey Backwater Houseboat",
+    "category": "experience",
+    "summary": "A night drifting past paddies, kingfishers and village life — Kerala's signature memory.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Life jackets provided; railings vary by boat — check when booking"
+    ],
+    "seniorNotes": [
+      "Sightseeing at armchair pace — ideal"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kerala-munnar-tea-gardens",
+    "destinationSlug": "kerala",
+    "name": "Munnar Tea Gardens",
+    "category": "nature",
+    "summary": "Emerald slopes to the horizon, tea-factory tours and air that feels washed.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Carry layers — evenings drop cool"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kerala-fort-kochi",
+    "destinationSlug": "kerala",
+    "name": "Fort Kochi",
+    "category": "culture",
+    "summary": "Chinese fishing nets, spice warehouses, café art and colonial lanes — history you can stroll.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Flat, compact and shaded — very senior-friendly"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kerala-thekkady-periyar-wildlife-sanctuary",
+    "destinationSlug": "kerala",
+    "name": "Thekkady / Periyar Wildlife Sanctuary",
+    "category": "nature",
+    "summary": "Boat safaris past elephant herds on the lake shore, spice plantations next door.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Boat slots book out — reserve morning rides"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kerala-kathakali-performance",
+    "destinationSlug": "kerala",
+    "name": "Kathakali Performance",
+    "category": "culture",
+    "summary": "Painted faces, drumming and epic storytelling — arrive early to watch the make-up ritual.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Evening shows in Kochi and Thekkady; one hour is enough for first-timers"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "kerala-ayurveda-wellness-session",
+    "destinationSlug": "kerala",
+    "name": "Ayurveda Wellness Session",
+    "category": "wellness",
+    "summary": "From single massages to full panchakarma — the original wellness tradition, done properly.",
+    "idealFor": [
+      "relaxation",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Choose certified centres; genuine programmes need multiple days"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

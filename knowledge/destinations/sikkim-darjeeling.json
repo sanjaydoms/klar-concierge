@@ -1,0 +1,283 @@
+{
+  "slug": "sikkim-darjeeling",
+  "name": "Sikkim & Darjeeling",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Kanchenjunga filling the dawn sky, toy-train whistles through tea gardens, monastery valleys and momos done right — the gentle Himalaya of the east.",
+  "positioningLine": "Kanchenjunga dawns, tea gardens and monastery calm.",
+  "idealTraveller": "Tea-and-mountains romantics, families and slow travellers.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "nature": 92,
+    "culture": 78,
+    "relaxation": 78,
+    "romance": 75,
+    "food": 70,
+    "adventure": 60,
+    "history": 60,
+    "wildlife": 40,
+    "snow": 45,
+    "city": 20,
+    "shopping": 45,
+    "nightlife": 15,
+    "beach": 0,
+    "themeparks": 0
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 60,
+    "children5To10": 75,
+    "teenagers": 75,
+    "seniors": 70,
+    "honeymoon": 82,
+    "solo": 80,
+    "firstInternationalTrip": 55
+  },
+  "food": {
+    "vegetarianFriendly": 80,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 55,
+    "localCuisineScore": 80,
+    "streetFoodScore": 75,
+    "fineDiningScore": 45
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 2,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 30,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 35,
+    "medicalAccessScore": 55
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "eastern-himalaya",
+    "monsoon-jun-sep",
+    "clear-oct-nov"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Cold and occasionally snow-blocked in North Sikkim"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Tea first-flush season around Darjeeling"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Rhododendrons and magnolias paint the ridges"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon hides the peaks and loosens hill roads"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Post-monsoon Kanchenjunga views at their sharpest"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Darjeeling + Gangtok classic",
+    "Add Pelling or Lachung/Yumthang",
+    "Tie in Kalimpong"
+  ],
+  "commonMistakes": [
+    "Monsoon visits hoping for mountain views",
+    "Skipping the 4am Tiger Hill sunrise — it's the whole point"
+  ],
+  "packingConsiderations": [
+    "Layers year-round; real warmth November–February",
+    "Rain shell in any month"
+  ],
+  "practicalWarnings": [
+    "North Sikkim requires permits arranged via registered operators — your Klar expert handles it"
+  ],
+  "tradeOffs": [
+    "Hill roads are slow and weather-dependent",
+    "Luxury inventory is limited outside a few heritage stays"
+  ],
+  "whoShouldAvoid": [
+    "Step-free access needs",
+    "Beach-and-pool holidaymakers"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-sikkim-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Sikkim Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-west-bengal-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "West Bengal Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

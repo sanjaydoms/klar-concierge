@@ -1,0 +1,232 @@
+[
+  {
+    "id": "goa-palolem-south-goa-beaches",
+    "destinationSlug": "goa",
+    "name": "Palolem & South Goa Beaches",
+    "category": "beach",
+    "summary": "Crescent bays, palm shade and slow mornings — the Goa people fall in love with.",
+    "idealFor": [
+      "family",
+      "couple",
+      "relaxation"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Gentle gradients at Palolem suit young swimmers"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "goa-baga-calangute-strip",
+    "destinationSlug": "goa",
+    "name": "Baga–Calangute Strip",
+    "category": "nightlife",
+    "summary": "Shacks, water sports and Goa's famous night energy — loud, alive and unapologetic.",
+    "idealFor": [
+      "friends",
+      "couple",
+      "nightlife"
+    ],
+    "unsuitableFor": [
+      "quiet-seekers"
+    ],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "goa-old-goa-churches",
+    "destinationSlug": "goa",
+    "name": "Old Goa Churches",
+    "category": "culture",
+    "summary": "Basilica of Bom Jesus and Se Cathedral — UNESCO-listed Portuguese grandeur.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Flat sites, easy visits, best in morning cool"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "goa-fontainhas-latin-quarter",
+    "destinationSlug": "goa",
+    "name": "Fontainhas Latin Quarter",
+    "category": "culture",
+    "summary": "Ochre-and-indigo Portuguese lanes, azulejo tiles and café corners — Panjim's picture-book heart.",
+    "idealFor": [
+      "culture",
+      "couple",
+      "senior"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Best explored on a slow morning walk"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "goa-dudhsagar-waterfalls",
+    "destinationSlug": "goa",
+    "name": "Dudhsagar Waterfalls",
+    "category": "nature",
+    "summary": "A four-tier cascade thundering under a railway bridge — monsoon-fed drama an easy day trip away.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Jeep-safari access; closed in peak monsoon flow"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "goa-sunset-cruise-on-the-mandovi",
+    "destinationSlug": "goa",
+    "name": "Sunset Cruise on the Mandovi",
+    "category": "experience",
+    "summary": "Live music, river breeze and Panjim lighting up — Goa's easiest golden hour.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Seated, gentle and effortless"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

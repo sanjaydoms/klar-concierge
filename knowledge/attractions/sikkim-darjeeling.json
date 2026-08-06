@@ -1,0 +1,230 @@
+[
+  {
+    "id": "sikkim-darjeeling-tiger-hill-sunrise",
+    "destinationSlug": "sikkim-darjeeling",
+    "name": "Tiger Hill Sunrise",
+    "category": "nature",
+    "summary": "Kanchenjunga igniting at dawn — on clear days, even Everest on the horizon.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Viewing pavilion has seating"
+    ],
+    "practicalNotes": [
+      "4am start; October–November clearest"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "sikkim-darjeeling-darjeeling-himalayan-railway",
+    "destinationSlug": "sikkim-darjeeling",
+    "name": "Darjeeling Himalayan Railway",
+    "category": "experience",
+    "summary": "The UNESCO toy train looping through bazaars and tea slopes.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Short joy-rides from Darjeeling suit young kids"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "sikkim-darjeeling-tea-estate-visit-tasting",
+    "destinationSlug": "sikkim-darjeeling",
+    "name": "Tea Estate Visit & Tasting",
+    "category": "food",
+    "summary": "Pluck-to-cup at a working estate — first flush tastes nothing like the tin at home.",
+    "idealFor": [
+      "food",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Estates close Sundays/Mondays for plucking cycles — check days"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "sikkim-darjeeling-rumtek-monastery",
+    "destinationSlug": "sikkim-darjeeling",
+    "name": "Rumtek Monastery",
+    "category": "religious",
+    "summary": "Sikkim's great Kagyu seat — murals, prayer wheels and valley silence.",
+    "idealFor": [
+      "culture",
+      "senior",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Modest dress; photography rules vary by hall"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "sikkim-darjeeling-tsomgo-lake-baba-mandir",
+    "destinationSlug": "sikkim-darjeeling",
+    "name": "Tsomgo Lake & Baba Mandir",
+    "category": "nature",
+    "summary": "A sacred glacial lake at 3,753m, yak rides and prayer flags against snow.",
+    "idealFor": [
+      "nature",
+      "couple",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Permit required — arranged by operators; weather can close the road"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "sikkim-darjeeling-gangtok-mg-marg",
+    "destinationSlug": "sikkim-darjeeling",
+    "name": "Gangtok MG Marg",
+    "category": "experience",
+    "summary": "A spotless pedestrian boulevard of momos, bakeries and mountain views.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Flat, traffic-free and bench-lined — ideal evening stroll"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]

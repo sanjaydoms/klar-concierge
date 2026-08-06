@@ -1,0 +1,229 @@
+[
+  {
+    "id": "andaman-islands-radhanagar-beach-havelock",
+    "destinationSlug": "andaman-islands",
+    "name": "Radhanagar Beach, Havelock",
+    "category": "beach",
+    "summary": "Repeatedly ranked Asia's best beach — forest meeting flour-white sand and glass water.",
+    "idealFor": [
+      "family",
+      "couple",
+      "relaxation"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [
+      "Lifeguarded main stretch; gentle evening swims"
+    ],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "andaman-islands-elephant-beach-snorkelling",
+    "destinationSlug": "andaman-islands",
+    "name": "Elephant Beach Snorkelling",
+    "category": "adventure",
+    "summary": "Reef fish and coral just metres off the sand — snorkelling for absolute beginners.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Morning boats get the clearest water"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "andaman-islands-scuba-at-havelock",
+    "destinationSlug": "andaman-islands",
+    "name": "Scuba at Havelock",
+    "category": "adventure",
+    "summary": "Discover dives with patient instructors — many people's first breath underwater.",
+    "idealFor": [
+      "adventure",
+      "friends",
+      "teenagers"
+    ],
+    "unsuitableFor": [],
+    "minimumAge": 10,
+    "typicalDurationHours": 4,
+    "physicalIntensity": "high",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Choose SSI/PADI-certified operators only"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "andaman-islands-cellular-jail-light-and-sound-show",
+    "destinationSlug": "andaman-islands",
+    "name": "Cellular Jail & Light-and-Sound Show",
+    "category": "museum",
+    "summary": "The moving story of India's freedom fighters, told where it happened.",
+    "idealFor": [
+      "culture",
+      "history",
+      "family"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 2.5,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "indoor",
+    "weatherSensitivity": "low",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [
+      "Evening show is seated; site has stairs"
+    ],
+    "practicalNotes": [
+      "Opening hours and closures: verify with a Klar expert or the official site before travel."
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "andaman-islands-neil-island-shaheed-dweep",
+    "destinationSlug": "andaman-islands",
+    "name": "Neil Island (Shaheed Dweep)",
+    "category": "beach",
+    "summary": "Cycling lanes, natural coral bridge and sunsets without a crowd.",
+    "idealFor": [
+      "family",
+      "couple",
+      "relaxation"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 4,
+    "physicalIntensity": "low",
+    "indoorOutdoor": "outdoor",
+    "weatherSensitivity": "high",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Half the pace of Havelock — stay a night, not a rush"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  },
+  {
+    "id": "andaman-islands-bioluminescence-kayaking",
+    "destinationSlug": "andaman-islands",
+    "name": "Bioluminescence Kayaking",
+    "category": "experience",
+    "summary": "Paddle through glowing water on new-moon nights — pure magic.",
+    "idealFor": [
+      "family",
+      "couple",
+      "friends"
+    ],
+    "unsuitableFor": [],
+    "typicalDurationHours": 3,
+    "physicalIntensity": "medium",
+    "indoorOutdoor": "mixed",
+    "weatherSensitivity": "medium",
+    "accessibilityNotes": [],
+    "childNotes": [],
+    "seniorNotes": [],
+    "practicalNotes": [
+      "Season and moon-phase dependent — plan around dark nights"
+    ],
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ]
+  }
+]
