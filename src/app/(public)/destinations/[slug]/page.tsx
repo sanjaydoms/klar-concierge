@@ -113,8 +113,8 @@ export default async function DestinationPage({
           <span className="font-medium text-brand">Ideal for:</span> {d.idealTraveller}
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link href="/concierge" className="btn-primary">Plan a {d.name} Holiday</Link>
-          <Link href="/concierge/compare" className="btn-secondary">Compare With Another</Link>
+          <Link href={`/concierge?destination=${d.slug}`} className="btn-primary">Plan a {d.name} Holiday</Link>
+          <Link href={`/concierge/compare?d=${d.slug}`} className="btn-secondary">Compare With Another</Link>
         </div>
       </header>
 
@@ -328,7 +328,7 @@ export default async function DestinationPage({
       </section>
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Link href="/concierge" className="btn-primary">Plan a {d.name} Holiday</Link>
+        <Link href={`/concierge?destination=${d.slug}`} className="btn-primary">Plan a {d.name} Holiday</Link>
         <Link href="/destinations" className="btn-secondary">All Destinations</Link>
       </div>
     </div>

@@ -79,6 +79,40 @@ test.describe("public surface", () => {
     await expect(page.getByPlaceholder("Describe your holiday…")).toBeVisible();
   });
 
+  test("'Plan a South Africa Holiday' opens a conversation already about South Africa", async ({ page }) => {
+    await page.goto("/destinations/south-africa");
+    await page.getByRole("link", { name: /Plan a South Africa Holiday/i }).first().click();
+    await expect(page).toHaveURL(/destination=south-africa/);
+    // No welcome gate, no generic opener — straight into the destination.
+    await expect(page.getByText(/South Africa — wonderful choice/i)).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByText(/Which month/i).first()).toBeVisible();
+    // A back control exists inside the planner.
+    await expect(page.getByRole("button", { name: "← Back" })).toBeVisible();
+  });
+
+  test("a destination deep link replaces an unrelated previous session", async ({ page }) => {
+    // Build an unrelated session first.
+    await page.goto("/concierge");
+    await skipWelcome(page);
+    await page.getByPlaceholder("Describe your holiday…").fill("Family trip in December for 5 nights");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await expect(page.getByText(/December/).first()).toBeVisible({ timeout: 15_000 });
+    // Now arrive from a destination page — the old conversation must not hijack it.
+    await page.goto("/concierge?destination=japan");
+    await expect(page.getByText(/Japan — wonderful choice/i)).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByText(/Family trip in December/)).toHaveCount(0);
+  });
+
+  test("theme links act even when a previous session exists", async ({ page }) => {
+    await page.goto("/concierge");
+    await skipWelcome(page);
+    await page.getByPlaceholder("Describe your holiday…").fill("hello");
+    await page.getByRole("button", { name: "Send", exact: true }).click();
+    await page.waitForTimeout(1000);
+    await page.goto("/concierge?theme=beach");
+    await expect(page.getByText(/Which month are you dreaming of/i)).toBeVisible({ timeout: 15_000 });
+  });
+
   test("shared plan links regenerate the identical plan from the URL", async ({ page }) => {
     await page.goto("/plan/japan?n=7&t=family&a=6,10&m=11");
     await expect(page.getByRole("heading", { name: /7-night Japan plan/i })).toBeVisible();

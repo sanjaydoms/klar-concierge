@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { answerChipsFor } from "@/lib/answerChips";
-import { processChatTurn, startWithTheme } from "@/services/conversation/engine";
+import { processChatTurn, startWithDestination, startWithTheme } from "@/services/conversation/engine";
 import { getSessionStore } from "@/repositories/sessions";
 import type { BriefField } from "@/types/brief";
 import type { PlanningSession } from "@/types/session";
@@ -141,5 +141,31 @@ describe("theme flow answers each question exactly once", () => {
     startWithTheme(session, "family");
     await processChatTurn(session, "6 and 9");
     expect(session.brief.childrenAges).toEqual([6, 9]);
+  });
+});
+
+describe("destination deep-link entry", () => {
+  it("'Plan a South Africa Holiday' seeds the destination and asks the month", async () => {
+    const session = await getSessionStore().create();
+    const result = startWithDestination(session, "south-africa")!;
+    expect(result).toBeDefined();
+    expect(session.brief.destinationPreferences).toContain("south-africa");
+    expect(result.assistantMessage).toContain("South Africa — wonderful choice");
+    expect(session.awaitingField).toBe("travelMonth");
+  });
+
+  it("rejects unknown destinations honestly", async () => {
+    const session = await getSessionStore().create();
+    expect(startWithDestination(session, "atlantis")).toBeUndefined();
+  });
+
+  it("the seeded destination survives the essentials and reaches matches", async () => {
+    const session = await getSessionStore().create();
+    startWithDestination(session, "south-africa");
+    for (const answer of ["In October", "9 nights", "A couple's getaway", "From Mumbai"]) {
+      await processChatTurn(session, answer);
+    }
+    expect(session.brief.destinationPreferences).toContain("south-africa");
+    expect(session.awaitingField).toBeUndefined();
   });
 });

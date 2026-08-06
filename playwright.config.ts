@@ -23,6 +23,9 @@ export default defineConfig({
     url: "http://localhost:3002",
     reuseExistingServer: true,
     timeout: 60_000,
+    // The whole suite shares one IP; production limits would rate-limit the
+    // tests against each other, not real abuse.
+    env: { RATE_LIMIT_CHAT_PER_MINUTE: "300", RATE_LIMIT_PLAN_PER_MINUTE: "300" },
   },
   projects: [
     { name: "desktop", use: { ...devices["Desktop Chrome"] } },

@@ -228,6 +228,37 @@ export function startWithTheme(session: PlanningSession, themeKey: string): Chat
   };
 }
 
+/**
+ * Deep-link entry from a destination page: "Plan a South Africa Holiday"
+ * must arrive with South Africa already the subject of the conversation —
+ * never a generic (or worse, someone else's previous) planner.
+ */
+export function startWithDestination(session: PlanningSession, slug: string): ChatTurnResult | undefined {
+  const destination = getDestination(slug);
+  if (!destination) return undefined;
+  session.brief = mergeBrief(
+    session.brief.originalPrompt
+      ? session.brief
+      : { ...session.brief, originalPrompt: `${destination.name} holiday` },
+    { destinationPreferences: [destination.slug] },
+  );
+  const assistantMessage =
+    `${destination.name} — wonderful choice. ${destination.positioningLine} ` +
+    `Which month are you thinking of travelling?`;
+  const now = new Date().toISOString();
+  session.messages.push({ role: "user", content: `Plan a ${destination.name} holiday`, createdAt: now });
+  session.messages.push({ role: "assistant", content: assistantMessage, createdAt: new Date().toISOString() });
+  session.turnIndex += 1;
+  session.awaitingField = session.brief.travelMonth ? undefined : "travelMonth";
+  return {
+    session,
+    assistantMessage,
+    readyForRecommendations: briefReadyForRecommendations(session.brief),
+    missingFields: missingBriefFields(session.brief),
+    awaitingField: session.awaitingField,
+  };
+}
+
 /** Record a complete turn (used for early honest replies that skip extraction). */
 function recordTurn(
   session: PlanningSession,

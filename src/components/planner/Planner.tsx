@@ -102,6 +102,10 @@ export function Planner({
         setCrmEnabled(Boolean(h.crmEnabled));
       })
       .catch(() => setCrmEnabled(false));
+    // A destination/theme deep link means a fresh, focused conversation —
+    // never resurrect an unrelated previous session under it.
+    const deepLink = new URLSearchParams(window.location.search);
+    if (deepLink.get("destination") || deepLink.get("theme")) return;
     const saved = typeof window !== "undefined" ? window.localStorage.getItem(SESSION_KEY) : null;
     if (!saved) return;
     fetch(`/api/chat/session/${saved}`)
@@ -190,20 +194,76 @@ export function Planner({
     [busy, sessionId],
   );
 
+  // Deep-link entry from a destination page: a fresh conversation already
+  // about that destination — the planner opens mid-thought, not blank.
+  const selectDestination = useCallback(async (slug: string) => {
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ destination: slug }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = (await res.json()) as {
+        sessionId: string;
+        brief: TravelBrief;
+        assistantMessage: string;
+        readyForRecommendations: boolean;
+        awaitingField?: string | null;
+        missingFields?: string[];
+      };
+      setSessionId(data.sessionId);
+      window.localStorage.setItem(SESSION_KEY, data.sessionId);
+      setBrief(data.brief);
+      setReady(data.readyForRecommendations);
+      setAwaitingField(data.awaitingField ?? null);
+      setMissingFields(data.missingFields ?? []);
+      setAnimateLast(true);
+      const prettyName = slug
+        .split("-")
+        .map((w) => (w.length > 1 ? w[0].toUpperCase() + w.slice(1) : w.toUpperCase()))
+        .join(" ");
+      setMessages([
+        { role: "user", content: `Plan a ${prettyName} holiday`, createdAt: new Date().toISOString() },
+        { role: "assistant", content: data.assistantMessage, createdAt: new Date().toISOString() },
+      ]);
+    } catch {
+      setError("We couldn't start that plan just now — please try again.");
+    } finally {
+      setBusy(false);
+    }
+  }, []);
+
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const destinationSlug = params.get("destination");
+    const rawTheme = params.get("theme");
+    // Old links may still say "romance" — the theme is now called "romantic".
+    const wanted = rawTheme === "romance" ? "romantic" : rawTheme;
+    const linkedTheme = wanted ? themes.find((t) => t.key === wanted) : undefined;
+
+    // "Plan a South Africa Holiday" arrived with intent — honour it
+    // immediately, in a fresh conversation about that destination.
+    if (destinationSlug) {
+      setShowWelcome(false);
+      void selectDestination(destinationSlug);
+      return;
+    }
     if (themes.length === 0) {
       setShowWelcome(false);
       return;
     }
     const hasSession = Boolean(window.localStorage.getItem(SESSION_KEY));
-    const rawTheme = new URLSearchParams(window.location.search).get("theme");
-    // Old links may still say "romance" — the theme is now called "romantic".
-    const wanted = rawTheme === "romance" ? "romantic" : rawTheme;
-    const linkedTheme = wanted ? themes.find((t) => t.key === wanted) : undefined;
-    if (hasSession || welcomeAlreadyHandled()) {
-      // Returning visitor: no gate. A theme deep link still starts the theme.
+    if (linkedTheme && (hasSession || welcomeAlreadyHandled())) {
+      // A theme link always starts that theme — even for returning visitors.
       setShowWelcome(false);
-      if (linkedTheme && !hasSession) void selectTheme(linkedTheme);
+      void selectTheme(linkedTheme);
+      return;
+    }
+    if (hasSession || welcomeAlreadyHandled()) {
+      setShowWelcome(false);
       return;
     }
     setWelcomeTheme(linkedTheme);
@@ -463,13 +523,28 @@ export function Planner({
       ) : null}
 
       {stage === "conversation" && showWelcome === false ? (
-        <section aria-label="Holiday conversation">
-          <h1 className="text-2xl font-bold text-brand sm:text-3xl">
-            Tell me about the holiday you have in mind.
-          </h1>
-          <p className="mt-2 text-sm text-foreground/60">
-            Name a destination — or simply describe how you want the trip to feel.
-          </p>
+        <section aria-label="Holiday conversation" className="pb-24 sm:pb-4">
+          <div className="mb-2">
+            <button
+              type="button"
+              className="btn-quiet text-xs"
+              onClick={() => {
+                if (window.history.length > 1) window.history.back();
+                else window.location.href = "/";
+              }}
+            >
+              ← Back
+            </button>
+          </div>
+          {/* Once the conversation is live, the chat gets the phone screen. */}
+          <div className={messages.length > 0 ? "hidden sm:block" : undefined}>
+            <h1 className="text-2xl font-bold text-brand sm:text-3xl">
+              Tell me about the holiday you have in mind.
+            </h1>
+            <p className="mt-2 text-sm text-foreground/60">
+              Name a destination — or simply describe how you want the trip to feel.
+            </p>
+          </div>
 
           {messages.length === 0 && themes.length > 0 ? (
             <fieldset className="mt-6">
@@ -500,7 +575,7 @@ export function Planner({
           <div
             ref={logRef}
             aria-live="polite"
-            className="mt-6 max-h-[45vh] space-y-3 overflow-y-auto rounded-2xl border border-line bg-surface p-4"
+            className="mt-4 max-h-[52vh] space-y-3 overflow-y-auto rounded-2xl border border-line bg-surface p-4 sm:mt-6 sm:max-h-[45vh]"
           >
             {showMessages.map((m, i) => (
               <div
@@ -524,6 +599,27 @@ export function Planner({
               </p>
             ) : null}
           </div>
+
+          {ready && brief && !busy && awaitingField == null && messages.length > 0 ? (
+            <div className="mt-4 rounded-xl border border-brand/30 bg-brand-soft p-4">
+              <div className="flex flex-wrap gap-3">
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={() => void confirmBrief(brief)}
+                >
+                  Show My Matches
+                </button>
+                <button
+                  type="button"
+                  className="btn-secondary"
+                  onClick={() => setStage("brief-review")}
+                >
+                  Change Something
+                </button>
+              </div>
+            </div>
+          ) : null}
 
           {messages.length === 0 ? (
             <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick ideas">
@@ -584,27 +680,6 @@ export function Planner({
               Send
             </button>
           </form>
-
-          {ready && brief && !busy && awaitingField == null && messages.length > 0 ? (
-            <div className="mt-4 rounded-xl border border-brand/30 bg-brand-soft p-4">
-              <div className="flex flex-wrap gap-3">
-                <button
-                  type="button"
-                  className="btn-primary"
-                  onClick={() => void confirmBrief(brief)}
-                >
-                  Show My Matches
-                </button>
-                <button
-                  type="button"
-                  className="btn-secondary"
-                  onClick={() => setStage("brief-review")}
-                >
-                  Change Something
-                </button>
-              </div>
-            </div>
-          ) : null}
 
           <div className="mt-4">
             {sessionId ? (
