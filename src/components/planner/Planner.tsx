@@ -10,11 +10,13 @@ import type {
 } from "@/types/recommendation";
 import { BriefReview } from "./BriefReview";
 import { RecommendationCards } from "./RecommendationCards";
-import { ItineraryView } from "./ItineraryView";
+import { ItineraryView, type ItineraryRefinement } from "./ItineraryView";
+import { PlanReady } from "./PlanReady";
 import { ComparisonView } from "@/components/comparison/ComparisonView";
 import { HandoverForm, type HandoverValues } from "@/components/handover/HandoverForm";
 import { HandoverSuccess } from "@/components/handover/HandoverSuccess";
 import { planSharePath } from "@/lib/shareLinks";
+import { answerChipsFor } from "@/lib/answerChips";
 import { TypewriterText } from "./TypewriterText";
 import { HolidayDNA } from "./HolidayDNA";
 import { WelcomeStep } from "./WelcomeStep";
@@ -29,59 +31,23 @@ type Stage =
   | "comparison"
   | "itinerary"
   | "handover"
-  | "submitted";
+  | "submitted"
+  | "complete";
 
 type ChatMessage = { role: "user" | "assistant"; content: string; createdAt: string };
 
-function getDynamicChips(brief?: TravelBrief): string[] {
-  if (!brief) {
-    return [
-      "Family holiday",
-      "Honeymoon",
-      "Within India",
-      "Best this month",
-      "Relaxed beach escape",
-      "Senior-friendly trip",
-      "Short international break",
-      "Food and culture",
-      "Surprise me",
-    ].slice(0, 7);
-  }
+const STARTER_CHIPS = [
+  "Family holiday",
+  "Honeymoon",
+  "Within India",
+  "Best this month",
+  "Relaxed beach escape",
+  "Senior-friendly trip",
+  "Short international break",
+  "Food and culture",
+  "Surprise me",
+];
 
-  const chips: string[] = [];
-
-  // Step 1: Missing Travel Month
-  if (!brief.travelMonth) {
-    chips.push("Traveling in April", "Traveling in July", "Traveling in October", "Flexible dates");
-  }
-
-  // Step 2: Missing Duration
-  if (!brief.durationNights) {
-    chips.push("7 nights (1 week)", "10 nights", "14 nights (2 weeks)", "Short 4-day break");
-  }
-
-  // Step 3: Missing Pace
-  if (brief.pace === "unknown") {
-    chips.push("Relaxed pace", "Balanced pace", "Active & adventurous");
-  }
-
-  // Step 4: Missing Budget
-  if (brief.budgetBand === "unknown") {
-    chips.push("Comfort budget", "Premium budget", "Luxury getaway");
-  }
-
-  // Step 5: Interests & Vibe
-  if (brief.interests.length === 0) {
-    chips.push("Beaches & relaxation", "Historical sites", "Food & wine", "Nature & wildlife");
-  }
-
-  // Fallback defaults if most parameters are filled
-  if (chips.length < 3) {
-    chips.push("Show recommendations", "Surprise me", "Within India", "Direct flights preferred");
-  }
-
-  return chips.slice(0, 6);
-}
 
 const SESSION_KEY = "klar-session-id";
 
@@ -98,6 +64,9 @@ export function Planner({
   const [input, setInput] = useState("");
   const [brief, setBrief] = useState<TravelBrief | undefined>(undefined);
   const [ready, setReady] = useState(false);
+  // What the assistant's open question is asking for — drives answer chips.
+  const [awaitingField, setAwaitingField] = useState<string | null>(null);
+  const [missingFields, setMissingFields] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [recResult, setRecResult] = useState<RecommendationResult | null>(null);
@@ -105,8 +74,8 @@ export function Planner({
   const [comparison, setComparison] = useState<ComparisonResult | null>(null);
   const [itinerary, setItinerary] = useState<ItineraryDay[]>([]);
   const [crmEnabled, setCrmEnabled] = useState<boolean | null>(null);
-  const [production, setProduction] = useState(false);
   const [crmReference, setCrmReference] = useState<string | null>(null);
+  const [planReference, setPlanReference] = useState<string | null>(null);
   const logRef = useRef<HTMLDivElement>(null);
   const recovered = useRef(false);
   // Animate only replies that just arrived — never on refresh/recovery.
@@ -129,9 +98,8 @@ export function Planner({
     recovered.current = true;
     fetch("/api/system/health")
       .then((r) => r.json())
-      .then((h: { crmEnabled?: boolean; production?: boolean }) => {
+      .then((h: { crmEnabled?: boolean }) => {
         setCrmEnabled(Boolean(h.crmEnabled));
-        setProduction(Boolean(h.production));
       })
       .catch(() => setCrmEnabled(false));
     const saved = typeof window !== "undefined" ? window.localStorage.getItem(SESSION_KEY) : null;
@@ -164,11 +132,14 @@ export function Planner({
     setMessages([]);
     setBrief(undefined);
     setReady(false);
+    setAwaitingField(null);
+    setMissingFields([]);
     setRecResult(null);
     setSelected(null);
     setComparison(null);
     setItinerary([]);
     setCrmReference(null);
+    setPlanReference(null);
     setError(null);
     setStage("conversation");
   }, [sessionId]);
@@ -196,11 +167,15 @@ export function Planner({
           brief: TravelBrief;
           assistantMessage: string;
           readyForRecommendations: boolean;
+          awaitingField?: string | null;
+          missingFields?: string[];
         };
         setSessionId(data.sessionId);
         window.localStorage.setItem(SESSION_KEY, data.sessionId);
         setBrief(data.brief);
         setReady(data.readyForRecommendations);
+        setAwaitingField(data.awaitingField ?? null);
+        setMissingFields(data.missingFields ?? []);
         setAnimateLast(true);
         setMessages((m) => [
           ...m,
@@ -221,7 +196,9 @@ export function Planner({
       return;
     }
     const hasSession = Boolean(window.localStorage.getItem(SESSION_KEY));
-    const wanted = new URLSearchParams(window.location.search).get("theme");
+    const rawTheme = new URLSearchParams(window.location.search).get("theme");
+    // Old links may still say "romance" — the theme is now called "romantic".
+    const wanted = rawTheme === "romance" ? "romantic" : rawTheme;
     const linkedTheme = wanted ? themes.find((t) => t.key === wanted) : undefined;
     if (hasSession || welcomeAlreadyHandled()) {
       // Returning visitor: no gate. A theme deep link still starts the theme.
@@ -258,6 +235,8 @@ export function Planner({
           brief: TravelBrief;
           assistantMessage: string;
           readyForRecommendations: boolean;
+          awaitingField?: string | null;
+          missingFields?: string[];
           suggestedAction?: "recommend" | "compare";
           comparisonSlugs?: string[];
         };
@@ -265,6 +244,8 @@ export function Planner({
         window.localStorage.setItem(SESSION_KEY, data.sessionId);
         setBrief(data.brief);
         setReady(data.readyForRecommendations);
+        setAwaitingField(data.awaitingField ?? null);
+        setMissingFields(data.missingFields ?? []);
         setAnimateLast(true);
         setMessages((m) => [
           ...m,
@@ -364,6 +345,58 @@ export function Planner({
     },
     [sessionId],
   );
+
+  // Lightweight refinement: the itinerary regenerates deterministically with
+  // the traveller's adjustment — no complex editors.
+  const refineItinerary = useCallback(
+    async (refinement: ItineraryRefinement) => {
+      if (!sessionId || !selected) return;
+      setBusy(true);
+      setError(null);
+      try {
+        const res = await fetch("/api/plan", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            sessionId,
+            destinationSlug: selected.destinationSlug,
+            refine: refinement,
+          }),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = (await res.json()) as { itinerary: ItineraryDay[] };
+        setItinerary(data.itinerary);
+      } catch {
+        setError("We couldn't adjust the plan just now — it's unchanged. Please try again.");
+      } finally {
+        setBusy(false);
+      }
+    },
+    [sessionId, selected],
+  );
+
+  // Completion (placeholder-CRM phase): issue the plan reference and end on a
+  // confident note — never a dead end or an unavailable form.
+  const finishPlan = useCallback(async () => {
+    if (!sessionId) return;
+    setBusy(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = (await res.json()) as { referenceId: string };
+      setPlanReference(data.referenceId);
+      setStage("complete");
+    } catch {
+      setError("We couldn't finish up just now — your plan is safe. Please try again.");
+    } finally {
+      setBusy(false);
+    }
+  }, [sessionId]);
 
   const compareRecommendations = useCallback(
     (recs: Recommendation[]) => {
@@ -492,19 +525,41 @@ export function Planner({
             ) : null}
           </div>
 
-          {/* Dynamic contextual suggestion chips */}
-          <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick ideas">
-            {getDynamicChips(brief).map((chip) => (
-              <button
-                key={chip}
-                type="button"
-                className="chip"
-                onClick={() => void sendMessage(chip)}
-              >
-                {chip}
-              </button>
-            ))}
-          </div>
+          {messages.length === 0 ? (
+            <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick ideas">
+              {STARTER_CHIPS.map((chip) => (
+                <button
+                  key={chip}
+                  type="button"
+                  className="chip"
+                  onClick={() => setInput((v) => (v ? `${v} ${chip.toLowerCase()}` : chip))}
+                >
+                  {chip}
+                </button>
+              ))}
+            </div>
+          ) : (
+            (() => {
+              // Answer chips always match the question on screen — never a
+              // random grab-bag of pace/budget options.
+              const chips = busy ? [] : answerChipsFor(awaitingField ?? missingFields[0] ?? null);
+              return chips.length > 0 ? (
+                <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick answers">
+                  {chips.map((chip) => (
+                    <button
+                      key={chip.label}
+                      type="button"
+                      className="chip"
+                      disabled={busy}
+                      onClick={() => void sendMessage(chip.send)}
+                    >
+                      {chip.label}
+                    </button>
+                  ))}
+                </div>
+              ) : null;
+            })()
+          )}
 
           <form
             className="mt-4 flex gap-2"
@@ -530,15 +585,31 @@ export function Planner({
             </button>
           </form>
 
-          <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+          {ready && brief && !busy && awaitingField == null && messages.length > 0 ? (
+            <div className="mt-4 rounded-xl border border-brand/30 bg-brand-soft p-4">
+              <div className="flex flex-wrap gap-3">
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={() => void confirmBrief(brief)}
+                >
+                  Show My Matches
+                </button>
+                <button
+                  type="button"
+                  className="btn-secondary"
+                  onClick={() => setStage("brief-review")}
+                >
+                  Change Something
+                </button>
+              </div>
+            </div>
+          ) : null}
+
+          <div className="mt-4">
             {sessionId ? (
               <button type="button" className="btn-quiet text-xs" onClick={() => void startOver()}>
                 Start over
-              </button>
-            ) : <span />}
-            {ready && brief ? (
-              <button type="button" className="btn-primary" onClick={() => setStage("brief-review")}>
-                Review My Trip Brief
               </button>
             ) : null}
           </div>
@@ -605,10 +676,33 @@ export function Planner({
           destinationName={selected.destinationName}
           itinerary={itinerary}
           crmEnabled={crmEnabled}
-          production={production}
+          busy={busy}
           sharePath={brief ? planSharePath(selected.destinationSlug, brief) : undefined}
           onBack={() => setStage("recommendations")}
           onContinue={() => setStage("handover")}
+          onRefine={(r) => void refineItinerary(r)}
+          onFinish={crmEnabled ? undefined : () => void finishPlan()}
+        />
+      ) : null}
+
+      {stage === "complete" && planReference && selected ? (
+        <PlanReady
+          referenceId={planReference}
+          destinationName={selected.destinationName}
+          summaryLine={
+            brief
+              ? [
+                  brief.durationNights ? `${brief.durationNights} nights` : null,
+                  brief.travelMonth
+                    ? `in ${["January","February","March","April","May","June","July","August","September","October","November","December"][brief.travelMonth - 1]}`
+                    : null,
+                ]
+                  .filter(Boolean)
+                  .join(" ")
+              : ""
+          }
+          sharePath={brief ? planSharePath(selected.destinationSlug, brief) : undefined}
+          onStartOver={() => void startOver()}
         />
       ) : null}
 
@@ -624,16 +718,23 @@ export function Planner({
   );
 }
 
+// Human progress language, per the product review — a journey, not software.
 const STAGE_LABELS: Array<{ key: Stage; label: string }> = [
-  { key: "conversation", label: "Conversation" },
-  { key: "brief-review", label: "Trip brief" },
-  { key: "recommendations", label: "Directions" },
-  { key: "itinerary", label: "Itinerary" },
-  { key: "handover", label: "Klar expert" },
+  { key: "conversation", label: "Your Trip" },
+  { key: "recommendations", label: "Your Matches" },
+  { key: "itinerary", label: "Your Plan" },
+  { key: "handover", label: "Next Step" },
 ];
 
+const STAGE_ALIASES: Partial<Record<Stage, Stage>> = {
+  comparison: "recommendations",
+  "brief-review": "conversation",
+  complete: "handover",
+  submitted: "handover",
+};
+
 function StageIndicator({ stage }: { stage: Stage }) {
-  const effective = stage === "comparison" ? "recommendations" : stage;
+  const effective = STAGE_ALIASES[stage] ?? stage;
   const activeIndex = STAGE_LABELS.findIndex((s) => s.key === effective);
   return (
     <nav aria-label="Planning progress" className="mb-8">

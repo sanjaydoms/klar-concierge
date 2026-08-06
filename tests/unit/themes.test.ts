@@ -6,9 +6,33 @@ import { getSessionStore } from "@/repositories/sessions";
 describe("holiday themes (discovery layer)", () => {
   it("covers the blueprint's twelve themes, data-driven", () => {
     expect(THEMES).toHaveLength(12);
-    for (const key of ["romance", "family", "luxury", "adventure", "beach", "nature", "wellness", "cruises", "snow", "food", "culture", "wildlife"]) {
+    for (const key of ["romantic", "family", "luxury", "adventure", "beach", "nature", "wellness", "cruises", "snow", "food", "culture", "wildlife"]) {
       expect(getTheme(key), key).toBeDefined();
     }
+  });
+
+  it("the couples theme is labelled Romantic — never 'Romance holiday'", () => {
+    const theme = getTheme("romantic")!;
+    expect(theme.label).toBe("Romantic");
+    // Old links with the pre-rename key must still resolve.
+    expect(getTheme("romance")?.key).toBe("romantic");
+  });
+
+  it("romantic theme knows a couple is travelling — never re-asks who's coming", async () => {
+    const session = await getSessionStore().create();
+    const result = startWithTheme(session, "romantic")!;
+    expect(session.brief.travellerType).toBe("couple");
+    expect(session.brief.adults).toBe(2);
+    expect(result.missingFields).not.toContain("travellerType");
+  });
+
+  it("each theme's opening question awaits its primary field for bare answers", async () => {
+    const family = await getSessionStore().create();
+    startWithTheme(family, "family");
+    expect(family.awaitingField).toBe("childrenAges");
+    const romantic = await getSessionStore().create();
+    startWithTheme(romantic, "romantic");
+    expect(romantic.awaitingField).toBe("travelMonth");
   });
 
   it("every theme has an opening question, intro and at least 3 FAQs", () => {

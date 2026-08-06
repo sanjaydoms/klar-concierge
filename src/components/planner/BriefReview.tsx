@@ -18,8 +18,13 @@ const INTEREST_OPTIONS = [
   "nature", "relaxation", "nightlife", "themeparks", "romance", "wildlife", "snow",
 ];
 
+const DISPLAY_LABELS: Record<string, string> = {
+  romance: "Romantic",
+  themeparks: "Theme parks",
+};
+
 function label(value: string): string {
-  return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, " ");
+  return DISPLAY_LABELS[value] ?? value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, " ");
 }
 
 export function BriefReview({
@@ -42,10 +47,10 @@ export function BriefReview({
   return (
     <section aria-labelledby="brief-heading">
       <h1 id="brief-heading" className="text-2xl font-bold text-brand sm:text-3xl">
-        Your trip brief
+        Here&rsquo;s what I&rsquo;ve understood
       </h1>
       <p className="mt-2 text-sm text-foreground/60">
-        Check the details and adjust anything before I suggest directions.
+        Change anything you like — then I&rsquo;ll show your matches.
       </p>
 
       <form
@@ -221,7 +226,7 @@ export function BriefReview({
                       )
                     }
                   >
-                    {interest}
+                    {label(interest)}
                   </button>
                 );
               })}
@@ -234,7 +239,7 @@ export function BriefReview({
             Back to conversation
           </button>
           <button type="submit" className="btn-primary" disabled={busy}>
-            {busy ? "Finding directions…" : "Show My Directions"}
+            {busy ? "Finding your matches…" : "Show My Matches"}
           </button>
         </div>
       </form>

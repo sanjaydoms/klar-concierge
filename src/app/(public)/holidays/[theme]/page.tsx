@@ -109,6 +109,21 @@ export default async function ThemePage({
         </div>
       </section>
 
+      <section aria-labelledby="more-themes" className="mt-12">
+        <h2 id="more-themes" className="text-xl font-semibold text-brand">More holiday types</h2>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {THEMES.filter((t) => t.key !== theme.key).map((t) => (
+            <Link
+              key={t.key}
+              href={`/holidays/${t.key}`}
+              className="chip"
+            >
+              {t.emoji} {t.label}
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <div className="mt-12 rounded-2xl bg-brand px-6 py-8 text-white">
         <h2 className="text-xl font-bold">Ready to shape yours?</h2>
         <p className="mt-2 max-w-2xl text-white/80">

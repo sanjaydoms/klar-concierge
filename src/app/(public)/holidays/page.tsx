@@ -5,7 +5,7 @@ import { THEMES } from "@/services/ktie/themes";
 export const metadata: Metadata = {
   title: "Holiday Types",
   description:
-    "Romance, family, adventure, wellness and more — discover holidays by the kind of trip you want, powered by Klar Travels' destination intelligence.",
+    "Romantic escapes, family trips, adventure, wellness and more — discover holidays by the kind of trip you want, powered by Klar Travels' destination intelligence.",
 };
 
 export default function HolidaysIndexPage() {

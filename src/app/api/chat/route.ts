@@ -56,6 +56,7 @@ export async function POST(request: Request) {
       assistantMessage: result.assistantMessage,
       readyForRecommendations: result.readyForRecommendations,
       missingFields: result.missingFields,
+      awaitingField: result.awaitingField ?? null,
       suggestedAction: result.suggestedAction,
       comparisonSlugs: result.comparisonSlugs,
       expiresAt: session.expiresAt,

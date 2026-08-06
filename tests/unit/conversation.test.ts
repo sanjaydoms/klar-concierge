@@ -9,10 +9,14 @@ describe("conversation intelligence", () => {
       session,
       "We are a family from Mumbai, 7 nights in December, kids are 6 and 10, relaxed pace, we love food",
     );
-    expect(turn.assistantMessage).toContain("So far I have");
+    // A rich first message completes the essentials in one go — the reply is
+    // the full understanding moment, not another question.
+    expect(turn.assistantMessage).toContain("Here's what I've understood");
     expect(turn.assistantMessage).toContain("7 nights");
     expect(turn.assistantMessage).toContain("December");
     expect(turn.assistantMessage).toContain("children aged 6 and 10");
+    expect(turn.assistantMessage).toMatch(/show your matches/i);
+    expect(turn.awaitingField).toBeUndefined();
   });
 
   it("answers destination questions from KTIE with honesty built in", async () => {

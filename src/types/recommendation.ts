@@ -47,6 +47,8 @@ export type Recommendation = {
   seasonalSummary: string;
   idealNights: number;
   reasons: string[];
+  /** Three named experiences from the knowledge base that define this trip. */
+  signatureExperiences: string[];
   tradeOff: string;
   whoMayNotEnjoy: string;
   verifyWithExpert: string[];

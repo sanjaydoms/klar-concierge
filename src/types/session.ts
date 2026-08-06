@@ -18,6 +18,8 @@ export type PlanningSession = {
   /** The brief field the assistant asked about last, so bare answers ("9") land in the right slot. */
   awaitingField?: BriefField;
   selectedDestinationSlug?: string;
+  /** Attractions swapped out via "change this day" — reset on destination change. */
+  itineraryExclusions?: string[];
   createdAt: string;
   updatedAt: string;
   expiresAt: string;

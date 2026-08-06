@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { buildDiscoverCollections } from "@/services/ktie/discover";
+import { THEMES } from "@/services/ktie/themes";
 import { Planner } from "@/components/planner/Planner";
 
 const TRUST_POINTS = [
@@ -54,6 +55,15 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
+
+          {/* Themes up front: the product is understood in one glance. */}
+          <nav aria-label="Holiday types" className="mt-10 flex flex-wrap gap-2">
+            {THEMES.map((t) => (
+              <Link key={t.key} href={`/concierge?theme=${t.key}`} className="chip">
+                {t.emoji} {t.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </section>
 

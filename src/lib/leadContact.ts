@@ -1,8 +1,10 @@
 /**
  * Browser-side contact storage for the welcome step. Details captured before
- * the conversation live ONLY in the visitor's own browser — the server never
- * sees them until the existing CRM enquiry is submitted, preserving the
- * no-PII-at-rest architecture. Clearing browser data clears them.
+ * the conversation live ONLY in the visitor's own browser, and only for the
+ * current visit (sessionStorage — cleared when the tab closes). The server
+ * never sees them until the existing CRM enquiry is submitted, preserving
+ * the no-PII-at-rest architecture. Per the product review: session state
+ * only, never long-term local storage for personal information.
  */
 export type LeadContact = {
   name: string;
@@ -19,7 +21,9 @@ const SKIP_KEY = "klar-lead-skipped";
 
 export function saveLeadContact(contact: LeadContact): void {
   try {
-    window.localStorage.setItem(KEY, JSON.stringify(contact));
+    window.sessionStorage.setItem(KEY, JSON.stringify(contact));
+    // Older versions kept this in localStorage — clean up on sight.
+    window.localStorage.removeItem(KEY);
   } catch {
     // Storage unavailable (private mode) — the enquiry form still works later.
   }
@@ -27,7 +31,7 @@ export function saveLeadContact(contact: LeadContact): void {
 
 export function loadLeadContact(): LeadContact | undefined {
   try {
-    const raw = window.localStorage.getItem(KEY);
+    const raw = window.sessionStorage.getItem(KEY);
     if (!raw) return undefined;
     const parsed = JSON.parse(raw) as LeadContact;
     return parsed && parsed.consent === true && parsed.name ? parsed : undefined;
