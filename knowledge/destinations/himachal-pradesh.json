@@ -1,0 +1,272 @@
+{
+  "slug": "himachal-pradesh",
+  "name": "Himachal Pradesh",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Snow peaks over Manali, colonial Shimla, paragliders above Bir and cafés in Kasol — the Himalaya with a road to every mood.",
+  "positioningLine": "Hill stations, snow adventures and Himalayan calm.",
+  "idealTraveller": "Mountain-hungry families, honeymooners and friend groups chasing snow or slow.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 10,
+  "suitablePaces": [
+    "relaxed",
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "nature": 95,
+    "adventure": 85,
+    "snow": 85,
+    "romance": 80,
+    "relaxation": 75,
+    "food": 60,
+    "culture": 60,
+    "wildlife": 40,
+    "history": 55,
+    "city": 25,
+    "shopping": 45,
+    "nightlife": 30,
+    "beach": 0,
+    "themeparks": 5
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 62,
+    "children5To10": 78,
+    "teenagers": 85,
+    "seniors": 68,
+    "honeymoon": 88,
+    "solo": 82,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 90,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 60,
+    "localCuisineScore": 70,
+    "streetFoodScore": 65,
+    "fineDiningScore": 50
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 1.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 35,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 40,
+    "medicalAccessScore": 55
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "himalayan",
+    "snow-winter",
+    "monsoon-landslides-jul-aug"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Reliable snow at Solang and Narkanda for first-snow joy"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Rohtang and high valleys open; orchards in fruit"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Monsoon landslides disrupt hill roads — build buffer days"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Rains continue; valley views often clouded"
+      ]
+    },
+    {
+      "month": 9,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Crystal post-monsoon views — the photographer's month"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 62,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Shimla + Manali circuit",
+    "Manali + Kasol + Bir",
+    "Add Amritsar en route"
+  ],
+  "commonMistakes": [
+    "Driving Chandigarh–Manali and sightseeing the same day — the road is the day",
+    "Expecting snow in October — it's views, not snowfall"
+  ],
+  "packingConsiderations": [
+    "True warm layers October–March",
+    "Motion-sickness tablets for hairpin roads",
+    "Sunscreen — mountain sun burns fast"
+  ],
+  "practicalWarnings": [
+    "Winter snowfall can close Atal Tunnel approaches — keep plans flexible"
+  ],
+  "tradeOffs": [
+    "Hill roads make every hop a half-day",
+    "Peak May–June brings plains-escape crowds to Mall Roads"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who can't handle winding roads",
+    "Step-free access needs"
+  ],
+  "confidence": 84,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-himachal-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Himachal Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

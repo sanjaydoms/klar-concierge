@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Planner } from "@/components/planner/Planner";
+import { THEMES } from "@/services/ktie/themes";
 
 export const metadata: Metadata = {
   title: "Klar Concierge",
@@ -13,10 +14,12 @@ export const metadata: Metadata = {
  * Embed with:
  *   <iframe src="https://<host>/embed" title="Klar Concierge" style="width:100%;height:100%;border:0"></iframe>
  */
+const themeChips = THEMES.map((t) => ({ key: t.key, label: t.label, emoji: t.emoji, tagline: t.tagline }));
+
 export default function EmbedPage() {
   return (
     <div className="mx-auto max-w-3xl px-3 py-4 sm:px-5">
-      <Planner />
+      <Planner themes={themeChips} />
     </div>
   );
 }

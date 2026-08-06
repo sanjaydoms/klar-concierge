@@ -3,6 +3,7 @@ import { KlarLogo } from "@/components/brand/KlarLogo";
 
 const NAV = [
   { href: "/concierge", label: "Plan a Holiday" },
+  { href: "/holidays", label: "Holiday Types" },
   { href: "/concierge/discover", label: "Discover" },
   { href: "/destinations", label: "Destinations" },
   { href: "/concierge/compare", label: "Compare" },

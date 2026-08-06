@@ -1,4 +1,4 @@
-import type { BudgetBand, Pace, TravelBrief, TravellerType } from "@/types/brief";
+import type { BudgetBand, Pace, TravelBrief, TravelScope, TravellerType } from "@/types/brief";
 import { getAllDestinations } from "@/repositories/knowledge";
 import type {
   AIProvider,
@@ -33,13 +33,13 @@ const INTEREST_KEYWORDS: Record<string, string[]> = {
   city: ["city break", "cities", "skyline", "urban"],
   shopping: ["shopping", "shop", "malls", "markets", "bazaar"],
   adventure: ["adventure", "trek", "trekking", "hiking", "diving", "rafting", "adventurous", "bungee", "bungy"],
-  nature: ["nature", "mountains", "waterfalls", "scenery", "landscape", "lakes", "countryside", "fiords", "fjords"],
+  nature: ["nature", "mountains", "waterfalls", "scenery", "landscape", "lakes", "countryside", "fiords", "fjords", "hill station", "hill stations", "himalaya", "himalayas", "backwaters", "valley"],
   relaxation: ["relax", "chill", "unwind", "spa", "wellness", "peaceful", "do nothing"],
   nightlife: ["nightlife", "party", "clubs", "bars"],
   themeparks: ["theme park", "theme parks", "universal", "disneyland", "disney", "amusement", "fun activities", "ferrari world"],
   romance: ["romantic", "romance", "honeymoon", "anniversary"],
   wildlife: ["wildlife", "safari", "animals", "leopard", "elephants", "big five", "whales", "penguins"],
-  snow: ["snow", "skiing", "alps", "winter wonderland"],
+  snow: ["snow", "snowfall", "skiing", "alps", "winter wonderland"],
 };
 
 function extractMonth(text: string): number | undefined {
@@ -157,10 +157,26 @@ function extractInterests(text: string): string[] {
 
 function extractOriginCity(text: string): string | undefined {
   const lower = text.toLowerCase();
+  // Only a "from <city>" phrasing marks a departure city — a bare mention of
+  // Goa or Kochi is a destination wish, not an origin. Bare answers to the
+  // "which city are you starting from?" question are handled by slot filling.
   for (const city of ORIGIN_CITIES) {
-    if (new RegExp(`\\b${city}\\b`).test(lower)) {
+    if (new RegExp(`\\bfrom\\s+${city}\\b`).test(lower)) {
       return CITY_DISPLAY[city] ?? city.charAt(0).toUpperCase() + city.slice(1);
     }
+  }
+  return undefined;
+}
+
+/** "Within India" vs "abroad" — the first fork in any Indian agency's funnel. */
+function extractScope(text: string): TravelScope | undefined {
+  const lower = text.toLowerCase();
+  if (/\b(domestic|within india|inside india|india only|somewhere in india|india trip|india holiday|india tour)\b/.test(lower)) {
+    return "domestic";
+  }
+  if (/\bin india\b/.test(lower) && !/\bfrom india\b/.test(lower)) return "domestic";
+  if (/\b(international|abroad|foreign|overseas|outside india|out of india)\b/.test(lower)) {
+    return "international";
   }
   return undefined;
 }
@@ -289,6 +305,8 @@ export function extractBriefPatch(message: string): Partial<TravelBrief> {
     patch.originCity = originCity;
     patch.originCountry = "India";
   }
+  const scope = extractScope(message);
+  if (scope) patch.travelScope = scope;
   const dietary = extractDietary(message);
   if (dietary.length) patch.dietaryPreferences = dietary;
   const accessibility = extractAccessibility(message);

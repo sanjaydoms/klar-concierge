@@ -1,0 +1,272 @@
+{
+  "slug": "ladakh",
+  "name": "Ladakh",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Moonscape passes above 5,000m, Pangong's impossible blues, monasteries on crags and roads that became legends — India's great high-altitude adventure.",
+  "positioningLine": "High passes, Pangong blues — the adventure of a lifetime.",
+  "idealTraveller": "Adventurers, riders and landscape addicts ready to respect altitude.",
+  "minimumNights": 5,
+  "idealNights": 7,
+  "maximumNights": 12,
+  "suitablePaces": [
+    "balanced",
+    "active"
+  ],
+  "interests": {
+    "adventure": 96,
+    "nature": 96,
+    "culture": 70,
+    "snow": 60,
+    "romance": 65,
+    "history": 60,
+    "wildlife": 45,
+    "relaxation": 40,
+    "food": 50,
+    "city": 10,
+    "shopping": 35,
+    "nightlife": 5,
+    "beach": 0,
+    "themeparks": 0
+  },
+  "suitability": {
+    "family": 55,
+    "toddlers": 25,
+    "children5To10": 45,
+    "teenagers": 78,
+    "seniors": 45,
+    "honeymoon": 72,
+    "solo": 88,
+    "firstInternationalTrip": 40
+  },
+  "food": {
+    "vegetarianFriendly": 80,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 60,
+    "localCuisineScore": 65,
+    "streetFoodScore": 50,
+    "fineDiningScore": 35
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 1.5,
+    "walkingIntensity": "high",
+    "publicTransportEase": 15,
+    "roadTransferBurden": "high",
+    "accessibilityScore": 25,
+    "medicalAccessScore": 45
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium"
+  ],
+  "climateTags": [
+    "high-altitude-desert",
+    "season-jun-sep",
+    "extreme-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 30,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [
+        "Chadar frozen-river trek season for the truly hardy (expert-led only)"
+      ],
+      "warnings": [
+        "-20°C and closed roads — flights only, specialist trips only"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 30,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "High passes still snowed shut; itineraries limited"
+      ]
+    },
+    {
+      "month": 5,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [
+        "Every pass open — Pangong, Nubra and Khardung La in full glory"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Golden light, thinning crowds, roads still open"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 30,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Leh + Nubra + Pangong circuit",
+    "Manali–Leh or Srinagar–Leh road journeys",
+    "Add Turtuk village"
+  ],
+  "commonMistakes": [
+    "No acclimatisation day in Leh — altitude sickness ruins more trips than weather",
+    "Cramming Pangong as a day trip — stay the night"
+  ],
+  "packingConsiderations": [
+    "Altitude medication after doctor's advice",
+    "Sun protection — UV is fierce at 3,500m",
+    "Warm layers even in July nights"
+  ],
+  "practicalWarnings": [
+    "Inner Line Permits apply for several areas — your Klar expert arranges current requirements"
+  ],
+  "tradeOffs": [
+    "Altitude is a real medical consideration — this trip is earned",
+    "Comforts are simple outside Leh"
+  ],
+  "whoShouldAvoid": [
+    "Travellers with heart/respiratory conditions without medical clearance",
+    "Toddler families",
+    "Comfort-first travellers"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-ladakh-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Ladakh Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

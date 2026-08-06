@@ -67,4 +67,13 @@ export const DESTINATION_GEO: Record<string, DestinationGeo> = {
   iceland: { lat: 64.15, lon: -21.94, station: "Reykjavik" },
   "united-states": { lat: 40.71, lon: -74.01, station: "New York City" },
   canada: { lat: 43.65, lon: -79.38, station: "Toronto" },
+  // 2.6.0 additions — India domestic
+  goa: { lat: 15.49, lon: 73.83, station: "Panaji" },
+  kerala: { lat: 9.96, lon: 76.26, station: "Kochi" },
+  rajasthan: { lat: 26.91, lon: 75.79, station: "Jaipur" },
+  "himachal-pradesh": { lat: 32.24, lon: 77.19, station: "Manali" },
+  kashmir: { lat: 34.08, lon: 74.8, station: "Srinagar", articleTitle: "Kashmir Valley" },
+  "andaman-islands": { lat: 11.62, lon: 92.73, station: "Port Blair", articleTitle: "Andaman Islands" },
+  ladakh: { lat: 34.15, lon: 77.58, station: "Leh" },
+  "sikkim-darjeeling": { lat: 27.04, lon: 88.26, station: "Darjeeling", articleTitle: "Darjeeling" },
 };

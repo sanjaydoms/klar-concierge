@@ -1,0 +1,270 @@
+{
+  "slug": "kashmir",
+  "name": "Kashmir",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Shikaras gliding Dal Lake at dawn, Gulmarg's gondola into the snowline, saffron fields and chinar autumns — beauty that explains every poem.",
+  "positioningLine": "Dal Lake mornings, Gulmarg snows — the fabled valley.",
+  "idealTraveller": "Honeymooners and families chasing the classic houseboat-and-meadows dream.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 9,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "nature": 96,
+    "romance": 90,
+    "snow": 80,
+    "relaxation": 80,
+    "culture": 65,
+    "food": 70,
+    "adventure": 65,
+    "history": 55,
+    "wildlife": 30,
+    "city": 25,
+    "shopping": 60,
+    "nightlife": 10,
+    "beach": 0,
+    "themeparks": 0
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 62,
+    "children5To10": 78,
+    "teenagers": 80,
+    "seniors": 70,
+    "honeymoon": 95,
+    "solo": 70,
+    "firstInternationalTrip": 55
+  },
+  "food": {
+    "vegetarianFriendly": 60,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 98,
+    "localCuisineScore": 85,
+    "streetFoodScore": 60,
+    "fineDiningScore": 55
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 1.5,
+    "walkingIntensity": "medium",
+    "publicTransportEase": 30,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 40,
+    "medicalAccessScore": 60
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "himalayan-valley",
+    "snow-winter",
+    "mild-summer"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Gulmarg's powder season — Asia's highest gondola into snow"
+      ],
+      "warnings": [
+        "Srinagar–Jammu highway can close in heavy snow — fly, and keep buffers"
+      ]
+    },
+    {
+      "month": 2,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Tulip garden bloom against snow peaks (verify festival dates)"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "mild",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 6,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 7,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Warm-season crowds at headline gardens"
+      ]
+    },
+    {
+      "month": 8,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cool",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Chinar trees turn the valley copper and gold"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "cold",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 58,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "cold",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Srinagar + Gulmarg + Pahalgam classic",
+    "Add Sonamarg day",
+    "Kashmir + Vaishno Devi"
+  ],
+  "commonMistakes": [
+    "Day-tripping Gulmarg in winter without booking gondola slots",
+    "Treating a houseboat as just a hotel — sunset on the lake is the point"
+  ],
+  "packingConsiderations": [
+    "Serious winter kit December–February",
+    "Layers all year — valley evenings cool fast"
+  ],
+  "practicalWarnings": [
+    "Weather and situational advisories can change plans — your Klar expert confirms current conditions before travel"
+  ],
+  "tradeOffs": [
+    "Weather can rearrange itineraries at short notice",
+    "Advisory checks are part of responsible planning here"
+  ],
+  "whoShouldAvoid": [
+    "Travellers who need certainty over serendipity"
+  ],
+  "confidence": 80,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-jammu-kashmir-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Jammu & Kashmir Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

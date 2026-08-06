@@ -32,6 +32,7 @@ export type ExclusionReason =
   | "senior-burden"
   | "climate-conflict"
   | "flight-tolerance-conflict"
+  | "scope-conflict"
   | "knowledge-stale";
 
 export type Recommendation = {

@@ -33,6 +33,22 @@ test.describe("public surface", () => {
     expect(jsonLd).toContain("TouristDestination");
   });
 
+  test("holiday theme landing pages render with destinations, FAQ and planner CTA", async ({ page }) => {
+    await page.goto("/holidays/romance");
+    await expect(page.getByRole("heading", { level: 1, name: /Romance Holidays/i })).toBeVisible();
+    await expect(page.getByText(/Best months:/i)).toBeVisible();
+    await expect(page.locator('a[href^="/destinations/"]').first()).toBeVisible();
+    await expect(page.getByRole("link", { name: /Plan My Romance Holiday/i })).toBeVisible();
+    const jsonLd = (await page.locator('script[type="application/ld+json"]').allTextContents()).join(" ");
+    expect(jsonLd).toContain("FAQPage");
+  });
+
+  test("picking a theme starts a context-aware conversation", async ({ page }) => {
+    await page.goto("/concierge");
+    await page.getByRole("button", { name: /Family\b/ }).first().click();
+    await expect(page.getByText(/How old are the children/i)).toBeVisible({ timeout: 15_000 });
+  });
+
   test("shared plan links regenerate the identical plan from the URL", async ({ page }) => {
     await page.goto("/plan/japan?n=7&t=family&a=6,10&m=11");
     await expect(page.getByRole("heading", { name: /7-night Japan plan/i })).toBeVisible();

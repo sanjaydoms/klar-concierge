@@ -2649,8 +2649,40 @@
       "Tamil"
     ],
     "timezones": [],
-    "climateZones": [],
-    "seasonOverview": [],
+    "climateZones": [
+      "tropical-coast",
+      "monsoon-jun-sep",
+      "dry-winter",
+      "tropical",
+      "double-monsoon",
+      "hill-cool-munnar",
+      "desert",
+      "fierce-summer",
+      "mild-winter",
+      "himalayan",
+      "snow-winter",
+      "monsoon-landslides-jul-aug",
+      "himalayan-valley",
+      "mild-summer",
+      "tropical-island",
+      "monsoon-may-sep",
+      "calm-dec-apr",
+      "high-altitude-desert",
+      "season-jun-sep",
+      "extreme-winter",
+      "eastern-himalaya",
+      "clear-oct-nov"
+    ],
+    "seasonOverview": [
+      "Goa: best months score highest around Dec, Jan, Feb",
+      "Kerala: best months score highest around Jan, Dec, Feb",
+      "Rajasthan: best months score highest around Jan, Dec, Nov",
+      "Himachal Pradesh: best months score highest around May, Oct, Apr",
+      "Kashmir: best months score highest around May, Apr, Oct",
+      "Andaman Islands: best months score highest around Jan, Feb, Dec",
+      "Ladakh: best months score highest around Jul, Jun, Aug",
+      "Sikkim & Darjeeling: best months score highest around Oct, Apr, Nov"
+    ],
     "stableAdvisoryNotes": [],
     "dynamicFieldsRequireVerification": [
       "visa rules",
@@ -2658,8 +2690,44 @@
       "safety advisories",
       "health requirements"
     ],
-    "status": "skeleton",
-    "sources": []
+    "status": "reviewed",
+    "sources": [
+      {
+        "id": "klar-knowledge-pack-2026",
+        "sourceType": "klar-expert",
+        "sourceName": "Klar destination knowledge pack (expert-compiled)",
+        "accessedAt": "2026-08-01",
+        "applicableFields": [
+          "*"
+        ],
+        "reliability": "medium",
+        "freshness": "current"
+      }
+    ],
+    "travellerFit": {
+      "family": 77,
+      "children": 73,
+      "teenagers": 80,
+      "seniors": 68,
+      "honeymoon": 86,
+      "solo": 78,
+      "firstInternationalTrip": 56
+    },
+    "travelPracticality": {
+      "typicalFlightTimeFromIndia": 1.5,
+      "connectivityLevel": "strong",
+      "internalTransportEase": 34,
+      "accessibilityMaturity": 42,
+      "medicalAccess": 59,
+      "languageEaseForIndianTravellers": 70
+    },
+    "foodPracticality": {
+      "vegetarianEase": 79,
+      "indianFoodAvailability": 100,
+      "halalEase": 72
+    },
+    "reviewedAt": "2026-08-01",
+    "nextReviewAt": "2026-11-01"
   },
   {
     "iso2": "ID",

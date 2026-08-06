@@ -1,0 +1,269 @@
+{
+  "slug": "goa",
+  "name": "Goa",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Palm-fringed beaches from party-bright Baga to serene Palolem, Portuguese lanes and seafood shacks at sunset — India's easiest exhale.",
+  "positioningLine": "Beaches, shacks and susegad — India's favourite unwind.",
+  "idealTraveller": "Friends, couples and families who want beach ease without a passport.",
+  "minimumNights": 3,
+  "idealNights": 4,
+  "maximumNights": 7,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 95,
+    "relaxation": 90,
+    "nightlife": 85,
+    "food": 82,
+    "romance": 78,
+    "culture": 60,
+    "history": 62,
+    "nature": 55,
+    "adventure": 55,
+    "city": 30,
+    "shopping": 55,
+    "wildlife": 25,
+    "themeparks": 15,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 80,
+    "toddlers": 70,
+    "children5To10": 78,
+    "teenagers": 85,
+    "seniors": 72,
+    "honeymoon": 82,
+    "solo": 80,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 75,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 70,
+    "localCuisineScore": 88,
+    "streetFoodScore": 75,
+    "fineDiningScore": 72
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 1.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 40,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 55,
+    "medicalAccessScore": 70
+  },
+  "budgetBands": [
+    "value",
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical-coast",
+    "monsoon-jun-sep",
+    "dry-winter"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 60,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 45,
+      "seasonLabel": "Off season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Pre-monsoon heat and humidity build"
+      ]
+    },
+    {
+      "month": 6,
+      "seasonScore": 30,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon lashes the coast — most shacks shut, swimming unsafe"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 30,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 70,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [
+        "Sea calm again, crowds not yet peak — the connoisseur's window"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 92,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Peak season sparkle — beach shacks, markets and festive nights"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "North Goa + South Goa split",
+    "Goa + Gokarna",
+    "Extended weekend from any metro"
+  ],
+  "commonMistakes": [
+    "Judging Goa by Baga alone — the south is a different island of calm",
+    "Monsoon bookings expecting beach weather"
+  ],
+  "packingConsiderations": [
+    "Reef-safe sunscreen",
+    "Light cottons",
+    "One smart-casual outfit for beach clubs"
+  ],
+  "practicalWarnings": [
+    "Rent scooters only with helmets and licence checks; taxis are negotiation-heavy"
+  ],
+  "tradeOffs": [
+    "Peak-season crowds and prices in December",
+    "Public transport is thin — you'll need taxis or a scooter"
+  ],
+  "whoShouldAvoid": [
+    "Travellers seeking mountain air or cultural depth as the main course"
+  ],
+  "confidence": 86,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-goa-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Goa Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

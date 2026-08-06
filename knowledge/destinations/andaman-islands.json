@@ -1,0 +1,267 @@
+{
+  "slug": "andaman-islands",
+  "name": "Andaman Islands",
+  "countryIso2": "IN",
+  "countryName": "India",
+  "region": "India",
+  "summary": "Radhanagar's blue-white perfection, snorkelling straight off the beach, bioluminescent kayaking and cellular-jail history — India's island paradise without a passport.",
+  "positioningLine": "India's own island paradise — Maldives-blue, home-easy.",
+  "idealTraveller": "Honeymooners and families who want tropical-island beauty on Indian soil.",
+  "minimumNights": 4,
+  "idealNights": 6,
+  "maximumNights": 8,
+  "suitablePaces": [
+    "relaxed",
+    "balanced"
+  ],
+  "interests": {
+    "beach": 96,
+    "relaxation": 88,
+    "romance": 88,
+    "adventure": 75,
+    "nature": 80,
+    "wildlife": 55,
+    "history": 60,
+    "food": 60,
+    "culture": 40,
+    "city": 15,
+    "shopping": 25,
+    "nightlife": 20,
+    "themeparks": 0,
+    "snow": 0
+  },
+  "suitability": {
+    "family": 78,
+    "toddlers": 62,
+    "children5To10": 78,
+    "teenagers": 82,
+    "seniors": 62,
+    "honeymoon": 92,
+    "solo": 70,
+    "firstInternationalTrip": 60
+  },
+  "food": {
+    "vegetarianFriendly": 65,
+    "indianFoodAvailability": 100,
+    "halalFriendly": 70,
+    "localCuisineScore": 70,
+    "streetFoodScore": 50,
+    "fineDiningScore": 55
+  },
+  "travelPracticality": {
+    "averageFlightHoursFromIndia": 2.5,
+    "walkingIntensity": "low",
+    "publicTransportEase": 25,
+    "roadTransferBurden": "medium",
+    "accessibilityScore": 40,
+    "medicalAccessScore": 50
+  },
+  "budgetBands": [
+    "comfort",
+    "premium",
+    "luxury"
+  ],
+  "climateTags": [
+    "tropical-island",
+    "monsoon-may-sep",
+    "calm-dec-apr"
+  ],
+  "monthlyIntelligence": [
+    {
+      "month": 1,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Glass-calm seas — peak snorkelling and dive visibility"
+      ],
+      "warnings": []
+    },
+    {
+      "month": 2,
+      "seasonScore": 90,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 3,
+      "seasonScore": 85,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 4,
+      "seasonScore": 75,
+      "seasonLabel": "Good season",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 5,
+      "seasonScore": 55,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "hot",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": [
+        "Season winding down; sea states unpredictable"
+      ]
+    },
+    {
+      "month": 6,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": [
+        "Monsoon swells cancel ferries and water sports"
+      ]
+    },
+    {
+      "month": 7,
+      "seasonScore": 35,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 8,
+      "seasonScore": 40,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "low",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 9,
+      "seasonScore": 50,
+      "seasonLabel": "Shoulder season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 10,
+      "seasonScore": 65,
+      "seasonLabel": "Good season",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 11,
+      "seasonScore": 80,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "high",
+      "temperatureBand": "warm",
+      "crowdLevel": "medium",
+      "highlights": [],
+      "warnings": []
+    },
+    {
+      "month": 12,
+      "seasonScore": 88,
+      "seasonLabel": "Excellent time to visit",
+      "rainfall": "low",
+      "humidity": "medium",
+      "temperatureBand": "warm",
+      "crowdLevel": "high",
+      "highlights": [
+        "Postcard weather across Havelock and Neil"
+      ],
+      "warnings": []
+    }
+  ],
+  "commonTripCombinations": [
+    "Port Blair + Havelock (Swaraj) + Neil classic",
+    "Add Baratang limestone caves"
+  ],
+  "commonMistakes": [
+    "Booking tight flight connections around ferry schedules",
+    "Skipping advance ferry booking in peak season"
+  ],
+  "packingConsiderations": [
+    "Reef-safe sunscreen and snorkel mask",
+    "Light rain shell even in season",
+    "Cash — ATMs are scarce on smaller islands"
+  ],
+  "practicalWarnings": [
+    "Certain tribal-area and foreign-national permits differ — your Klar expert confirms the current rules"
+  ],
+  "tradeOffs": [
+    "Reaching the islands takes a full travel day each way",
+    "Connectivity and nightlife are minimal — that's the charm"
+  ],
+  "whoShouldAvoid": [
+    "Travellers needing constant connectivity or urban buzz"
+  ],
+  "confidence": 82,
+  "status": "verified",
+  "tier": 1,
+  "version": "2.0.0",
+  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
+  "reviewedAt": "2026-08-01",
+  "nextReviewAt": "2026-11-01",
+  "sources": [
+    {
+      "id": "klar-knowledge-pack-2026",
+      "sourceType": "klar-expert",
+      "sourceName": "Klar destination knowledge pack (expert-compiled)",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "*"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "tourism-board-andaman-nicobar-tourism",
+      "sourceType": "official-tourism-board",
+      "sourceName": "Andaman & Nicobar Tourism",
+      "accessedAt": "2026-08-01",
+      "applicableFields": [
+        "seasonality",
+        "attractions",
+        "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    }
+  ]
+}

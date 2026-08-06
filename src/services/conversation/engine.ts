@@ -8,6 +8,7 @@ import { getAIProvider } from "@/services/ai";
 import { isUnreadableMessage, parseAwaitedAnswer } from "@/services/conversation/slotFill";
 import { getDestination } from "@/repositories/knowledge";
 import { buildDiscoverCollections } from "@/services/ktie/discover";
+import { getTheme } from "@/services/ktie/themes";
 import type { DestinationIntelligence } from "@/types/knowledge";
 
 export type ChatTurnResult = {
@@ -54,6 +55,9 @@ function understoodSummary(patch: Partial<TravelBrief>, brief: TravelBrief): str
         ? "a multi-generational trip"
         : `a ${patch.travellerType} holiday`,
     );
+  }
+  if (patch.travelScope) {
+    bits.push(patch.travelScope === "domestic" ? "a holiday within India" : "an international holiday");
   }
   if (patch.durationNights) bits.push(`${patch.durationNights} nights`);
   if (patch.travelMonth) bits.push(`in ${MONTH_NAMES[patch.travelMonth - 1]}`);
@@ -147,6 +151,35 @@ const OUT_OF_SCOPE_REPLY =
 
 const UNDECIDED_REPLY =
   "That's exactly what I'm for. Let's narrow it gently: which month are you thinking of, roughly how many nights, and who's travelling?";
+
+/**
+ * Discovery-layer entry: the traveller picked a holiday theme instead of
+ * typing. Seeds the brief with the theme's implied preferences and opens
+ * with the theme's tailored question — the conversation adapts from the
+ * first word instead of interrogating everyone identically.
+ */
+export function startWithTheme(session: PlanningSession, themeKey: string): ChatTurnResult | undefined {
+  const theme = getTheme(themeKey);
+  if (!theme) return undefined;
+  session.brief = mergeBrief(
+    session.brief.originalPrompt
+      ? session.brief
+      : { ...session.brief, originalPrompt: `${theme.label} holiday` },
+    theme.briefPatch,
+  );
+  const assistantMessage = theme.openingQuestion;
+  const now = new Date().toISOString();
+  session.messages.push({ role: "user", content: `${theme.emoji} ${theme.label} holiday`, createdAt: now });
+  session.messages.push({ role: "assistant", content: assistantMessage, createdAt: new Date().toISOString() });
+  session.turnIndex += 1;
+  session.awaitingField = undefined; // the opening question is multi-part by design
+  return {
+    session,
+    assistantMessage,
+    readyForRecommendations: briefReadyForRecommendations(session.brief),
+    missingFields: missingBriefFields(session.brief),
+  };
+}
 
 /** Record a complete turn (used for early honest replies that skip extraction). */
 function recordTurn(

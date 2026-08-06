@@ -43,6 +43,7 @@ export function buildDiscoverCollections(month: number): DiscoverCollection[] {
 
   return [
     { key: "this-month", title: "Best places to visit this month", description: "Destinations at their seasonal best right now.", destinations: withSeason(top(pool, monthScore)) },
+    { key: "india", title: "Incredible India", description: "Klar's home-ground picks — no passport required.", destinations: withSeason(top(pool.filter((d) => d.countryIso2 === "IN"), monthScore)) },
     { key: "families", title: "Best for families", description: "Easy logistics and attractions the whole family enjoys.", destinations: withSeason(top(pool, (d) => d.suitability.family)) },
     { key: "young-children", title: "Best for young children", description: "Gentle pacing, short transfers and guaranteed delights.", destinations: withSeason(top(pool, (d) => d.suitability.toddlers + d.suitability.children5To10)) },
     { key: "teenagers", title: "Best for teenagers", description: "Thrills, culture-cool and food teens actually rate.", destinations: withSeason(top(pool, (d) => d.suitability.teenagers)) },
@@ -52,7 +53,7 @@ export function buildDiscoverCollections(month: number): DiscoverCollection[] {
     { key: "first-trip", title: "Best for first international trips", description: "Forgiving logistics and big rewards for new travellers.", destinations: withSeason(top(pool, (d) => d.suitability.firstInternationalTrip)) },
     { key: "beach", title: "Relaxed beach holidays", description: "Slow mornings, warm water and nowhere to be.", destinations: withSeason(top(pool, (d) => (d.interests.beach ?? 0) + (d.interests.relaxation ?? 0))) },
     { key: "culture", title: "Culture and city breaks", description: "Museums, old towns, skylines and civilisations.", destinations: withSeason(top(pool, (d) => (d.interests.culture ?? 0) + (d.interests.city ?? 0))) },
-    { key: "short-trips", title: "Short holidays from India", description: "Big experiences within about five flight hours.", destinations: withSeason(top(pool.filter((d) => d.travelPracticality.averageFlightHoursFromIndia <= 5.5), monthScore)) },
+    { key: "short-trips", title: "Short international breaks", description: "Big experiences abroad within about five flight hours.", destinations: withSeason(top(pool.filter((d) => d.travelPracticality.averageFlightHoursFromIndia <= 5.5 && d.countryIso2 !== "IN"), monthScore)) },
     { key: "different", title: "Something different", description: "Beyond the usual suspects — still fully Klar-verified.", destinations: withSeason(top(pool, (d) => 100 - d.suitability.firstInternationalTrip + (d.interests.nature ?? 0) / 2)) },
   ];
 }
