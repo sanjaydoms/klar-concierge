@@ -40,7 +40,7 @@ export default function DestinationsIndexPage() {
                   href={`/destinations/${d.slug}`}
                   className="card block transition hover:border-brand"
                 >
-                  <DestinationThumb slug={d.slug} name={d.name} className="mb-3 h-32" />
+                  <DestinationThumb slug={d.slug} name={d.name} countryIso2={d.countryIso2} className="mb-3 h-36" />
                   <div className="flex items-baseline justify-between gap-3">
                     <span className="font-semibold text-brand">{d.name}</span>
                     <span className="text-xs text-foreground/55">
