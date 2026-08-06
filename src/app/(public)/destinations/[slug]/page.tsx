@@ -101,7 +101,7 @@ export default async function DestinationPage({
         <span>{d.name}</span>
       </nav>
 
-      <DestinationHero slug={d.slug} name={d.name} />
+      <DestinationHero slug={d.slug} name={d.name} countryIso2={d.countryIso2} />
 
       <header className="mt-6">
         <h1 className="sr-only">{d.name}</h1>
