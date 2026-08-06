@@ -20,6 +20,7 @@ const bodySchema = z.object({
     name: z.string().min(2).max(120),
     phone: z.string().regex(/^[+\d][\d\s-]{7,15}$/),
     email: z.string().email().max(200),
+    city: z.string().max(120).optional(),
     preferredContactChannel: z.enum(["phone", "email", "whatsapp"]),
     preferredContactTime: z.string().max(120).optional(),
     additionalNotes: z.string().max(2000).optional(),

@@ -13,6 +13,7 @@ export type CRMLeadPayload = {
     name: string;
     phone: string;
     email: string;
+    city?: string;
     preferredContactChannel: "phone" | "email" | "whatsapp";
     preferredContactTime?: string;
     additionalNotes?: string;

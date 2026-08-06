@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { loadLeadContact } from "@/lib/leadContact";
 
 export type HandoverValues = {
   name: string;
   phone: string;
   email: string;
+  city?: string;
   preferredContactChannel: "phone" | "email" | "whatsapp";
   preferredContactTime?: string;
   additionalNotes?: string;
@@ -27,14 +29,20 @@ export function HandoverForm({
   onBack: () => void;
   onSubmit: (values: HandoverValues) => void;
 }) {
-  const [values, setValues] = useState<HandoverValues>({
-    name: "",
-    phone: "",
-    email: "",
-    preferredContactChannel: "whatsapp",
-    preferredContactTime: "",
-    additionalNotes: "",
-    consent: false,
+  // Details shared at the welcome step (stored only in this browser)
+  // pre-fill the enquiry — one glance to confirm instead of retyping.
+  const [values, setValues] = useState<HandoverValues>(() => {
+    const saved = typeof window !== "undefined" ? loadLeadContact() : undefined;
+    return {
+      name: saved?.name ?? "",
+      phone: saved?.phone ?? "",
+      email: saved?.email ?? "",
+      city: saved?.city ?? "",
+      preferredContactChannel: "whatsapp",
+      preferredContactTime: "",
+      additionalNotes: "",
+      consent: Boolean(saved?.consent),
+    };
   });
   const [errors, setErrors] = useState<Partial<Record<keyof HandoverValues, string>>>({});
 
@@ -109,6 +117,18 @@ export function HandoverForm({
             onChange={(e) => setValues((v) => ({ ...v, email: e.target.value }))}
           />
           {errors.email ? <p id="ho-email-error" className="mt-1 text-xs text-danger">{errors.email}</p> : null}
+        </div>
+        <div>
+          <label className="field-label" htmlFor="ho-city">
+            City <span className="font-normal text-foreground/50">(optional)</span>
+          </label>
+          <input
+            id="ho-city"
+            className="field-input"
+            autoComplete="address-level2"
+            value={values.city ?? ""}
+            onChange={(e) => setValues((v) => ({ ...v, city: e.target.value }))}
+          />
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <div>

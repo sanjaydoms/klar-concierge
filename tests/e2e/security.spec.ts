@@ -23,6 +23,8 @@ test.describe("injection resistance", () => {
       await d.dismiss();
     });
     await page.goto("/concierge");
+    const skip = page.getByRole("button", { name: /Continue without sharing details/i });
+    if (await skip.isVisible().catch(() => false)) await skip.click();
     const payload = '<script>alert(1)</script><img src=x onerror=alert(2)>';
     await page.getByPlaceholder("Describe your holiday…").fill(payload);
     await page.getByRole("button", { name: "Send", exact: true }).click();

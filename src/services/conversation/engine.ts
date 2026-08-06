@@ -165,7 +165,11 @@ export function startWithTheme(session: PlanningSession, themeKey: string): Chat
     session.brief.originalPrompt
       ? session.brief
       : { ...session.brief, originalPrompt: `${theme.label} holiday` },
-    theme.briefPatch,
+    {
+      ...theme.briefPatch,
+      // The chosen theme travels with the enquiry to the Klar team.
+      decisionPriorities: [...(theme.briefPatch.decisionPriorities ?? []), `theme:${theme.key}`],
+    },
   );
   const assistantMessage = theme.openingQuestion;
   const now = new Date().toISOString();
@@ -324,6 +328,7 @@ export async function processChatTurn(
 export function conversationSummary(session: PlanningSession): string {
   const b = session.brief;
   const parts = [
+    b.decisionPriorities.find((p) => p.startsWith("theme:"))?.replace("theme:", "theme ") ?? null,
     b.travellerType !== "unknown" ? b.travellerType : null,
     b.travelMonth ? `month ${b.travelMonth}` : null,
     b.durationNights ? `${b.durationNights} nights` : null,
