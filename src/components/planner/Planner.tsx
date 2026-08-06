@@ -15,6 +15,7 @@ import { ComparisonView } from "@/components/comparison/ComparisonView";
 import { HandoverForm, type HandoverValues } from "@/components/handover/HandoverForm";
 import { HandoverSuccess } from "@/components/handover/HandoverSuccess";
 import { planSharePath } from "@/lib/shareLinks";
+import { answerChipsFor } from "@/lib/answerChips";
 import { TypewriterText } from "./TypewriterText";
 import { HolidayDNA } from "./HolidayDNA";
 import { WelcomeStep } from "./WelcomeStep";
@@ -33,7 +34,7 @@ type Stage =
 
 type ChatMessage = { role: "user" | "assistant"; content: string; createdAt: string };
 
-const CHIPS = [
+const STARTER_CHIPS = [
   "Family holiday",
   "Honeymoon",
   "Within India",
@@ -45,6 +46,7 @@ const CHIPS = [
   "Surprise me",
 ];
 
+
 const SESSION_KEY = "klar-session-id";
 
 export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
@@ -54,6 +56,9 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
   const [input, setInput] = useState("");
   const [brief, setBrief] = useState<TravelBrief | undefined>(undefined);
   const [ready, setReady] = useState(false);
+  // What the assistant's open question is asking for — drives answer chips.
+  const [awaitingField, setAwaitingField] = useState<string | null>(null);
+  const [missingFields, setMissingFields] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [recResult, setRecResult] = useState<RecommendationResult | null>(null);
@@ -120,6 +125,8 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
     setMessages([]);
     setBrief(undefined);
     setReady(false);
+    setAwaitingField(null);
+    setMissingFields([]);
     setRecResult(null);
     setSelected(null);
     setComparison(null);
@@ -152,11 +159,15 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
           brief: TravelBrief;
           assistantMessage: string;
           readyForRecommendations: boolean;
+          awaitingField?: string | null;
+          missingFields?: string[];
         };
         setSessionId(data.sessionId);
         window.localStorage.setItem(SESSION_KEY, data.sessionId);
         setBrief(data.brief);
         setReady(data.readyForRecommendations);
+        setAwaitingField(data.awaitingField ?? data.missingFields?.[0] ?? null);
+        setMissingFields(data.missingFields ?? []);
         setAnimateLast(true);
         setMessages((m) => [
           ...m,
@@ -177,7 +188,9 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
       return;
     }
     const hasSession = Boolean(window.localStorage.getItem(SESSION_KEY));
-    const wanted = new URLSearchParams(window.location.search).get("theme");
+    const rawTheme = new URLSearchParams(window.location.search).get("theme");
+    // Old links may still say "romance" — the theme is now called "romantic".
+    const wanted = rawTheme === "romance" ? "romantic" : rawTheme;
     const linkedTheme = wanted ? themes.find((t) => t.key === wanted) : undefined;
     if (hasSession || welcomeAlreadyHandled()) {
       // Returning visitor: no gate. A theme deep link still starts the theme.
@@ -214,6 +227,8 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
           brief: TravelBrief;
           assistantMessage: string;
           readyForRecommendations: boolean;
+          awaitingField?: string | null;
+          missingFields?: string[];
           suggestedAction?: "recommend" | "compare";
           comparisonSlugs?: string[];
         };
@@ -221,6 +236,8 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
         window.localStorage.setItem(SESSION_KEY, data.sessionId);
         setBrief(data.brief);
         setReady(data.readyForRecommendations);
+        setAwaitingField(data.awaitingField ?? data.missingFields?.[0] ?? null);
+        setMissingFields(data.missingFields ?? []);
         setAnimateLast(true);
         setMessages((m) => [
           ...m,
@@ -448,18 +465,41 @@ export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
             ) : null}
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick ideas">
-            {CHIPS.map((chip) => (
-              <button
-                key={chip}
-                type="button"
-                className="chip"
-                onClick={() => setInput((v) => (v ? `${v} ${chip.toLowerCase()}` : chip))}
-              >
-                {chip}
-              </button>
-            ))}
-          </div>
+          {messages.length === 0 ? (
+            <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick ideas">
+              {STARTER_CHIPS.map((chip) => (
+                <button
+                  key={chip}
+                  type="button"
+                  className="chip"
+                  onClick={() => setInput((v) => (v ? `${v} ${chip.toLowerCase()}` : chip))}
+                >
+                  {chip}
+                </button>
+              ))}
+            </div>
+          ) : (
+            (() => {
+              // Answer chips always match the question on screen — never a
+              // random grab-bag of pace/budget options.
+              const chips = busy ? [] : answerChipsFor(awaitingField ?? missingFields[0] ?? null);
+              return chips.length > 0 ? (
+                <div className="mt-4 flex flex-wrap gap-2" aria-label="Quick answers">
+                  {chips.map((chip) => (
+                    <button
+                      key={chip.label}
+                      type="button"
+                      className="chip"
+                      disabled={busy}
+                      onClick={() => void sendMessage(chip.send)}
+                    >
+                      {chip.label}
+                    </button>
+                  ))}
+                </div>
+              ) : null;
+            })()
+          )}
 
           <form
             className="mt-4 flex gap-2"

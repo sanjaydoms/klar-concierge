@@ -16,6 +16,8 @@ export type ChatTurnResult = {
   assistantMessage: string;
   readyForRecommendations: boolean;
   missingFields: string[];
+  /** The field the assistant's question is asking for — drives answer chips. */
+  awaitingField?: string;
   suggestedAction?: "recommend" | "compare";
   comparisonSlugs?: string[];
 };
@@ -176,12 +178,15 @@ export function startWithTheme(session: PlanningSession, themeKey: string): Chat
   session.messages.push({ role: "user", content: `${theme.emoji} ${theme.label} holiday`, createdAt: now });
   session.messages.push({ role: "assistant", content: assistantMessage, createdAt: new Date().toISOString() });
   session.turnIndex += 1;
-  session.awaitingField = undefined; // the opening question is multi-part by design
+  // The opening question is multi-part, but it leads with one primary field —
+  // remembering it lets a bare answer ("6 and 9", "April") land correctly.
+  session.awaitingField = theme.awaitingField;
   return {
     session,
     assistantMessage,
     readyForRecommendations: briefReadyForRecommendations(session.brief),
     missingFields: missingBriefFields(session.brief),
+    awaitingField: session.awaitingField,
   };
 }
 
@@ -200,6 +205,7 @@ function recordTurn(
     assistantMessage,
     readyForRecommendations: briefReadyForRecommendations(session.brief),
     missingFields: missingBriefFields(session.brief),
+    awaitingField: session.awaitingField,
   };
 }
 
@@ -222,6 +228,7 @@ export async function processChatTurn(
     const question = openField
       ? await ai.composeFollowUp({ brief: session.brief, missingField: openField })
       : "Tell me about the holiday you have in mind.";
+    session.awaitingField = openField;
     return recordTurn(session, message, `Sorry — I couldn't make sense of that message. ${question}`);
   }
 
@@ -319,6 +326,7 @@ export async function processChatTurn(
     assistantMessage,
     readyForRecommendations: ready,
     missingFields: missing,
+    awaitingField: session.awaitingField,
     suggestedAction,
     comparisonSlugs,
   };

@@ -33,6 +33,13 @@ const nextConfig = {
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
+  async redirects() {
+    // The theme was renamed from "romance" to "romantic" — keep old links alive.
+    return [
+      { source: "/holidays/romance", destination: "/holidays/romantic", permanent: true },
+      { source: "/concierge/romance", destination: "/concierge?theme=romantic", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

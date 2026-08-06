@@ -1,5 +1,61 @@
 # Release Notes
 
+## 2.9.0 — Go-live polish: Romantic rename, honest theme flow, answer chips (2026-08-06)
+
+Fixes the three defects reported from live testing, plus a full go-live sweep.
+
+### "Romantic", not "Romance" — and a full tone audit
+- The couples theme is now **Romantic** everywhere: planner grid, welcome
+  step, chat bubble ("💐 Romantic holiday"), `/holidays/romantic` landing
+  page ("Romantic Holidays", "Plan My Romantic Holiday"). Old
+  `/holidays/romance` links redirect permanently; old `?theme=romance`
+  deep links and stored keys still resolve via an alias.
+- Every user-facing sentence was audited for tone; wording that could read
+  as anything other than professional family travel was rewritten (e.g.
+  "the destination does the wooing" is gone). The trip-brief interest chip
+  now displays "Romantic" too.
+
+### The theme flow finally respects the theme
+- Picking **Romantic** now tells the planner a couple is travelling
+  (2 adults) — it will **never again ask "who's travelling?"** after you
+  chose a couples holiday. Each of the 12 themes was audited the same way.
+- Every theme's opening question now remembers which field it primarily
+  asks for, so bare answers land correctly on the first reply: "6 and 9"
+  after the family opening fills the children's ages; "April" after the
+  romantic opening fills the month.
+- Slot understanding hardened: "Relaxed pace" (the word *relaxed* itself)
+  now fills pace; "A couple's getaway", "With my parents", "Travelling
+  solo" and friends/honeymoon phrasings answer "who's travelling?"
+  directly; "From Hyderabad" no longer risks being stored verbatim as a
+  city called "From Hyderabad".
+
+### Answer chips that match the question (replaces the random chip row)
+- The static chip row is gone. While a question is open, the planner now
+  shows **one-tap answers for exactly that question**: months when asked
+  "when", night counts when asked "how long", party types when asked
+  "who's travelling", ages, pace, interests, origin cities and comfort
+  levels each for their own question. Tapping a chip sends the answer
+  immediately.
+- Every chip's send-text is covered by a unit test proving the engine
+  parses it into the intended brief field — a chip can never produce
+  "I didn't quite catch that".
+- Starter idea chips still appear before the conversation begins.
+
+### Go-live verification (the complete sweep)
+- All 12 themes tested end-to-end as a user against the production build:
+  theme → conversation → brief → 3 recommendations → itinerary. All pass;
+  the romantic flow was additionally asserted never to re-ask who's
+  travelling and never to repeat a question.
+- All public routes status-checked (landing, planner, discover, compare +
+  deep links, holidays index + all theme pages, destinations, shared plans,
+  embed, legal, sitemap/robots/llms.txt; internal routes still 404).
+- Natural-language spot checks: "mid July" → July, "early December" →
+  December, "a short 4-day break" → 3 nights, bare "9" only fills nights
+  when nights was asked, emoji-only input still honestly rejected.
+- 116/116 unit tests (15 new), 288/288 evals, **44/44 e2e** (the welcome
+  journey now also asserts answer chips appear for the open question and
+  never show unrelated options), build green, `npm audit` 0 vulnerabilities.
+
 ## 2.8.0 — Trust-based lead capture, without changing the flow (2026-08-06)
 
 One inserted step, everything after it untouched, per the blueprint.

@@ -1,4 +1,4 @@
-import type { TravelBrief } from "@/types/brief";
+import type { BriefField, TravelBrief } from "@/types/brief";
 import type { DestinationIntelligence } from "@/types/knowledge";
 import { getEligibleDestinations } from "@/repositories/knowledge";
 
@@ -20,6 +20,11 @@ export type HolidayTheme = {
   briefPatch: Partial<TravelBrief>;
   /** The tailored first question the assistant asks for this theme. */
   openingQuestion: string;
+  /**
+   * The brief field the opening question primarily asks for — lets a bare
+   * answer ("6 and 9", "April") land in the right slot on the first reply.
+   */
+  awaitingField?: BriefField;
   /** KTIE interest keys that rank destinations for this theme. */
   interestKeys: string[];
   /** Optional suitability key that must also be strong. */
@@ -31,20 +36,21 @@ export type HolidayTheme = {
 
 export const THEMES: HolidayTheme[] = [
   {
-    key: "romance",
-    label: "Romance",
-    emoji: "💞",
+    key: "romantic",
+    label: "Romantic",
+    emoji: "💐",
     tagline: "Honeymoons, anniversaries and trips that feel like an occasion.",
     intro:
-      "Sunset dinners, private pools, lantern-lit old towns — romantic holidays work when the destination does the wooing for you. These are the places Klar's intelligence rates highest for couples, each with honest notes on when to go and what to weigh.",
-    briefPatch: { interests: ["romance"], occasion: "romance" },
+      "Sunset dinners, quiet beaches, lantern-lit old towns — a romantic holiday works when the destination itself makes the trip feel special. These are the places Klar's intelligence rates highest for couples, each with honest notes on when to go and what to weigh.",
+    briefPatch: { interests: ["romance"], occasion: "romance", travellerType: "couple", adults: 2 },
     openingQuestion:
-      "Lovely. Is this a honeymoon, an anniversary, or simply time together — and which month are you thinking of?",
+      "Lovely. Is this a honeymoon, an anniversary, or simply a special trip together — and which month are you thinking of?",
+    awaitingField: "travelMonth",
     interestKeys: ["romance"],
     suitabilityKey: "honeymoon",
     faq: [
       { q: "When should we book a honeymoon?", a: "Once your wedding date is fixed — the best romantic stays fill earliest in peak season. Your Klar expert confirms live availability; this planner helps you choose the destination first." },
-      { q: "Which is better for privacy — islands or cities?", a: "Islands (Maldives, Seychelles, Andamans) build privacy into the design; cities romance you with evenings instead. Tell the planner which mood fits and it will call it honestly." },
+      { q: "Which is better for a quiet getaway — islands or cities?", a: "Islands (Maldives, Seychelles, Andamans) build calm and privacy into the design; cities offer beautiful evenings and things to discover together. Tell the planner which mood fits and it will call it honestly." },
       { q: "Do you handle proposals and celebrations?", a: "Klar's human experts arrange the special touches after handover — the planner's job is finding the place worth proposing in." },
     ],
   },
@@ -58,6 +64,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { travellerType: "family" },
     openingQuestion:
       "Wonderful — how old are the children travelling, and which month works for the family?",
+    awaitingField: "childrenAges",
     interestKeys: ["themeparks", "beach", "nature"],
     suitabilityKey: "family",
     faq: [
@@ -76,6 +83,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { budgetBand: "luxury" },
     openingQuestion:
       "Excellent. Who's travelling, and is this about resort seclusion, city glamour, or once-in-a-lifetime scenery?",
+    awaitingField: "travellerType",
     interestKeys: ["romance", "relaxation", "city"],
     faq: [
       { q: "Does the planner show prices?", a: "No — deliberately. Rates change daily, so your Klar expert quotes live options after you've chosen the direction. The planner tells you honestly which destinations deliver at luxury level." },
@@ -93,6 +101,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["adventure"], pace: "active" },
     openingQuestion:
       "Great — what kind of adventure calls you: mountains and treks, water and diving, or desert and wildlife? And who's coming along?",
+    awaitingField: "interests",
     interestKeys: ["adventure"],
     faq: [
       { q: "How fit do I need to be?", a: "Every adventure destination and attraction carries a physical-intensity rating, and hard limits (like Ladakh's altitude) are stated plainly — the planner excludes what genuinely won't fit." },
@@ -110,6 +119,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["beach", "relaxation"] },
     openingQuestion:
       "Perfect. Which month are you dreaming of — and is this a couples' escape, a family trip, or friends together?",
+    awaitingField: "travelMonth",
     interestKeys: ["beach"],
     faq: [
       { q: "Which beach destination has the best weather in my month?", a: "Pick a month in the planner and it ranks every beach destination by measured seasonal data — monsoon months are marked honestly, not hidden." },
@@ -127,6 +137,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["nature"] },
     openingQuestion:
       "Beautiful choice. Mountains, lakes, forests or all of it — and roughly when would you like to travel?",
+    awaitingField: "travelMonth",
     interestKeys: ["nature"],
     faq: [
       { q: "When is nature at its best?", a: "It depends entirely on the destination — autumn colours, spring blooms and post-monsoon clarity all have narrow windows. The season tables below are built from measured climate data." },
@@ -144,6 +155,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["relaxation"], pace: "relaxed" },
     openingQuestion:
       "A wise choice. Is this about a full programme (like Ayurveda or a retreat), or simply a deeply restful holiday — and for how many nights?",
+    awaitingField: "durationNights",
     interestKeys: ["relaxation"],
     faq: [
       { q: "How long should a wellness trip be?", a: "Genuine Ayurveda programmes want 7+ nights; a restorative break works from 4. The planner shapes the itinerary around your answer honestly." },
@@ -179,6 +191,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["snow"], climatePreferences: ["want-snow"] },
     openingQuestion:
       "Magical. Is this about seeing and playing in snow, or proper skiing — and who's travelling?",
+    awaitingField: "travellerType",
     interestKeys: ["snow"],
     faq: [
       { q: "When is snow guaranteed?", a: "Nothing in weather is guaranteed — but the month tables below show when snow is reliable in each destination, from Himachal's December–February to the Alps' longer season." },
@@ -213,6 +226,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["culture", "history"] },
     openingQuestion:
       "Wonderful. Ancient history, living traditions, or grand architecture — and which month suits you?",
+    awaitingField: "travelMonth",
     interestKeys: ["culture", "history"],
     faq: [
       { q: "How much walking do culture trips involve?", a: "Usually plenty — but every attraction carries intensity notes, and the planner builds gentler days if you ask. Seniors' comfort is a first-class factor." },
@@ -230,6 +244,7 @@ export const THEMES: HolidayTheme[] = [
     briefPatch: { interests: ["wildlife", "nature"] },
     openingQuestion:
       "Thrilling. Big-cat safaris, elephants and forests, or marine life — and when can you travel?",
+    awaitingField: "travelMonth",
     interestKeys: ["wildlife"],
     faq: [
       { q: "Are sightings guaranteed?", a: "Never — and anyone who promises otherwise is selling something. The planner shows honest season windows when odds are highest." },
@@ -239,8 +254,12 @@ export const THEMES: HolidayTheme[] = [
   },
 ];
 
+/** Older links and stored sessions may still use pre-rename keys. */
+const THEME_KEY_ALIASES: Record<string, string> = { romance: "romantic" };
+
 export function getTheme(key: string): HolidayTheme | undefined {
-  return THEMES.find((t) => t.key === key);
+  const resolved = THEME_KEY_ALIASES[key] ?? key;
+  return THEMES.find((t) => t.key === resolved);
 }
 
 /** Top destinations for a theme, ranked from KTIE scores — never invented. */

@@ -93,8 +93,9 @@ export function parseAwaitedAnswer(message: string, field: BriefField): SlotFill
       // The traveller's own departure city — accept it verbatim when it looks
       // like a place name (1–3 words, letters only, not a refusal).
       if (/\b(no idea|not sure|don'?t know|anywhere)\b/.test(lower)) return { kind: "no-answer" };
-      const words = message.trim().split(/\s+/);
-      if (words.length > 3 || !/^[\p{L}][\p{L}\s.'-]*$/u.test(message.trim())) return { kind: "no-answer" };
+      const stripped = message.trim().replace(/^from\s+/i, "");
+      const words = stripped.split(/\s+/);
+      if (words.length > 3 || !/^[\p{L}][\p{L}\s.'-]*$/u.test(stripped)) return { kind: "no-answer" };
       const city = words
         .map((w) => (w.length > 1 ? w[0].toUpperCase() + w.slice(1).toLowerCase() : w.toUpperCase()))
         .join(" ");
@@ -111,11 +112,37 @@ export function parseAwaitedAnswer(message: string, field: BriefField): SlotFill
     }
     case "pace": {
       const pace: Pace | undefined =
-        /\b(relax|slow|easy|chill|laid)\b/.test(lower) ? "relaxed"
+        /\b(relax\w*|slow|easy|chill\w*|laid[\s-]?back|unhurried)\b/.test(lower) ? "relaxed"
           : /\b(active|packed|busy|fast|adventurous|everything)\b/.test(lower) ? "active"
-            : /\b(balanced|mix|both|moderate|medium)\b/.test(lower) ? "balanced"
+            : /\b(balanced?|mix|both|moderate|medium)\b/.test(lower) ? "balanced"
               : undefined;
       return pace ? { kind: "filled", patch: { pace } } : { kind: "no-answer" };
+    }
+    case "travellerType": {
+      // "A couple's getaway", "family with children", "with my parents" —
+      // direct answers to "who's travelling?".
+      if (/\bhoneymoon\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "honeymoon", adults: 2 } };
+      }
+      if (/\b(my parents|our parents)\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "senior", seniorTravellers: 2 } };
+      }
+      if (/\b(family|children|kids|son|daughter|toddler)\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "family" } };
+      }
+      if (/\b(senior|elderly|retired)\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "senior", seniorTravellers: 1 } };
+      }
+      if (/\b(couple|wife|husband|partner|two of us|anniversary)\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "couple", adults: 2 } };
+      }
+      if (/\b(friends?|group|bachelor|bachelorette)\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "friends" } };
+      }
+      if (/\b(solo|myself|my own|alone|just me)\b/.test(lower)) {
+        return { kind: "filled", patch: { travellerType: "solo", adults: 1 } };
+      }
+      return { kind: "no-answer" };
     }
     default:
       return { kind: "no-answer" };

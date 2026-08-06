@@ -41,11 +41,11 @@ test.describe("public surface", () => {
   });
 
   test("holiday theme landing pages render with destinations, FAQ and planner CTA", async ({ page }) => {
-    await page.goto("/holidays/romance");
-    await expect(page.getByRole("heading", { level: 1, name: /Romance Holidays/i })).toBeVisible();
+    await page.goto("/holidays/romantic");
+    await expect(page.getByRole("heading", { level: 1, name: /Romantic Holidays/i })).toBeVisible();
     await expect(page.getByText(/Best months:/i)).toBeVisible();
     await expect(page.locator('a[href^="/destinations/"]').first()).toBeVisible();
-    await expect(page.getByRole("link", { name: /Plan My Romance Holiday/i })).toBeVisible();
+    await expect(page.getByRole("link", { name: /Plan My Romantic Holiday/i })).toBeVisible();
     const jsonLd = (await page.locator('script[type="application/ld+json"]').allTextContents()).join(" ");
     expect(jsonLd).toContain("FAQPage");
   });
@@ -64,6 +64,13 @@ test.describe("public surface", () => {
     await page.getByRole("button", { name: "Start Planning" }).click();
     // Seamless continuation into the theme-aware conversation
     await expect(page.getByText(/How old are the children/i)).toBeVisible({ timeout: 15_000 });
+    // Answer chips match the question being asked — ages, not budgets.
+    const ageChip = page.getByRole("button", { name: "5–9 years" });
+    await expect(ageChip).toBeVisible();
+    await expect(page.getByRole("button", { name: "Luxury" })).toHaveCount(0);
+    await ageChip.click();
+    // The answer lands and the conversation moves to the next question.
+    await expect(page.getByText("Ages 6 and 9").first()).toBeVisible({ timeout: 15_000 });
   });
 
   test("welcome step can be skipped and the classic planner still works", async ({ page }) => {

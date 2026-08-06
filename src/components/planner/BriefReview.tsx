@@ -18,8 +18,13 @@ const INTEREST_OPTIONS = [
   "nature", "relaxation", "nightlife", "themeparks", "romance", "wildlife", "snow",
 ];
 
+const DISPLAY_LABELS: Record<string, string> = {
+  romance: "Romantic",
+  themeparks: "Theme parks",
+};
+
 function label(value: string): string {
-  return value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, " ");
+  return DISPLAY_LABELS[value] ?? value.charAt(0).toUpperCase() + value.slice(1).replace(/-/g, " ");
 }
 
 export function BriefReview({
