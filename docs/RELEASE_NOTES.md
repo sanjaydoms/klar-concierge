@@ -1,5 +1,37 @@
 # Release Notes
 
+## 2.8.0 — Trust-based lead capture, without changing the flow (2026-08-06)
+
+One inserted step, everything after it untouched, per the blueprint.
+
+### The welcome step
+- Fresh visitors to the planner now see "Let's Plan Your Perfect Holiday":
+  first a theme choice (planning, not a form), then a polite contact card —
+  full name, mobile, email, optional city, and the exact consent line
+  "I agree to be contacted by Klar regarding this holiday enquiry" — with
+  the why-text above and three subtle trust statements below. CTA: **Start
+  Planning**, which flows seamlessly into the existing theme-aware
+  conversation. No popups, no modals.
+- Shown once per visit; returning visitors and recovered sessions skip it.
+  A quiet "Continue without sharing details" link keeps consent genuinely
+  voluntary (and keeps the classic type-anything planner reachable).
+
+### Privacy architecture preserved (the important part)
+- Contact details are stored **only in the visitor's browser** — the server
+  never sees them until the existing CRM enquiry fires. No PII at rest,
+  exactly as before.
+- At handover, the saved details **pre-fill the enquiry form** (name,
+  phone, email, city, consent) — confirmation instead of retyping, which is
+  where end-of-flow leads were being lost.
+- The enquiry object now carries optional `city` and the selected theme
+  (`theme:romance` in decision priorities + conversation summary). The
+  submission flow itself is unchanged; with CRM disabled the placeholder
+  behaves truthfully as always.
+
+### Verification
+- 102/102 unit tests, 288/288 evals, **44/44 e2e** (new: full welcome
+  journey theme → contact → conversation; skip path), build green.
+
 ## 2.7.0 — The discovery layer: holiday themes, Holiday DNA, /holidays SEO (2026-08-06)
 
 Implements the "Klar Holiday Planner v2 (Minimal Blueprint)" — preserving the

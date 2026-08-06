@@ -17,6 +17,8 @@ import { HandoverSuccess } from "@/components/handover/HandoverSuccess";
 import { planSharePath } from "@/lib/shareLinks";
 import { TypewriterText } from "./TypewriterText";
 import { HolidayDNA } from "./HolidayDNA";
+import { WelcomeStep } from "./WelcomeStep";
+import { welcomeAlreadyHandled } from "@/lib/leadContact";
 
 export type ThemeChip = { key: string; label: string; emoji: string; tagline: string };
 
@@ -109,6 +111,10 @@ export function Planner({
   const recovered = useRef(false);
   // Animate only replies that just arrived — never on refresh/recovery.
   const [animateLast, setAnimateLast] = useState(false);
+  // Trust-based onboarding: shown once per visit before the conversation.
+  // null = undecided (until client-side checks run), then true/false.
+  const [showWelcome, setShowWelcome] = useState<boolean | null>(null);
+  const [welcomeTheme, setWelcomeTheme] = useState<ThemeChip | undefined>(undefined);
 
   const greeting: ChatMessage = {
     role: "assistant",
@@ -210,12 +216,21 @@ export function Planner({
   );
 
   useEffect(() => {
-    if (themes.length === 0) return;
+    if (themes.length === 0) {
+      setShowWelcome(false);
+      return;
+    }
+    const hasSession = Boolean(window.localStorage.getItem(SESSION_KEY));
     const wanted = new URLSearchParams(window.location.search).get("theme");
-    if (!wanted) return;
-    const theme = themes.find((t) => t.key === wanted);
-    const hasSession = window.localStorage.getItem(SESSION_KEY);
-    if (theme && !hasSession) void selectTheme(theme);
+    const linkedTheme = wanted ? themes.find((t) => t.key === wanted) : undefined;
+    if (hasSession || welcomeAlreadyHandled()) {
+      // Returning visitor: no gate. A theme deep link still starts the theme.
+      setShowWelcome(false);
+      if (linkedTheme && !hasSession) void selectTheme(linkedTheme);
+      return;
+    }
+    setWelcomeTheme(linkedTheme);
+    setShowWelcome(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -402,7 +417,19 @@ export function Planner({
         </p>
       ) : null}
 
-      {stage === "conversation" ? (
+      {stage === "conversation" && showWelcome ? (
+        <WelcomeStep
+          themes={themes}
+          initialTheme={welcomeTheme}
+          onStart={(theme) => {
+            setShowWelcome(false);
+            void selectTheme(theme);
+          }}
+          onSkip={() => setShowWelcome(false)}
+        />
+      ) : null}
+
+      {stage === "conversation" && showWelcome === false ? (
         <section aria-label="Holiday conversation">
           <h1 className="text-2xl font-bold text-brand sm:text-3xl">
             Tell me about the holiday you have in mind.

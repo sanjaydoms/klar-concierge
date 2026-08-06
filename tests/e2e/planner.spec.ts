@@ -1,4 +1,11 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+/** The trust-based welcome step shows once per fresh visit — skip it when a
+ *  test wants the classic free-text planner. */
+async function skipWelcome(page: Page) {
+  const skip = page.getByRole("button", { name: /Continue without sharing details/i });
+  if (await skip.isVisible().catch(() => false)) await skip.click();
+}
 
 test.describe("public surface", () => {
   test("landing page renders with the official logo and no horizontal scroll", async ({ page }) => {
@@ -43,10 +50,26 @@ test.describe("public surface", () => {
     expect(jsonLd).toContain("FAQPage");
   });
 
-  test("picking a theme starts a context-aware conversation", async ({ page }) => {
+  test("welcome step: theme → polite contact capture → context-aware conversation", async ({ page }) => {
     await page.goto("/concierge");
+    await expect(page.getByRole("heading", { name: /Let.s Plan Your Perfect Holiday/i })).toBeVisible();
     await page.getByRole("button", { name: /Family\b/ }).first().click();
+    // Contact step with the why-text and trust statements
+    await expect(page.getByText(/Tell us where to send your personalised holiday plan/i)).toBeVisible();
+    await expect(page.getByText(/never sold or shared/i)).toBeVisible();
+    await page.locator("#wl-name").fill("Test Traveller");
+    await page.locator("#wl-phone").fill("+91 98765 43210");
+    await page.locator("#wl-email").fill("test@example.com");
+    await page.getByRole("checkbox").check();
+    await page.getByRole("button", { name: "Start Planning" }).click();
+    // Seamless continuation into the theme-aware conversation
     await expect(page.getByText(/How old are the children/i)).toBeVisible({ timeout: 15_000 });
+  });
+
+  test("welcome step can be skipped and the classic planner still works", async ({ page }) => {
+    await page.goto("/concierge");
+    await skipWelcome(page);
+    await expect(page.getByPlaceholder("Describe your holiday…")).toBeVisible();
   });
 
   test("shared plan links regenerate the identical plan from the URL", async ({ page }) => {
@@ -65,6 +88,7 @@ test.describe("public surface", () => {
 
   test("embed route renders the bare planner for the portal iframe", async ({ page }) => {
     await page.goto("/embed");
+    await skipWelcome(page);
     await expect(page.getByPlaceholder("Describe your holiday…")).toBeVisible();
     // No site chrome inside the iframe
     await expect(page.getByRole("navigation", { name: "Main" })).toHaveCount(0);
@@ -82,6 +106,7 @@ test.describe("planner journey (CRM disabled)", () => {
   test("family flow: conversation → brief → directions → itinerary", async ({ page }) => {
     test.setTimeout(120_000);
     await page.goto("/concierge");
+    await skipWelcome(page);
 
     const input = page.getByPlaceholder("Describe your holiday…");
     await input.fill(
