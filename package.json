@@ -1,7 +1,7 @@
 {
   "name": "klar-concierge",
   "private": true,
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Klar Concierge \u2014 conversational holiday decision engine for Klar Travels",
   "scripts": {
     "dev": "next dev -p 3002",
@@ -23,6 +23,7 @@
     "knowledge:research": "tsx scripts/knowledge-research.ts",
     "knowledge:promote": "tsx scripts/knowledge-promote.ts",
     "knowledge:enrich": "tsx scripts/knowledge-enrich.ts",
+    "knowledge:images": "tsx scripts/knowledge-images.ts",
     "knowledge:autonomous": "tsx scripts/knowledge-autonomous.ts"
   },
   "dependencies": {

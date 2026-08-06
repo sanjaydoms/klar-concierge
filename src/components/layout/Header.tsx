@@ -11,7 +11,7 @@ const NAV = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-surface shadow-sm">
+    <header className="sticky top-0 z-40 border-b border-line bg-surface shadow-sm print:hidden">
       <div className="mx-auto flex h-16 max-w-content items-center justify-between gap-3 px-4 sm:px-6">
         <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="Klar Concierge home">
           <KlarLogo height={30} priority />

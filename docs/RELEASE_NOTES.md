@@ -1,5 +1,45 @@
 # Release Notes
 
+## 2.5.0 — The "feel" release: photography, maps, sharing, streaming (2026-08-06)
+
+### Destination photography (autonomous, credited)
+- New imagery pipeline: `npm run knowledge:images` fetches each destination's
+  Wikipedia lead image (Wikimedia-hosted, freely licensable), resizes it
+  locally and records artist/licence credits. Runs inside the weekly and
+  expand workflows; photos are committed and served same-origin, so the
+  strict CSP is untouched.
+- Hero images on every destination guide, photo thumbnails across the
+  encyclopedia index and Discover. Until the first CI run fetches photos,
+  every surface renders deliberate brand-gradient art — nothing ever looks
+  broken.
+
+### Maps everywhere they help
+- Every real attraction in an itinerary carries a "📍 Map" deep link, and
+  each day has a "Day route map" link chaining the day's stops into
+  directions — no API keys, no embedded tiles, no CSP exceptions; the
+  user's own maps app does what it does best.
+- Encyclopedia attraction cards link to maps too.
+
+### Share it with the family (the India-critical feature)
+- **Deterministic share links**: `/plan/<destination>?n=7&t=family&a=6,10…`
+  regenerates the identical itinerary from the URL — no storage, no expiry,
+  no PII in links. "Share on WhatsApp", "Copy link" and "Download PDF"
+  (print-styled) on every itinerary, plus a branded shared-plan page with
+  the honesty note and a "plan your own" call-to-action.
+- Comparisons are shareable the same way
+  (`/concierge/compare?d=japan,south-korea&month=10` auto-runs on arrival).
+- Print stylesheet: header/footer/buttons vanish, the plan prints clean.
+
+### Conversation feel
+- Assistant replies now stream in with a typewriter reveal — same engine,
+  far more alive. Screen readers receive the full text immediately and
+  prefers-reduced-motion users see it instantly.
+
+### Verification
+- 88/88 unit/integration tests, 288/288 evals (70/70 critical), **38/38
+  Playwright e2e** (4 new: shared plans, comparison deep links), production
+  build green, `npm audit` still 0 vulnerabilities.
+
 ## 2.4.0 — Europe & Americas expansion, security certification, sharper comparison (2026-08-06)
 
 ### Knowledge: +8 destinations across Europe and the Americas

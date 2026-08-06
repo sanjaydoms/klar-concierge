@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllDestinations } from "@/repositories/knowledge";
+import { DestinationThumb } from "@/components/destinations/DestinationVisual";
 
 export const metadata: Metadata = {
   title: "Destination Encyclopedia",
@@ -39,6 +40,7 @@ export default function DestinationsIndexPage() {
                   href={`/destinations/${d.slug}`}
                   className="card block transition hover:border-brand"
                 >
+                  <DestinationThumb slug={d.slug} name={d.name} className="mb-3 h-32" />
                   <div className="flex items-baseline justify-between gap-3">
                     <span className="font-semibold text-brand">{d.name}</span>
                     <span className="text-xs text-foreground/55">

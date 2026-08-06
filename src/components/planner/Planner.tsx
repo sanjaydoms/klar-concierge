@@ -14,6 +14,8 @@ import { ItineraryView } from "./ItineraryView";
 import { ComparisonView } from "@/components/comparison/ComparisonView";
 import { HandoverForm, type HandoverValues } from "@/components/handover/HandoverForm";
 import { HandoverSuccess } from "@/components/handover/HandoverSuccess";
+import { planSharePath } from "@/lib/shareLinks";
+import { TypewriterText } from "./TypewriterText";
 
 type Stage =
   | "conversation"
@@ -57,6 +59,8 @@ export function Planner() {
   const [crmReference, setCrmReference] = useState<string | null>(null);
   const logRef = useRef<HTMLDivElement>(null);
   const recovered = useRef(false);
+  // Animate only replies that just arrived — never on refresh/recovery.
+  const [animateLast, setAnimateLast] = useState(false);
 
   const greeting: ChatMessage = {
     role: "assistant",
@@ -146,6 +150,7 @@ export function Planner() {
         window.localStorage.setItem(SESSION_KEY, data.sessionId);
         setBrief(data.brief);
         setReady(data.readyForRecommendations);
+        setAnimateLast(true);
         setMessages((m) => [
           ...m,
           { role: "assistant", content: data.assistantMessage, createdAt: new Date().toISOString() },
@@ -320,7 +325,11 @@ export function Planner() {
                     : "mr-auto max-w-[85%] rounded-2xl rounded-bl-sm bg-surface-muted px-4 py-2.5 text-sm text-foreground"
                 }
               >
-                {m.content}
+                {m.role === "assistant" && animateLast && i === showMessages.length - 1 ? (
+                  <TypewriterText content={m.content} />
+                ) : (
+                  m.content
+                )}
               </div>
             ))}
             {busy ? (
@@ -437,6 +446,7 @@ export function Planner() {
           itinerary={itinerary}
           crmEnabled={crmEnabled}
           production={production}
+          sharePath={brief ? planSharePath(selected.destinationSlug, brief) : undefined}
           onBack={() => setStage("recommendations")}
           onContinue={() => setStage("handover")}
         />

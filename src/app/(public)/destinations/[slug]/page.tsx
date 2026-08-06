@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllDestinations, getAttractions, getDestination } from "@/repositories/knowledge";
+import { DestinationHero } from "@/components/destinations/DestinationVisual";
+import { mapSearchUrl } from "@/lib/maps";
 
 const MONTH_NAMES = [
   "January", "February", "March", "April", "May", "June",
@@ -99,9 +101,11 @@ export default async function DestinationPage({
         <span>{d.name}</span>
       </nav>
 
-      <header className="mt-4">
-        <h1 className="text-3xl font-bold text-brand sm:text-4xl">{d.name}</h1>
-        <p className="mt-1 text-sm text-foreground/60">
+      <DestinationHero slug={d.slug} name={d.name} />
+
+      <header className="mt-6">
+        <h1 className="sr-only">{d.name}</h1>
+        <p className="text-sm text-foreground/60">
           {d.countryName === d.name ? d.region : `${d.countryName} · ${d.region}`}
         </p>
         <p className="mt-4 max-w-3xl text-lg text-foreground/80">{d.summary}</p>
@@ -244,8 +248,19 @@ export default async function DestinationPage({
               <div key={a.id} className="card">
                 <div className="flex items-baseline justify-between gap-3">
                   <h3 className="font-semibold text-brand">{a.name}</h3>
-                  <span className="rounded-full bg-surface-muted px-2 py-0.5 text-xs capitalize text-foreground/60">
-                    {a.category.replace(/-/g, " ")}
+                  <span className="flex shrink-0 items-center gap-2">
+                    <span className="rounded-full bg-surface-muted px-2 py-0.5 text-xs capitalize text-foreground/60">
+                      {a.category.replace(/-/g, " ")}
+                    </span>
+                    <a
+                      href={mapSearchUrl(a.name, d.name)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-brand underline-offset-2 hover:underline"
+                      aria-label={`Open ${a.name} in maps`}
+                    >
+                      📍
+                    </a>
                   </span>
                 </div>
                 <p className="mt-1.5 text-sm text-foreground/70">{a.summary}</p>

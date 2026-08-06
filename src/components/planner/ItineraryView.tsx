@@ -1,6 +1,8 @@
 "use client";
 
 import type { ItineraryBlock, ItineraryDay } from "@/types/recommendation";
+import { dayRouteUrl, mapSearchUrl } from "@/lib/maps";
+import { ShareBar } from "@/components/share/ShareBar";
 
 const PACE_LABEL: Record<ItineraryDay["pace"], string> = {
   light: "Light day",
@@ -8,7 +10,7 @@ const PACE_LABEL: Record<ItineraryDay["pace"], string> = {
   active: "Active day",
 };
 
-function Blocks({ label, blocks }: { label: string; blocks: ItineraryBlock[] }) {
+function Blocks({ label, blocks, place }: { label: string; blocks: ItineraryBlock[]; place: string }) {
   if (blocks.length === 0) return null;
   return (
     <div className="mt-2">
@@ -23,6 +25,17 @@ function Blocks({ label, blocks }: { label: string; blocks: ItineraryBlock[] }) 
                   optional
                 </span>
               ) : null}
+              {b.attractionId ? (
+                <a
+                  href={mapSearchUrl(b.title, place)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 text-xs font-normal text-brand underline-offset-2 hover:underline"
+                  aria-label={`Open ${b.title} in maps`}
+                >
+                  📍 Map
+                </a>
+              ) : null}
             </span>
             <p className="text-foreground/65">{b.description}</p>
           </li>
@@ -32,11 +45,19 @@ function Blocks({ label, blocks }: { label: string; blocks: ItineraryBlock[] }) 
   );
 }
 
+/** All mappable stops for a day, in visit order. */
+function dayStops(day: ItineraryDay): string[] {
+  return [...day.morning, ...day.afternoon, ...day.evening]
+    .filter((b) => b.attractionId)
+    .map((b) => b.title);
+}
+
 export function ItineraryView({
   destinationName,
   itinerary,
   crmEnabled,
   production,
+  sharePath,
   onBack,
   onContinue,
 }: {
@@ -44,6 +65,7 @@ export function ItineraryView({
   itinerary: ItineraryDay[];
   crmEnabled: boolean | null;
   production: boolean;
+  sharePath?: string;
   onBack: () => void;
   onContinue: () => void;
 }) {
@@ -59,6 +81,13 @@ export function ItineraryView({
         A decision-ready starting plan for a Klar expert to refine — not a confirmed package.
       </p>
 
+      {sharePath ? (
+        <ShareBar
+          path={sharePath}
+          message={`Our ${destinationName} plan from Klar Travels:`}
+        />
+      ) : null}
+
       <ol className="mt-6 space-y-4">
         {itinerary.map((day) => (
           <li key={day.day} className="card">
@@ -66,11 +95,23 @@ export function ItineraryView({
               <h2 className="font-semibold text-brand">
                 Day {day.day} — {day.title}
               </h2>
-              <span className="text-xs text-foreground/55">{PACE_LABEL[day.pace]}</span>
+              <span className="flex items-center gap-3 text-xs text-foreground/55">
+                {PACE_LABEL[day.pace]}
+                {dayRouteUrl(dayStops(day), `${day.baseLocation}, ${destinationName}`) ? (
+                  <a
+                    href={dayRouteUrl(dayStops(day), `${day.baseLocation}, ${destinationName}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-brand underline-offset-2 hover:underline"
+                  >
+                    Day route map ↗
+                  </a>
+                ) : null}
+              </span>
             </div>
-            <Blocks label="Morning" blocks={day.morning} />
-            <Blocks label="Afternoon" blocks={day.afternoon} />
-            <Blocks label="Evening" blocks={day.evening} />
+            <Blocks label="Morning" blocks={day.morning} place={`${day.baseLocation}, ${destinationName}`} />
+            <Blocks label="Afternoon" blocks={day.afternoon} place={`${day.baseLocation}, ${destinationName}`} />
+            <Blocks label="Evening" blocks={day.evening} place={`${day.baseLocation}, ${destinationName}`} />
             {day.weatherAlternative ? (
               <p className="mt-3 rounded-lg bg-surface-muted px-3 py-2 text-xs text-foreground/65">
                 ☂ {day.weatherAlternative}

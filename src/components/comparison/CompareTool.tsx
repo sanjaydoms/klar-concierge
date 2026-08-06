@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { ComparisonResult } from "@/types/recommendation";
 import { ComparisonView } from "./ComparisonView";
+import { ShareBar } from "@/components/share/ShareBar";
+import { compareSharePath } from "@/lib/shareLinks";
 
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -19,6 +21,26 @@ export function CompareTool({
   const [result, setResult] = useState<ComparisonResult | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const deepLinked = useRef(false);
+
+  // Shared comparison links: /concierge/compare?d=japan,south-korea&month=10
+  // re-run the identical deterministic comparison on arrival.
+  useEffect(() => {
+    if (deepLinked.current) return;
+    deepLinked.current = true;
+    const params = new URLSearchParams(window.location.search);
+    const slugs = (params.get("d") ?? "")
+      .split(",")
+      .filter((s) => options.some((o) => o.slug === s))
+      .slice(0, 3);
+    if (slugs.length < 2) return;
+    const m = parseInt(params.get("month") ?? "", 10);
+    const validMonth = m >= 1 && m <= 12 ? m : undefined;
+    setSelected(slugs);
+    setMonth(validMonth);
+    void runWith(slugs, validMonth);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function toggle(slug: string) {
     setSelected((s) =>
@@ -27,6 +49,10 @@ export function CompareTool({
   }
 
   async function run() {
+    return runWith(selected, month);
+  }
+
+  async function runWith(slugs: string[], forMonth: number | undefined) {
     setBusy(true);
     setError(null);
     setResult(null);
@@ -34,7 +60,7 @@ export function CompareTool({
       const res = await fetch("/api/compare", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ slugs: selected, month }),
+        body: JSON.stringify({ slugs, month: forMonth }),
       });
       const data = (await res.json()) as ComparisonResult | { error: string };
       if (!res.ok || "error" in data) {
@@ -107,6 +133,10 @@ export function CompareTool({
       {result ? (
         <div className="mt-10">
           <ComparisonView result={result} />
+          <ShareBar
+            path={compareSharePath(result.slugs, result.month)}
+            message={`Klar Travels' honest comparison — ${result.slugs.map((s) => s.replace(/-/g, " ")).join(" vs ")}:`}
+          />
         </div>
       ) : null}
     </div>

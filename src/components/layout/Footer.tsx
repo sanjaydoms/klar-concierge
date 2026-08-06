@@ -3,7 +3,7 @@ import { KlarLogo } from "@/components/brand/KlarLogo";
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t border-line bg-surface">
+    <footer className="mt-16 border-t border-line bg-surface print:hidden">
       <div className="mx-auto flex max-w-content flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-3">
           <KlarLogo height={26} />

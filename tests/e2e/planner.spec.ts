@@ -33,6 +33,20 @@ test.describe("public surface", () => {
     expect(jsonLd).toContain("TouristDestination");
   });
 
+  test("shared plan links regenerate the identical plan from the URL", async ({ page }) => {
+    await page.goto("/plan/japan?n=7&t=family&a=6,10&m=11");
+    await expect(page.getByRole("heading", { name: /7-night Japan plan/i })).toBeVisible();
+    await expect(page.getByText("Day 1 —", { exact: false }).first()).toBeVisible();
+    await expect(page.getByRole("button", { name: "Download PDF" })).toBeVisible();
+    await expect(page.getByText(/not a confirmed package/i)).toBeVisible();
+  });
+
+  test("comparison deep links auto-run the comparison", async ({ page }) => {
+    await page.goto("/concierge/compare?d=japan,south-korea&month=10");
+    await expect(page.getByRole("heading", { name: /Japan vs South Korea/i })).toBeVisible({ timeout: 20_000 });
+    await expect(page.getByRole("button", { name: /Copy link/i })).toBeVisible();
+  });
+
   test("embed route renders the bare planner for the portal iframe", async ({ page }) => {
     await page.goto("/embed");
     await expect(page.getByPlaceholder("Describe your holiday…")).toBeVisible();
