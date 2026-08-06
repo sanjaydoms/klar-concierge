@@ -113,7 +113,7 @@ async function main() {
       failed++;
       console.error(`✗ ${slug}: ${err instanceof Error ? err.message : err}`);
     }
-    await new Promise((r) => setTimeout(r, 300));
+    await new Promise((r) => setTimeout(r, 2500));
   }
 
   fs.writeFileSync(REGISTRY, JSON.stringify(registry, null, 2) + "\n");
