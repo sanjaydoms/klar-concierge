@@ -1,6 +1,7 @@
 import {
   briefReadyForRecommendations,
   missingBriefFields,
+  missingEssentialFields,
   type TravelBrief,
 } from "@/types/brief";
 import type { PlanningSession } from "@/types/session";
@@ -77,6 +78,43 @@ function understoodSummary(patch: Partial<TravelBrief>, brief: TravelBrief): str
   }
   if (bits.length < 2) return undefined;
   return `So far I have: ${bits.join(", ")}.`;
+}
+
+/**
+ * The complete "Here's what I've understood" moment — spoken once the
+ * essentials are in, right before matches. Always covers the whole brief,
+ * so the traveller can confirm or correct in one glance.
+ */
+function fullBriefSummary(brief: TravelBrief): string {
+  const bits: string[] = [];
+  const who =
+    brief.travellerType === "multi-generational"
+      ? "a multi-generational trip"
+      : brief.travellerType === "honeymoon"
+        ? "a honeymoon"
+        : brief.travellerType === "couple"
+          ? "a couple's holiday"
+          : brief.travellerType === "friends"
+            ? "a friends' trip"
+            : `a ${brief.travellerType} holiday`;
+  bits.push(who);
+  if (brief.childrenAges.length) bits.push(`children aged ${brief.childrenAges.join(" and ")}`);
+  if (brief.originCity) bits.push(`starting from ${brief.originCity}`);
+  if (brief.durationNights) bits.push(`${brief.durationNights} nights`);
+  if (brief.travelMonth) bits.push(`in ${MONTH_NAMES[brief.travelMonth - 1]}`);
+  if (brief.travelScope) bits.push(brief.travelScope === "domestic" ? "within India" : "international");
+  if (brief.pace !== "unknown") bits.push(`${brief.pace} pace`);
+  if (brief.interests.length) {
+    const INTEREST_PHRASES: Record<string, string> = {
+      romance: "romantic escapes",
+      themeparks: "theme parks",
+      relaxation: "unwinding",
+    };
+    const phrased = brief.interests.slice(0, 3).map((i) => INTEREST_PHRASES[i] ?? i);
+    bits.push(`you enjoy ${phrased.join(", ")}`);
+  }
+  if (brief.budgetBand !== "unknown") bits.push(`${brief.budgetBand} comfort`);
+  return `Here's what I've understood: ${bits.join(", ")}.`;
 }
 
 function bestMonthsOf(d: DestinationIntelligence): { name: string; label: string }[] {
@@ -224,7 +262,7 @@ export async function processChatTurn(
   // Honesty first: emoji-only or symbol-only input carries nothing to plan
   // with. Never reply "Got it" to it — say so, and re-ask the open question.
   if (isUnreadableMessage(message)) {
-    const openField = session.awaitingField ?? missingBriefFields(session.brief)[0];
+    const openField = session.awaitingField ?? missingEssentialFields(session.brief)[0];
     const question = openField
       ? await ai.composeFollowUp({ brief: session.brief, missingField: openField })
       : "Tell me about the holiday you have in mind.";
@@ -255,6 +293,7 @@ export async function processChatTurn(
   session.messages.push({ role: "user", content: message, createdAt: now });
 
   const missing = missingBriefFields(brief);
+  const essentials = missingEssentialFields(brief);
   const ready = briefReadyForRecommendations(brief);
   const summary = understoodSummary(extraction.briefPatch, brief);
   let assistantMessage: string;
@@ -284,15 +323,13 @@ export async function processChatTurn(
     assistantMessage = seasonalScanReply(brief.travelMonth);
   } else if (extraction.detectedIntent === "undecided" && !ready) {
     assistantMessage = UNDECIDED_REPLY;
-  } else if (missing.length === 0 || (ready && session.turnIndex >= 3)) {
-    assistantMessage = [
-      summary,
-      "I have a clear picture of your holiday. Review your trip brief below, adjust anything you like, and I'll suggest the best directions.",
-    ]
-      .filter(Boolean)
-      .join(" ");
+  } else if (essentials.length === 0) {
+    // Every essential is in — never ask another blocking question. Optional
+    // preferences (pace, tastes, comfort) only sharpen matches and can be
+    // adjusted behind "Change something".
+    assistantMessage = `${fullBriefSummary(brief)} Shall I show your matches, or would you like to change something first?`;
   } else {
-    nextQuestion = await ai.composeFollowUp({ brief, missingField: missing[0] });
+    nextQuestion = await ai.composeFollowUp({ brief, missingField: essentials[0] });
     const learnedNothing =
       Object.keys(extraction.briefPatch).length === 0 && extraction.detectedIntent === "unknown";
     // Only acknowledge warmly when the message actually taught us something —
@@ -307,7 +344,7 @@ export async function processChatTurn(
 
   // Remember which question is open so a bare answer next turn lands in the
   // right slot. Cleared when no question is pending.
-  session.awaitingField = nextQuestion ? missing[0] : undefined;
+  session.awaitingField = nextQuestion ? essentials[0] : undefined;
 
   // Optional natural-language polish — strictly grounded, always falls back.
   if (polishable && ai.polishReply) {

@@ -314,6 +314,34 @@ function bestForLabel(destination: DestinationIntelligence, brief: TravelBrief):
   return top ? `Best for ${top[0]} lovers` : destination.idealTraveller;
 }
 
+/**
+ * Three named experiences that make the destination feel real on the card —
+ * always from KTIE, matched to who's travelling, never invented.
+ */
+function signatureExperiences(
+  attractions: AttractionIntelligence[],
+  brief: TravelBrief,
+): string[] {
+  const fits = (a: AttractionIntelligence): number => {
+    let rank = 0;
+    if (brief.travellerType === "family" && a.idealFor.includes("children")) rank += 4;
+    if (
+      (brief.travellerType === "honeymoon" || brief.travellerType === "couple") &&
+      (a.idealFor.includes("honeymoon") || a.idealFor.includes("couple"))
+    ) rank += 4;
+    if ((brief.seniorTravellers > 0 || brief.travellerType === "senior") && a.idealFor.includes("seniors")) rank += 4;
+    for (const interest of brief.interests) {
+      if (a.idealFor.includes(interest)) rank += 2;
+    }
+    if (a.minimumAge && brief.childrenAges.some((c) => c < a.minimumAge!)) rank -= 10;
+    return rank;
+  };
+  return [...attractions]
+    .sort((a, b) => fits(b) - fits(a))
+    .slice(0, 3)
+    .map((a) => a.name);
+}
+
 function toRecommendation(
   destination: DestinationIntelligence,
   brief: TravelBrief,
@@ -343,6 +371,7 @@ function toRecommendation(
       : "Season fit depends on your final travel dates.",
     idealNights: destination.idealNights,
     reasons: buildReasons(destination, brief, score),
+    signatureExperiences: signatureExperiences(destinationAttractions, brief),
     tradeOff: destination.tradeOffs[0] ?? "Your Klar expert will confirm the practical details.",
     whoMayNotEnjoy: destination.whoShouldAvoid[0] ?? "",
     verifyWithExpert: verifyWithExpert.slice(0, 3),

@@ -15,6 +15,13 @@ export const runtime = "nodejs";
 const bodySchema = z.object({
   sessionId: z.string().uuid(),
   destinationSlug: z.string().max(80).optional(),
+  /** Lightweight itinerary refinement — the only three edits travellers need. */
+  refine: z
+    .object({
+      pace: z.enum(["relaxed", "active"]).optional(),
+      changeDay: z.number().int().min(1).max(60).optional(),
+    })
+    .optional(),
 });
 
 /**
@@ -60,7 +67,34 @@ export async function POST(request: Request) {
           { status: 422 },
         );
       }
-      const itinerary = composeItinerary(destination, session.brief);
+
+      // Refinements accumulate on the session; choosing a new destination
+      // starts clean.
+      if (session.selectedDestinationSlug !== destination.slug) {
+        session.itineraryExclusions = [];
+      }
+      if (parsed.refine?.pace) {
+        session.brief.pace = parsed.refine.pace;
+      }
+      if (parsed.refine?.changeDay) {
+        const current = composeItinerary(destination, session.brief, {
+          excludeAttractionIds: session.itineraryExclusions,
+        });
+        const day = current.find((d) => d.day === parsed.refine!.changeDay);
+        const swappedOut = day
+          ? [...day.morning, ...day.afternoon, ...day.evening]
+              .map((b) => b.attractionId)
+              .filter((id): id is string => Boolean(id))
+          : [];
+        session.itineraryExclusions = [
+          ...(session.itineraryExclusions ?? []),
+          ...swappedOut,
+        ];
+      }
+
+      const itinerary = composeItinerary(destination, session.brief, {
+        excludeAttractionIds: session.itineraryExclusions,
+      });
       session.selectedDestinationSlug = destination.slug;
       await store.save(session);
       await track("recommendation_selected", { destination: destination.slug });

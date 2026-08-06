@@ -96,6 +96,20 @@ export type BriefField =
   | "budgetBand";
 
 export function missingBriefFields(brief: TravelBrief): BriefField[] {
+  const missing: BriefField[] = [...missingEssentialFields(brief)];
+  if (brief.pace === "unknown") missing.push("pace");
+  if (brief.interests.length === 0) missing.push("interests");
+  if (brief.budgetBand === "unknown") missing.push("budgetBand");
+  return missing;
+}
+
+/**
+ * The only questions allowed to stand between a traveller and their matches:
+ * period, duration, who's travelling (+ ages for a family) and origin.
+ * Everything else improves recommendations but must never block them —
+ * that's the 4–6 answer promise.
+ */
+export function missingEssentialFields(brief: TravelBrief): BriefField[] {
   const missing: BriefField[] = [];
   if (!brief.travelMonth) missing.push("travelMonth");
   if (!brief.durationNights) missing.push("durationNights");
@@ -103,10 +117,7 @@ export function missingBriefFields(brief: TravelBrief): BriefField[] {
   if (brief.travellerType === "family" && brief.childrenAges.length === 0) {
     missing.push("childrenAges");
   }
-  if (brief.pace === "unknown") missing.push("pace");
-  if (brief.interests.length === 0) missing.push("interests");
   if (!brief.originCity) missing.push("originCity");
-  if (brief.budgetBand === "unknown") missing.push("budgetBand");
   return missing;
 }
 

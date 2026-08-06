@@ -52,25 +52,38 @@ function dayStops(day: ItineraryDay): string[] {
     .map((b) => b.title);
 }
 
+export type ItineraryRefinement =
+  | { pace: "relaxed" }
+  | { pace: "active" }
+  | { changeDay: number };
+
 export function ItineraryView({
   destinationName,
   itinerary,
   crmEnabled,
-  production,
   sharePath,
+  busy,
   onBack,
   onContinue,
+  onRefine,
+  onFinish,
 }: {
   destinationName: string;
   itinerary: ItineraryDay[];
   crmEnabled: boolean | null;
-  production: boolean;
   sharePath?: string;
+  busy?: boolean;
   onBack: () => void;
   onContinue: () => void;
+  onRefine?: (refinement: ItineraryRefinement) => void;
+  onFinish?: () => void;
 }) {
   const notes = (day: ItineraryDay) =>
     [...day.childNotes, ...day.seniorNotes, ...day.accessibilityNotes, ...day.practicalNotes];
+  // Only days built around named attractions can be meaningfully swapped.
+  const changeableDays = itinerary
+    .filter((d) => [...d.morning, ...d.afternoon, ...d.evening].some((b) => b.attractionId))
+    .map((d) => d.day);
 
   return (
     <section aria-labelledby="itin-heading">
@@ -80,6 +93,48 @@ export function ItineraryView({
       <p className="mt-2 rounded-lg bg-brand-soft px-4 py-2.5 text-sm font-medium text-brand">
         A decision-ready starting plan for a Klar expert to refine — not a confirmed package.
       </p>
+
+      {onRefine ? (
+        <div className="mt-4 flex flex-wrap items-center gap-2" aria-label="Refine your plan">
+          <span className="text-xs font-medium text-foreground/55">Refine:</span>
+          <button
+            type="button"
+            className="chip"
+            disabled={busy}
+            onClick={() => onRefine({ pace: "relaxed" })}
+          >
+            Make it more relaxed
+          </button>
+          <button
+            type="button"
+            className="chip"
+            disabled={busy}
+            onClick={() => onRefine({ pace: "active" })}
+          >
+            Add more experiences
+          </button>
+          {changeableDays.length > 0 ? (
+            <label className="chip flex cursor-pointer items-center gap-1.5">
+              Change a day
+              <select
+                aria-label="Choose a day to change"
+                className="bg-transparent text-inherit outline-none"
+                disabled={busy}
+                value=""
+                onChange={(e) => {
+                  const day = Number(e.target.value);
+                  if (day) onRefine({ changeDay: day });
+                }}
+              >
+                <option value="">…</option>
+                {changeableDays.map((d) => (
+                  <option key={d} value={d}>Day {d}</option>
+                ))}
+              </select>
+            </label>
+          ) : null}
+        </div>
+      ) : null}
 
       {sharePath ? (
         <ShareBar
@@ -130,29 +185,18 @@ export function ItineraryView({
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
         <button type="button" className="btn-secondary" onClick={onBack}>
-          ← Other directions
+          ← Back to matches
         </button>
         {crmEnabled ? (
           <button type="button" className="btn-primary" onClick={onContinue}>
-            Hand Over to a Klar Expert
+            Continue with Klar
           </button>
-        ) : crmEnabled === false && !production ? (
-          <button
-            type="button"
-            className="btn-secondary cursor-not-allowed opacity-60"
-            disabled
-            title="Expert handover activates when Klar connects its CRM"
-          >
-            Expert handover — not yet available (preview)
+        ) : onFinish ? (
+          <button type="button" className="btn-primary" disabled={busy} onClick={onFinish}>
+            {busy ? "One moment…" : "Finish My Plan"}
           </button>
         ) : null}
       </div>
-      {crmEnabled === false ? (
-        <p className="mt-4 rounded-lg bg-surface-muted p-4 text-sm text-foreground/70">
-          To take this plan further right now, contact Klar Travels directly and mention your
-          chosen direction — nothing you&rsquo;ve planned here has been sent anywhere.
-        </p>
-      ) : null}
     </section>
   );
 }

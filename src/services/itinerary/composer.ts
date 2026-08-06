@@ -69,6 +69,14 @@ function interestRank(a: AttractionIntelligence, brief: TravelBrief): number {
 export function composeItinerary(
   destination: DestinationIntelligence,
   brief: TravelBrief,
+  options?: {
+    /**
+     * Attractions the traveller asked to swap out ("change this day").
+     * Excluding a day's attractions regenerates that day with the next-best
+     * picks while earlier days stay identical — deterministic refinement.
+     */
+    excludeAttractionIds?: string[];
+  },
 ): ItineraryDay[] {
   const requested = brief.durationNights ?? destination.idealNights;
   const nights = Math.max(destination.minimumNights, Math.min(destination.maximumNights, requested));
@@ -77,8 +85,10 @@ export function composeItinerary(
   const hasYoungChildren = brief.childrenAges.some((a) => a <= 10);
   const hasSeniors = brief.seniorTravellers > 0 || brief.travellerType === "senior" || brief.travellerType === "multi-generational";
   const accessibility = brief.accessibilityNeeds.length > 0;
+  const excluded = new Set(options?.excludeAttractionIds ?? []);
 
   const pool = getAttractions(destination.slug)
+    .filter((a) => !excluded.has(a.id))
     .filter((a) => suitableFor(a, brief))
     .sort((a, b) => interestRank(b, brief) - interestRank(a, brief));
 

@@ -10,6 +10,7 @@ export const ALLOWED_EVENTS = [
   "comparison_started",
   "comparison_completed",
   "itinerary_viewed",
+  "plan_completed",
   "crm_handover_started",
   "crm_handover_succeeded",
   "crm_handover_failed",

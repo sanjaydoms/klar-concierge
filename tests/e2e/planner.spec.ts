@@ -110,7 +110,7 @@ test.describe("public surface", () => {
 });
 
 test.describe("planner journey (CRM disabled)", () => {
-  test("family flow: conversation → brief → directions → itinerary", async ({ page }) => {
+  test("family flow: one message → understanding → matches → plan → completion", async ({ page }) => {
     test.setTimeout(120_000);
     await page.goto("/concierge");
     await skipWelcome(page);
@@ -121,22 +121,37 @@ test.describe("planner journey (CRM disabled)", () => {
     );
     await page.getByRole("button", { name: "Send", exact: true }).click();
 
-    await page.getByRole("button", { name: "Review My Trip Brief" }).click();
-    await expect(page.getByRole("heading", { name: "Your trip brief" })).toBeVisible();
+    // A rich first message reaches the understanding moment immediately.
+    await expect(page.getByText(/Here's what I've understood/i).first()).toBeVisible({ timeout: 20_000 });
+
+    // "Change Something" opens the editable understanding, pre-filled.
+    await page.getByRole("button", { name: "Change Something" }).click();
+    await expect(page.getByRole("heading", { name: /Here.s what I.ve understood/i })).toBeVisible();
     await expect(page.locator("#bf-nights")).toHaveValue("7");
 
-    await page.getByRole("button", { name: "Show My Directions" }).click();
-    await expect(page.getByRole("heading", { name: /directions for your holiday/i })).toBeVisible({ timeout: 20_000 });
+    await page.getByRole("button", { name: "Show My Matches" }).click();
+    await expect(page.getByRole("heading", { name: "Your matches" })).toBeVisible({ timeout: 20_000 });
     await expect(page.getByText("Best Match")).toBeVisible();
+    await expect(page.getByText(/Why it suits you/).first()).toBeVisible();
+    await expect(page.getByText(/Signature experiences/).first()).toBeVisible();
     await expect(page.getByText(/Worth knowing:/).first()).toBeVisible();
 
-    await page.getByRole("button", { name: "View This Direction" }).first().click();
+    // Intent confirmation before the itinerary is built.
+    await page.getByRole("button", { name: /^Choose / }).first().click();
+    await expect(page.getByText(/build your suggested holiday around/i)).toBeVisible();
+    await page.getByRole("button", { name: "Create My Plan" }).click();
     await expect(page.getByText(/decision-ready starting plan/i)).toBeVisible({ timeout: 20_000 });
     await expect(page.getByText("Day 1 —", { exact: false }).first()).toBeVisible();
 
-    // CRM is disabled in this environment: no live handover CTA, honest note instead.
-    await expect(page.getByRole("button", { name: "Hand Over to a Klar Expert" })).toHaveCount(0);
-    await expect(page.getByText(/contact Klar Travels directly/i)).toBeVisible();
+    // Lightweight refinement is available.
+    await expect(page.getByRole("button", { name: "Make it more relaxed" })).toBeVisible();
+
+    // CRM is disabled: the journey still ends confidently with a reference.
+    await expect(page.getByRole("button", { name: "Continue with Klar" })).toHaveCount(0);
+    await page.getByRole("button", { name: "Finish My Plan" }).click();
+    await expect(page.getByRole("heading", { name: /Your holiday plan is ready/i })).toBeVisible({ timeout: 20_000 });
+    await expect(page.getByText(/KLAR-[A-Z0-9]+/).first()).toBeVisible();
+    await expect(page.getByRole("button", { name: "Start another holiday" })).toBeVisible();
 
     // Never claim a fake submission
     await expect(page.getByText("Your plan is with Klar")).toHaveCount(0);

@@ -91,8 +91,15 @@ export function parseAwaitedAnswer(message: string, field: BriefField): SlotFill
     }
     case "originCity": {
       // The traveller's own departure city — accept it verbatim when it looks
-      // like a place name (1–3 words, letters only, not a refusal).
+      // like a place name (1–3 words, letters only, not a refusal). Words that
+      // answer a *different* question must never become a city called
+      // "Relaxed Pace".
       if (/\b(no idea|not sure|don'?t know|anywhere)\b/.test(lower)) return { kind: "no-answer" };
+      if (
+        /\b(relax\w*|balanced?|active|packed|slow|easy|pace|luxury|premium|comfort\w*|value|budget|cheap|couple|family|honeymoon|friends?|solo|parents|senior\w*|nights?|days?|weeks?|beach\w*|mountain\w*|culture|food|wildlife|shopping|nature|adventure)\b/.test(lower)
+      ) {
+        return { kind: "no-answer" };
+      }
       const stripped = message.trim().replace(/^from\s+/i, "");
       const words = stripped.split(/\s+/);
       if (words.length > 3 || !/^[\p{L}][\p{L}\s.'-]*$/u.test(stripped)) return { kind: "no-answer" };

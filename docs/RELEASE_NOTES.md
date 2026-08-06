@@ -1,5 +1,70 @@
 # Release Notes
 
+## 3.0.0 — One continuous conversation (2026-08-06)
+
+Implements the executive product review in full: same architecture, same
+engines, a journey that finally feels like planning with a consultant.
+
+### Faster planning (review §4) — 4–6 answers to matches
+- Only the essentials can stand between a traveller and their matches:
+  travel period, duration, who's travelling (+ ages for families) and
+  origin city. Pace, tastes and comfort level **never block** — they
+  sharpen matches and stay editable behind "Change Something".
+- A rich first message ("family of four from Hyderabad, 7 nights in
+  December, kids 6 and 10…") reaches the understanding moment in one turn.
+
+### Inline understanding (review §5) — the brief page is no longer a gate
+- When the essentials are in, the assistant says **"Here's what I've
+  understood: …"** with the complete picture, and offers two buttons:
+  **Show My Matches** (straight to recommendations) and **Change
+  Something** (the existing editable review, now headed "Here's what
+  I've understood").
+
+### Human matches (review §6) + intent confirmation (§7)
+- Cards now read like a consultant wrote them: **Why it suits you**,
+  **three signature experiences** (named, from the knowledge base, matched
+  to who's travelling), **one honest trade-off**, best-for and season.
+  Numeric score breakdowns are gone from the UI.
+- Buttons per card: **Choose {destination}** → "Would you like me to build
+  your suggested holiday around {destination}?" → **Create My Plan** /
+  **View Other Matches**. **Explore ↗** opens the full destination guide.
+
+### Lightweight itinerary refinement (review §8)
+- Three controls, no editors: **Make it more relaxed**, **Add more
+  experiences**, **Change a day** (regenerates that day with next-best
+  attractions, deterministically; earlier days stay identical).
+
+### A real ending (review §9) — no more dead end without CRM
+- **Finish My Plan** → "Your holiday plan is ready": a plan reference
+  (e.g. `KLAR-3F8A2C`), trip summary, view/download link and "Start
+  another holiday". No CRM errors, no disabled forms.
+- New `LeadCaptureAdapter` interface (review §3): the placeholder issues
+  a deterministic reference from the anonymous session id and **stores
+  nothing** — when Klar's CRM arrives, only the adapter changes.
+- With CRM enabled, the button reads **Continue with Klar** and the
+  existing handover flow runs unchanged.
+
+### Trust details (review §2–3)
+- City removed from the welcome step — name, mobile, email only.
+- Contact details now live in **sessionStorage** (cleared when the tab
+  closes), never long-term localStorage; old localStorage copies are
+  cleaned up on sight. No PII at rest, as always.
+
+### Progress language & microcopy (review)
+- Stages are now **Your Trip → Your Matches → Your Plan → Next Step**.
+- "Show My Directions" → "Show My Matches"; "Hand over" → "Continue with
+  Klar"; interest chips display human labels ("Romantic", "Theme parks").
+
+### SEO (checklist §10)
+- Every theme landing page now cross-links all other holiday types.
+
+### Verification
+- 121/121 unit tests (5 new: lead adapter, refinement determinism,
+  essentials journey), 288/288 evals, 44/44 e2e (family flow rewritten to
+  walk the full new journey: one message → understanding → Change
+  Something → matches → confirmation → plan → refine → completion),
+  build green, 0 audit findings.
+
 ## 2.9.0 — Go-live polish: Romantic rename, honest theme flow, answer chips (2026-08-06)
 
 Fixes the three defects reported from live testing, plus a full go-live sweep.

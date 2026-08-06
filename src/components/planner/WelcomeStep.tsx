@@ -26,7 +26,6 @@ export function WelcomeStep({
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [city, setCity] = useState("");
   const [consent, setConsent] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -47,7 +46,6 @@ export function WelcomeStep({
       name: name.trim(),
       phone: phone.trim(),
       email: email.trim(),
-      city: city.trim() || undefined,
       consent: true,
       themeKey: theme.key,
       capturedAt: new Date().toISOString(),
@@ -125,16 +123,11 @@ export function WelcomeStep({
                 onChange={(e) => setPhone(e.target.value)} />
               {errors.phone ? <p className="mt-1 text-xs text-danger">{errors.phone}</p> : null}
             </div>
-            <div>
+            <div className="sm:col-span-2">
               <label className="field-label" htmlFor="wl-email">Email address</label>
               <input id="wl-email" className="field-input" type="email" inputMode="email" autoComplete="email"
                 value={email} aria-invalid={Boolean(errors.email)} onChange={(e) => setEmail(e.target.value)} />
               {errors.email ? <p className="mt-1 text-xs text-danger">{errors.email}</p> : null}
-            </div>
-            <div>
-              <label className="field-label" htmlFor="wl-city">City <span className="font-normal text-foreground/50">(optional)</span></label>
-              <input id="wl-city" className="field-input" autoComplete="address-level2" value={city}
-                onChange={(e) => setCity(e.target.value)} />
             </div>
 
             <div className="sm:col-span-2">

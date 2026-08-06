@@ -1,7 +1,7 @@
 {
   "name": "klar-concierge",
   "private": true,
-  "version": "2.9.0",
+  "version": "3.0.0",
   "description": "Klar Concierge \u2014 conversational holiday decision engine for Klar Travels",
   "scripts": {
     "dev": "next dev -p 3002",

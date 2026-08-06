@@ -110,22 +110,30 @@ describe("answer chips always parse into the awaited field", () => {
 });
 
 describe("theme flow answers each question exactly once", () => {
-  it("romantic: month → nights → pace → ready, never asking who's travelling", async () => {
+  it("romantic: three answers to matches, never asking who's travelling", async () => {
     const session = await getSessionStore().create();
     startWithTheme(session, "romantic");
 
     const asked: string[] = [];
-    for (const answer of ["In April", "7 nights", "Relaxed pace", "From Hyderabad", "Comfortable"]) {
+    let final = "";
+    for (const answer of ["In April", "7 nights", "From Hyderabad"]) {
       const result = await processChatTurn(session, answer);
       if (result.awaitingField) asked.push(result.awaitingField);
       expect(result.assistantMessage).not.toMatch(/who'?s travelling/i);
-      if (result.readyForRecommendations && result.awaitingField === undefined) break;
+      final = result.assistantMessage;
     }
     expect(session.brief.travellerType).toBe("couple");
     expect(session.brief.travelMonth).toBe(4);
     expect(session.brief.durationNights).toBe(7);
-    // No question was ever repeated.
+    expect(session.brief.originCity).toBe("Hyderabad");
+    // Three answers reached the understanding moment — the 4–6 answer promise.
+    expect(final).toContain("Here's what I've understood");
+    expect(session.awaitingField).toBeUndefined();
+    // No question was ever repeated, and no optional question ever blocked.
     expect(new Set(asked).size).toBe(asked.length);
+    expect(asked).not.toContain("pace");
+    expect(asked).not.toContain("interests");
+    expect(asked).not.toContain("budgetBand");
   });
 
   it("family: ages land from a bare answer to the opening question", async () => {
