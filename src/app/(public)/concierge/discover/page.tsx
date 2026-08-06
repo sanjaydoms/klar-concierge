@@ -31,7 +31,7 @@ export default function DiscoverPage() {
                     href={`/destinations/${d.slug}`}
                     className="block rounded-lg bg-surface-muted px-4 py-3 transition hover:bg-brand-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
                   >
-                    <DestinationThumb slug={d.slug} name={d.name} className="mb-2.5 h-24" />
+                    <DestinationThumb slug={d.slug} name={d.name} countryIso2={d.countryIso2} className="mb-2.5 h-28" />
                     <div className="flex items-baseline justify-between gap-3">
                       <span className="font-medium text-brand">{d.name}</span>
                       <span className="text-xs text-foreground/55">
