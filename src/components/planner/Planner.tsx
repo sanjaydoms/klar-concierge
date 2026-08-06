@@ -16,6 +16,9 @@ import { HandoverForm, type HandoverValues } from "@/components/handover/Handove
 import { HandoverSuccess } from "@/components/handover/HandoverSuccess";
 import { planSharePath } from "@/lib/shareLinks";
 import { TypewriterText } from "./TypewriterText";
+import { HolidayDNA } from "./HolidayDNA";
+
+export type ThemeChip = { key: string; label: string; emoji: string; tagline: string };
 
 type Stage =
   | "conversation"
@@ -42,7 +45,7 @@ const CHIPS = [
 
 const SESSION_KEY = "klar-session-id";
 
-export function Planner() {
+export function Planner({ themes = [] }: { themes?: ThemeChip[] }) {
   const [stage, setStage] = useState<Stage>("conversation");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -119,6 +122,58 @@ export function Planner() {
     setError(null);
     setStage("conversation");
   }, [sessionId]);
+
+  // Discovery layer: a theme picked instead of typed starts a context-aware
+  // conversation. Also honours /concierge?theme=… links from landing pages.
+  const selectTheme = useCallback(
+    async (theme: ThemeChip) => {
+      if (busy) return;
+      setBusy(true);
+      setError(null);
+      setMessages((m) => [
+        ...m,
+        { role: "user", content: `${theme.emoji} ${theme.label} holiday`, createdAt: new Date().toISOString() },
+      ]);
+      try {
+        const res = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ theme: theme.key, sessionId: sessionId ?? undefined }),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = (await res.json()) as {
+          sessionId: string;
+          brief: TravelBrief;
+          assistantMessage: string;
+          readyForRecommendations: boolean;
+        };
+        setSessionId(data.sessionId);
+        window.localStorage.setItem(SESSION_KEY, data.sessionId);
+        setBrief(data.brief);
+        setReady(data.readyForRecommendations);
+        setAnimateLast(true);
+        setMessages((m) => [
+          ...m,
+          { role: "assistant", content: data.assistantMessage, createdAt: new Date().toISOString() },
+        ]);
+      } catch {
+        setError("We couldn't start that theme just now — please try again.");
+      } finally {
+        setBusy(false);
+      }
+    },
+    [busy, sessionId],
+  );
+
+  useEffect(() => {
+    if (themes.length === 0) return;
+    const wanted = new URLSearchParams(window.location.search).get("theme");
+    if (!wanted) return;
+    const theme = themes.find((t) => t.key === wanted);
+    const hasSession = window.localStorage.getItem(SESSION_KEY);
+    if (theme && !hasSession) void selectTheme(theme);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const sendMessage = useCallback(
     async (text: string) => {
@@ -312,6 +367,32 @@ export function Planner() {
             Name a destination — or simply describe how you want the trip to feel.
           </p>
 
+          {messages.length === 0 && themes.length > 0 ? (
+            <fieldset className="mt-6">
+              <legend className="text-sm font-medium text-foreground/70">
+                What kind of holiday is calling you?
+              </legend>
+              <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+                {themes.map((t) => (
+                  <button
+                    key={t.key}
+                    type="button"
+                    className="rounded-xl border border-line bg-surface px-3 py-2.5 text-left transition hover:border-brand hover:bg-brand-soft"
+                    onClick={() => void selectTheme(t)}
+                    disabled={busy}
+                  >
+                    <span className="block text-lg" aria-hidden>{t.emoji}</span>
+                    <span className="block text-sm font-semibold text-brand">{t.label}</span>
+                    <span className="mt-0.5 block text-xs leading-snug text-foreground/55">{t.tagline}</span>
+                  </button>
+                ))}
+              </div>
+              <p className="mt-3 text-xs text-foreground/50">
+                — or simply describe your holiday below in your own words.
+              </p>
+            </fieldset>
+          ) : null}
+
           <div
             ref={logRef}
             aria-live="polite"
@@ -401,6 +482,12 @@ export function Planner() {
         />
       ) : null}
 
+      {stage === "recommendations" && recResult && brief ? (
+        <HolidayDNA
+          brief={brief}
+          destinations={recResult.recommendations.map((r) => r.destinationName)}
+        />
+      ) : null}
       {stage === "recommendations" && recResult ? (
         <RecommendationCards
           result={recResult}

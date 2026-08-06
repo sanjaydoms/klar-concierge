@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { processChatTurn } from "@/services/conversation/engine";
+import { processChatTurn, startWithTheme } from "@/services/conversation/engine";
 import { getSessionStore } from "@/repositories/sessions";
 import { clientKey, rateLimit } from "@/lib/rateLimit";
 import { config } from "@/lib/config";
@@ -8,10 +8,13 @@ import { track } from "@/services/analytics";
 
 export const runtime = "nodejs";
 
-const bodySchema = z.object({
-  message: z.string().min(1).max(2000),
-  sessionId: z.string().uuid().optional(),
-});
+const bodySchema = z
+  .object({
+    message: z.string().min(1).max(2000).optional(),
+    theme: z.string().max(30).optional(),
+    sessionId: z.string().uuid().optional(),
+  })
+  .refine((b) => b.message || b.theme, { message: "message or theme required" });
 
 export async function POST(request: Request) {
   const limit = rateLimit(clientKey(request, "chat"), config.rateLimitChatPerMinute);
@@ -37,7 +40,12 @@ export async function POST(request: Request) {
       await track("planner_started");
     }
 
-    const result = await processChatTurn(session, parsed.message);
+    const result = parsed.theme
+      ? startWithTheme(session, parsed.theme)
+      : await processChatTurn(session, parsed.message!);
+    if (!result) {
+      return NextResponse.json({ error: "Unknown holiday theme." }, { status: 400 });
+    }
     await store.save(session);
     await track("planner_message_sent");
     if (result.readyForRecommendations) await track("brief_completed");

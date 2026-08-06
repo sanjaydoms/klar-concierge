@@ -1,5 +1,46 @@
 # Release Notes
 
+## 2.7.0 — The discovery layer: holiday themes, Holiday DNA, /holidays SEO (2026-08-06)
+
+Implements the "Klar Holiday Planner v2 (Minimal Blueprint)" — preserving the
+existing application exactly as it is, all additions data-driven.
+
+### Discovery layer (blueprint §1)
+- Twelve holiday themes — Romance, Family, Luxury, Adventure, Beach, Nature,
+  Wellness, Cruises, Snow, Food, Culture, Wildlife — presented as a picker
+  before the conversation. One registry file (`src/services/ktie/themes.ts`)
+  drives the planner grid, the conversation seeding and the landing pages:
+  adding a theme is adding one object.
+
+### Context-aware conversation (blueprint §2)
+- Picking a theme seeds the brief with its implied preferences (Family →
+  traveller type; Luxury → comfort band; Snow → wants-snow climate) and
+  opens with a tailored question ("How old are the children…?", "Honeymoon
+  or anniversary…?") instead of interrogating everyone identically.
+- Landing pages deep-link into the planner with the theme pre-applied
+  (`/concierge?theme=romance`).
+- Cruises handled honestly: recorded as an interest for the Klar cruise
+  specialists (no fake cruise inventory), while the planner shapes the
+  land-stay around the sailing.
+
+### Recommendations & Holiday DNA (blueprint §3–4)
+- Three explained recommendations already existed — unchanged, per the
+  blueprint's own rule.
+- New **Holiday DNA** card: traveller type, scope, month, nights, pace,
+  comfort, style, weather and the recommended directions in one glance —
+  the same picture the Klar team receives at handover.
+
+### SEO landing pages (blueprint §5)
+- `/holidays` index + statically generated `/holidays/<theme>` pages:
+  honest introduction, top destinations ranked from KTIE scores (with
+  photos), computed best-months badge, FAQ with FAQPage JSON-LD, and the
+  planner CTA. All in the sitemap, llms.txt and site navigation.
+
+### Verification
+- 102/102 unit/integration tests (7 new theme tests), 288/288 evals,
+  **42/42 e2e** (4 new: theme landing pages, theme-driven conversation),
+  production build green — 12 theme pages + 61 destination guides static.
+
 ## 2.6.0 — Domestic India, and the language of Indian travellers (2026-08-06)
 
 ### India domestic knowledge pack (the reported gap)

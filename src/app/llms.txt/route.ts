@@ -1,5 +1,6 @@
 import { config } from "@/lib/config";
 import { getAllDestinations, knowledgeGeneratedAt } from "@/repositories/knowledge";
+import { THEMES } from "@/services/ktie/themes";
 
 export const dynamic = "force-static";
 
@@ -38,6 +39,10 @@ export function GET(): Response {
     `- [Discover collections](${base}/concierge/discover): seasonal and traveller-type ideas`,
     `- [Compare destinations](${base}/concierge/compare): deterministic side-by-side comparison`,
     `- [How it works](${base}/concierge/how-it-works): scope and honesty rules`,
+    "",
+    "## Holiday types",
+    "",
+    ...THEMES.map((t) => `- [${t.label} holidays](${base}/holidays/${t.key}): ${t.tagline}`),
     "",
     "## Destination guides",
     "",

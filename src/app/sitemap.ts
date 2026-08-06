@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { config } from "@/lib/config";
 import { getAllDestinations } from "@/repositories/knowledge";
+import { THEMES } from "@/services/ktie/themes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = config.appUrl.replace(/\/$/, "");
@@ -20,5 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly",
     priority: 0.8,
   }));
-  return [...staticRoutes, ...destinationRoutes];
+  const themeRoutes: MetadataRoute.Sitemap = [
+    { url: `${base}/holidays`, changeFrequency: "monthly", priority: 0.9 },
+    ...THEMES.map((t) => ({
+      url: `${base}/holidays/${t.key}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
+  ];
+  return [...staticRoutes, ...themeRoutes, ...destinationRoutes];
 }
