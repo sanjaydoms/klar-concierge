@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { processChatTurn, startWithTheme } from "@/services/conversation/engine";
+import { processChatTurn, startWithDestination, startWithTheme } from "@/services/conversation/engine";
 import { getSessionStore } from "@/repositories/sessions";
 import { clientKey, rateLimit } from "@/lib/rateLimit";
 import { config } from "@/lib/config";
@@ -12,9 +12,12 @@ const bodySchema = z
   .object({
     message: z.string().min(1).max(2000).optional(),
     theme: z.string().max(30).optional(),
+    destination: z.string().max(80).optional(),
     sessionId: z.string().uuid().optional(),
   })
-  .refine((b) => b.message || b.theme, { message: "message or theme required" });
+  .refine((b) => b.message || b.theme || b.destination, {
+    message: "message, theme or destination required",
+  });
 
 export async function POST(request: Request) {
   const limit = rateLimit(clientKey(request, "chat"), config.rateLimitChatPerMinute);
@@ -42,9 +45,14 @@ export async function POST(request: Request) {
 
     const result = parsed.theme
       ? startWithTheme(session, parsed.theme)
-      : await processChatTurn(session, parsed.message!);
+      : parsed.destination
+        ? startWithDestination(session, parsed.destination)
+        : await processChatTurn(session, parsed.message!);
     if (!result) {
-      return NextResponse.json({ error: "Unknown holiday theme." }, { status: 400 });
+      return NextResponse.json(
+        { error: parsed.destination ? "Unknown destination." : "Unknown holiday theme." },
+        { status: 400 },
+      );
     }
     await store.save(session);
     await track("planner_message_sent");

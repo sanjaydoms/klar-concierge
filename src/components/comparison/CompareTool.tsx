@@ -33,12 +33,13 @@ export function CompareTool({
       .split(",")
       .filter((s) => options.some((o) => o.slug === s))
       .slice(0, 3);
-    if (slugs.length < 2) return;
+    if (slugs.length === 0) return;
     const m = parseInt(params.get("month") ?? "", 10);
     const validMonth = m >= 1 && m <= 12 ? m : undefined;
     setSelected(slugs);
     setMonth(validMonth);
-    void runWith(slugs, validMonth);
+    // One slug preselects ("compare South Africa with…"); two or three run.
+    if (slugs.length >= 2) void runWith(slugs, validMonth);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

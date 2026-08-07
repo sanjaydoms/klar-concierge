@@ -1,5 +1,43 @@
 # Release Notes
 
+## 3.1.0 — Every entry point wired, mobile chat fixed (2026-08-06)
+
+Fixes the three defects shown in the live screen recording.
+
+### "Plan a South Africa Holiday" now plans a South Africa holiday
+- Destination pages' CTAs carry the destination into the planner
+  (`/concierge?destination=south-africa`). The conversation opens already
+  about that place — "South Africa — wonderful choice. Safari mornings,
+  wineland afternoons, ocean sunsets. Which month are you thinking of
+  travelling?" — with the destination seeded into the brief so it leads
+  the matches.
+- A destination or theme deep link **always acts**, even when an older
+  planning session exists — the unrelated previous conversation can never
+  hijack a fresh intent again. (Theme links now behave the same way.)
+- "Compare With Another" on a destination page pre-selects that
+  destination in the comparison tool.
+
+### Back, everywhere
+- The planner conversation now has a visible **← Back** control (browser
+  history when available, home otherwise). Every other stage already had
+  one; now no screen strands the traveller.
+
+### Mobile-friendly chat
+- Once the conversation starts, the page headline hides on phones — the
+  chat gets the screen (taller message log too).
+- The **Show My Matches / Change Something** panel moved directly under
+  the conversation, above the input — visible without scrolling past it.
+- Extra bottom clearance on phones so portal chat widgets floating in the
+  corner no longer sit on top of the Send button.
+
+### Verification
+- 124/124 unit tests (3 new destination-entry tests), 288/288 evals,
+  **50/50 e2e** (new: destination CTA journey, deep link vs stale
+  session, theme link with existing session, back control), build green,
+  0 audit findings. E2e server now runs with test-scoped rate limits so
+  parallel suites can't rate-limit each other.
+
+
 ## 3.0.0 — One continuous conversation (2026-08-06)
 
 Implements the executive product review in full: same architecture, same
