@@ -95,7 +95,7 @@
       "month": 3,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
+      "rainfall": "medium",
       "humidity": "medium",
       "temperatureBand": "cool",
       "crowdLevel": "medium",
@@ -107,7 +107,7 @@
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "medium",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
@@ -119,7 +119,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "medium",
       "humidity": "medium",
-      "temperatureBand": "warm",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [
         "Green valleys, snow still on Ararat — peak beauty"
@@ -131,8 +131,8 @@
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "humidity": "low",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -232,13 +232,13 @@
     "Beach and resort travellers",
     "Anyone allergic to churches and history"
   ],
-  "confidence": 76,
+  "confidence": 86,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -262,6 +262,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-armenia",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Yerevan",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-armenia",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Armenia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Armenia",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-armenia",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Armenia",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Armenia",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

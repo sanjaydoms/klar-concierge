@@ -72,8 +72,8 @@
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -85,8 +85,8 @@
       "seasonScore": 65,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -95,9 +95,9 @@
       "month": 3,
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [
         "Tea first-flush season around Darjeeling"
@@ -108,8 +108,8 @@
       "month": 4,
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -121,8 +121,8 @@
       "month": 5,
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
@@ -133,7 +133,7 @@
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
       "rainfall": "high",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
@@ -144,8 +144,8 @@
       "seasonScore": 40,
       "seasonLabel": "Off season",
       "rainfall": "high",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -157,8 +157,8 @@
       "seasonScore": 40,
       "seasonLabel": "Off season",
       "rainfall": "high",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": []
@@ -167,8 +167,8 @@
       "month": 9,
       "seasonScore": 65,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
@@ -178,8 +178,8 @@
       "month": 10,
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -192,8 +192,8 @@
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -203,8 +203,8 @@
       "seasonScore": 65,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -234,13 +234,13 @@
     "Step-free access needs",
     "Beach-and-pool holidaymakers"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -277,6 +277,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-sikkim-darjeeling",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Darjeeling",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-sikkim-darjeeling",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Darjeeling",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Darjeeling",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-sikkim-darjeeling",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Darjeeling",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Darjeeling",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

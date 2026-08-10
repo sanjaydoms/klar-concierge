@@ -72,7 +72,7 @@
       "seasonScore": 65,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
@@ -83,7 +83,7 @@
       "seasonScore": 65,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
@@ -104,9 +104,9 @@
       "month": 4,
       "seasonScore": 72,
       "seasonLabel": "Good season",
-      "rainfall": "low",
+      "rainfall": "medium",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -117,7 +117,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "medium",
       "humidity": "medium",
-      "temperatureBand": "warm",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -141,7 +141,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "medium",
       "humidity": "medium",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -152,7 +152,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "medium",
       "humidity": "medium",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": [
@@ -163,9 +163,9 @@
       "month": 9,
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -175,8 +175,8 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -186,8 +186,8 @@
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "humidity": "high",
+      "temperatureBand": "cold",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -199,7 +199,7 @@
       "seasonScore": 75,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "high",
       "highlights": [
@@ -231,13 +231,13 @@
   "whoShouldAvoid": [
     "Travellers chasing beach warmth or big nightlife"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -261,6 +261,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-austria",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Vienna",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-austria",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Austria",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Austria",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-austria",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Austria",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Austria",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

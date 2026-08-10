@@ -72,7 +72,7 @@
       "seasonScore": 45,
       "seasonLabel": "Off season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "low",
       "highlights": [],
@@ -85,8 +85,8 @@
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -106,7 +106,7 @@
       "month": 4,
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "medium",
+      "rainfall": "low",
       "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "high",
@@ -120,7 +120,7 @@
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [],
@@ -177,7 +177,7 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -189,7 +189,7 @@
       "month": 11,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "low",
+      "rainfall": "medium",
       "humidity": "medium",
       "temperatureBand": "cool",
       "crowdLevel": "medium",
@@ -201,7 +201,7 @@
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
@@ -231,13 +231,13 @@
   "whoShouldAvoid": [
     "Beach seekers and travellers wanting nightlife or resort comfort"
   ],
-  "confidence": 78,
+  "confidence": 88,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -261,6 +261,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-uzbekistan",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Tashkent",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-uzbekistan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Uzbekistan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uzbekistan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-uzbekistan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Uzbekistan",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Uzbekistan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

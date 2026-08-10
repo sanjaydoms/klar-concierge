@@ -71,8 +71,8 @@
       "month": 1,
       "seasonScore": 55,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "low",
+      "humidity": "high",
       "temperatureBand": "cool",
       "crowdLevel": "low",
       "highlights": [],
@@ -85,8 +85,8 @@
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
       "rainfall": "medium",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -97,7 +97,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "warm",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -107,8 +107,8 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "hot",
+      "humidity": "low",
+      "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
         "Wildflowers at Jerash, perfect Petra hiking weather"
@@ -121,7 +121,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "low",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -167,7 +167,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "low",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -177,7 +177,7 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
@@ -191,7 +191,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "warm",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -200,8 +200,8 @@
       "month": 12,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "low",
+      "humidity": "high",
       "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
@@ -232,13 +232,13 @@
     "Travellers with limited mobility — Petra's magic requires distance on foot",
     "Resort-and-pool holidaymakers"
   ],
-  "confidence": 80,
+  "confidence": 90,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -262,6 +262,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-jordan",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Amman",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-jordan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Jordan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jordan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-jordan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Jordan",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Jordan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

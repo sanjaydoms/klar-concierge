@@ -72,8 +72,8 @@
       "seasonScore": 92,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "humidity": "high",
+      "temperatureBand": "hot",
       "crowdLevel": "high",
       "highlights": [
         "Glass-calm seas around the four islands"
@@ -84,9 +84,9 @@
       "month": 2,
       "seasonScore": 92,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "hot",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -95,8 +95,8 @@
       "month": 3,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -106,7 +106,7 @@
       "month": 4,
       "seasonScore": 72,
       "seasonLabel": "Good season",
-      "rainfall": "low",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
@@ -117,7 +117,7 @@
       "month": 5,
       "seasonScore": 55,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
@@ -128,7 +128,7 @@
       "month": 6,
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
@@ -139,7 +139,7 @@
       "month": 7,
       "seasonScore": 48,
       "seasonLabel": "Off season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
@@ -150,7 +150,7 @@
       "month": 8,
       "seasonScore": 48,
       "seasonLabel": "Off season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
@@ -187,8 +187,8 @@
       "month": 11,
       "seasonScore": 75,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -198,8 +198,8 @@
       "month": 12,
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
@@ -232,13 +232,13 @@
   "whoShouldAvoid": [
     "Travellers wanting big-resort infrastructure and nightlife"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -262,6 +262,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-krabi",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Krabi",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-krabi",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Krabi",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Krabi",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-krabi",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Krabi",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Krabi",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

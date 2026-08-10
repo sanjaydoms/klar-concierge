@@ -68,10 +68,10 @@
   "monthlyIntelligence": [
     {
       "month": 1,
-      "seasonScore": 50,
-      "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "seasonScore": 34,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "low",
       "highlights": [
@@ -81,10 +81,10 @@
     },
     {
       "month": 2,
-      "seasonScore": 52,
-      "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
+      "seasonScore": 32,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
@@ -94,9 +94,9 @@
       "month": 3,
       "seasonScore": 55,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -105,9 +105,9 @@
       "month": 4,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -116,9 +116,9 @@
       "month": 5,
       "seasonScore": 75,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -127,9 +127,9 @@
       "month": 6,
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "high",
       "highlights": [
         "Midnight sun over the fjords — surreal, endless days"
@@ -140,9 +140,9 @@
       "month": 7,
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
         "Every trail, ferry and viewpoint open"
@@ -153,9 +153,9 @@
       "month": 8,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "medium",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -165,8 +165,8 @@
       "seasonScore": 72,
       "seasonLabel": "Good season",
       "rainfall": "high",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": [
@@ -175,10 +175,10 @@
     },
     {
       "month": 10,
-      "seasonScore": 55,
-      "seasonLabel": "Shoulder season",
+      "seasonScore": 44,
+      "seasonLabel": "Off season",
       "rainfall": "high",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
@@ -189,8 +189,8 @@
       "seasonScore": 48,
       "seasonLabel": "Off season",
       "rainfall": "high",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "humidity": "high",
+      "temperatureBand": "cold",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -199,10 +199,10 @@
     },
     {
       "month": 12,
-      "seasonScore": 50,
-      "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "seasonScore": 27,
+      "seasonLabel": "Off season",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [],
@@ -234,13 +234,13 @@
     "Budget travellers",
     "Warm-weather-only holidaymakers"
   ],
-  "confidence": 80,
+  "confidence": 90,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -264,6 +264,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-norway",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Bergen",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-norway",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Norway",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Norway",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-norway",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Norway",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Norway",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

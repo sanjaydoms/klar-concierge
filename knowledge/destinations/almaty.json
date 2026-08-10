@@ -95,7 +95,7 @@
       "month": 3,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
+      "rainfall": "medium",
       "humidity": "medium",
       "temperatureBand": "cool",
       "crowdLevel": "low",
@@ -121,7 +121,7 @@
       "seasonLabel": "Good season",
       "rainfall": "medium",
       "humidity": "medium",
-      "temperatureBand": "warm",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -130,8 +130,8 @@
       "month": 6,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "low",
+      "humidity": "low",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -142,7 +142,7 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "hot",
       "crowdLevel": "high",
       "highlights": [
@@ -156,7 +156,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "low",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -167,7 +167,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "low",
-      "temperatureBand": "warm",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -178,7 +178,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -189,7 +189,7 @@
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "cool",
+      "temperatureBand": "cold",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -234,13 +234,13 @@
   "whoShouldAvoid": [
     "Travellers wanting beaches, heritage depth or guaranteed warm weather"
   ],
-  "confidence": 76,
+  "confidence": 86,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -264,6 +264,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-almaty",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Almaty",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-almaty",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Almaty",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Almaty",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-almaty",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Almaty",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Almaty",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

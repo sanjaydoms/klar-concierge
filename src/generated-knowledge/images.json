@@ -284,5 +284,34 @@
     "file": "/destinations/uzbekistan.jpg",
     "alt": "Uzbekistan — Uzbekistan",
     "sourceUrl": "https://en.wikipedia.org/wiki/Uzbekistan"
+  },
+  "andaman-islands": {
+    "file": "/destinations/andaman-islands.jpg",
+    "alt": "Andaman Islands — Andaman Islands",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Andaman_Islands"
+  },
+  "goa": {
+    "file": "/destinations/goa.jpg",
+    "alt": "Goa — Goa",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Goa"
+  },
+  "himachal-pradesh": {
+    "file": "/destinations/himachal-pradesh.jpg",
+    "alt": "Himachal Pradesh — Himachal Pradesh",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Himachal_Pradesh"
+  },
+  "kerala": {
+    "file": "/destinations/kerala.jpg",
+    "alt": "Kerala — Kerala",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kerala"
+  },
+  "rajasthan": {
+    "file": "/destinations/rajasthan.jpg",
+    "alt": "Rajasthan — Rajasthan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Rajasthan"
   }
 }

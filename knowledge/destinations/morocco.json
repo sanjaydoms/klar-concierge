@@ -72,9 +72,9 @@
       "month": 1,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "mild",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": []
@@ -85,7 +85,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "cool",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -94,7 +94,7 @@
       "month": 3,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "medium",
+      "rainfall": "low",
       "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
@@ -106,8 +106,8 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "low",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
         "Perfect medina-and-mountains weather; roses bloom in the valleys"
@@ -119,8 +119,8 @@
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "humidity": "low",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -167,8 +167,8 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "humidity": "low",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -178,8 +178,8 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "low",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
         "Warm days, cool Sahara nights — ideal desert-camp season"
@@ -190,9 +190,9 @@
       "month": 11,
       "seasonScore": 82,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "medium",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "rainfall": "low",
+      "humidity": "low",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -201,9 +201,9 @@
       "month": 12,
       "seasonScore": 72,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
+      "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "cool",
+      "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -233,13 +233,13 @@
   "whoShouldAvoid": [
     "Travellers who dislike haggling and busy medina energy"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -263,6 +263,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-morocco",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Marrakech",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-morocco",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Morocco",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Morocco",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-morocco",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Morocco",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Morocco",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

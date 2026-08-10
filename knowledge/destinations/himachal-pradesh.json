@@ -72,8 +72,8 @@
       "month": 1,
       "seasonScore": 58,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "low",
       "temperatureBand": "cold",
       "crowdLevel": "medium",
       "highlights": [
@@ -85,9 +85,9 @@
       "month": 2,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "high",
+      "humidity": "low",
+      "temperatureBand": "cool",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": []
@@ -96,9 +96,9 @@
       "month": 3,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "high",
+      "humidity": "low",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -107,9 +107,9 @@
       "month": 4,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "rainfall": "high",
+      "humidity": "low",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -118,8 +118,8 @@
       "month": 5,
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "low",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -143,7 +143,7 @@
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
       "rainfall": "high",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -156,7 +156,7 @@
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
       "rainfall": "high",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "low",
       "highlights": [],
@@ -168,8 +168,8 @@
       "month": 9,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
@@ -179,9 +179,9 @@
       "month": 10,
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "rainfall": "medium",
+      "humidity": "low",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [
         "Crystal post-monsoon views — the photographer's month"
@@ -192,9 +192,9 @@
       "month": 11,
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "medium",
+      "humidity": "low",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -203,9 +203,9 @@
       "month": 12,
       "seasonScore": 62,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "high",
+      "humidity": "low",
+      "temperatureBand": "cool",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -236,13 +236,13 @@
     "Travellers who can't handle winding roads",
     "Step-free access needs"
   ],
-  "confidence": 84,
+  "confidence": 94,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -266,6 +266,33 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-himachal-pradesh",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Manali",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-himachal-pradesh",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Himachal Pradesh",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Himachal_Pradesh",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

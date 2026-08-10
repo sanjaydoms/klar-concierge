@@ -72,7 +72,7 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
@@ -83,7 +83,7 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -94,7 +94,7 @@
       "seasonScore": 82,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -116,7 +116,7 @@
       "seasonScore": 52,
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -127,7 +127,7 @@
       "seasonScore": 38,
       "seasonLabel": "Off season",
       "rainfall": "low",
-      "humidity": "high",
+      "humidity": "medium",
       "temperatureBand": "hot",
       "crowdLevel": "low",
       "highlights": [],
@@ -138,7 +138,7 @@
       "seasonScore": 34,
       "seasonLabel": "Off season",
       "rainfall": "low",
-      "humidity": "high",
+      "humidity": "medium",
       "temperatureBand": "hot",
       "crowdLevel": "low",
       "highlights": [],
@@ -151,7 +151,7 @@
       "seasonScore": 34,
       "seasonLabel": "Off season",
       "rainfall": "low",
-      "humidity": "high",
+      "humidity": "medium",
       "temperatureBand": "hot",
       "crowdLevel": "low",
       "highlights": [],
@@ -164,7 +164,7 @@
       "seasonScore": 48,
       "seasonLabel": "Off season",
       "rainfall": "low",
-      "humidity": "high",
+      "humidity": "medium",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -176,7 +176,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "warm",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -186,7 +186,7 @@
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [
@@ -199,8 +199,8 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
-      "temperatureBand": "mild",
+      "humidity": "medium",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
         "Perfect Corniche weather"
@@ -230,13 +230,13 @@
   "whoShouldAvoid": [
     "Travellers wanting walkable old-town streets and bustle"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -260,6 +260,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-abu-dhabi",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Abu Dhabi",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-abu-dhabi",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Abu Dhabi",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Abu_Dhabi",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-abu-dhabi",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Abu Dhabi",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Abu_Dhabi",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

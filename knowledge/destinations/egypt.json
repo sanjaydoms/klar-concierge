@@ -72,7 +72,7 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
@@ -83,8 +83,8 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
-      "temperatureBand": "warm",
+      "humidity": "medium",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [
         "Abu Simbel sun alignment (22 Feb — verify)"
@@ -177,8 +177,8 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "low",
-      "temperatureBand": "warm",
+      "humidity": "medium",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -188,7 +188,7 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -199,7 +199,7 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -232,13 +232,13 @@
   "whoShouldAvoid": [
     "Travellers wanting a polished, hassle-free resort experience only"
   ],
-  "confidence": 80,
+  "confidence": 90,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -262,6 +262,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-egypt",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Cairo",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-egypt",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Egypt",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Egypt",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-egypt",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Egypt",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Egypt",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

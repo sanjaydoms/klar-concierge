@@ -73,7 +73,7 @@
       "seasonScore": 92,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -87,7 +87,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "low",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -98,7 +98,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "low",
-      "temperatureBand": "warm",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -108,7 +108,7 @@
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -119,7 +119,7 @@
       "seasonScore": 35,
       "seasonLabel": "Off season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "low",
       "temperatureBand": "hot",
       "crowdLevel": "low",
       "highlights": [],
@@ -131,8 +131,8 @@
       "month": 6,
       "seasonScore": 30,
       "seasonLabel": "Off season",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "low",
       "temperatureBand": "hot",
       "crowdLevel": "low",
       "highlights": [],
@@ -144,8 +144,8 @@
       "month": 7,
       "seasonScore": 40,
       "seasonLabel": "Off season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -155,8 +155,8 @@
       "month": 8,
       "seasonScore": 45,
       "seasonLabel": "Off season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -166,8 +166,8 @@
       "month": 9,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
@@ -178,8 +178,8 @@
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
-      "temperatureBand": "warm",
+      "humidity": "medium",
+      "temperatureBand": "hot",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -202,7 +202,7 @@
       "seasonScore": 92,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "low",
+      "humidity": "medium",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
@@ -234,13 +234,13 @@
     "Beach-first relaxers",
     "Anyone travelling April–June who dislikes extreme heat"
   ],
-  "confidence": 86,
+  "confidence": 95,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -264,6 +264,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-rajasthan",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Jaipur",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-rajasthan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Rajasthan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rajasthan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-rajasthan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Rajasthan",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Rajasthan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

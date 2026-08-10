@@ -72,7 +72,7 @@
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
@@ -82,8 +82,8 @@
       "month": 2,
       "seasonScore": 82,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [
@@ -95,9 +95,9 @@
       "month": 3,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "hot",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [
         "Best all-round month across regions"
@@ -108,9 +108,9 @@
       "month": 4,
       "seasonScore": 82,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
+      "rainfall": "medium",
       "humidity": "high",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -119,7 +119,7 @@
       "month": 5,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "hot",
       "crowdLevel": "medium",
@@ -130,9 +130,9 @@
       "month": 6,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "warm",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -143,7 +143,7 @@
       "seasonLabel": "Shoulder season",
       "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "warm",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": [
@@ -156,7 +156,7 @@
       "seasonLabel": "Shoulder season",
       "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "warm",
+      "temperatureBand": "hot",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -178,8 +178,8 @@
       "month": 10,
       "seasonScore": 65,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -190,7 +190,7 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -201,7 +201,7 @@
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
@@ -232,13 +232,13 @@
   "whoShouldAvoid": [
     "Travellers wanting a single-base, no-transfers beach holiday"
   ],
-  "confidence": 84,
+  "confidence": 94,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -262,6 +262,33 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-vietnam",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Hanoi",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-vietnam",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Vietnam",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vietnam",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

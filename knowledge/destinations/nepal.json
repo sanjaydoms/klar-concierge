@@ -74,7 +74,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "cold",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -85,7 +85,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "cold",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -96,7 +96,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "cool",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -107,7 +107,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
         "Rhododendron bloom on the trails"
@@ -118,8 +118,8 @@
       "month": 5,
       "seasonScore": 75,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -129,7 +129,7 @@
       "month": 6,
       "seasonScore": 50,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
@@ -166,8 +166,8 @@
       "month": 9,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -177,8 +177,8 @@
       "month": 10,
       "seasonScore": 92,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -191,8 +191,8 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cool",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -202,8 +202,8 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -233,13 +233,13 @@
   "whoShouldAvoid": [
     "Travellers needing step-free access or luxury polish throughout"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -263,6 +263,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-nepal",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Kathmandu",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-nepal",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Nepal",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nepal",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-nepal",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Nepal",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Nepal",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

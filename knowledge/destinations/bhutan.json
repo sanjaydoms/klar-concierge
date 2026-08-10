@@ -71,9 +71,9 @@
       "month": 1,
       "seasonScore": 65,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -84,9 +84,9 @@
       "month": 2,
       "seasonScore": 72,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -95,8 +95,8 @@
       "month": 3,
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
@@ -106,8 +106,8 @@
       "month": 4,
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -119,9 +119,9 @@
       "month": 5,
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -130,9 +130,9 @@
       "month": 6,
       "seasonScore": 55,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "warm",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -143,7 +143,7 @@
       "seasonLabel": "Shoulder season",
       "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "hot",
+      "temperatureBand": "mild",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -154,9 +154,9 @@
       "month": 8,
       "seasonScore": 55,
       "seasonLabel": "Shoulder season",
-      "rainfall": "medium",
+      "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "hot",
+      "temperatureBand": "mild",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": []
@@ -165,9 +165,9 @@
       "month": 9,
       "seasonScore": 75,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "warm",
+      "rainfall": "high",
+      "humidity": "high",
+      "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -176,8 +176,8 @@
       "month": 10,
       "seasonScore": 92,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "high",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "high",
       "highlights": [
@@ -189,8 +189,8 @@
       "month": 11,
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
@@ -200,9 +200,9 @@
       "month": 12,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "cold",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "cool",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -231,13 +231,13 @@
   "whoShouldAvoid": [
     "Nightlife seekers and tight-budget travellers"
   ],
-  "confidence": 80,
+  "confidence": 90,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -261,6 +261,47 @@
         "practicality"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-bhutan",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Thimphu",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-bhutan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Bhutan",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bhutan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-bhutan",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Bhutan",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Bhutan",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]

@@ -73,7 +73,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -84,7 +84,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [
         "Calving season and superb predator action"
@@ -95,7 +95,7 @@
       "month": 3,
       "seasonScore": 70,
       "seasonLabel": "Good season",
-      "rainfall": "medium",
+      "rainfall": "low",
       "humidity": "medium",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
@@ -131,7 +131,7 @@
       "seasonScore": 75,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
+      "humidity": "high",
       "temperatureBand": "mild",
       "crowdLevel": "medium",
       "highlights": [],
@@ -167,7 +167,7 @@
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [],
       "warnings": []
@@ -178,7 +178,7 @@
       "seasonLabel": "Good season",
       "rainfall": "low",
       "humidity": "medium",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -187,9 +187,9 @@
       "month": 11,
       "seasonScore": 60,
       "seasonLabel": "Shoulder season",
-      "rainfall": "high",
+      "rainfall": "medium",
       "humidity": "high",
-      "temperatureBand": "mild",
+      "temperatureBand": "warm",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": [
@@ -201,8 +201,8 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "medium",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -232,13 +232,13 @@
   "whoShouldAvoid": [
     "Travellers who dislike early starts and rustic remoteness"
   ],
-  "confidence": 82,
+  "confidence": 92,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -260,6 +260,20 @@
         "seasonality",
         "attractions",
         "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-kenya",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Nairobi",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
       ],
       "reliability": "high",
       "freshness": "current"

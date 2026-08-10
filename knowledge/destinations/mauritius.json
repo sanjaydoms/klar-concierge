@@ -73,7 +73,7 @@
       "seasonLabel": "Good season",
       "rainfall": "high",
       "humidity": "high",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": [
@@ -84,9 +84,9 @@
       "month": 2,
       "seasonScore": 65,
       "seasonLabel": "Good season",
-      "rainfall": "high",
+      "rainfall": "medium",
       "humidity": "high",
-      "temperatureBand": "hot",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": [
@@ -108,9 +108,9 @@
       "month": 4,
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "rainfall": "medium",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -120,8 +120,8 @@
       "seasonScore": 85,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [
         "Calm seas and green interiors"
@@ -133,8 +133,8 @@
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "low",
       "highlights": [],
       "warnings": []
@@ -144,8 +144,8 @@
       "seasonScore": 78,
       "seasonLabel": "Good season",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": [
@@ -157,8 +157,8 @@
       "seasonScore": 80,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -168,8 +168,8 @@
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
       "warnings": []
@@ -179,8 +179,8 @@
       "seasonScore": 90,
       "seasonLabel": "Excellent time to visit",
       "rainfall": "low",
-      "humidity": "medium",
-      "temperatureBand": "mild",
+      "humidity": "high",
+      "temperatureBand": "warm",
       "crowdLevel": "high",
       "highlights": [
         "Warm, dry and flamboyant-tree bloom"
@@ -191,8 +191,8 @@
       "month": 11,
       "seasonScore": 88,
       "seasonLabel": "Excellent time to visit",
-      "rainfall": "low",
-      "humidity": "medium",
+      "rainfall": "medium",
+      "humidity": "high",
       "temperatureBand": "warm",
       "crowdLevel": "medium",
       "highlights": [],
@@ -232,13 +232,13 @@
   "whoShouldAvoid": [
     "Travellers seeking buzzing nightlife"
   ],
-  "confidence": 86,
+  "confidence": 95,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
-  "reviewedBy": "Klar knowledge team — stable-facts editorial review (re-confirm before major campaigns)",
-  "reviewedAt": "2026-08-01",
-  "nextReviewAt": "2026-11-01",
+  "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
+  "reviewedAt": "2026-08-10",
+  "nextReviewAt": "2026-11-08",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -260,6 +260,20 @@
         "seasonality",
         "attractions",
         "practicality"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-mauritius",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Port Louis",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-10",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
       ],
       "reliability": "high",
       "freshness": "current"
