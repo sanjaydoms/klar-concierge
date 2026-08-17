@@ -230,13 +230,13 @@
   "whoShouldAvoid": [
     "Travellers wanting walkable old-town streets and bustle"
   ],
-  "confidence": 92,
+  "confidence": 95,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-10",
-  "nextReviewAt": "2026-11-08",
+  "reviewedAt": "2026-08-17",
+  "nextReviewAt": "2026-11-15",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -267,7 +267,7 @@
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Abu Dhabi",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-10",
+      "accessedAt": "2026-08-17",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
@@ -281,7 +281,7 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Abu Dhabi",
       "sourceUrl": "https://en.wikipedia.org/wiki/Abu_Dhabi",
-      "accessedAt": "2026-08-10",
+      "accessedAt": "2026-08-17",
       "applicableFields": [
         "summary",
         "positioningLine"
@@ -294,7 +294,7 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Abu Dhabi",
       "sourceUrl": "https://en.wikivoyage.org/wiki/Abu_Dhabi",
-      "accessedAt": "2026-08-10",
+      "accessedAt": "2026-08-17",
       "applicableFields": [
         "idealTraveller",
         "tradeOffs",

@@ -231,13 +231,13 @@
   "whoShouldAvoid": [
     "Travellers needing step-free access throughout"
   ],
-  "confidence": 90,
+  "confidence": 95,
   "status": "verified",
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-10",
-  "nextReviewAt": "2026-11-08",
+  "reviewedAt": "2026-08-17",
+  "nextReviewAt": "2026-11-15",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -268,7 +268,7 @@
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Tbilisi",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-10",
+      "accessedAt": "2026-08-17",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
@@ -282,7 +282,7 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Georgia (country)",
       "sourceUrl": "https://en.wikipedia.org/wiki/Georgia_(country)",
-      "accessedAt": "2026-08-10",
+      "accessedAt": "2026-08-17",
       "applicableFields": [
         "summary",
         "positioningLine"
@@ -295,7 +295,7 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Georgia (disambiguation)",
       "sourceUrl": "https://en.wikivoyage.org/wiki/Georgia_(disambiguation)",
-      "accessedAt": "2026-08-10",
+      "accessedAt": "2026-08-17",
       "applicableFields": [
         "idealTraveller",
         "tradeOffs",

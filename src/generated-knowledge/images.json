@@ -313,5 +313,16 @@
     "file": "/destinations/rajasthan.jpg",
     "alt": "Rajasthan — Rajasthan",
     "sourceUrl": "https://en.wikipedia.org/wiki/Rajasthan"
+  },
+  "kashmir": {
+    "file": "/destinations/kashmir.jpg",
+    "alt": "Kashmir — Kashmir Valley",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kashmir_Valley"
+  },
+  "ladakh": {
+    "file": "/destinations/ladakh.jpg",
+    "alt": "Ladakh — Ladakh",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ladakh"
   }
 }
