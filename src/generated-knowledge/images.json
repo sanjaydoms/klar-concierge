@@ -324,5 +324,10 @@
     "file": "/destinations/ladakh.jpg",
     "alt": "Ladakh — Ladakh",
     "sourceUrl": "https://en.wikipedia.org/wiki/Ladakh"
+  },
+  "sikkim-darjeeling": {
+    "file": "/destinations/sikkim-darjeeling.jpg",
+    "alt": "Sikkim & Darjeeling — Darjeeling",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Darjeeling"
   }
 }

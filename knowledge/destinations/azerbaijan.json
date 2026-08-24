@@ -236,8 +236,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-17",
-  "nextReviewAt": "2026-11-15",
+  "reviewedAt": "2026-08-24",
+  "nextReviewAt": "2026-11-22",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -259,20 +259,6 @@
         "seasonality",
         "attractions",
         "practicality"
-      ],
-      "reliability": "high",
-      "freshness": "current"
-    },
-    {
-      "id": "open-meteo-azerbaijan",
-      "sourceType": "meteorological-service",
-      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Baku",
-      "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-17",
-      "applicableFields": [
-        "monthlyIntelligence.temperatureBand",
-        "monthlyIntelligence.rainfall",
-        "monthlyIntelligence.humidity"
       ],
       "reliability": "high",
       "freshness": "current"
@@ -302,6 +288,20 @@
         "practicalWarnings"
       ],
       "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-azerbaijan",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Baku",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-08-24",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
       "freshness": "current"
     }
   ]

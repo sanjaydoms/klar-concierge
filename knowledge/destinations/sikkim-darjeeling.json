@@ -239,8 +239,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-17",
-  "nextReviewAt": "2026-11-15",
+  "reviewedAt": "2026-08-24",
+  "nextReviewAt": "2026-11-22",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -280,19 +280,6 @@
       "freshness": "current"
     },
     {
-      "id": "wikipedia-sikkim-darjeeling",
-      "sourceType": "licensed-data-provider",
-      "sourceName": "Wikipedia: Darjeeling",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Darjeeling",
-      "accessedAt": "2026-08-10",
-      "applicableFields": [
-        "summary",
-        "positioningLine"
-      ],
-      "reliability": "medium",
-      "freshness": "current"
-    },
-    {
       "id": "wikivoyage-sikkim-darjeeling",
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Darjeeling",
@@ -311,13 +298,26 @@
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Darjeeling",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-17",
+      "accessedAt": "2026-08-24",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
         "monthlyIntelligence.humidity"
       ],
       "reliability": "high",
+      "freshness": "current"
+    },
+    {
+      "id": "wikipedia-sikkim-darjeeling",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikipedia: Darjeeling",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Darjeeling",
+      "accessedAt": "2026-08-24",
+      "applicableFields": [
+        "summary",
+        "positioningLine"
+      ],
+      "reliability": "medium",
       "freshness": "current"
     }
   ]
