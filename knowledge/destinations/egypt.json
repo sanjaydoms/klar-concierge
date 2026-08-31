@@ -237,8 +237,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-24",
-  "nextReviewAt": "2026-11-22",
+  "reviewedAt": "2026-08-31",
+  "nextReviewAt": "2026-11-29",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -269,7 +269,7 @@
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Cairo",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-08-31",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
@@ -283,7 +283,7 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Egypt",
       "sourceUrl": "https://en.wikipedia.org/wiki/Egypt",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-08-31",
       "applicableFields": [
         "summary",
         "positioningLine"
@@ -296,7 +296,7 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Egypt",
       "sourceUrl": "https://en.wikivoyage.org/wiki/Egypt",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-08-31",
       "applicableFields": [
         "idealTraveller",
         "tradeOffs",

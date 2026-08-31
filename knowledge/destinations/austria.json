@@ -236,8 +236,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-24",
-  "nextReviewAt": "2026-11-22",
+  "reviewedAt": "2026-08-31",
+  "nextReviewAt": "2026-11-29",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -264,25 +264,11 @@
       "freshness": "current"
     },
     {
-      "id": "wikivoyage-austria",
-      "sourceType": "licensed-data-provider",
-      "sourceName": "Wikivoyage: Austria",
-      "sourceUrl": "https://en.wikivoyage.org/wiki/Austria",
-      "accessedAt": "2026-08-17",
-      "applicableFields": [
-        "idealTraveller",
-        "tradeOffs",
-        "practicalWarnings"
-      ],
-      "reliability": "medium",
-      "freshness": "current"
-    },
-    {
       "id": "open-meteo-austria",
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Vienna",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-08-31",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
@@ -296,10 +282,24 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Austria",
       "sourceUrl": "https://en.wikipedia.org/wiki/Austria",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-08-31",
       "applicableFields": [
         "summary",
         "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-austria",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Austria",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Austria",
+      "accessedAt": "2026-08-31",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
       ],
       "reliability": "medium",
       "freshness": "current"
