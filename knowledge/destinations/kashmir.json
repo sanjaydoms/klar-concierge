@@ -239,8 +239,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-31",
-  "nextReviewAt": "2026-11-29",
+  "reviewedAt": "2026-09-07",
+  "nextReviewAt": "2026-12-06",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -267,11 +267,25 @@
       "freshness": "current"
     },
     {
+      "id": "open-meteo-kashmir",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Srinagar",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-09-07",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
       "id": "wikipedia-kashmir",
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Kashmir Valley",
       "sourceUrl": "https://en.wikipedia.org/wiki/Kashmir_Valley",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-09-07",
       "applicableFields": [
         "summary",
         "positioningLine"
@@ -284,27 +298,13 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Kashmir Valley",
       "sourceUrl": "https://en.wikivoyage.org/wiki/Kashmir_Valley",
-      "accessedAt": "2026-08-24",
+      "accessedAt": "2026-09-07",
       "applicableFields": [
         "idealTraveller",
         "tradeOffs",
         "practicalWarnings"
       ],
       "reliability": "medium",
-      "freshness": "current"
-    },
-    {
-      "id": "open-meteo-kashmir",
-      "sourceType": "meteorological-service",
-      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Srinagar",
-      "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-31",
-      "applicableFields": [
-        "monthlyIntelligence.temperatureBand",
-        "monthlyIntelligence.rainfall",
-        "monthlyIntelligence.humidity"
-      ],
-      "reliability": "high",
       "freshness": "current"
     }
   ]

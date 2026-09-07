@@ -238,8 +238,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-08-31",
-  "nextReviewAt": "2026-11-29",
+  "reviewedAt": "2026-09-07",
+  "nextReviewAt": "2026-12-06",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -266,25 +266,11 @@
       "freshness": "current"
     },
     {
-      "id": "wikivoyage-nepal",
-      "sourceType": "licensed-data-provider",
-      "sourceName": "Wikivoyage: Nepal",
-      "sourceUrl": "https://en.wikivoyage.org/wiki/Nepal",
-      "accessedAt": "2026-08-24",
-      "applicableFields": [
-        "idealTraveller",
-        "tradeOffs",
-        "practicalWarnings"
-      ],
-      "reliability": "medium",
-      "freshness": "current"
-    },
-    {
       "id": "open-meteo-nepal",
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Kathmandu",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-08-31",
+      "accessedAt": "2026-09-07",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
@@ -298,10 +284,24 @@
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Nepal",
       "sourceUrl": "https://en.wikipedia.org/wiki/Nepal",
-      "accessedAt": "2026-08-31",
+      "accessedAt": "2026-09-07",
       "applicableFields": [
         "summary",
         "positioningLine"
+      ],
+      "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "wikivoyage-nepal",
+      "sourceType": "licensed-data-provider",
+      "sourceName": "Wikivoyage: Nepal",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Nepal",
+      "accessedAt": "2026-09-07",
+      "applicableFields": [
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
       ],
       "reliability": "medium",
       "freshness": "current"
