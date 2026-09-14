@@ -238,8 +238,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-09-07",
-  "nextReviewAt": "2026-12-06",
+  "reviewedAt": "2026-09-14",
+  "nextReviewAt": "2026-12-13",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -266,15 +266,14 @@
       "freshness": "current"
     },
     {
-      "id": "wikivoyage-phuket",
+      "id": "wikipedia-phuket",
       "sourceType": "licensed-data-provider",
-      "sourceName": "Wikivoyage: Phuket",
-      "sourceUrl": "https://en.wikivoyage.org/wiki/Phuket",
-      "accessedAt": "2026-08-31",
+      "sourceName": "Wikipedia: Phuket province",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Phuket_province",
+      "accessedAt": "2026-09-07",
       "applicableFields": [
-        "idealTraveller",
-        "tradeOffs",
-        "practicalWarnings"
+        "summary",
+        "positioningLine"
       ],
       "reliability": "medium",
       "freshness": "current"
@@ -284,7 +283,7 @@
       "sourceType": "meteorological-service",
       "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Phuket",
       "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-09-07",
+      "accessedAt": "2026-09-14",
       "applicableFields": [
         "monthlyIntelligence.temperatureBand",
         "monthlyIntelligence.rainfall",
@@ -294,14 +293,15 @@
       "freshness": "current"
     },
     {
-      "id": "wikipedia-phuket",
+      "id": "wikivoyage-phuket",
       "sourceType": "licensed-data-provider",
-      "sourceName": "Wikipedia: Phuket province",
-      "sourceUrl": "https://en.wikipedia.org/wiki/Phuket_province",
-      "accessedAt": "2026-09-07",
+      "sourceName": "Wikivoyage: Phuket",
+      "sourceUrl": "https://en.wikivoyage.org/wiki/Phuket",
+      "accessedAt": "2026-09-14",
       "applicableFields": [
-        "summary",
-        "positioningLine"
+        "idealTraveller",
+        "tradeOffs",
+        "practicalWarnings"
       ],
       "reliability": "medium",
       "freshness": "current"
