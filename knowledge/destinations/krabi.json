@@ -237,8 +237,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-10-05",
-  "nextReviewAt": "2027-01-03",
+  "reviewedAt": "2026-10-12",
+  "nextReviewAt": "2027-01-10",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -265,20 +265,6 @@
       "freshness": "current"
     },
     {
-      "id": "open-meteo-krabi",
-      "sourceType": "meteorological-service",
-      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Krabi",
-      "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-10-05",
-      "applicableFields": [
-        "monthlyIntelligence.temperatureBand",
-        "monthlyIntelligence.rainfall",
-        "monthlyIntelligence.humidity"
-      ],
-      "reliability": "high",
-      "freshness": "current"
-    },
-    {
       "id": "wikipedia-krabi",
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Krabi",
@@ -292,11 +278,25 @@
       "freshness": "current"
     },
     {
+      "id": "open-meteo-krabi",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Krabi",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-10-12",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
       "id": "wikivoyage-krabi",
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Krabi",
       "sourceUrl": "https://en.wikivoyage.org/wiki/Krabi",
-      "accessedAt": "2026-10-05",
+      "accessedAt": "2026-10-12",
       "applicableFields": [
         "idealTraveller",
         "tradeOffs",

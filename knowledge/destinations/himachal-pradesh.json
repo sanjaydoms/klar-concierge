@@ -241,8 +241,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-10-05",
-  "nextReviewAt": "2027-01-03",
+  "reviewedAt": "2026-10-12",
+  "nextReviewAt": "2027-01-10",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -264,20 +264,6 @@
         "seasonality",
         "attractions",
         "practicality"
-      ],
-      "reliability": "high",
-      "freshness": "current"
-    },
-    {
-      "id": "open-meteo-himachal-pradesh",
-      "sourceType": "meteorological-service",
-      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Manali",
-      "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-10-05",
-      "applicableFields": [
-        "monthlyIntelligence.temperatureBand",
-        "monthlyIntelligence.rainfall",
-        "monthlyIntelligence.humidity"
       ],
       "reliability": "high",
       "freshness": "current"
@@ -307,6 +293,20 @@
         "practicalWarnings"
       ],
       "reliability": "medium",
+      "freshness": "current"
+    },
+    {
+      "id": "open-meteo-himachal-pradesh",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Manali",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-10-12",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
       "freshness": "current"
     }
   ]
