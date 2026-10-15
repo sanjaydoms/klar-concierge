@@ -27,7 +27,7 @@
     "knowledge:autonomous": "tsx scripts/knowledge-autonomous.ts"
   },
   "dependencies": {
-    "next": "^15.5.22",
+    "next": "^16.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "zod": "^3.25.0"
