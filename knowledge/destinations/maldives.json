@@ -235,8 +235,8 @@
   "tier": 1,
   "version": "2.0.0",
   "reviewedBy": "Klar autonomous knowledge pipeline (measured climate + cited sources)",
-  "reviewedAt": "2026-10-26",
-  "nextReviewAt": "2027-01-24",
+  "reviewedAt": "2026-11-02",
+  "nextReviewAt": "2027-01-31",
   "sources": [
     {
       "id": "klar-knowledge-pack-2026",
@@ -263,20 +263,6 @@
       "freshness": "current"
     },
     {
-      "id": "open-meteo-maldives",
-      "sourceType": "meteorological-service",
-      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Malé",
-      "sourceUrl": "https://open-meteo.com/",
-      "accessedAt": "2026-10-26",
-      "applicableFields": [
-        "monthlyIntelligence.temperatureBand",
-        "monthlyIntelligence.rainfall",
-        "monthlyIntelligence.humidity"
-      ],
-      "reliability": "high",
-      "freshness": "current"
-    },
-    {
       "id": "wikipedia-maldives",
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikipedia: Maldives",
@@ -290,11 +276,25 @@
       "freshness": "current"
     },
     {
+      "id": "open-meteo-maldives",
+      "sourceType": "meteorological-service",
+      "sourceName": "Open-Meteo ERA5 archive, 2021-01-01–2025-12-31, station Malé",
+      "sourceUrl": "https://open-meteo.com/",
+      "accessedAt": "2026-11-02",
+      "applicableFields": [
+        "monthlyIntelligence.temperatureBand",
+        "monthlyIntelligence.rainfall",
+        "monthlyIntelligence.humidity"
+      ],
+      "reliability": "high",
+      "freshness": "current"
+    },
+    {
       "id": "wikivoyage-maldives",
       "sourceType": "licensed-data-provider",
       "sourceName": "Wikivoyage: Maldives",
       "sourceUrl": "https://en.wikivoyage.org/wiki/Maldives",
-      "accessedAt": "2026-10-26",
+      "accessedAt": "2026-11-02",
       "applicableFields": [
         "idealTraveller",
         "tradeOffs",
